@@ -1,0 +1,33 @@
+name: Update Wetter Data
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"   # 3 óránként
+  workflow_dispatch:         # manuális indítás
+
+jobs:
+  update-wetter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run Wetter Script
+        run: python fetch_wetter.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/wetter.json
+          git commit -m "Auto update wetter data" || echo "No changes"
+          git push
