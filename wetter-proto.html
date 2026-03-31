@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>PARA:AT – Flugwetter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* ===== LAYOUT ===== */
+        .wetter-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .wetter-left,
+        .wetter-right {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .wetter-center {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* ===== CARDS ===== */
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .card a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #1f2a36;
+        }
+
+        .card p {
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        .card.warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+
+        /* ===== IFRAME ===== */
+        .forecast-frame {
+            width: 100%;
+            height: 70vh;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .forecast-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .forecast-header a {
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #1f2a36;
+        }
+
+        /* ===== MOBIL ===== */
+        @media (max-width: 900px) {
+            .wetter-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .wetter-left { order: 2; }
+            .wetter-center { order: 1; }
+            .wetter-right { order: 3; }
+
+            .forecast-frame {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <h1>Flugwetter Österreich</h1>
+
+        <nav class="header-nav">
+            <a href="index.html">PARASPOTS</a>
+            <span class="nav-active">Wetter</span>
+            <a href="airspace.html">Luftraum</a>
+            <a href="#">Hilfe</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<div class="wetter-layout">
+
+    <!-- BAL OLDAL -->
+    <aside class="wetter-left">
+        <h3>Wie lesen?</h3>
+
+        <div class="card">
+            <strong>Wind</strong>
+            <ul>
+                <li>Richtung prüfen</li>
+                <li>Stärke beachten</li>
+                <li>Böen beachten</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <strong>Thermik</strong>
+            <ul>
+                <li>Stärke</li>
+                <li>Basis</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <strong>Bewölkung</strong>
+            <ul>
+                <li>Cumulus Entwicklung</li>
+                <li>Overdevelopment</li>
+            </ul>
+        </div>
+
+        <div class="card warning">
+            ⚠ Talwind ≠ Startwind<br>
+            ⚠ Modell ≠ Realität
+        </div>
+    </aside>
+
+    <!-- KÖZÉP -->
+    <div class="wetter-center">
+
+        <div class="forecast-header">
+            <strong>Offizielle Flugwetter-Prognose (AustroControl)</strong>
+
+            <a href="https://www.austrocontrol.at/wetter/flugwetter"
+               target="_blank">
+               ↗ Original öffnen
+            </a>
+        </div>
+
+        <a href="https://www.austrocontrol.at/wetter/wetterlexikon"
+           target="_blank"
+           class="wetter-lexikon-btn">
+           Wetterlexikon öffnen
+        </a>
+
+        <!-- IFRAME -->
+        <iframe
+            class="forecast-frame"
+            src="https://www.austrocontrol.at/wetter/flugwetter">
+        </iframe>
+
+    </div>
+
+    <!-- JOBB OLDAL -->
+    <aside class="wetter-right">
+        <h3>Tools</h3>
+
+        <div class="card">
+            <a href="https://www.windy.com" target="_blank">Windy</a>
+            <p>Wind & Übersicht</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.xcskies.com" target="_blank">XC Skies</a>
+            <p>Thermik & XC Potential</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.meteo-parapente.com" target="_blank">Meteo-Parapente</a>
+            <p>Pilot Forecast</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.zamg.ac.at" target="_blank">ZAMG</a>
+            <p>Offizielle Warnungen</p>
+        </div>
+    </aside>
+
+</div>
+
+</main>
+
+<footer class="site-footer">
+    <p>© PARA:AT</p>
+</footer>
+
+</body>
+</html>

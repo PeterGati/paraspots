@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>PARASPOTS – Startplatz</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="site-header-inner">
+<h1 id="siteName">Startplatz</h1>
+        <nav class="header-nav">
+    <a href="index.html">PARASPOTS</a>
+    <a href="#overview">Übersicht</a>
+    <a href="#startpunkte">Startpunkte</a>
+    <a href="#landeplaetze">Landeplätze</a>
+    <a href="#beschreibung">Beschreibung</a>
+    
+</nav>
+    </div>
+</header>
+
+
+<div class="page-layout">
+
+    
+
+    <!-- KÖZÉP – TARTALOM -->
+    <main class="main-content">
+
+        
+
+        <section id="overview">
+            <h2>Übersicht</h2>
+            <p><strong>Betreiber:</strong> <span id="sp-operator"></span></p>
+<p><strong>Website:</strong> <span id="sp-operator-url"></span></p>
+<p><strong>Telefon:</strong> <span id="sp-operator-phone"></span></p>
+<p><strong>Anfahrt:</strong> 
+   <span id="sp-anfahrt"></span>
+</p>
+
+<p><strong>Zugang:</strong> 
+   <span id="sp-zugang"></span>
+</p>
+
+<p><strong>Parken:</strong> <span id="sp-parking"></span></p>
+
+            <p><strong>Luftraum:</strong> <span id="sp-airspace"></span></p>
+            <p><strong>Flug:</strong> <span id="sp-flight"></span></p>
+            <p><strong>Start Rate:</strong> <span id="sp-start-rate"></span></p>
+            <p><strong>Thermik Rate:</strong> <span id="sp-thermal-rate"></span></p>
+<!-- ====================== -->
+<!-- SITE SZINTŰ IRÁNYOK -->
+<!-- ====================== -->
+
+<div id="sp-available-directions-wrapper" class="start-layout">
+    <div class="wind-wrapper">
+        <svg id="sp-available-directions-svg" viewBox="-20 -20 340 340"></svg>
+    </div>
+    <div class="start-details">
+        <h3>Erreichbare Startrichtungen</h3>
+        <p id="sp-available-directions-text"></p>
+    </div>
+</div>
+            <p><strong>Flug Beschreibung / Schwierigkeiten:</strong> <span id="sp-flight-description"></span></p>
+            <p><strong>Webcam:</strong> <span id="sp-webcam"></span></p>
+        </section>
+
+        <section id="startpunkte">
+            <h2>Startpunkte</h2>
+            <div id="sp-startpunkte-container"></div>
+        </section>
+
+        <section id="landeplaetze">
+            <h2>Landeplätze</h2>
+            <div id="sp-landeplaetze-container"></div>
+        </section>
+
+        <section id="beschreibung">
+            <h2>Beschreibung</h2>
+            <p id="sp-description"></p>
+        </section>
+
+    </main>
+
+    
+
+</div>
+
+<script src="js/startplatz.js"></script>
+
+<p style="font-size:14px; color:#666; margin-top:40px;">
+    <a href="#" id="admin-link">🔒 Admin bearbeiten</a>
+</p>
+
+<script>
+document.getElementById("admin-link").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const code = prompt("Admin-Code eingeben:");
+    if (code !== "123578") {
+        alert("Falscher Code.");
+        return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const region = params.get("region");
+    const site = params.get("site");
+
+    if (!region || !site) {
+        alert("Fehlende URL-Parameter.");
+        return;
+    }
+
+    const adminUrl = `site-admin.html?region=${region}&site=${site}`;
+    window.open(adminUrl, "_blank");
+});
+</script>
+
+
+
+</body>
+</html>
+
+
+</body>
+
+</html>

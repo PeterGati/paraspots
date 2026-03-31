@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>PARASPOTS – Fluggebiete</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- TOP STICKY STACK -->
+<div class="top-stack">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <h1>PARASPOTS</h1>
+
+            <nav class="header-nav">
+                <span class="nav-active">Fluggebiete</span>
+                <a href="wetter.html">Wetter</a>
+                <a href="airspace.html">Luftraum</a>
+                <a href="#">Hilfe</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MODE SWITCH -->
+    <div class="mode-switch">
+        <div class="mode-btn active" onclick="switchMode('spots', this)">Fluggebiete</div>
+        <div class="mode-btn" onclick="switchMode('weather', this)">Wetter</div>
+    </div>
+
+    <!-- FILTERS -->
+    <div id="filters" class="filter-area">
+
+        <!-- REGION -->
+        <div class="filter-group">
+            <div class="filter-title">Region</div>
+
+            <div class="filter-row">
+                <div class="filter-chip" data-value="tirol" onclick="toggle(this)">Tirol</div>
+                <div class="filter-chip" data-value="salzburg" onclick="toggle(this)">Salzburg</div>
+                <div class="filter-chip" data-value="steiermark" onclick="toggle(this)">Steiermark</div>
+                <div class="filter-chip" data-value="kaernten" onclick="toggle(this)">Kärnten</div>
+                <div class="filter-chip" data-value="niederoesterreich" onclick="toggle(this)">Niederösterreich</div>
+                <div class="filter-chip" data-value="oberoesterreich" onclick="toggle(this)">Oberösterreich</div>
+                <div class="filter-chip" data-value="vorarlberg" onclick="toggle(this)">Vorarlberg</div>
+                <div class="filter-chip" data-value="burgenland" onclick="toggle(this)">Burgenland</div>
+                <div class="filter-chip" data-value="suedtirol" onclick="toggle(this)">Südtirol</div>
+
+                <div class="reset-btn inline-reset" onclick="resetFilters()">Filter zurücksetzen</div>
+            </div>
+        </div>
+
+        <!-- WIND -->
+        <div class="filter-group">
+            <div class="filter-title">Windrichtung</div>
+            <div class="filter-row">
+                <div class="filter-chip" data-value="N" onclick="toggle(this)">↓ N</div>
+<div class="filter-chip" data-value="NO" onclick="toggle(this)">↙ NO</div>
+<div class="filter-chip" data-value="O" onclick="toggle(this)">← O</div>
+<div class="filter-chip" data-value="SO" onclick="toggle(this)">↖ SO</div>
+<div class="filter-chip" data-value="S" onclick="toggle(this)">↑ S</div>
+<div class="filter-chip" data-value="SW" onclick="toggle(this)">↗ SW</div>
+<div class="filter-chip" data-value="W" onclick="toggle(this)">→ W</div>
+<div class="filter-chip" data-value="NW" onclick="toggle(this)">↘ NW</div>
+            </div>
+        </div>
+
+        <!-- ACCESS -->
+        <div class="filter-group">
+            <div class="filter-title">Zugang</div>
+            <div class="filter-row">
+                <div class="filter-chip" data-value="hike" onclick="toggle(this)">Hike & Fly</div>
+                <div class="filter-chip" data-value="auto" onclick="toggle(this)">Auto</div>
+<div class="filter-chip" data-value="seilbahn" onclick="toggle(this)">
+    Seilbahn
+</div>                <div class="filter-chip" data-value="public" onclick="toggle(this)">Öffis</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- SPOTS MODE -->
+<div id="spotsMode">
+    <div class="main">
+        <div id="spots-container"></div>
+    </div>
+</div>
+
+
+<!-- WEATHER MODE -->
+<div id="weatherMode" class="windy" style="display:none;">
+    <iframe src="https://embed.windy.com/embed.html?lat=47.5&lon=13.6&zoom=7&overlay=wind"></iframe>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+<p>© petergati@me.com</p>
+</footer>
+
+
+<!-- SCRIPTS (EGYSZER!) -->
+<script src="js/spots.js" defer></script>
+
+<script>
+function switchMode(mode, el) {
+
+    const filters = document.getElementById("filters");
+
+    document.getElementById("spotsMode").style.display =
+        mode === "spots" ? "block" : "none";
+
+    document.getElementById("weatherMode").style.display =
+        mode === "weather" ? "block" : "none";
+
+    // 👉 FILTER ELTÜNTETÉS
+    filters.style.display = mode === "spots" ? "block" : "none";
+
+    document.querySelectorAll(".mode-btn")
+        .forEach(b => b.classList.remove("active"));
+
+    el.classList.add("active");
+}
+</script>
+
+</body>
+</html>

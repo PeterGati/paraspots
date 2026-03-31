@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARASPOTS – Mobile Prototype</title>
+
+<style>
+body {
+    font-family: system-ui;
+    margin: 0;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+.header {
+    background: #1f2a36;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+/* SWITCH */
+.mode-switch {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+}
+
+.mode-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: #eee;
+    font-size: 14px;
+}
+
+.mode-btn.active {
+    background: #2b7cff;
+    color: white;
+}
+
+/* FILTER BAR */
+.filter-area {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* GROUP */
+.filter-group {
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+.filter-title {
+    font-size: 12px;
+    color: #666;
+    margin: 0 12px 5px;
+}
+
+/* SCROLL ROW */
+.filter-row {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0 12px;
+}
+
+/* CHIP */
+.filter-chip {
+    flex: 0 0 auto;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.filter-chip.active {
+    background: #2b7cff;
+    color: white;
+    border-color: #2b7cff;
+}
+
+/* SPOTS */
+.container {
+    padding: 12px;
+}
+
+.spot-card {
+    background: white;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* WINDY */
+.windy {
+    display: none;
+}
+
+.windy iframe {
+    width: 100%;
+    height: 75vh;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">PARASPOTS</div>
+
+<div class="mode-switch">
+    <div class="mode-btn active" onclick="switchMode('spots')">Fluggebiete</div>
+    <div class="mode-btn" onclick="switchMode('weather')">Wetter</div>
+</div>
+
+<!-- FILTERS -->
+<div id="filters" class="filter-area">
+
+    <div class="filter-group">
+        <div class="filter-title">Region</div>
+        <div class="filter-row">
+            <div class="filter-chip" onclick="toggle(this)">Tirol</div>
+            <div class="filter-chip" onclick="toggle(this)">Salzburg</div>
+            <div class="filter-chip" onclick="toggle(this)">Steiermark</div>
+            <div class="filter-chip" onclick="toggle(this)">Kärnten</div>
+            <div class="filter-chip" onclick="toggle(this)">NÖ</div>
+        </div>
+    </div>
+
+    <div class="filter-group">
+        <div class="filter-title">Windrichtung</div>
+        <div class="filter-row">
+            <div class="filter-chip" onclick="toggle(this)">↑ N</div>
+            <div class="filter-chip" onclick="toggle(this)">↗ NO</div>
+            <div class="filter-chip" onclick="toggle(this)">→ O</div>
+            <div class="filter-chip" onclick="toggle(this)">↘ SO</div>
+            <div class="filter-chip" onclick="toggle(this)">↓ S</div>
+            <div class="filter-chip" onclick="toggle(this)">↙ SW</div>
+        </div>
+    </div>
+
+    <div class="filter-group">
+        <div class="filter-title">Zugang</div>
+        <div class="filter-row">
+            <div class="filter-chip" onclick="toggle(this)">Hike & Fly</div>
+            <div class="filter-chip" onclick="toggle(this)">Auto</div>
+            <div class="filter-chip" onclick="toggle(this)">Seilbahn</div>
+            <div class="filter-chip" onclick="toggle(this)">Öffis</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- SPOTS -->
+<div id="spotsMode" class="container">
+
+    <div class="spot-card">Hohe Wand – Ost</div>
+    <div class="spot-card">Rax – West</div>
+    <div class="spot-card">Gerlitzen – Süd</div>
+
+</div>
+
+<!-- WINDY -->
+<div id="weatherMode" class="windy">
+    <iframe src="https://embed.windy.com/embed.html?lat=47.5&lon=13.6&zoom=7&overlay=wind"></iframe>
+</div>
+
+<script>
+function toggle(el) {
+    el.classList.toggle("active");
+}
+
+function switchMode(mode) {
+
+    document.getElementById("spotsMode").style.display =
+        mode === "spots" ? "block" : "none";
+
+    document.getElementById("filters").style.display =
+        mode === "spots" ? "block" : "none";
+
+    document.getElementById("weatherMode").style.display =
+        mode === "weather" ? "block" : "none";
+
+    document.querySelectorAll(".mode-btn").forEach(b => b.classList.remove("active"));
+    event.target.classList.add("active");
+}
+</script>
+
+</body>
+</html>

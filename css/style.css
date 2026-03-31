@@ -1,0 +1,1153 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+.site-header {
+    background: #c00000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 25px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header-nav {
+    margin-top: 18px;
+}
+
+.header-nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+.main-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CONTENT
+========================= */
+.content {
+    padding: 30px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   REGIONS / STARTPLÄTZE LISTS
+========================= */
+.bundeslaender {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.bundeslaender li {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.bundeslaender li:hover {
+    background-color: #e6eef7;
+}
+
+.startplaetze {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.startplaetze li {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+/* =========================
+   MAP HINT (Windy Hinweis)
+========================= */
+.map-hint {
+    margin-bottom: 14px;
+    font-size: 1.2rem;          /* kicsit nagyobb */
+    line-height: 1.45;
+    color: #0b2a4a;             /* sötétkék */
+    max-width: 100%;
+}
+
+.map-hint strong {
+    font-weight: 600;
+}
+
+/* =========================
+   MAP CONTAINER (Windy)
+========================= */
+.map-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+    max-height: 800px;
+
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        height: 50vh;
+        min-height: 300px;
+    }
+}
+
+/* =========================
+   GOOGLE MAPS LINK BUTTON
+========================= */
+.map-link-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #1f2a36;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.map-link-button:hover {
+    background: #324457;
+}
+
+/* =========================
+   FOOTER
+==============
+.site-footer {
+    background-color: #1f2a36;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* =========================
+   BACK TO REGION LINK
+========================= */
+.back-link {
+    margin-bottom: 16px;
+}
+
+.back-link a {
+    display: inline-block;
+    font-size: 0.95rem;
+    color: #1f2a36;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #e9eef3;
+}
+
+.back-link a:hover {
+    background: #dbe3ec;
+}
+/* ===============================
+   STARTPLATZ – HERO HEADER
+================================= */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f6f8;
+    line-height: 1.6;
+}
+
+header {
+    background: #c00000; /* osztrák piros */
+    color: white;
+    padding: 25px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+header nav {
+    margin-top: 10px;
+}
+.flag-bar {
+    height: 25px;
+    background: #c00000;
+    width: 100%;
+}
+/* RESET BUTTON */
+.reset-btn {
+    font-size: 12px;
+    cursor: pointer;
+
+    padding: 6px 12px;
+    border-radius: 8px;
+
+    background: #e3ecf7;
+    color: #2b7cff;
+
+    border: 1px solid #c7d7ef;
+
+    transition: all 0.15s ease;
+}
+
+/* hover */
+.reset-btn:hover {
+    background: #d4e4f9;
+    border-color: #2b7cff;
+}
+
+/* active (kattintás) */
+.reset-btn:active {
+    transform: scale(0.96);
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 12px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===============================
+   SECTIONS – CARD STYLE
+================================= */
+
+section {
+    background: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+
+/* ===============================
+   CONTENT TYPOGRAPHY
+================================= */
+
+p {
+    font-size: 1.05rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+
+/* ===============================
+   STARTPUNKT & LANDEPLATZ BLOCK
+================================= */
+
+#sp-startpunkte-container > div,
+#sp-landeplaetze-container > div {
+    background: #f9fafb;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ececec;
+}
+
+
+/* ===============================
+   LINK STYLING
+================================= */
+
+a {
+    color: #c00000;
+    font-weight: 500;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+
+/* ===============================
+   HR CLEANER LOOK
+================================= */
+
+hr {
+    display: none;
+}
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    background: #c00000;
+    color: white;
+    padding: 40px 20px 25px 20px;
+}
+
+.site-header-inner {
+    max-width: 1600px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header-title h1 {
+    margin: 0;
+    font-size: 2.6rem;   /* nagyobb starthely név */
+    font-weight: 700;
+}
+
+.header-logos img {
+    height: 38px;
+    margin-left: 18px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.header-logos img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.header-nav {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.header-nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   SECTION CARDS
+========================================= */
+
+section {
+    background: #f0f6ff;
+    padding: 35px;
+    margin: 35px 0;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.7rem;
+    color: #0a2a5e; /* sötétkék */
+}
+
+
+/* =========================================
+   STARTPUNKT / LANDEPLATZ BLOKK
+========================================= */
+
+#sp-startpunkte-container > div,
+#sp-landeplaetze-container > div {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    border: 1px solid #e2ebf7;
+}
+
+#sp-startpunkte-container h3,
+#sp-landeplaetze-container h3 {
+    font-size: 1.35rem;
+    color: #0a2a5e; /* sötétkék */
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+p {
+    font-size: 1.18rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+    color: #0a2a5e;
+    font-weight: 500;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+/* ===============================
+   3 COLUMN LAYOUT
+================================= */
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+
+
+
+.main-content {
+    width: 100%;
+}
+
+
+.left-column,
+.right-column {
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+}
+
+/* ===============================
+   HEADER CENTERED TITLE
+================================= */
+
+.site-header {
+    background: #c00000;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* ===============================
+   PHOTO STACK
+================================= */
+
+.photo-stack img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+   PARTNER LOGOS
+================================= */
+
+.partner-logos img {
+    width: 100%;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.partner-logos img:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column,
+    .right-column {
+        display: none;
+    }
+}
+/* ===============================
+   TYPOGRAPHY SCALE ADJUSTMENT
+================================= */
+
+/* Section címek nagyobbak */
+section h2 {
+    font-size: 1.9rem;
+}
+
+/* Startpont és Landeplatz címek nagyobbak */
+#sp-startpunkte-container h3,
+#sp-landeplaetze-container h3 {
+    font-size: 1.55rem;
+}
+/* ===============================
+   REGION PAGE REFACTOR
+================================= */
+
+.region-card-large {
+    background: #f0f6ff;
+    padding: 35px;
+    border-radius: 18px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.region-card-large h2 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #0a2a5e;
+}
+
+.region-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.region-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid #e2ebf7;
+    transition: 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.region-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.region-card h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    color: #0a2a5e;
+}
+/* =========================================
+   INDEX PAGE CLEAN LAYOUT
+========================================= */
+
+.index-main {
+    padding: 60px 20px;
+}
+
+.index-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.index-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #0a2a5e;
+}
+
+/* ===== REGION LARGE GRID ===== */
+
+.region-large-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 80px;
+}
+
+.region-large-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 110px;
+
+    background: #ffffff;
+    border-radius: 18px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0a2a5e;
+    text-decoration: none;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.25s ease;
+}
+
+.region-large-grid a:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* ===== WINDY LARGE CLEAN ===== */
+
+.windy-full {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.windy-full iframe {
+    width: 100%;
+    height: 650px;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1100px) {
+    .region-large-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .windy-full iframe {
+        height: 520px;
+    }
+}
+
+@media (max-width: 700px) {
+    .region-large-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .windy-full iframe {
+        height: 420px;
+    }
+}
+.nav-active {
+    color: white;
+    font-weight: 600;
+    margin: 0 12px;
+    opacity: 0.85;
+}
+.windy-button {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.windy-button a {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #0a2a5e;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.windy-button a:hover {
+    background: #082248;
+}
+/* ===== WINDY INFO STRIP ===== */
+
+.windy-info {
+    max-width: 1300px;
+    margin: 0 auto 20px auto;
+    padding: 14px 20px;
+    background: #e8f1fb;     /* halvány kék */
+    color: #0a2a5e;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-align: center;
+}
+/* =========================================
+   WETTER MODULE
+========================================= */
+
+.foehn-warning {
+    background: #ffe8cc;
+    border-left: 6px solid #ff8c00;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #7a3e00;
+}
+
+.wetter-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.wetter-nav-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a2a5e;
+    margin-bottom: 10px;
+}
+
+.wetter-lexikon-btn {
+    background: #0a2a5e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.wetter-lexikon-btn:hover {
+    background: #082248;
+}
+
+.forecast-content {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #222;
+}
+
+.forecast-content p {
+    margin-bottom: 10px;
+}
+.forecast-heading {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: #0a2a5e;
+}
+
+.forecast-separator {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+.forecast-heading {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0a2a5e;
+}
+.forecast-security {
+    font-weight: 700;
+    color: #333;
+}
+/* START CARD LAYOUT */
+
+.start-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.wind-wrapper {
+    flex: 0 0 150px;
+}
+
+.wind-wrapper svg {
+    width: 150px;
+    height: 150px;
+}
+
+.start-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.start-details p {
+    margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+    .start-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* BELSŐ START LAYOUT */
+
+.start-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.wind-wrapper {
+    flex: 0 0 120px;   /* kisebb, mint előbb */
+}
+
+.wind-wrapper svg {
+    width: 120px;
+    height: 120px;
+}
+
+.start-details {
+    flex: 1;
+}
+
+@media (max-width: 700px) {
+    .start-layout {
+        flex-direction: column;
+    }
+
+    .wind-wrapper {
+        margin-bottom: 15px;
+    }
+}
+/* ===============================
+   START CARD HOVER (KÉK KERET)
+================================= */
+
+.start-card {
+    border: 2px solid transparent;
+    transition: border 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    cursor: pointer;
+}
+
+/* Desktop */
+@media (hover: hover) {
+    .start-card:hover {
+        border: 2px solid #0a2a5e;   /* sötétkék */
+        background: #f7fbff;         /* nagyon halvány kék */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+}
+
+/* Mobil */
+.start-card:active {
+    border: 2px solid #0a2a5e;
+    background: #eef5ff;
+}
+/* ======================
+   MAPS BUTTON
+====================== */
+
+.maps-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-top: 8px;
+    padding: 6px 10px;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    color: #1f5fd1;
+    background: rgba(31, 95, 209, 0.08);
+
+    border: 1px solid rgba(31, 95, 209, 0.2);
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition: all 0.15s ease;
+}
+
+/* hover */
+.maps-link:hover {
+    background: rgba(31, 95, 209, 0.15);
+    border-color: rgba(31, 95, 209, 0.4);
+}
+
+/* ikon picit finomítva */
+.maps-icon {
+    font-size: 0.9rem;
+}
+/* ======================
+   REGION CARDS (INDEX)
+====================== */
+
+.region-large-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.region-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+
+    background: white;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+    transition: all 0.15s ease;
+    border: 2px solid transparent;
+}
+
+/* hover = spots style */
+.region-card:hover {
+    border-color: #2b7cff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+.mode-switch {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.mode-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #eee;
+    font-weight: 500;
+}
+
+.mode-btn.active {
+    background: #2b7cff;
+    color: white;
+}
+
+.windy {
+    display: none;
+    padding: 20px;
+}
+
+.windy iframe {
+    width: 100%;
+    height: 75vh;
+    border: none;
+    border-radius: 10px;
+}
+/* =========================
+   FILTER UI (PROTOTYPE)
+========================= */
+
+.filter-area {
+    background: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-group {
+    margin-bottom: 12px;
+}
+
+.filter-title {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.filter-row {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+}
+
+.filter-chip {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    white-space: nowrap;
+    background: #fff;
+}
+
+.filter-chip.active {
+    background: #2b7cff;
+    color: white;
+    border-color: #2b7cff;
+}
+
+/* RESET mint külön UI elem */
+.inline-reset {
+    margin-left: auto;
+
+    padding: 5px 10px;
+    border-radius: 8px;
+
+    background: #ffffff;
+    border: 1px solid #d0d7e2;
+
+    font-size: 12px;
+    color: #2b7cff;
+
+    white-space: nowrap;
+
+    transition: all 0.15s ease;
+}
+
+/* hover */
+.inline-reset:hover {
+    background: #f0f6ff;
+    border-color: #2b7cff;
+}
+/* =========================
+   MAIN CONTENT WIDTH
+========================= */
+
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.spot-card {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto 15px auto;
+    max-width: 900px;
+
+    border: 1px solid #e0e6ed;   /* EZ ADJA A KONTRASZTOT */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.filter-area {
+    background: #eef2f6;   /* halvány szürke-kék */
+    padding: 3px 18px;
+    border-bottom: 1px solid #ddd;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.main {
+    flex: 1;
+    overflow-y: auto;
+}
+.top-stack {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+}
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #c00000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+}
+.main {
+    padding-bottom: 70px;
+}
+/* FILTER HEADER */
+.filter-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+}
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    background: #c00000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    z-index: 30;
+}
+.main {
+    padding-bottom: 70px; /* footer magasság */
+}

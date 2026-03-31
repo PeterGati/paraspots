@@ -1,0 +1,124 @@
+{
+  "region": "niederosterreich",
+  "name": "Hohe Wand",
+  "coordinates": {
+    "lat": 47.81666666666667,
+    "lon": 16.05
+  },
+  "talHeight": 450,
+  "operator": {
+    "name": null,
+    "url": null
+  },
+  "access": {
+    "car": false,
+    "publicTransport": null,
+    "hikeAndFly": true,
+    "cableCar": false,
+    "parking": null
+  },
+  "airspace": [],
+  "flightCharacteristics": {
+    "soaring": null,
+    "thermal": null,
+    "crossCountry": null
+  },
+  "siteRatings": {
+    "overallRating": 4.5,
+    "thermalRating": 4.5
+  },
+  "maxHeightDifference": 60,
+  "typicalDifficulty": null,
+  "windDirections": [
+    "O",
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Auf der A2 Wien - Graz nehmt Ihr die Abfahrt Wiener Neustadt-West. ´Dann folgt Ihr der B26 Richtung Weikersdorf und den grünen Schildern 'Naturpark Hohe Wand'.",
+  "description": "Hohe Wand, 1100 MeterTalort:MaiersdorfHöhe Talort:450 MeterHöhenunterschied:-5\r\n\t\t\t\t\t \t\t\t\t\t\t \r\n\t\t\t\t\t \t\t\t\t\t \tbis\r\n\t\t\t\t\t\t \t\t\t\t\t\t \t\t\t\t\t\t\t \t\t535\r\n\t\t\t\t\t\t \t\t\t\t\t\t\t \t\t\t\t\t \t\t\t\t\t MeterStart Richtungen:Seilbahn:NeinStreckenflug:JaSoaring:JaWindenschlepp:NeinWalk and Fly:JaSki and Fly:NeinDrachen:JaUL:NeinGPS Tal:47° 49' 00'' N,16° 3' 0'' OQualität Fluggebiet:Qualität dieser Seite:Statistik:209Votes, 43175HitsAdoption (User):Manfredseit 04.02.2005Zuletzt bearbeitet:19.08.201824.03.200718Votes7582Hits[taggi]Übersicht©www.muerzer.at[Bild hinzufügen]Das von Wien aus gesehen näheste Gebiet. Gerade bei Ost- und Südostwindlagen ist es ein ausgezeichnetes Soaringrevier. Die Termik ist manchmal auch so aktiv, dass Einsteiger die Mittagsstunden meiden sollten (Frühjahr und Sommer)!!!An manchen Wochenenden, besonders im Herbst und manchmal auch im Winter, kann es am Startplatz und über der Hohen Wand eng werden. Das liegt eigentlich nicht am Platz, sondern oft am undisziplinierten Verhalten mancher Piloten am Startplatz einerseits und den \"Rudelverhalten\" vieler Piloten der Luft andrerseits.Die Hohe Wand trägt von 3 bis 12 km länge, da haben viele Flieger Platz!",
+  "startpunkte": [
+    {
+      "id": "osttart",
+      "name": "Osttart",
+      "coordinates": {
+        "lat": null,
+        "lon": 16.041666666666668
+      },
+      "startHeight": 935,
+      "heightDifference": 60,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": null,
+      "startRating": 0,
+      "description": "Startplatz:OsttartGPS-Koordinaten:47° 49' 45.3'' N,16° 02' 30'' OStartrichtung:O \t\t\t\t\tSOSchwierigkeit:mittelHöhe über NN:935Vom Gasthof Postl aus ist man in 10min zu Fuß unterwegs und wird mit einem von Wald flankierten breiten Wiesenstart belohnt.Achtung bei stärkeren S-Wind: Rotoren"
+    },
+    {
+      "id": "suedstart",
+      "name": "Südstart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 870,
+      "heightDifference": -5,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": null,
+      "startRating": 0,
+      "description": "Startplatz:SüdstartStartrichtung:SO \t\t\t\t\tSSchwierigkeit:mittelHöhe über NN:870Diffizieler Platz - es fehlt ein wenig Länge! Ansonsten ist er in der Nähe vom Gasthaus 'Postl' zu finden. ACHTUNG: Bei starker Thermik und im besonderen bei NO-O Wind stehen Rotoren in der Startbucht vor dem Startplatz die hauptsächlich von der Sonnenuhrwand (Skywalk) herühren!"
+    }
+  ],
+  "landeplaetze": [
+    {
+      "id": "toplandeplatz",
+      "name": "Toplandeplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": 16.059444444444445
+      },
+      "height": 875,
+      "difficulty": "mittel",
+      "description": "Landeplatz:Weide-MaiersdorfSchwierigkeit:leichtHöhe über NN:580Sehr große Landefläche, die aber durch den Weidebetrieb zwischen Mai und Oktober oft durch Weidezäune mehrfach unterteilt ist. Auch ist der Weidegrund auch nicht wie eine \"schöne\" Wiese eben.Da die Weide eine Hanglage hat, entsteht dort auch gute Thermik, die schon mal den ausgewählten Landepunkt unfreiwillig \"verschiebt\"!ACHTUNG: Die Weide Maiersdorf ist auch Schulungsgelände! So ist bei Schulbetrieb abseits des Übungshanges zu landen!Weitere Infos: http://www.soaringclub-hohewand.at/index.php/fluggebiets-infosLandeplatz:Mautstation - HauptlandeplatzGPS-Koordinaten:47° 49' 30.8'' N,16° 3' 34'' OSchwierigkeit:mittelHöhe über NN:500Gleich hinter dem Mauthäuschen befindlicher großer Landeplatz.Bei stärkeren SO bis S Wind kann durch die Terassenlage des Landegeländes Aufwind entstehen. Wenn da noch Thermik dazu kommt, kann das Landen schwierig werden, da man schwer \"runterkommt\" und der Wind drehen kann (Thermik).Bei S bis SW Wind wird die Landeeinteilung durch Hindernisse (Mauthaus, Stromleitung) anspruchsvoll! Da ist es besser, wenn möglich, auf der Weide Maiersdorf zu landen.Landeplatz:Drachenlandeplatz/SchullandeplatzSchwierigkeit:sehr leichtHöhe über NN:400Im Osten des Talortes befindlicher problemloser Landeplatz.Eigentlich sind es zwei große Landewiesen die unmittelbar nebeneinander liegen und von allen Richtungen anfliegbar ist! Beide sind mit Windsäcken und Fähnchen ausgestattet. Achtung, es kann schwierig werden wieder auf die Hohe Wand zum Fahrzeug zu kommen. Mit anderen Piloten absprechen oder Chauffeur mitnehmen!!!Landeplatz:ToplandeplatzSchwierigkeit:mittelHöhe über NN:875Gleich beim Gasthof 'Postl' gibt es den für Thermikfreaks bestimmten Landeplatz. Achtung: Es kann flott gesunken werden!Ab Windstärken von 15 - 20 km/h, bei guter Thermik und bei südlichen Windrichtungen kann das Landen zum \"Glücksspiel\" und recht sportlich werden und unsanft enden!!!"
+    },
+    {
+      "id": "Hauptlandeplatz",
+      "name": "Mautstation",
+      "coordinates": {
+        "lat": null,
+        "lon": 16.059444444444445
+      },
+      "height": 875,
+      "difficulty": "mittel",
+      "description": "Landeplatz:Mautstation - HauptlandeplatzGPS-Koordinaten:47° 49' 30.8'' N,16° 3' 34'' OSchwierigkeit:mittelHöhe über NN:500Gleich hinter dem Mauthäuschen befindlicher großer Landeplatz.Bei stärkeren SO bis S Wind kann durch die Terassenlage des Landegeländes Aufwind entstehen. Wenn da noch Thermik dazu kommt, kann das Landen schwierig werden, da man schwer \"runterkommt\" und der Wind drehen kann (Thermik).Bei S bis SW Wind wird die Landeeinteilung durch Hindernisse (Mauthaus, Stromleitung) anspruchsvoll! Da ist es besser, wenn möglich, auf der Weide Maiersdorf zu landen.Landeplatz:Drachenlandeplatz/SchullandeplatzSchwierigkeit:sehr leichtHöhe über NN:400Im Osten des Talortes befindlicher problemloser Landeplatz.Eigentlich sind es zwei große Landewiesen die unmittelbar nebeneinander liegen und von allen Richtungen anfliegbar ist! Beide sind mit Windsäcken und Fähnchen ausgestattet. Achtung, es kann schwierig werden wieder auf die Hohe Wand zum Fahrzeug zu kommen. Mit anderen Piloten absprechen oder Chauffeur mitnehmen!!!Landeplatz:ToplandeplatzSchwierigkeit:mittelHöhe über NN:875Gleich beim Gasthof 'Postl' gibt es den für Thermikfreaks bestimmten Landeplatz. Achtung: Es kann flott gesunken werden!Ab Windstärken von 15 - 20 km/h, bei guter Thermik und bei südlichen Windrichtungen kann das Landen zum \"Glücksspiel\" und recht sportlich werden und unsanft enden!!!"
+    },
+    {
+      "id": "toplandeplatz",
+      "name": "Toplandeplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "height": 875,
+      "difficulty": "mittel",
+      "description": "Landeplatz:Drachenlandeplatz/SchullandeplatzSchwierigkeit:sehr leichtHöhe über NN:400Im Osten des Talortes befindlicher problemloser Landeplatz.Eigentlich sind es zwei große Landewiesen die unmittelbar nebeneinander liegen und von allen Richtungen anfliegbar ist! Beide sind mit Windsäcken und Fähnchen ausgestattet. Achtung, es kann schwierig werden wieder auf die Hohe Wand zum Fahrzeug zu kommen. Mit anderen Piloten absprechen oder Chauffeur mitnehmen!!!Landeplatz:ToplandeplatzSchwierigkeit:mittelHöhe über NN:875Gleich beim Gasthof 'Postl' gibt es den für Thermikfreaks bestimmten Landeplatz. Achtung: Es kann flott gesunken werden!Ab Windstärken von 15 - 20 km/h, bei guter Thermik und bei südlichen Windrichtungen kann das Landen zum \"Glücksspiel\" und recht sportlich werden und unsanft enden!!!"
+    },
+    {
+      "id": "toplandeplatz",
+      "name": "Toplandeplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "height": 875,
+      "difficulty": "mittel",
+      "description": "Landeplatz:ToplandeplatzSchwierigkeit:mittelHöhe über NN:875Gleich beim Gasthof 'Postl' gibt es den für Thermikfreaks bestimmten Landeplatz. Achtung: Es kann flott gesunken werden!Ab Windstärken von 15 - 20 km/h, bei guter Thermik und bei südlichen Windrichtungen kann das Landen zum \"Glücksspiel\" und recht sportlich werden und unsanft enden!!!"
+    }
+  ]
+}

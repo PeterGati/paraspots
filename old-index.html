@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>PARA:AT – Startplätze Österreich</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <h1>PARASPOTS</h1>
+
+        <nav class="header-nav">
+            <span class="nav-active">PARASPOTS</span>
+            <a href="wetter.html">Wetter</a>
+            <a href="airspace.html">Luftraum</a>
+            <a href="#">Hilfe</a>
+            <a href="new-site-admin.html">Neue Startplatz-Eingabe</a>
+        </nav>
+    </div>
+</header>
+
+<main class="index-main">
+
+    <div class="index-container">
+
+        <!-- REGION GRID -->
+        <h2 class="index-title">Startplätze in Österreich</h2>
+
+        <div class="region-large-grid">
+
+    <a href="region.html?region=tirol" class="region-card">Tirol</a>
+    <a href="region.html?region=vorarlberg" class="region-card">Vorarlberg</a>
+    <a href="region.html?region=salzburg" class="region-card">Salzburg</a>
+    <a href="region.html?region=oberoesterreich" class="region-card">Oberösterreich</a>
+    <a href="region.html?region=steiermark" class="region-card">Steiermark</a>
+    <a href="region.html?region=kaernten" class="region-card">Kärnten</a>
+    <a href="region.html?region=niederoesterreich" class="region-card">Niederösterreich</a>
+    <a href="region.html?region=burgenland" class="region-card">Burgenland</a>
+    <a href="region.html?region=suedtirol" class="region-card">Südtirol</a>
+
+</div>
+
+        <!-- WINDY -->
+        <div class="windy-info">
+    Wind, Thermik und Paragliding-Spots – interaktive Übersicht.
+</div>
+
+        <div class="windy-full">
+           <iframe
+    src="https://embed.windy.com/embed.html
+    ?lat=47.538
+    &lon=13.619
+    &zoom=8
+    &level=surface
+    &overlay=wind
+    &product=ecmwf
+    &calendar=now
+    &metricWind=km%2Fh
+    &metricTemp=%C2%B0C"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+<div class="windy-button">
+    <a href="https://www.windy.com/?47.538,13.619,8,p:pgspots&lang=de"
+   target="_blank"
+   rel="noopener noreferrer">
+   Windy in neuem Fenster öffnen
+</a>
+
+
+</div>
+
+        
+
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <p>© petergati@me.com</p>
+</footer>
+<script>
+document.getElementById("new-site-link").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const code = prompt("Admin-Code eingeben:");
+    if (code !== "123578") {
+        alert("Falscher Code.");
+        return;
+    }
+
+    window.open("new-site-admin.html", "_blank");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Windy Demo – PARA:AT</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        #windy {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .info-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="info-box">
+    <strong>PARA:AT Windy Demo</strong><br>
+    Hohe Wand starthelyek
+</div>
+
+<div id="windy"></div>
+
+<script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
+
+<script>
+const options = {
+    key: 'YOUR_API_KEY_HERE', // <-- IDE kell majd az API kulcs
+    lat: 47.82,
+    lon: 16.02,
+    zoom: 11,
+};
+
+windyInit(options, windyAPI => {
+
+    const { map } = windyAPI;
+
+    // 🟢 HOHE WAND OST
+    const marker1 = L.marker([47.823, 16.033]).addTo(map);
+    marker1.bindPopup(`
+        <b>Hohe Wand – Ost</b><br>
+        🟢 Jó reggel<br>
+        Szél: O, SO
+    `);
+
+    // 🔴 HOHE WAND SÜD
+    const marker2 = L.marker([47.818, 16.020]).addTo(map);
+    marker2.bindPopup(`
+        <b>Hohe Wand – Süd</b><br>
+        🟡 Termikus délben<br>
+        ⚠️ Figyelj a szélre
+    `);
+
+});
+</script>
+
+</body>
+</html>

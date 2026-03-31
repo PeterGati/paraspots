@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Wind Compass Preview</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+.wrapper {
+    width: 320px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+svg {
+    width: 300px;
+    height: 300px;
+}
+
+/* Alapkör */
+.base-circle {
+    fill: #3498db;
+}
+
+/* Zöld start szektor */
+.launch-sector {
+    fill: #5fd12f;
+}
+
+/* Irány betűk */
+.direction-label {
+    font-size: 20px;
+    font-weight: bold;
+    fill: #111;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h2>Wind Startbereich Preview</h2>
+
+    <svg viewBox="0 0 300 300">
+
+        <!-- Alapkör -->
+        <circle cx="150" cy="150" r="130" class="base-circle" />
+
+        <!-- ZÖLD SZAKASZ (SO-S-SW: 135°–225°) -->
+       <path class="launch-sector"
+      d="
+        M150 150
+        L270.2 200.3
+        A130 130 0 0 1 29.8 200.3
+        Z
+      " />
+
+        <!-- Égtájak -->
+        <text x="150" y="15" text-anchor="middle" class="direction-label">N</text>
+        <text x="290" y="155" text-anchor="middle" class="direction-label">O</text>
+        <text x="150" y="300" text-anchor="middle" class="direction-label">S</text>
+        <text x="10" y="155" text-anchor="middle" class="direction-label">W</text>
+
+    </svg>
+
+    <p>Grün = SO, S, SW</p>
+
+</div>
+
+</body>
+</html>

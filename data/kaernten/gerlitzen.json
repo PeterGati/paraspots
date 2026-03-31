@@ -1,0 +1,148 @@
+{
+  "startpunkte": [
+    {
+      "id": "",
+      "name": "Gerlitze Oststart",
+      "coordinates": {
+        "lat": 46.413524,
+        "lon": 13.544838
+      },
+      "startHeight": 1910,
+      "heightDifference": 1400,
+      "launchDirections": [
+        "NO",
+        "O"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": null,
+      "startRating": 3,
+      "description": "Großzügiges Platzangebot, es können gut 6 Schirme nebeneinander ausgelegt werden. Schöner Flacher Hang, dann Kante mit steilem Hang Richtung Finsterbachgraben, der die Thermik zuverlässig sammelt. Hausbart an der östlichen Begrenzung des Finsterbachgrabens über der sogenannten Bergersiedlung.Großzügiges Platzangebot, es können gut 6 Schirme nebeneinander ausgelegt werden. Schöner Flacher Hang, dann Kante mit steilem Hang Richtung Finsterbachgraben, der die Thermik zuverlässig sammelt. Hausbart an der östlichen Begrenzung des Finsterbachgrabens über der sogenannten Bergersiedlung."
+    },
+    {
+      "id": "",
+      "name": "Gerlitze Weststart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1900,
+      "heightDifference": 1390,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": null,
+      "startRating": 3.5,
+      "description": "A) Direkt unterhalb der Sessellift Bergstation in Richtung der Schipisten - Schneise. Start zwischen den Drahtseilen eines Schlepplifts (rechts), und dem Sessellift (links)\n\n(B) Etwas westlich des Südstarts schräg zum Hang Richtung SW starten - bei dieser Variante nicht zu tief über den Sessellift fliegen, andererseits möglichst nicht die Bäume links des Sessellifts beglücken"
+    },
+    {
+      "id": "",
+      "name": "Gerlitze Südstart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1900,
+      "heightDifference": 1390,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": null,
+      "startRating": 3.5,
+      "description": "Die neue Schipiste - vom Südstartplatz genau in Startrichtung Süden, erleichtert den Abflug, weil man nicht mehr in geringer Höhe über Bäume fliegt, sondern der Schneise der Schipiste folgen kann."
+    },
+    {
+      "id": "",
+      "name": "Bergeralm",
+      "coordinates": {
+        "lat": 46.413704,
+        "lon": 13.55167
+      },
+      "startHeight": 1789,
+      "heightDifference": 1279,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "wenn am Hauptstartplatz der Wind zu heftig ansteht, kann es hier eventuell besser möglich sein, in östl. Richtung zu starten. Fußmarsch entlang Grat vom Hauptplatz ca. 10min. Start oberhalb der Hotelsiedlung. Platz für 2 bis max.3 Schirme.",
+      "startRating": 3,
+      "description": null
+    },
+    {
+      "id": "",
+      "name": "Kanzelhöhe",
+      "coordinates": {
+        "lat": 46.40248,
+        "lon": 13.53473
+      },
+      "startHeight": 1470,
+      "heightDifference": 960,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": null,
+      "windSensitivity": null,
+      "startRating": null,
+      "description": "Öffentlicher Startplatz des DGFC Ossiachersee\nan der Ostseite des \"Haus Edelweiß\"."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Annenheim Flugschullandeplatz",
+      "coordinates": {
+        "lat": 46.39108,
+        "lon": 13.5328
+      },
+      "difficulty": "leicht",
+      "windSensitivity": null,
+      "description": "Direkt im Westen des Ossiacher Sees, vom Ufer nur durch eine Baum- / Buschreihe getrennt. Die Kärntner Flugschule als Landeplatzbetreiber hebt keine Landegebühr ein. Der Talwind kommt aus Osten. Die Position befindet sich im NO Eck der riesigen Landewiese. Im Queranflug 50m Abstand zur stark frequentierten Straße einhalten. Großer blau-gelber Windsack vorhanden."
+    }
+  ],
+  "siteRatings": {
+    "overallRating": 2.5,
+    "thermalRating": 2.5
+  },
+  "region": "kaernten",
+  "site": "gerlitzen",
+  "name": "Gerlitzen",
+  "coordinates": {
+    "lat": 46.6594,
+    "lon": 13.90131
+  },
+  "talHeight": 510,
+  "operator": {
+    "name": "DGFC",
+    "url": "www.dgfc-ossiachersee.at/",
+    "phone": "+43 676 34003400"
+  },
+  "access": {
+    "car": false,
+    "publicTransport": false,
+    "hikeAndFly": true,
+    "cableCar": true,
+    "parking": "Neben die Seilbahn Talstation."
+  },
+  "airspaces": [
+    "Das FG befindet sich unterhalb der TMA Klagenfurt die hier auf 300m/Gnd beginnt",
+    "dh im Gipfelbereich max 2200müM ansonsten max 6500ft ~1980müM ■ Detaillierte Infos auf der Seite des DGFC Ossiachersee .... www.dgfc-ossiachersee.at/ im besonderen auch",
+    "was die Benutzung der TRA? betrifft."
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": "www.it-wms.com",
+  "approachDescription": null,
+  "description": "Perfekte Verkehrsanbindung und Infrastruktur, orthographisch günstiges Gelände und der Ossiachersee in Verbindung mit 1400m Höhenunterschied machen dieses Gebiet zur ersten Wahl für stressfreies Genußfliegen, für Sicherheitstrainings mit dem einheimischen Acropiloten Xandi Meschuh X-ART xandi.me, und bei günstigen Bedingungen zum Streckenfliegen.\nDurch die umfangreichen touristischen Möglichkeiten im Sommer wie im Winter, die Nähe der Stadt Villach, und den Landeplatz in direkter Nähe zum Ossiachersee für Flieger mit Familienanhang bestens geeignet\nDie Gerlitze ist ein beliebtes Schigebiet, daher steht die Bahn im Winter auch zur Verfügung."
+}

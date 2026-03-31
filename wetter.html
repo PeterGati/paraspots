@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>PARA:AT – Flugwetter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <h1>Flugwetter Österreich</h1>
+
+        <nav class="header-nav">
+            <a href="index.html">PARASPOTS</a>
+            <span class="nav-active">Wetter</span>
+<a href="airspace.html">Luftraum</a>
+            <a href="#">Hilfe</a>
+        </nav>
+    </div>
+</header>
+
+<main class="index-main">
+
+    <div class="index-container">
+
+        <!-- FÖHN WARNING -->
+        <div id="foehn-warning" class="foehn-warning" style="display:none;">
+            ⚠ Bitte prüfen Sie die mögliche Föhnlage. 
+            Föhn stellt im Alpenraum ein erhebliches Flugrisiko dar.
+        </div>
+
+        <!-- NAVIGATION BUTTONS -->
+        <div class="wetter-nav">
+            <div class="wetter-nav-title">Heute tagsüber</div>
+
+            <a href="https://www.austrocontrol.at/wetter/wetterlexikon"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="wetter-lexikon-btn">
+   Wetterlexikon öffnen
+</a>
+
+        </div>
+
+        <!-- FORECAST CONTENT -->
+        <div id="forecast-content" class="forecast-content">
+            Lade Wetterdaten...
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <p>© PARA:AT</p>
+</footer>
+
+<script>
+fetch("data/wetter.json")
+    .then(response => response.json())
+    .then(data => {
+
+        // Föhn warning
+        if (data.foehnWarning) {
+            document.getElementById("foehn-warning").style.display = "block";
+        }
+
+        // Forecast text formatieren
+       let text = data.forecast;
+       
+    // PROGNOSESICHERHEIT sorok összefűzése
+text = text.replace(
+    /PROGNOSESICHERHEIT\s*\n\s*(WETTERLAGE|WETTERABLAUF)\s*\n\s*:\s*abgesichert/g,
+    "PROGNOSESICHERHEIT $1: abgesichert"
+);
+
+
+// A pont-only sorokat töröljük
+text = text.replace(/\n\.\n/g, "\n\n");
+
+// Több sortörést egyre redukálunk
+text = text.replace(/\n{2,}/g, "\n\n");
+
+// Sorokra bontás
+let lines = text.split("\n");
+
+let html = "";
+let paragraph = "";
+
+lines.forEach(line => {
+    const clean = line.trim();
+
+    if (!clean) {
+        if (paragraph) {
+            html += `<p>${paragraph.trim()}</p>`;
+            paragraph = "";
+        }
+        return;
+    }
+
+    // ===== CÍM DETEKTÁLÁS =====
+    // Teljesen nagybetűs sor → cím
+    // KIVÉVE a PROGNOSESICHERHEIT sorokat
+    if (
+        clean === clean.toUpperCase() &&
+        clean.length > 5 &&
+        !clean.startsWith("PROGNOSESICHERHEIT")
+    ) {
+        if (paragraph) {
+            html += `<p>${paragraph.trim()}</p>`;
+            paragraph = "";
+        }
+        html += `<h3 class="forecast-heading">${clean}</h3>`;
+        return;
+    }
+
+    // Normál szöveg → fűzzük össze
+    if (clean.startsWith("PROGNOSESICHERHEIT")) {
+    paragraph += `<span class="forecast-security">${clean}</span> `;
+} else {
+    paragraph += clean + " ";
+}
+
+});
+
+// Utolsó bekezdés lezárása
+if (paragraph) {
+    html += `<p>${paragraph.trim()}</p>`;
+}
+
+document.getElementById("forecast-content").innerHTML = html;
+
+
+            "<p>Wetterdaten konnten nicht geladen werden.</p>";
+    });
+</script>
+
+</body>
+</html>

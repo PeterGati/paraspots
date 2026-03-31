@@ -1,0 +1,80 @@
+{
+  "ctr": [
+    "controlled/ctr/Control_zones.geojson",
+    "controlled/mctr/Military_control_zone.geojson",
+    "controlled/matz/Military_aerodrome_traffic_zone.geojson"
+  ],
+  
+  "tma": [
+ 
+  "controlled/tma/LOWG_1.geojson",
+  "controlled/tma/LOWG_2.geojson",
+  "controlled/tma/LOWG_3.geojson",
+  "controlled/tma/LOWG_4.geojson",
+  "controlled/tma/LOWG_5.geojson",
+  "controlled/tma/LOWI_1.geojson",
+  "controlled/tma/LOWI_2.geojson",
+  "controlled/tma/LOWI_3.geojson",
+  "controlled/tma/LOWI_4.geojson",
+  "controlled/tma/LOWI_5.geojson",
+  "controlled/tma/LOWK_1.geojson",
+  "controlled/tma/LOWK_2.geojson",
+  "controlled/tma/LOWK_3.geojson",
+  "controlled/tma/LOWK_4.geojson",
+  "controlled/tma/LOWL_1.geojson",
+  "controlled/tma/LOWL_2.geojson",
+  "controlled/tma/LOWL_3.geojson",
+  "controlled/tma/LOWS_1.geojson",
+  "controlled/tma/LOWS_2.geojson",
+  "controlled/tma/LOWS_3.geojson",
+  "controlled/tma/LOWS_4.geojson",
+  "controlled/tma/LOWS_5.geojson",
+  "controlled/tma/LOWS_6.geojson",
+  "controlled/tma/LOWS_7.geojson",
+  "controlled/tma/LOWS_8.geojson",
+  "controlled/tma/LOWS_9.geojson",
+  "controlled/tma/LOWW_1.geojson",
+  "controlled/tma/LOWW_2.geojson",
+  "controlled/tma/LOWW_3.geojson",
+  "controlled/tma/LOWW_4.geojson",
+  "controlled/tma/LOWW_5.geojson",
+  "controlled/tma/LOWW_6.geojson",
+  "controlled/tma/LOWW_7.geojson",
+  "controlled/tma/LOWW_8.geojson",
+  "controlled/tma/LOXT_1.geojson",
+  "controlled/tma/LOXT_2.geojson",
+  "controlled/tma/LOXT_3.geojson",
+  "controlled/tma/LOXZ_1.geojson",
+  "controlled/tma/LOXZ_2.geojson",
+  "controlled/tma/LOXZ_3.geojson",
+  "controlled/tma/LOXZ_4.geojson",
+  "controlled/tma/LOXZ_5.geojson"
+  ],
+  
+  "classc": [
+    "controlled/class-c/ARLBERG.geojson",
+    "controlled/class-c/GLOCKNER.geojson",
+    "controlled/class-c/S.geojson",
+    "controlled/class-c/C.geojson"
+
+  ],
+  "restricted": [
+    "restricted/r/restricted_areas_military_restricted.geojson",
+        "restricted/r/restricted_areas_r.geojson"
+
+  ],
+  "temporary": [
+    "temporary/Temporary_reserved_areas_TRA.geojson",
+    "temporary/Military_training_areas_MTA.geojson",
+    "temporary/Military_temporary_reserved areas_MTRA.geojson"
+
+  ],
+  "special": [
+    "special/rmz/Radio_mandatory_zones_RMZ.geojson",
+    "special/tmz/Transponder_mandatory_zones_TMZ.geojson"
+  ],
+  "sport": [
+    "sport/gliding/Gliding_areas.geojson",
+    "sport/hanggliding/Hanggliding_and_paragliding_areas.geojson"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "region": "salzburg",
+  "name": "Abtenau -Karkogel",
+  "coordinates": {
+    "lat": 47.3322,
+    "lon": 13.2115
+  },
+  "talHeight": 715,
+  "operator": {
+    "name": null,
+    "url": null,
+    "phone": null
+  },
+  "access": {
+    "car": false,
+    "publicTransport": false,
+    "hikeAndFly": true,
+    "cableCar": true,
+    "parking": null
+  },
+  "parking": null,
+  "airspace": null,
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "siteRatings": {
+    "overallRating": 2.5,
+    "thermalRating": 3.5
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": null,
+  "description": "Das Becken um Abtenau bietet Startmöglichkeiten an den Nordhängen des Tennengebirges und viele Startmöglichkeiten an den Südhängen der Osterhorngruppe etwa am Einberg, Trattberg, Dachstein-West..Der am häufigsten benützte Startberg ist der Karkogel. Das auch für den Schulungsbetrieb geeignete Revier ist von Frühjahr bis Herbst aktiv. Vom gemütlichen Soaringflug bis hin zu großen Streckenflügen bietet das Gebiet am Nordrand der Alpen für jeden Geschmack etwas.",
+  "startpunkte": [
+    {
+      "id": "karkogel",
+      "name": "Karkogel",
+      "coordinates": {
+        "lat": 47.54527777777778,
+        "lon": 13.359166666666667
+      },
+      "startHeight": 1200,
+      "heightDifference": null,
+      "launchDirections": [
+        "S",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": null,
+      "startRating": null,
+      "description": null
+    },
+    {
+      "id": "wandalm",
+      "name": "Wandalm",
+      "coordinates": null,
+      "startHeight": 1500,
+      "heightDifference": null,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": null,
+      "startRating": null,
+      "description": null
+    },
+    {
+      "id": "tagweide",
+      "name": "Tagweide",
+      "coordinates": {
+        "lat": 47.52688611111111,
+        "lon": 13.35536111111111
+      },
+      "startHeight": 2100,
+      "heightDifference": null,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": null,
+      "startRating": null,
+      "description": null
+    },
+    {
+      "id": "pernegg",
+      "name": "Pernegg",
+      "coordinates": {
+        "lat": 47.60666666666667,
+        "lon": 13.355
+      },
+      "startHeight": 975,
+      "heightDifference": null,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": null,
+      "startRating": null,
+      "description": null
+    },
+    {
+      "id": "einberg-gipfel",
+      "name": "Einberg-Gipfel",
+      "coordinates": {
+        "lat": 47.6175,
+        "lon": 13.360833333333334
+      },
+      "startHeight": 1688,
+      "heightDifference": null,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": null,
+      "startRating": null,
+      "description": null
+    }
+  ],
+  "landeplaetze": [],
+  "airspaces": []
+}

@@ -1,0 +1,52 @@
+{
+  "regions": [
+    {
+      "slug": "niederoesterreich",
+      "name": "Niederösterreich",
+      "sites": [
+        {
+          "slug": "hohe-wand",
+          "name": "Hohe Wand"
+        }
+      ]
+    },
+    {
+      "slug": "salzburg",
+      "name": "Salzburg",
+      "sites": [
+        {
+          "slug": "abtenau-karkogel",
+          "name": "Abtenau Karkogel"
+        }
+      ]
+    },
+    {
+      "slug": "tirol",
+      "name": "Tirol",
+      "sites": [
+        {
+          "slug": "hintertux",
+          "name": "Hintertux"
+        }
+      ]
+    },
+    {
+      "slug": "kaernten",
+      "name": "Kärnten",
+      "sites": [
+        {
+          "slug": "dreilandereck",
+          "name": "Dreiländereck"
+        },
+        {
+          "slug": "emberger-alm",
+          "name": "Emberger Alm"
+        },
+        {
+          "slug": "gerlitzen",
+          "name": "Gerlitzen"
+        }
+      ]
+    }
+  ]
+}

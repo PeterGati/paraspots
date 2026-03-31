@@ -1,0 +1,88 @@
+{
+  "startpunkte": [
+    {
+      "id": "",
+      "name": "Emberger Alm Haupstartplatz",
+      "coordinates": {
+        "lat": 46.77320,
+        "lon": 13.14957
+      },
+      "startHeight": 1760,
+      "heightDifference": 1115,
+      "launchDirections": [
+        "S",
+        "SO"
+      ],
+      "difficulty": null,
+      "windSensitivity": "Unfallgefahr!\nVorsicht bei Westwind durch Lee der Bäume!",
+      "startRating": 3,
+      "description": "Direkt neben dem Startplatz tagsüber bewirtschaftete Hütte mit aktuellem Flugwetterbericht von Austrocontrol ."
+    },
+    {
+      "id": "",
+      "name": "Emberger Alm 2",
+      "coordinates": {
+        "lat": 46.77735,
+        "lon": 13.14837
+      },
+      "startHeight": 1860,
+      "heightDifference": 1215,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": null,
+      "startRating": 4,
+      "description": "Etwas steilere Wiese 15 Minuten oberhalb des Hauptstartplatzes."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Greifenburg-Badesee",
+      "coordinates": {
+        "lat": 46.74677,
+        "lon": 13.19191
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Achtung: 'Luftiges' Stromkabel und nicht über den Campingplatz fliegen (südliche Landevolte)! ",
+      "description": "Direkt am Campinplatz, neben dem neuen Fliegercamp und östlich von Greifenburg, befindet sich die einladende Landewiese."
+    }
+  ],
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "region": "kaernten",
+  "site": "emberger-alm",
+  "name": "Emberger Alm",
+  "coordinates": {
+    "lat": 46.77320,
+    "lon": 13.14957
+  },
+  "talHeight": 0,
+  "operator": {
+    "name": "Touristinfo Greifenburg A-9761 Greifenburg",
+    "url": null,
+    "phone": "+43 4712 8195"
+  },
+  "access": {
+    "car": true,
+    "publicTransport": true,
+    "hikeAndFly": false,
+    "cableCar": false,
+    "parking": "Der Shuttleservice zum Startplatz direkt vom Parkplatz des Badesee (Greifenburg)."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": null,
+  "description": "Eines, wenn nicht gar das berühmteste und schönste Fluggebiet Österreichs. 'Strecke machen' ist ohne weiteres möglich - genau wie 'Höhe gewinnen'. Hier finden Drachenflieger ebenso wie 'Gleiter' ausgedehnte Start- und Landemöglichkeiten."
+}

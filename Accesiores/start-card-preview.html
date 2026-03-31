@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Start Card Layout Preview</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+/* KÁRTYA */
+.start-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* BAL OLDAL – WIND */
+.wind-wrapper {
+    flex: 0 0 150px;
+}
+
+.wind-wrapper svg {
+    width: 150px;
+    height: 150px;
+}
+
+/* JOBB OLDAL – ADATOK */
+.start-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.start-details p {
+    margin: 4px 0;
+}
+
+/* RESZPONZÍV */
+@media (max-width: 600px) {
+    .start-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="start-card">
+
+    <!-- BAL OLDAL -->
+    <div class="wind-wrapper">
+
+        <svg viewBox="0 0 300 300">
+
+            <circle cx="150" cy="150" r="130" fill="#cfe8ff" />
+
+            <path fill="#5fd12f"
+                  d="M150 150
+                     L270.2 200.3
+                     A130 130 0 0 1 29.8 200.3
+                     Z" />
+
+            <text x="150" y="15" text-anchor="middle" font-size="22" font-weight="bold">N</text>
+            <text x="290" y="155" text-anchor="middle" font-size="22" font-weight="bold">O</text>
+            <text x="150" y="300" text-anchor="middle" font-size="22" font-weight="bold">S</text>
+            <text x="10" y="155" text-anchor="middle" font-size="22" font-weight="bold">W</text>
+
+        </svg>
+
+    </div>
+
+    <!-- JOBB OLDAL -->
+    <div class="start-details">
+        <h3>Rock</h3>
+        <p><strong>Starthöhe:</strong> 1100 m</p>
+        <p><strong>Höhenunterschied:</strong> 500 m</p>
+        <p><strong>Schwierigkeit:</strong> anspruchsvoll</p>
+        <p><strong>Beschreibung:</strong> Vorsicht bei Westwind</p>
+    </div>
+
+</div>
+
+</body>
+</html>

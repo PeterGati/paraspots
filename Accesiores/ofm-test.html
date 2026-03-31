@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leaflet OK teszt</title>
+
+<link rel="stylesheet"
+ href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+body { margin:0; }
+#map { height:100vh; }
+</style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<script>
+
+var map = L.map('map').setView([47.6,16.0],8);
+
+L.tileLayer(
+ 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+ { attribution:'© OpenStreetMap' }
+).addTo(map);
+
+L.marker([47.8489,16.0332])
+.addTo(map)
+.bindTooltip("Hohe Wand Ost");
+
+</script>
+
+</body>
+</html>

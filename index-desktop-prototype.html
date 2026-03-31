@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>PARASPOTS – Desktop Prototype</title>
+
+<style>
+body {
+    font-family: system-ui;
+    margin: 0;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+.header {
+    background: #1f2a36;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* MODE SWITCH */
+.mode-switch {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.mode-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #eee;
+    font-weight: 500;
+}
+
+.mode-btn.active {
+    background: #2b7cff;
+    color: white;
+}
+
+/* FULL WIDTH FILTER AREA */
+.filter-area {
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* FILTER GROUP */
+.filter-group {
+    margin-bottom: 10px;
+}
+
+.filter-title {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+/* ROW: NO WRAP */
+.filter-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+/* CHIP */
+.filter-chip {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.15s;
+}
+
+.filter-chip:hover {
+    border-color: #2b7cff;
+}
+
+.filter-chip.active {
+    background: #2b7cff;
+    color: white;
+    border-color: #2b7cff;
+}
+
+/* WIND ICON */
+.wind-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* CENTERED ACCESS */
+.access-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* CONTENT */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* SPOT CARD */
+.spot-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.spot-card:hover {
+    border-color: #2b7cff;
+}
+
+/* WINDY */
+.windy {
+    display: none;
+    padding: 20px;
+}
+
+.windy iframe {
+    width: 100%;
+    height: 75vh;
+    border: none;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">PARASPOTS</div>
+
+<!-- SWITCH -->
+<div class="mode-switch">
+    <div class="mode-btn active" onclick="switchMode('spots')">Fluggebiete</div>
+    <div class="mode-btn" onclick="switchMode('weather')">Wetter</div>
+</div>
+
+<!-- FILTERS -->
+<div id="filters" class="filter-area">
+
+    <!-- REGION -->
+    <div class="filter-group">
+        <div class="filter-title">Region</div>
+        <div class="filter-row">
+            <div class="filter-chip" onclick="toggle(this)">Tirol</div>
+            <div class="filter-chip" onclick="toggle(this)">Salzburg</div>
+            <div class="filter-chip" onclick="toggle(this)">Steiermark</div>
+            <div class="filter-chip" onclick="toggle(this)">Kärnten</div>
+            <div class="filter-chip" onclick="toggle(this)">Niederösterreich</div>
+            <div class="filter-chip" onclick="toggle(this)">OÖ</div>
+            <div class="filter-chip" onclick="toggle(this)">Vorarlberg</div>
+            <div class="filter-chip" onclick="toggle(this)">Burgenland</div>
+            <div class="filter-chip" onclick="toggle(this)">Südtirol</div>
+        </div>
+    </div>
+
+    <!-- WIND -->
+    <div class="filter-group">
+        <div class="filter-title">Windrichtung</div>
+        <div class="filter-row">
+            <div class="filter-chip wind-chip" onclick="toggle(this)">↑ N</div>
+            <div class="filter-chip wind-chip" onclick="toggle(this)">↗ NO</div>
+            <div class="filter-chip wind-chip" onclick="toggle(this)">→ O</div>
+            <div class="filter-chip wind-chip" onclick="toggle(this)">↘ SO</div>
+            <div class="filter-chip wind-chip" onclick="toggle(this)">↓ S</div>
+            <div class="filter-chip wind-chip" onclick="toggle(this)">↙ SW</div>
+            <div class="filter-chip wind-chip" onclick="toggle(this)">← W</div>
+            <div class="filter-chip wind-chip" onclick="toggle(this)">↖ NW</div>
+        </div>
+    </div>
+
+    <!-- ACCESS -->
+    <div class="filter-group">
+        <div class="filter-title">Zugang</div>
+        <div class="access-row">
+            <div class="filter-chip" onclick="toggle(this)">Hike & Fly</div>
+            <div class="filter-chip" onclick="toggle(this)">Auto</div>
+            <div class="filter-chip" onclick="toggle(this)">Seilbahn</div>
+            <div class="filter-chip" onclick="toggle(this)">Öffis</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- SPOTS -->
+<div id="spotsMode" class="container">
+
+    <div class="spot-card">Hohe Wand – Ost (SO, S)</div>
+    <div class="spot-card">Rax – West (W, SW)</div>
+    <div class="spot-card">Gerlitzen – Süd (S, SW)</div>
+
+</div>
+
+<!-- WINDY -->
+<div id="weatherMode" class="windy">
+    <iframe src="https://embed.windy.com/embed.html?lat=47.5&lon=13.6&zoom=7&overlay=wind"></iframe>
+</div>
+
+<script>
+function toggle(el) {
+    el.classList.toggle("active");
+}
+
+function switchMode(mode) {
+
+    document.getElementById("spotsMode").style.display =
+        mode === "spots" ? "block" : "none";
+
+    document.getElementById("filters").style.display =
+        mode === "spots" ? "block" : "none";
+
+    document.getElementById("weatherMode").style.display =
+        mode === "weather" ? "block" : "none";
+
+    document.querySelectorAll(".mode-btn").forEach(b => b.classList.remove("active"));
+    event.target.classList.add("active");
+}
+</script>
+
+</body>
+</html>

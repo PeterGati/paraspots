@@ -1,0 +1,108 @@
+{
+  "startpunkte": [
+    {
+      "id": "",
+      "name": "3-Länder Treff",
+      "coordinates": {
+        "lat": 46.312722,
+        "lon": 13.43329
+      },
+      "startHeight": 1508,
+      "heightDifference": 0,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei wenig Wind kommt man schwer über die Bäume.\n",
+      "startRating": 2.5,
+      "description": "Startplatz befindet sich direkt Westlich neben dem Bergrestaurant 3-Länder-Treff."
+    },
+    {
+      "id": "",
+      "name": "3Ländereck",
+      "coordinates": {
+        "lat": 46.313836,
+        "lon": 13.423118
+      },
+      "startHeight": 1600,
+      "heightDifference": 0,
+      "launchDirections": [
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": null,
+      "startRating": 3,
+      "description": null
+    },
+    {
+      "id": "",
+      "name": "Holzhütte",
+      "coordinates": {
+        "lat": 43.312726,
+        "lon": 13.433816
+      },
+      "startHeight": 1508,
+      "heightDifference": 0,
+      "launchDirections": [
+        "NO",
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Ostwind eignet sich der Startplatz hinter der Holzhütte sehr gut.\n",
+      "startRating": null,
+      "description": null
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Seltschach",
+      "coordinates": {
+        "lat": 46.322952,
+        "lon": 13.424478
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Gelandet werden kann westlich der Talstation auf einem der Äcker.",
+      "description": null
+    }
+  ],
+  "siteRatings": {
+    "overallRating": 2.5,
+    "thermalRating": 2.5
+  },
+  "region": "kaernten",
+  "site": "dreilandereck",
+  "name": "Dreiländereck",
+  "coordinates": {
+    "lat": 46.323132,
+    "lon": 13.423132
+  },
+  "talHeight": 680,
+  "operator": {
+    "name": null,
+    "url": "www.3laendereck.at",
+    "phone": null
+  },
+  "access": {
+    "car": false,
+    "publicTransport": false,
+    "hikeAndFly": true,
+    "cableCar": true,
+    "parking": "Bei Seilbahn Talstation"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "NW"
+  ],
+  "webcam": "http://dreilaendereck.it-wms.com/",
+  "approachDescription": null,
+  "description": "Das Dreiländereck liegt in der Ferienregion Arnoldstein und bildet den Schnittpunkt dreier Staatsgrenzen (Slowenien-Italien-Österreich). Gerade bei Nordföhn ist das Dreiländereck zu empfehlen, da dieser vom Dobratsch meist abgeschirmt ist und man dort trotzdem fliegen kann.\nMit einer 3er-Sesselbahn (dem sogenannten \"3-Länder-Jet\") erreicht man bequem das Dreiländereck auf 1.506m Seehöhe. Oben angekommen, genießt man die herrliche Aussicht auf die Karawanken, die Julischen Alpen, das Gailtal und auf das Villacher Becken."
+}
