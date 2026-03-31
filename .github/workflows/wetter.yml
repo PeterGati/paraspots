@@ -3,7 +3,9 @@ name: Update Wetter Data
 on:
   schedule:
     - cron: "0 */3 * * *"   # 3 óránként
-  workflow_dispatch:         # manuális indítás
+  workflow_dispatch:
+permissions:
+  contents: write
 
 jobs:
   update-wetter:
