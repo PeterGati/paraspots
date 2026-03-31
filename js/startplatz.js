@@ -36,9 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // HEADER TITLE
         document.getElementById("siteName").textContent = data.name || "Keine Angabe";
 
-        // BACK LINK
-        const backLink = document.getElementById("backLink");
-        backLink.href = `region.html?region=${region}`;
+        
 
         // ======================
         // ÜBERSICHT
