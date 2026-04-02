@@ -391,3 +391,50 @@ function drawWind(svg, directions) {
 // ======================
 
 loadAllSpots();
+// ======================
+// RESTORE FILTER STATE
+// ======================
+
+window.addEventListener("load", () => {
+
+    const state = JSON.parse(localStorage.getItem("indexState"));
+
+    if (!state || !state.filters) return;
+
+    // RESET filters object
+    filters = {
+        region: [],
+        wind: [],
+        access: []
+    };
+
+    state.filters.forEach(value => {
+
+        // REGION
+        if (["tirol","salzburg","steiermark","kaernten","niederoesterreich","oberoesterreich","vorarlberg","burgenland","suedtirol"].includes(value)) {
+            filters.region.push(value);
+        }
+
+        // WIND
+        else if (["N","NO","O","SO","S","SW","W","NW"].includes(value)) {
+            filters.wind.push(value);
+        }
+
+        // ACCESS
+        else {
+            filters.access.push(value);
+        }
+
+    });
+
+    // UI visszaállítás (class)
+    document.querySelectorAll(".filter-chip").forEach(el => {
+        if (state.filters.includes(el.dataset.value)) {
+            el.classList.add("active");
+        }
+    });
+
+    // 🔥 FONTOS: újraszűrés
+    applyFilters();
+
+});
