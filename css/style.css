@@ -1250,4 +1250,33 @@ body {
         font-size: 14px;
     }
 
+}/* ======================
+   MOBILE HEADER FIX
+====================== */
+@media (max-width: 768px) {
+
+    .site-header {
+        padding: 12px 0 !important;
+    }
+
+    .site-header-inner {
+        padding: 0 10px !important;
+    }
+
+    .site-header h1 {
+        font-size: 28px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .header-nav a {
+        font-size: 13px;
+    }
+
 }
