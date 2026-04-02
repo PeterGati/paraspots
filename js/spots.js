@@ -229,8 +229,45 @@ async function loadAllSpots() {
         }
 
     } catch (err) {
-        console.error("regions.json konnte nicht geladen werden:", err);
-    }
+    console.error("regions.json konnte nicht geladen werden:", err);
+}
+
+// ======================
+// RESTORE STATE (IDE JÖN!)
+// ======================
+
+const state = JSON.parse(localStorage.getItem("indexState"));
+
+if (state && state.filters) {
+
+    // filters object feltöltése
+    state.filters.forEach(value => {
+
+        if (["tirol","salzburg","steiermark","kaernten","niederoesterreich","oberoesterreich","vorarlberg","burgenland","suedtirol"].includes(value)) {
+            filters.region.push(value);
+        }
+
+        else if (["N","NO","O","SO","S","SW","W","NW"].includes(value)) {
+            filters.wind.push(value);
+        }
+
+        else {
+            filters.access.push(value);
+        }
+
+    });
+
+    // UI visszaállítás
+    document.querySelectorAll(".filter-chip").forEach(el => {
+        if (state.filters.includes(el.dataset.value)) {
+            el.classList.add("active");
+        }
+    });
+
+    // 🔥 SZŰRÉS (MOST MÁR VAN ADAT!)
+    applyFilters();
+}
+
 }
 
 
