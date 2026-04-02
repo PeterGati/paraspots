@@ -1190,9 +1190,7 @@ body {
 
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
 }
-body {
-    font-size: 10px;
-}
+
 /* ======================
    MOBILE FIX
 ====================== */
@@ -1277,6 +1275,62 @@ body {
 
     .header-nav a {
         font-size: 13px;
+    }
+
+}
+/* ======================
+   MOBILE FINAL FIX (CLEAN)
+====================== */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .site-header {
+        padding: 14px 10px !important;
+    }
+
+    .site-header h1 {
+        font-size: 24px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .header-nav a {
+        font-size: 13px !important;
+    }
+
+    /* MODE SWITCH */
+    .mode-switch {
+        padding: 8px;
+    }
+
+    .mode-btn {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    /* FILTER */
+    .filter-area {
+        padding: 8px;
+    }
+
+    .filter-title {
+        font-size: 12px;
+    }
+
+    .filter-chip {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    /* CARD */
+    .start-card {
+        padding: 12px;
     }
 
 }
