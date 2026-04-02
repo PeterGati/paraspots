@@ -1285,12 +1285,12 @@ body {
 
     /* HEADER */
     .site-header {
-        padding: 14px 10px !important;
+        padding: 10px 8px !important;
     }
 
     .site-header h1 {
-        font-size: 24px !important;
-        margin-bottom: 6px !important;
+        font-size: 20px !important;
+        margin-bottom: 4px !important;
     }
 
     .header-nav {
@@ -1301,7 +1301,7 @@ body {
     }
 
     .header-nav a {
-        font-size: 13px !important;
+        font-size: 12px !important;
     }
 
     /* MODE SWITCH */
@@ -1310,8 +1310,8 @@ body {
     }
 
     .mode-btn {
-        font-size: 13px;
-        padding: 6px 10px;
+        font-size: 12px;
+        padding: 5px 8px;
     }
 
     /* FILTER */
