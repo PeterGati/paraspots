@@ -1044,6 +1044,7 @@ section h2 {
     padding-bottom: 6px; /* hely a scrollbar-nak */
 
     -webkit-overflow-scrolling: touch;
+   position: relative;
 }
 
 .filter-chip {
@@ -1175,4 +1176,17 @@ body {
 .filter-row {
     scrollbar-width: thin;
     scrollbar-color: rgba(0,0,0,0.2) transparent;
+}
+/* ===== SCROLL HINT (FADE) ===== */
+.filter-row::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30px;
+
+    pointer-events: none;
+
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
 }
