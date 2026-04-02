@@ -131,8 +131,14 @@ function switchMode(mode, el) {
 </script>
 <script>
 function saveIndexState() {
+
+    const activeFilters = Array.from(
+        document.querySelectorAll(".filter-chip.active")
+    ).map(el => el.dataset.value);
+
     const state = {
-        scrollY: window.scrollY
+        scrollY: window.scrollY,
+        filters: activeFilters
     };
 
     localStorage.setItem("indexState", JSON.stringify(state));
@@ -160,6 +166,20 @@ window.addEventListener("load", () => {
 
     if (state.scrollY !== undefined) {
         window.scrollTo(0, state.scrollY);
+    }
+    // FILTEREK
+    if (state.filters && state.filters.length > 0) {
+
+        document.querySelectorAll(".filter-chip").forEach(el => {
+            if (state.filters.includes(el.dataset.value)) {
+                el.classList.add("active");
+            }
+        });
+
+        // 👉 fontos: újrarender
+        if (typeof applyFilters === "function") {
+            applyFilters();
+        }
     }
 
 });
