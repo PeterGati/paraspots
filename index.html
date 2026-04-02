@@ -129,6 +129,41 @@ function switchMode(mode, el) {
     el.classList.add("active");
 }
 </script>
+<script>
+function saveIndexState() {
+    const state = {
+        scrollY: window.scrollY
+    };
+
+    localStorage.setItem("indexState", JSON.stringify(state));
+}
+
+// 👉 kattintás figyelése
+document.addEventListener("click", function(e) {
+
+    const link = e.target.closest("a");
+
+    if (!link) return;
+
+    if (link.href.includes("startplatz.html")) {
+        saveIndexState();
+    }
+
+});
+
+// 👉 visszatöltés
+window.addEventListener("load", () => {
+
+    const state = JSON.parse(localStorage.getItem("indexState"));
+
+    if (!state) return;
+
+    if (state.scrollY !== undefined) {
+        window.scrollTo(0, state.scrollY);
+    }
+
+});
+</script>
 
 </body>
 </html>
