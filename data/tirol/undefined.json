@@ -1,0 +1,114 @@
+{
+  "region": "tirol",
+  "name": "Hintertux",
+  "overview": {
+    "operator": {
+      "name": null,
+      "url": null
+    },
+    "access": {
+      "type": null,
+      "description": null
+    },
+    "parking": null,
+    "airspace": [],
+    "flightOptions": {
+      "soaring": null,
+      "thermal": null,
+      "crossCountry": null
+    },
+    "startRate": 1,
+    "thermalRate": 2.5,
+    "reachableWindDirections": [
+      "E",
+      "W"
+    ],
+    "flightDescription": null,
+    "webcam": null
+  },
+  "startpunkte": [
+    {
+      "name": "Sommerberg Hintertuxer Gletscher",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2000,
+      "heightDifference": 0,
+      "direction": [
+        "O"
+      ],
+      "difficulty": null,
+      "windSensitivity": null,
+      "startRate": null,
+      "googleMaps": null,
+      "description": "Der erste Abschnitt der Gletscherbahn bringt Euch bis fast an den Start - es sind dann noch rund 15 Minuten zu Fuß.",
+      "launchDirections": [],
+      "startRating": null
+    },
+    {
+      "name": "Gefrorene Wand",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3250,
+      "heightDifference": 0,
+      "direction": [
+        "W"
+      ],
+      "difficulty": null,
+      "windSensitivity": null,
+      "startRate": null,
+      "googleMaps": null,
+      "description": "Zum Start auf dem Hintertuxer Gletscher fahrt Ihr mit der Bahn ganz bis nach oben. Gleih unter der Bergstation ist der bei Ostwind wegen der Höhenlage unglaublich anfällige Platz. (Leerotoren)",
+      "launchDirections": [],
+      "startRating": null
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Hintertux",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "height": 1500,
+      "difficulty": null,
+      "googleMaps": null,
+      "description": "Leider gibt es keinen offiziellen Landeplatz - also erkundigt Euch voher bei den Wieseneigentümern, wo Ihr runter dürft.",
+      "windSensitivity": null
+    }
+  ],
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 5
+  },
+  "coordinates": {
+    "lat": 0,
+    "lon": 0
+  },
+  "talHeight": 1222,
+  "operator": {
+    "name": null,
+    "url": null,
+    "phone": null
+  },
+  "access": {
+    "car": false,
+    "publicTransport": false,
+    "hikeAndFly": true,
+    "cableCar": true,
+    "parking": null
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [],
+  "webcam": null,
+  "approachDescription": null,
+  "description": "Es ist ein Probe version."
+}
