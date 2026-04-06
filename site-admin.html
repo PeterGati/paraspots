@@ -560,6 +560,47 @@ function checkLandeplatzCoords(index) {
 function generateJSON() { 
     /* NE VESZÍTSE EL A MEGLÉVŐ ADATOKAT */
 originalData = JSON.parse(JSON.stringify(originalData));
+    /* ===== STRUCTURE FIX ===== */
+
+if (originalData.overview) {
+
+    originalData.operator = originalData.operator || {
+        name: originalData.overview.operator?.name || null,
+        url: originalData.overview.operator?.url || null
+    };
+
+    originalData.access = originalData.access || {
+        car: false,
+        publicTransport: false,
+        hikeAndFly: false,
+        cableCar: false,
+        parking: null
+    };
+
+    originalData.flightCharacteristics =
+        originalData.flightCharacteristics || {
+            soaring: originalData.overview.flightOptions?.soaring || false,
+            thermal: originalData.overview.flightOptions?.thermal || false,
+            crossCountry: originalData.overview.flightOptions?.crossCountry || false
+        };
+
+    originalData.siteRatings = originalData.siteRatings || {
+        overallRating: originalData.overview.startRate || 0,
+        thermalRating: originalData.overview.thermalRate || 0
+    };
+
+    originalData.windDirections =
+        originalData.windDirections ||
+        originalData.overview.reachableWindDirections ||
+        [];
+
+    originalData.description =
+        originalData.description ||
+        originalData.overview.flightDescription ||
+        null;
+
+    delete originalData.overview;
+}
 
 // ===== MINIMAL VALIDATION =====
 
