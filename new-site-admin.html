@@ -726,29 +726,22 @@ document.addEventListener("input", (e) => {
    async function saveToGitHub(data) {
 
 const response = await fetch(
-"https://api.github.com/repos/PeterGati/paraspots/dispatches",
+"https://paraspots-save.petergati.workers.dev",
 {
 method: "POST",
 headers: {
-"Accept": "application/vnd.github+json",
 "Content-Type": "application/json"
 },
-body: JSON.stringify({
-event_type: "save-site",
-client_payload: {
-json: JSON.stringify(data, null, 2)
-}
-})
+body: JSON.stringify(data)
 });
 
 if (response.ok) {
-alert("Site gespeichert (GitHub Action gestartet)");
+alert("Site gespeichert");
 } else {
 alert("Fehler beim Speichern");
 }
 
 }
-
 </script>
 
 </body>
