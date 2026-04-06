@@ -651,14 +651,7 @@ originalData.approachDescription =
     document.getElementById("output").textContent =
         JSON.stringify(originalData, null, 2);
 
-    const blob = new Blob(
-        [JSON.stringify(originalData, null, 2)],
-        { type: "application/json" }
-    );
-
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-a.download = `${siteSlug}.json`;    a.click();
+    saveToGitHub(originalData);
 }
 // ======================
 // LIVE SYNC STARTPUNKTE + LANDEPLÄTZE
