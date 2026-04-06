@@ -34,7 +34,7 @@
         "lon": null
       },
       "startHeight": 2000,
-      "heightDifference": null,
+      "heightDifference": 0,
       "direction": [
         "O"
       ],
@@ -42,7 +42,9 @@
       "windSensitivity": null,
       "startRate": null,
       "googleMaps": null,
-      "description": "Der erste Abschnitt der Gletscherbahn bringt Euch bis fast an den Start - es sind dann noch rund 15 Minuten zu Fuß."
+      "description": "Der erste Abschnitt der Gletscherbahn bringt Euch bis fast an den Start - es sind dann noch rund 15 Minuten zu Fuß.",
+      "launchDirections": [],
+      "startRating": null
     },
     {
       "name": "Gefrorene Wand",
@@ -51,7 +53,7 @@
         "lon": null
       },
       "startHeight": 3250,
-      "heightDifference": null,
+      "heightDifference": 0,
       "direction": [
         "W"
       ],
@@ -59,7 +61,9 @@
       "windSensitivity": null,
       "startRate": null,
       "googleMaps": null,
-      "description": "Zum Start auf dem Hintertuxer Gletscher fahrt Ihr mit der Bahn ganz bis nach oben. Gleih unter der Bergstation ist der bei Ostwind wegen der Höhenlage unglaublich anfällige Platz. (Leerotoren)"
+      "description": "Zum Start auf dem Hintertuxer Gletscher fahrt Ihr mit der Bahn ganz bis nach oben. Gleih unter der Bergstation ist der bei Ostwind wegen der Höhenlage unglaublich anfällige Platz. (Leerotoren)",
+      "launchDirections": [],
+      "startRating": null
     }
   ],
   "landeplaetze": [
@@ -72,7 +76,39 @@
       "height": 1500,
       "difficulty": null,
       "googleMaps": null,
-      "description": "Leider gibt es keinen offiziellen Landeplatz - also erkundigt Euch voher bei den Wieseneigentümern, wo Ihr runter dürft."
+      "description": "Leider gibt es keinen offiziellen Landeplatz - also erkundigt Euch voher bei den Wieseneigentümern, wo Ihr runter dürft.",
+      "windSensitivity": null
     }
-  ]
+  ],
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 5
+  },
+  "coordinates": {
+    "lat": 0,
+    "lon": 0
+  },
+  "talHeight": 1222,
+  "operator": {
+    "name": null,
+    "url": null,
+    "phone": null
+  },
+  "access": {
+    "car": false,
+    "publicTransport": false,
+    "hikeAndFly": true,
+    "cableCar": true,
+    "parking": null
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [],
+  "webcam": null,
+  "approachDescription": null,
+  "description": "Es ist ein Probe version."
 }
