@@ -2,7 +2,7 @@
   "regions": [
     {
       "slug": "niederoesterreich",
-      "name": "Niederösterreich",
+      "name": "NiederÃ¶sterreich",
       "sites": [
         {
           "slug": "hohe-wand",
@@ -30,17 +30,21 @@
         },
         {
           "slug": "kitzbuchel",
-          "name": "Kitzb�chel"
+          "name": "Kitzbüchel"
+        },
+        {
+          "slug": "kitzbuhel",
+          "name": "Kitzb�hel"
         }
       ]
     },
     {
       "slug": "kaernten",
-      "name": "Kärnten",
+      "name": "KÃ¤rnten",
       "sites": [
         {
           "slug": "dreilandereck",
-          "name": "Dreiländereck"
+          "name": "DreilÃ¤ndereck"
         },
         {
           "slug": "emberger-alm",
