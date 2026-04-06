@@ -1,8 +1,12 @@
 name: Save new site
 
 on:
-  repository_dispatch:
-    types: [save-site]
+  workflow_dispatch:
+    inputs:
+      json:
+        description: "Site JSON"
+        required: true
+        type: string
 
 jobs:
   save:
@@ -11,14 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Save site JSON
+      - name: Save JSON
         run: |
-          echo '${{ github.event.client_payload.json }}' > site.json
+          echo '${{ inputs.json }}' > site.json
 
       - name: Commit
         run: |
           git config user.name "paraspots-bot"
           git config user.email "bot@paraspots.at"
-          git add .
+          git add site.json
           git commit -m "Add new site"
           git push
