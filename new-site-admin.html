@@ -723,44 +723,28 @@ document.addEventListener("input", (e) => {
     }
 
 });
-    async function saveToGitHub(data) {
+   async function saveToGitHub(data) {
 
-const region = data.region;
-const site = data.site;
-
-const filename = `data/${region}/${site}.json`;
-
-const token = " ";
-
-const repo = "PeterGati/paraspots";
-
-const content = btoa(
-    unescape(
-        encodeURIComponent(
-            JSON.stringify(data, null, 2)
-        )
-    )
-);
-
-const url =
-`https://api.github.com/repos/${repo}/contents/${filename}`;
-
-const response = await fetch(url, {
-    method: "PUT",
-    headers: {
-        "Authorization": `token ${token}`,
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        message: `Add site ${site}`,
-        content: content
-    })
+const response = await fetch(
+"https://api.github.com/repos/PeterGati/paraspots/dispatches",
+{
+method: "POST",
+headers: {
+"Accept": "application/vnd.github+json",
+"Content-Type": "application/json"
+},
+body: JSON.stringify({
+event_type: "save-site",
+client_payload: {
+json: JSON.stringify(data, null, 2)
+}
+})
 });
 
 if (response.ok) {
-    alert("Site erfolgreich gespeichert!");
+alert("Site gespeichert (GitHub Action gestartet)");
 } else {
-    alert("Fehler beim Speichern!");
+alert("Fehler beim Speichern");
 }
 
 }
