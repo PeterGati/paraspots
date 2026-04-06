@@ -161,6 +161,56 @@ pre { background:#f4f4f4; padding:15px; overflow:auto; }
 <script>
 
 let originalData = null;
+<script>
+
+let originalData = null;
+
+
+/* ===============================
+JSON FRISSÍTÉS – GITHUB SAVE
+Cloudflare worker mentés
+=============================== */
+
+async function saveToGitHub(data) {
+
+try {
+
+const response = await fetch(
+"https://paraspots-save.petergati.workers.dev",
+{
+method: "POST",
+headers: {
+"Content-Type": "application/json"
+},
+body: JSON.stringify(data)
+});
+
+const text = await response.text();
+
+console.log("Worker response:", text);
+
+if (response.ok) {
+alert("Site erfolgreich gespeichert");
+} else {
+alert("Fehler beim Speichern:\n" + text);
+}
+
+} catch (err) {
+
+alert("Fetch Fehler: " + err.message);
+
+}
+
+}
+
+/* ===============================
+JSON FRISSÍTÉS VÉGE
+=============================== */
+
+
+const params = new URLSearchParams(window.location.search);
+const region = params.get("region");
+const site = params.get("site");
 
 const params = new URLSearchParams(window.location.search);
 const region = params.get("region");
@@ -659,15 +709,18 @@ originalData.approachDescription =
     document.getElementById("output").textContent =
         JSON.stringify(originalData, null, 2);
 
-    const blob = new Blob(
-        [JSON.stringify(originalData, null, 2)],
-        { type: "application/json" }
-    );
+    /* ===============================
+JSON FRISSÍTÉS – SITE ADMIN
+Felülírja a meglévő site JSON file-t
+nem hoz létre újat
+nem módosít regions.json-t
+=============================== */
 
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `${site}.json`;
-    a.click();
+saveToGitHub(originalData);
+
+/* ===============================
+JSON FRISSÍTÉS VÉGE
+=============================== */
 }
 
 </script>
