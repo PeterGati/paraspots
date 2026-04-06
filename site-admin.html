@@ -208,9 +208,21 @@ JSON FRISSÍTÉS VÉGE
 =============================== */
 
 
+/* ===============================
+JSON FRISSÍTÉS – PARAM FIX
+támogatja a direkt megnyitást is
+=============================== */
+
 const params = new URLSearchParams(window.location.search);
-const region = params.get("region");
-const site = params.get("site");
+
+let region = params.get("region");
+let site = params.get("site");
+
+// fallback ha nincs param
+if (!region) region = window.region;
+if (!site) site = window.site;
+
+/* =============================== */
 
 fetch(`data/${region}/${site}.json`)
 .then(res => res.json())
