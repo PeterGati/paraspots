@@ -723,6 +723,47 @@ document.addEventListener("input", (e) => {
     }
 
 });
+    async function saveToGitHub(data) {
+
+const region = data.region;
+const site = data.site;
+
+const filename = `data/${region}/${site}.json`;
+
+const token = " ";
+
+const repo = "PeterGati/paraspots";
+
+const content = btoa(
+    unescape(
+        encodeURIComponent(
+            JSON.stringify(data, null, 2)
+        )
+    )
+);
+
+const url =
+`https://api.github.com/repos/${repo}/contents/${filename}`;
+
+const response = await fetch(url, {
+    method: "PUT",
+    headers: {
+        "Authorization": `token ${token}`,
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        message: `Add site ${site}`,
+        content: content
+    })
+});
+
+if (response.ok) {
+    alert("Site erfolgreich gespeichert!");
+} else {
+    alert("Fehler beim Speichern!");
+}
+
+}
 
 </script>
 
