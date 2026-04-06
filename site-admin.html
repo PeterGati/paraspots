@@ -152,581 +152,189 @@ pre { background:#f4f4f4; padding:15px; overflow:auto; }
 
 </fieldset>
 
-<button type="button" onclick="generateJSON()">JSON erzeugen & herunterladen</button>
+<button type="button" onclick="generateJSON()">Speichern</button>
 
 </form>
 
 <pre id="output"></pre>
 
 <script>
+
 let originalData = null;
 
-
-/* ===============================
-JSON FRISSÍTÉS – GITHUB SAVE
-Cloudflare worker mentés
-=============================== */
-
 async function saveToGitHub(data) {
-
-try {
 
 const response = await fetch(
 "https://paraspots-save.petergati.workers.dev",
 {
 method: "POST",
-headers: {
-"Content-Type": "application/json"
-},
+headers: { "Content-Type": "application/json" },
 body: JSON.stringify(data)
 });
 
-const text = await response.text();
-
-console.log("Worker response:", text);
-
 if (response.ok) {
-alert("Site erfolgreich gespeichert");
+alert("Site gespeichert");
 } else {
-alert("Fehler beim Speichern:\n" + text);
-}
-
-} catch (err) {
-
-alert("Fetch Fehler: " + err.message);
-
+alert("Fehler beim Speichern");
 }
 
 }
-
-/* ===============================
-JSON FRISSÍTÉS VÉGE
-=============================== */
-
-
-/* ===============================
-JSON FRISSÍTÉS – PARAM FIX
-támogatja a direkt megnyitást is
-=============================== */
 
 const params = new URLSearchParams(window.location.search);
-
-let region = params.get("region");
-let site = params.get("site");
-
-// fallback ha nincs param
-if (!region) region = window.region;
-if (!site) site = window.site;
-
-/* =============================== */
+const region = params.get("region");
+const site = params.get("site");
 
 fetch(`data/${region}/${site}.json`)
 .then(res => res.json())
 .then(data => {
-    originalData = data;
 
-    document.getElementById("region").value = data.region;
-    document.getElementById("name").value = data.name;
-    document.getElementById("lat").value = data.coordinates?.lat ?? 0;
-    document.getElementById("lon").value = data.coordinates?.lon ?? 0;
-    document.getElementById("talHeight").value = data.talHeight ?? 0;
-    document.getElementById("description").value = data.description ?? "";
-    document.getElementById("overallRating").value = data.siteRatings?.overallRating ?? 0;
-    document.getElementById("thermalRating").value = data.siteRatings?.thermalRating ?? 0;
-document.getElementById("operatorName").value = data.operator?.name ?? "";
-document.getElementById("operatorUrl").value = data.operator?.url ?? "";
-document.getElementById("operatorPhone").value = data.operator?.phone ?? "";
+originalData = data;
 
-document.getElementById("accessCar").checked = data.access?.car ?? false;
-document.getElementById("accessPublic").checked = data.access?.publicTransport ?? false;
-document.getElementById("accessHike").checked = data.access?.hikeAndFly ?? false;
-document.getElementById("accessCable").checked = data.access?.cableCar ?? false;
-document.getElementById("accessParking").value = data.access?.parking ?? "";
+document.getElementById("region").value = data.region;
+document.getElementById("name").value = data.name;
+document.getElementById("lat").value = data.coordinates?.lat ?? "";
+document.getElementById("lon").value = data.coordinates?.lon ?? "";
+document.getElementById("talHeight").value = data.talHeight ?? "";
+document.getElementById("description").value = data.description ?? "";
 
-document.getElementById("airspaces").value = (data.airspaces || []).join(",");
+document.getElementById("overallRating").value =
+data.siteRatings?.overallRating ?? "";
 
-document.getElementById("fcSoaring").checked = data.flightCharacteristics?.soaring ?? false;
-document.getElementById("fcThermal").checked = data.flightCharacteristics?.thermal ?? false;
-document.getElementById("fcXC").checked = data.flightCharacteristics?.crossCountry ?? false;
+document.getElementById("thermalRating").value =
+data.siteRatings?.thermalRating ?? "";
 
-document.querySelectorAll(".windDir").forEach(cb => {
-    cb.checked = (data.windDirections || []).includes(cb.value);
+document.getElementById("operatorName").value =
+data.operator?.name ?? "";
+
+document.getElementById("operatorUrl").value =
+data.operator?.url ?? "";
+
+document.getElementById("operatorPhone").value =
+data.operator?.phone ?? "";
+
+document.getElementById("accessCar").checked =
+data.access?.car ?? false;
+
+document.getElementById("accessPublic").checked =
+data.access?.publicTransport ?? false;
+
+document.getElementById("accessHike").checked =
+data.access?.hikeAndFly ?? false;
+
+document.getElementById("accessCable").checked =
+data.access?.cableCar ?? false;
+
+document.getElementById("accessParking").value =
+data.access?.parking ?? "";
+
+document.getElementById("airspaces").value =
+(data.airspaces || []).join(",");
+
+document.getElementById("fcSoaring").checked =
+data.flightCharacteristics?.soaring ?? false;
+
+document.getElementById("fcThermal").checked =
+data.flightCharacteristics?.thermal ?? false;
+
+document.getElementById("fcXC").checked =
+data.flightCharacteristics?.crossCountry ?? false;
+
+document.querySelectorAll(".windDir").forEach(cb=>{
+cb.checked=(data.windDirections||[]).includes(cb.value);
 });
 
-document.getElementById("webcam").value = data.webcam ?? "";
-document.getElementById("approachDescription").value = data.approachDescription ?? "";
-    renderStartpunkte();
-    renderLandeplaetze();
+document.getElementById("webcam").value=data.webcam ?? "";
+document.getElementById("approachDescription").value=
+data.approachDescription ?? "";
+
+renderStartpunkte();
+renderLandeplaetze();
+
 });
 
-function renderStartpunkte() {
-
-    const container = document.getElementById("startpunkte-container");
-    container.innerHTML = "";
-
-    (originalData.startpunkte || []).forEach((sp, index) => {
-
-        const div = document.createElement("div");
-        div.className = "block";
-
-        div.innerHTML = `
-
-    <label>Name
-        <input type="text"
-            value="${sp.name ?? ""}"
-            data-index="${index}"
-            data-field="name"
-            class="sp-input">
-    </label>
-
-    <label>Latitude
-        <input type="number" step="any"
-            value="${sp.coordinates?.lat ?? ""}"
-            data-index="${index}"
-            data-field="lat"
-            class="sp-input">
-    </label>
-
-    <label>Longitude
-        <input type="number" step="any"
-            value="${sp.coordinates?.lon ?? ""}"
-            data-index="${index}"
-            data-field="lon"
-            class="sp-input">
-    </label>
-    
-    <p style="margin-top:4px;">
-    <a href="#"
-       onclick="checkStartpunktCoords(${index}); return false;"
-       target="_blank">
-       Koordinaten hier überprüfen
-    </a>
-</p>
-
-    <label>Starthöhe
-        <input type="number"
-            value="${sp.startHeight ?? 0}"
-            data-index="${index}"
-            data-field="startHeight"
-            class="sp-input">
-    </label>
-
-    <label>Höhenunterschied
-        <input type="number"
-            value="${sp.heightDifference ?? 0}"
-            data-index="${index}"
-            data-field="heightDifference"
-            class="sp-input">
-    </label>
-
-    <label>Richtungen (z.B. S,SW,W)
-        <input type="text"
-            value="${(sp.launchDirections || []).join(",")}"
-            data-index="${index}"
-            data-field="launchDirections"
-            class="sp-input">
-    </label>
-
-    <label>Schwierigkeit
-        <select data-index="${index}"
-                data-field="difficulty"
-                class="sp-input">
-            <option value="">-- wählen --</option>
-            <option value="leicht" ${sp.difficulty === "leicht" ? "selected" : ""}>leicht</option>
-            <option value="mittel" ${sp.difficulty === "mittel" ? "selected" : ""}>mittel</option>
-            <option value="anspruchsvoll" ${sp.difficulty === "anspruchsvoll" ? "selected" : ""}>anspruchsvoll</option>
-            <option value="extrem" ${sp.difficulty === "extrem" ? "selected" : ""}>extrem</option>
-        </select>
-    </label>
-
-    <label>Wind Sensitivity
-        <textarea
-            data-index="${index}"
-            data-field="windSensitivity"
-            class="sp-input">${sp.windSensitivity ?? ""}</textarea>
-    </label>
-
-    <label>Start Rating (0–5)
-        <input type="number" step="0.5" min="0" max="5"
-            value="${sp.startRating ?? ""}"
-            data-index="${index}"
-            data-field="startRating"
-            class="sp-input">
-    </label>
-
-    <label>Beschreibung
-        <textarea
-            data-index="${index}"
-            data-field="description"
-            class="sp-input">${sp.description ?? ""}</textarea>
-    </label>
-
-    <button type="button" onclick="removeStartpunkt(${index})">
-        Entfernen
-    </button>
-`;
-
-        container.appendChild(div);
-    });
-}
-
-function renderLandeplaetze() {
-
-    const container = document.getElementById("landeplaetze-container");
-    container.innerHTML = "";
-
-    (originalData.landeplaetze || []).forEach((lp, index) => {
-
-        const div = document.createElement("div");
-        div.className = "block";
-
-        div.innerHTML = `
-
-    <label>Name
-        <input type="text"
-            value="${lp.name ?? ""}"
-            data-index="${index}"
-            data-field="name"
-            class="lp-input">
-    </label>
-
-    <label>Latitude
-        <input type="number" step="any"
-            value="${lp.coordinates?.lat ?? ""}"
-            data-index="${index}"
-            data-field="lat"
-            class="lp-input">
-    </label>
-
-    <label>Longitude
-        <input type="number" step="any"
-            value="${lp.coordinates?.lon ?? ""}"
-            data-index="${index}"
-            data-field="lon"
-            class="lp-input">
-    </label>
-
-    <p style="margin-top:4px;">
-        <a href="#"
-           onclick="checkLandeplatzCoords(${index}); return false;"
-           target="_blank">
-           Koordinaten hier überprüfen
-        </a>
-    </p>
-
-    <label>Schwierigkeit
-        <select data-index="${index}"
-                data-field="difficulty"
-                class="lp-input">
-            <option value="">-- wählen --</option>
-            <option value="leicht" ${lp.difficulty === "leicht" ? "selected" : ""}>leicht</option>
-            <option value="mittel" ${lp.difficulty === "mittel" ? "selected" : ""}>mittel</option>
-            <option value="anspruchsvoll" ${lp.difficulty === "anspruchsvoll" ? "selected" : ""}>anspruchsvoll</option>
-            <option value="extrem" ${lp.difficulty === "extrem" ? "selected" : ""}>extrem</option>
-        </select>
-    </label>
+function generateJSON(){
 
-    <label>Wind Sensitivity
-        <textarea
-            data-index="${index}"
-            data-field="windSensitivity"
-            class="lp-input">${lp.windSensitivity ?? ""}</textarea>
-    </label>
-
-    <label>Beschreibung
-        <textarea
-            data-index="${index}"
-            data-field="description"
-            class="lp-input">${lp.description ?? ""}</textarea>
-    </label>
+if(!originalData) return;
 
-    <button type="button" onclick="removeLandeplatz(${index})">
-        Entfernen
-    </button>
-`;
-
-        container.appendChild(div);
-    });
-}
+originalData.coordinates = originalData.coordinates || {};
+originalData.siteRatings = originalData.siteRatings || {};
+originalData.operator = originalData.operator || {};
+originalData.access = originalData.access || {};
+originalData.flightCharacteristics =
+originalData.flightCharacteristics || {};
 
-function addStartpunkt() {
+originalData.coordinates.lat =
+parseFloat(document.getElementById("lat").value) || null;
 
-    if (!originalData.startpunkte) originalData.startpunkte = [];
-
-    originalData.startpunkte.push({
+originalData.coordinates.lon =
+parseFloat(document.getElementById("lon").value) || null;
 
-    id: "",
-
-    name: "",
+originalData.talHeight =
+parseInt(document.getElementById("talHeight").value) || null;
 
-    coordinates: {
-        lat: null,
-        lon: null
-    },
+originalData.description =
+document.getElementById("description").value || null;
 
-    startHeight: 0,
-    heightDifference: 0,
+originalData.siteRatings.overallRating =
+parseFloat(document.getElementById("overallRating").value) || null;
 
-    launchDirections: [],
-
-    difficulty: null,
-    windSensitivity: null,
+originalData.siteRatings.thermalRating =
+parseFloat(document.getElementById("thermalRating").value) || null;
 
-    startRating: null,
+originalData.operator.name =
+document.getElementById("operatorName").value || null;
 
-    description: null
-});
+originalData.operator.url =
+document.getElementById("operatorUrl").value || null;
 
-    renderStartpunkte();
-}
+originalData.operator.phone =
+document.getElementById("operatorPhone").value || null;
 
-function removeStartpunkt(index) {
-    originalData.startpunkte.splice(index, 1);
-    renderStartpunkte();
-}
-
-function addLandeplatz() {
+originalData.access.car =
+document.getElementById("accessCar").checked;
 
-    if (!originalData.landeplaetze) originalData.landeplaetze = [];
-
-    originalData.landeplaetze.push({
-
-    name: "",
-
-    coordinates: {
-        lat: null,
-        lon: null
-    },
-
-    difficulty: null,
-    windSensitivity: null,
-    description: null
-});
-
-    renderLandeplaetze();
-}
-
-function removeLandeplatz(index) {
-    originalData.landeplaetze.splice(index, 1);
-    renderLandeplaetze();
-}
-function checkStartpunktCoords(index) {
-
-    const latInput = document.querySelector(
-        `.sp-input[data-index="${index}"][data-field="lat"]`
-    );
-
-    const lonInput = document.querySelector(
-        `.sp-input[data-index="${index}"][data-field="lon"]`
-    );
-
-    if (!latInput || !lonInput) return;
-
-    const lat = latInput.value;
-    const lon = lonInput.value;
-
-    if (!lat || !lon) {
-        alert("Bitte zuerst Breitengrad und Längengrad eingeben.");
-        return;
-    }
-
-    const url = `https://www.google.com/maps?q=${lat},${lon}`;
-    window.open(url, "_blank");
-}
-function checkLandeplatzCoords(index) {
-
-    const latInput = document.querySelector(
-        `.lp-input[data-index="${index}"][data-field="lat"]`
-    );
-
-    const lonInput = document.querySelector(
-        `.lp-input[data-index="${index}"][data-field="lon"]`
-    );
-
-    if (!latInput || !lonInput) return;
-
-    const lat = latInput.value;
-    const lon = lonInput.value;
-
-    if (!lat || !lon) {
-        alert("Bitte zuerst Breitengrad und Längengrad eingeben.");
-        return;
-    }
-
-    const url = `https://www.google.com/maps?q=${lat},${lon}`;
-    window.open(url, "_blank");
-}
-
-function generateJSON() { 
-    /* NE VESZÍTSE EL A MEGLÉVŐ ADATOKAT */
-originalData = JSON.parse(JSON.stringify(originalData));
-
-// ===== MINIMAL VALIDATION =====
-
-// Legalább 1 startpont
-if (!originalData.startpunkte || originalData.startpunkte.length === 0) {
-    alert("Mindestens ein Startpunkt ist erforderlich.");
-    return;
-}
-
-// Startpont név kötelező
-for (let i = 0; i < originalData.startpunkte.length; i++) {
-
-    const nameInput = document.querySelector(
-        `.sp-input[data-index="${i}"][data-field="name"]`
-    );
-
-    if (!nameInput || nameInput.value.trim() === "") {
-        alert("Startpunkt " + (i + 1) + " hat keinen Namen.");
-        return;
-    }
-}
-
- if (!originalData.siteRatings) {
-    originalData.siteRatings = {};
-}
-
-    originalData.coordinates = {
-        lat: parseFloat(document.getElementById("lat").value) || 0,
-        lon: parseFloat(document.getElementById("lon").value) || 0
-    };
-
-    originalData.talHeight = parseInt(document.getElementById("talHeight").value) || 0;
-    
-   originalData.operator = {
-    name: document.getElementById("operatorName").value || null,
-    url: document.getElementById("operatorUrl").value || null,
-    phone: document.getElementById("operatorPhone").value || null
-};
-
-originalData.access = {
-    car: document.getElementById("accessCar").checked,
-    publicTransport: document.getElementById("accessPublic").checked,
-    hikeAndFly: document.getElementById("accessHike").checked,
-    cableCar: document.getElementById("accessCable").checked,
-    parking: document.getElementById("accessParking").value || null
-};
+originalData.access.publicTransport =
+document.getElementById("accessPublic").checked;
+
+originalData.access.hikeAndFly =
+document.getElementById("accessHike").checked;
+
+originalData.access.cableCar =
+document.getElementById("accessCable").checked;
+
+originalData.access.parking =
+document.getElementById("accessParking").value || null;
 
 originalData.airspaces =
-    document.getElementById("airspaces").value
-        .split(",")
-        .map(s => s.trim())
-        .filter(Boolean);
+document.getElementById("airspaces").value
+.split(",")
+.map(s=>s.trim())
+.filter(Boolean);
 
-originalData.flightCharacteristics = {
-    soaring: document.getElementById("fcSoaring").checked,
-    thermal: document.getElementById("fcThermal").checked,
-    crossCountry: document.getElementById("fcXC").checked
-};
+originalData.flightCharacteristics.soaring =
+document.getElementById("fcSoaring").checked;
+
+originalData.flightCharacteristics.thermal =
+document.getElementById("fcThermal").checked;
+
+originalData.flightCharacteristics.crossCountry =
+document.getElementById("fcXC").checked;
 
 originalData.windDirections =
-    Array.from(document.querySelectorAll(".windDir:checked"))
-        .map(cb => cb.value);
+Array.from(document.querySelectorAll(".windDir:checked"))
+.map(cb=>cb.value);
 
 originalData.webcam =
-    document.getElementById("webcam").value || null;
+document.getElementById("webcam").value || null;
 
 originalData.approachDescription =
-    document.getElementById("approachDescription").value || null;
-    
-    originalData.description = document.getElementById("description").value || "";
+document.getElementById("approachDescription").value || null;
 
-    originalData.siteRatings.overallRating =
-        parseFloat(document.getElementById("overallRating").value) || 0;
-
-    originalData.siteRatings.thermalRating =
-        parseFloat(document.getElementById("thermalRating").value) || 0;
-
-    document.querySelectorAll(".sp-input").forEach(input => {
-
-    const index = input.dataset.index;
-    const field = input.dataset.field;
-
-    if (!originalData.startpunkte[index]) return;
-
-    if (field === "launchDirections") {
-        originalData.startpunkte[index].launchDirections =
-            input.value.split(",").map(s => s.trim()).filter(Boolean);
-    }
-
-    else if (field === "lat") {
-        if (!originalData.startpunkte[index].coordinates) {
-            originalData.startpunkte[index].coordinates = {};
-        }
-        originalData.startpunkte[index].coordinates.lat =
-            input.value ? parseFloat(input.value) : null;
-    }
-
-    else if (field === "lon") {
-        if (!originalData.startpunkte[index].coordinates) {
-            originalData.startpunkte[index].coordinates = {};
-        }
-        originalData.startpunkte[index].coordinates.lon =
-            input.value ? parseFloat(input.value) : null;
-    }
-
-    else if (field === "startHeight" || field === "heightDifference") {
-        originalData.startpunkte[index][field] =
-            input.value ? parseInt(input.value) : 0;
-    }
-
-    else if (field === "startRating") {
-        originalData.startpunkte[index].startRating =
-            input.value ? parseFloat(input.value) : null;
-    }
-
-    else {
-        originalData.startpunkte[index][field] =
-            input.value || null;
-    }
-
-});
-
-  document.querySelectorAll(".lp-input").forEach(input => {
-
-    const index = input.dataset.index;
-    const field = input.dataset.field;
-
-    if (!originalData.landeplaetze[index]) return;
-
-    if (field === "lat") {
-        if (!originalData.landeplaetze[index].coordinates) {
-            originalData.landeplaetze[index].coordinates = {};
-        }
-        originalData.landeplaetze[index].coordinates.lat =
-            input.value ? parseFloat(input.value) : null;
-    }
-
-    else if (field === "lon") {
-        if (!originalData.landeplaetze[index].coordinates) {
-            originalData.landeplaetze[index].coordinates = {};
-        }
-        originalData.landeplaetze[index].coordinates.lon =
-            input.value ? parseFloat(input.value) : null;
-    }
-
-    else {
-        originalData.landeplaetze[index][field] =
-            input.value || null;
-    }
-
-});
-
-    document.getElementById("output").textContent =
-        JSON.stringify(originalData, null, 2);
-
-    /* ===============================
-JSON FRISSÍTÉS – SITE ADMIN
-Felülírja a meglévő site JSON file-t
-nem hoz létre újat
-nem módosít regions.json-t
-=============================== */
+document.getElementById("output").textContent =
+JSON.stringify(originalData,null,2);
 
 saveToGitHub(originalData);
 
-/* ===============================
-JSON FRISSÍTÉS VÉGE
-=============================== */
 }
 
 </script>
