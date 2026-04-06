@@ -1,0 +1,24 @@
+name: Save new site
+
+on:
+  repository_dispatch:
+    types: [save-site]
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Save site JSON
+        run: |
+          echo '${{ github.event.client_payload.json }}' > site.json
+
+      - name: Commit
+        run: |
+          git config user.name "paraspots-bot"
+          git config user.email "bot@paraspots.at"
+          git add .
+          git commit -m "Add new site"
+          git push
