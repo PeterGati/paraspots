@@ -557,7 +557,9 @@ function checkLandeplatzCoords(index) {
     window.open(url, "_blank");
 }
 
-function generateJSON() {
+function generateJSON() { 
+    /* NE VESZÍTSE EL A MEGLÉVŐ ADATOKAT */
+originalData = JSON.parse(JSON.stringify(originalData));
 
 // ===== MINIMAL VALIDATION =====
 
