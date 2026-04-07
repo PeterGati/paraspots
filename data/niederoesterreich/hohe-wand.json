@@ -1,5 +1,6 @@
 {
   "region": "niederoesterreich",
+  "site": "hohe-wand",
   "name": "Hohe Wand",
   "coordinates": {
     "lat": 47.81666666666667,
@@ -12,12 +13,12 @@
   },
   "access": {
     "car": false,
-    "publicTransport": null,
+    "publicTransport": false,
     "hikeAndFly": true,
     "cableCar": false,
     "parking": null
   },
-  "airspace": [],
+  "airspaces": [],
   "flightCharacteristics": {
     "soaring": null,
     "thermal": null,
