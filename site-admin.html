@@ -285,40 +285,41 @@ if (!site) site = window.site;
 /* =============================== */
 
 fetch(`data/${region}/${site}.json`)
-.then(res => res.json())
+.then(res => res.text())
+.then(text => JSON.parse(text))
 .then(data => {
 originalData = normalizeSiteData(data);
 
-    document.getElementById("region").value = data.region;
-    document.getElementById("name").value = data.name;
-    document.getElementById("lat").value = data.coordinates?.lat ?? 0;
-    document.getElementById("lon").value = data.coordinates?.lon ?? 0;
-    document.getElementById("talHeight").value = data.talHeight ?? 0;
-    document.getElementById("description").value = data.description ?? "";
-    document.getElementById("overallRating").value = data.siteRatings?.overallRating ?? 0;
-    document.getElementById("thermalRating").value = data.siteRatings?.thermalRating ?? 0;
-document.getElementById("operatorName").value = data.operator?.name ?? "";
-document.getElementById("operatorUrl").value = data.operator?.url ?? "";
-document.getElementById("operatorPhone").value = data.operator?.phone ?? "";
+    document.getElementById("region").value = originalData.region;
+    document.getElementById("name").value = originalData.name;
+    document.getElementById("lat").value = originalData.coordinates?.lat ?? 0;
+    document.getElementById("lon").value = originalData.coordinates?.lon ?? 0;
+    document.getElementById("talHeight").value = originalData.talHeight ?? 0;
+    document.getElementById("description").value = originalData.description ?? "";
+    document.getElementById("overallRating").value = originalData.siteRatings?.overallRating ?? 0;
+    document.getElementById("thermalRating").value = originalData.siteRatings?.thermalRating ?? 0;
+document.getElementById("operatorName").value = originalData.operator?.name ?? "";
+document.getElementById("operatorUrl").value = originalData.operator?.url ?? "";
+document.getElementById("operatorPhone").value = originalData.operator?.phone ?? "";
 
-document.getElementById("accessCar").checked = data.access?.car ?? false;
-document.getElementById("accessPublic").checked = data.access?.publicTransport ?? false;
-document.getElementById("accessHike").checked = data.access?.hikeAndFly ?? false;
-document.getElementById("accessCable").checked = data.access?.cableCar ?? false;
-document.getElementById("accessParking").value = data.access?.parking ?? "";
+document.getElementById("accessCar").checked = originalData.access?.car ?? false;
+document.getElementById("accessPublic").checked = originalData.access?.publicTransport ?? false;
+document.getElementById("accessHike").checked = originalData.access?.hikeAndFly ?? false;
+document.getElementById("accessCable").checked = originalData.access?.cableCar ?? false;
+document.getElementById("accessParking").value = originalData.access?.parking ?? "";
 
-document.getElementById("airspaces").value = (data.airspaces || []).join(",");
+document.getElementById("airspaces").value = (originalData.airspaces || []).join(",");
 
-document.getElementById("fcSoaring").checked = data.flightCharacteristics?.soaring ?? false;
-document.getElementById("fcThermal").checked = data.flightCharacteristics?.thermal ?? false;
-document.getElementById("fcXC").checked = data.flightCharacteristics?.crossCountry ?? false;
+document.getElementById("fcSoaring").checked = originalData.flightCharacteristics?.soaring ?? false;
+document.getElementById("fcThermal").checked = originalData.flightCharacteristics?.thermal ?? false;
+document.getElementById("fcXC").checked = originalData.flightCharacteristics?.crossCountry ?? false;
 
 document.querySelectorAll(".windDir").forEach(cb => {
-    cb.checked = (data.windDirections || []).includes(cb.value);
+    cb.checked = (originalData.windDirections || []).includes(cb.value);
 });
 
-document.getElementById("webcam").value = data.webcam ?? "";
-document.getElementById("approachDescription").value = data.approachDescription ?? "";
+document.getElementById("webcam").value = originalData.webcam ?? "";
+document.getElementById("approachDescription").value = originalData.approachDescription ?? "";
     renderStartpunkte();
     renderLandeplaetze();
 });
@@ -521,7 +522,7 @@ function addStartpunkt() {
 
     originalData.startpunkte.push({
 
-    id: "",
+  
 
     name: "",
 
