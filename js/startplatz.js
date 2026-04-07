@@ -94,13 +94,24 @@ setText("sp-zugang", formatAccess(data.access));
         setText("sp-flight-description",
     data.approachDescription
 );
+        
+const webcamEl = document.getElementById("sp-webcam");
 
-       if (data.webcam) {
-    document.getElementById("sp-webcam").innerHTML =
-        `<a href="${data.webcam}" target="_blank" rel="noopener noreferrer">Webcam öffnen</a>`;
+if (data.webcam && data.webcam.trim() !== "") {
+
+    const a = document.createElement("a");
+    a.href = data.webcam;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = "Webcam öffnen";
+
+    webcamEl.innerHTML = "";
+    webcamEl.appendChild(a);
+
 } else {
     setText("sp-webcam", null);
 }
+       
 
     // ... eddigi kód (header, zugang stb.)
 
