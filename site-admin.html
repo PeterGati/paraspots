@@ -625,6 +625,11 @@ function checkLandeplatzCoords(index) {
 }
 
 function generateJSON() { 
+
+
+originalData.region = document.getElementById("region").value;
+originalData.site = site;
+originalData.name = document.getElementById("name").value;
     /* NE VESZÍTSE EL A MEGLÉVŐ ADATOKAT */
 originalData = JSON.parse(JSON.stringify(originalData));
     /* ===== STRUCTURE FIX ===== */
