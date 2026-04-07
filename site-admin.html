@@ -213,6 +213,70 @@ const params = new URLSearchParams(window.location.search);
 
 let region = params.get("region");
 let site = params.get("site");
+    function normalizeSiteData(data) {
+
+return {
+region: data.region || "",
+site: data.site || "",
+name: data.name || "",
+
+coordinates: data.coordinates || { lat: null, lon: null },
+talHeight: data.talHeight || 0,
+
+operator: {
+name: data.operator?.name || null,
+url: data.operator?.url || null,
+phone: data.operator?.phone || null
+},
+
+access: {
+car: data.access?.car || false,
+publicTransport: data.access?.publicTransport || false,
+hikeAndFly: data.access?.hikeAndFly || false,
+cableCar: data.access?.cableCar || false,
+parking: data.access?.parking || null
+},
+
+airspaces: data.airspaces || [],
+
+flightCharacteristics: {
+soaring: data.flightCharacteristics?.soaring || false,
+thermal: data.flightCharacteristics?.thermal || false,
+crossCountry: data.flightCharacteristics?.crossCountry || false
+},
+
+windDirections: data.windDirections || [],
+
+webcam: data.webcam || null,
+approachDescription: data.approachDescription || null,
+description: data.description || "",
+
+siteRatings: {
+overallRating: data.siteRatings?.overallRating || 0,
+thermalRating: data.siteRatings?.thermalRating || 0
+},
+
+startpunkte: (data.startpunkte || []).map(sp => ({
+name: sp.name || "",
+coordinates: sp.coordinates || { lat: null, lon: null },
+startHeight: sp.startHeight || 0,
+heightDifference: sp.heightDifference || 0,
+launchDirections: sp.launchDirections || [],
+difficulty: sp.difficulty || null,
+windSensitivity: sp.windSensitivity || null,
+startRating: sp.startRating || null,
+description: sp.description || null
+})),
+
+landeplaetze: (data.landeplaetze || []).map(lp => ({
+name: lp.name || "",
+coordinates: lp.coordinates || { lat: null, lon: null },
+difficulty: lp.difficulty || null,
+windSensitivity: lp.windSensitivity || null,
+description: lp.description || null
+}))
+};
+}
 
 // fallback ha nincs param
 if (!region) region = window.region;
@@ -223,7 +287,7 @@ if (!site) site = window.site;
 fetch(`data/${region}/${site}.json`)
 .then(res => res.json())
 .then(data => {
-    originalData = data;
+originalData = normalizeSiteData(data);
 
     document.getElementById("region").value = data.region;
     document.getElementById("name").value = data.name;
