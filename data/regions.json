@@ -9,9 +9,7 @@
           "name": "Hohe Wand"
         }
       ]
-    }
-  ]
-},
+    },
     {
       "slug": "salzburg",
       "name": "Salzburg",
@@ -32,24 +30,21 @@
         },
         {
           "slug": "kitzbuchel",
-          "name": "KitzbÃ¼chel"
+          "name": "Kitzbühel"
         },
         {
           "slug": "kitzbuhel",
           "name": "Kitzbühel"
-        },
-        {
-          "name": "Hintertux"
         }
       ]
     },
     {
       "slug": "kaernten",
-      "name": "KÃƒÂ¤rnten",
+      "name": "Kärnten",
       "sites": [
         {
           "slug": "dreilandereck",
-          "name": "DreilÃƒÂ¤ndereck"
+          "name": "Dreiländereck"
         },
         {
           "slug": "emberger-alm",
