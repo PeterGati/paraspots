@@ -2,14 +2,16 @@
   "regions": [
     {
       "slug": "niederoesterreich",
-      "name": "NiederÃƒÂ¶sterreich",
+      "name": "Niederösterreich",
       "sites": [
         {
           "slug": "hohe-wand",
           "name": "Hohe Wand"
         }
       ]
-    },
+    }
+  ]
+},
     {
       "slug": "salzburg",
       "name": "Salzburg",
