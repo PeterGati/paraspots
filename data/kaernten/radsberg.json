@@ -1,0 +1,71 @@
+{
+  "startpunkte": [
+    {
+      "id": "",
+      "name": "Start 1-Süd",
+      "coordinates": {
+        "lat": 46.5669,
+        "lon": 14.318
+      },
+      "startHeight": 980,
+      "heightDifference": 480,
+      "launchDirections": [
+        "S",
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Rotoranfällig bei Nordanteil.",
+      "startRating": 3,
+      "description": "Schmaler Wiesenstart mit freiem Abflug. Bei stärkerer Thermik anspruchsvoll. "
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Tal-Radsberg",
+      "coordinates": {
+        "lat": 46.562,
+        "lon": 14.315
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Thermik leicht turbulent. ",
+      "description": "Große Wiese im Talbereich.Ausreichend Platz für sichere Landung."
+    }
+  ],
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3.5
+  },
+  "region": "kaernten",
+  "site": "radsberg",
+  "name": "Radsberg",
+  "coordinates": {
+    "lat": 46.5667,
+    "lon": 14.3167
+  },
+  "talHeight": 0,
+  "operator": {
+    "name": null,
+    "url": null,
+    "phone": null
+  },
+  "access": {
+    "car": true,
+    "publicTransport": false,
+    "hikeAndFly": true,
+    "cableCar": false,
+    "parking": null
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": null,
+  "description": "Soaring- und Thermikgelände mit Ausrichtung nach Süd bis Ost. Geeignet für ruhige Bedingungen, bei\nstärkerem Wind teils turbulent. Begrenzter Platz am Start, saubere Starttechnik erforderlich. Zufahrt über Radsbergstraße bis in Gipfelnähe. Kurzer Fußweg zu den Startplätzen möglich. Parkmöglichkeiten entlang der Straße."
+}
