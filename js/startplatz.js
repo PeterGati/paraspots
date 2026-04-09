@@ -262,6 +262,7 @@ div.innerHTML = `
                     : "Keine Angabe"
             }</p>
             <p><strong>Schwierigkeit:</strong> ${safe(sp.difficulty)}</p>
+            <p><strong>Wind Sensitivity:</strong> ${safe(sp.windSensitivity)}</p>
             <p><strong>Beschreibung:</strong> ${safe(sp.description)}</p>
             ${mapsLink}
         </div>
@@ -295,6 +296,7 @@ if (url) {
                 <h3>${lp.name || "Keine Angabe"}</h3>
                 <p><strong>Höhe:</strong> ${lp.height ?? "Keine Angabe"} m</p>
                 <p><strong>Schwierigkeit:</strong> ${lp.difficulty || "Keine Angabe"}</p>
+                <p><strong>Wind Sensitivity:</strong> ${lp.windSensitivity || "Keine Angabe"}</p>
                 <p><strong>Beschreibung:</strong> ${lp.description || "Keine Angabe"}</p>
                 ${mapsLink}
             `;
