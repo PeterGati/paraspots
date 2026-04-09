@@ -1,0 +1,47 @@
+{
+  "region": "kaernten",
+  "site": "goldeck",
+  "siteData": {
+    "region": "kaernten",
+    "name": "Goldeck",
+    "coordinates": "46.79278, 13.48444",
+    "talHeight": "550",
+    "access": "Auto, Seilbahn, Hike & Fly",
+    "windDirections": "NO, O, SO, S, W, NW",
+    "thermalRating": "4",
+    "overallRating": "4",
+    "approachDescription": "A10 Tauernautobahn Ausfahrt Spittal. Auffahrt mit Goldeckseilbahn oder über die Goldeck-Mautstraße bis in Startplatznähe möglich. Parkmöglichkeiten bei der Bergstation sowie im Tal vorhanden.",
+    "notes": "Großzügiges Fluggebiet mit mehreren Startoptionen in unterschiedliche Windrichtungen. Gute Thermikentwicklung durch exponierte Lage über dem Drautal. XC‑Möglichkeiten Richtung Dobratsch, Gerlitzen und Tschiernock. Auf Seilbahnkabel sowie gelegentlichen Hubschrauberbetrieb im Tal achten."
+  },
+  "startpunkte": [
+    {
+      "name": "Sender",
+      "coordinates": "46.75833, 13.45972",
+      "startHeight": "2142",
+      "heightDifference": "1592",
+      "directions": "SO, S",
+      "windSensitivity": "Empfindlich bei stärkerem Südwind. Bei schwacher Thermik kann das Erreichen des Landeplatzes kritisch werden.",
+      "difficulty": "leicht",
+      "description": "Start nahe der Bergstation beim Sendemast. Nach dem Abheben meist geradeaus zur Kante vorfliegen und dort Thermik suchen. Viel Platz im Startbereich, jedoch auf Seilbahn achten. Soaring entlang der Südflanke möglich."
+    },
+    {
+      "name": "NO-NW",
+      "coordinates": "46.75600, 13.46000",
+      "startHeight": "2100",
+      "heightDifference": "1550",
+      "directions": "NO, NW",
+      "windSensitivity": "Bei stärkerem Nordwind turbulent hinter der Kante. Seitenwind kann anspruchsvoll werden.",
+      "difficulty": "mittel",
+      "description": "Mehrere Startmöglichkeiten oberhalb der Bergstation. Geeignet für Nordlagen mit Soaring entlang des Kamms. Thermik setzt etwas später ein. Verkehr entlang der Kante beachten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Spittal",
+      "coordinates": "46.79278, 13.48444",
+      "windSensitivity": "Talwind aus dem Drautal kann am Nachmittag stärker werden. Thermisch zeitweise unruhig.",
+      "difficulty": "leicht",
+      "description": "Große ebene Landewiese westlich der Talstation. Gute Anflugmöglichkeiten aus allen Richtungen. Windsack vorhanden, auf Hubschrauberbetrieb achten."
+    }
+  ]
+}
