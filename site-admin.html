@@ -46,7 +46,7 @@ pre { background:#f4f4f4; padding:15px; overflow:auto; }
 <input type="number" id="talHeight">
 </label>
 
-<label>Beschreibung
+<label>Anmerkungen
 <textarea id="description"></textarea>
 </label>
 
@@ -405,7 +405,7 @@ function renderStartpunkte() {
         </select>
     </label>
 
-    <label>Wind Sensitivity
+    <label>Windempfindlichkeit
         <textarea
             data-index="${index}"
             data-field="windSensitivity"
@@ -420,7 +420,7 @@ function renderStartpunkte() {
             class="sp-input">
     </label>
 
-    <label>Beschreibung
+    <label>Startbeschreibung
         <textarea
             data-index="${index}"
             data-field="description"
@@ -493,14 +493,14 @@ function renderLandeplaetze() {
         </select>
     </label>
 
-    <label>Wind Sensitivity
+    <label>Windempfindlichkeit
         <textarea
             data-index="${index}"
             data-field="windSensitivity"
             class="lp-input">${lp.windSensitivity ?? ""}</textarea>
     </label>
 
-    <label>Beschreibung
+    <label>Landeplatzbeschreibung
         <textarea
             data-index="${index}"
             data-field="description"
