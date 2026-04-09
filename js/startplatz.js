@@ -294,7 +294,6 @@ if (url) {
 
             div.innerHTML = `
                 <h3>${lp.name || "Keine Angabe"}</h3>
-                <p><strong>Höhe:</strong> ${lp.height ?? "Keine Angabe"} m</p>
                 <p><strong>Schwierigkeit:</strong> ${lp.difficulty || "Keine Angabe"}</p>
                 <p><strong>Wind Sensitivity:</strong> ${lp.windSensitivity || "Keine Angabe"}</p>
                 <p><strong>Beschreibung:</strong> ${lp.description || "Keine Angabe"}</p>
