@@ -262,7 +262,7 @@ div.innerHTML = `
                     : "Keine Angabe"
             }</p>
             <p><strong>Schwierigkeit:</strong> ${safe(sp.difficulty)}</p>
-            <p><strong>Wind Sensitivity:</strong> ${safe(sp.windSensitivity)}</p>
+            <p><strong>Windempfindlichkeit:</strong> ${safe(sp.windSensitivity)}</p>
             <p><strong>Beschreibung:</strong> ${safe(sp.description)}</p>
             ${mapsLink}
         </div>
@@ -295,15 +295,18 @@ if (url) {
             div.innerHTML = `
                 <h3>${lp.name || "Keine Angabe"}</h3>
                 <p><strong>Schwierigkeit:</strong> ${lp.difficulty || "Keine Angabe"}</p>
-                <p><strong>Wind Sensitivity:</strong> ${lp.windSensitivity || "Keine Angabe"}</p>
+                <p><strong>Windempfindlichkeit:</strong> ${lp.windSensitivity || "Keine Angabe"}</p>
                 <p><strong>Beschreibung:</strong> ${lp.description || "Keine Angabe"}</p>
                 ${mapsLink}
             `;
 
             landeContainer.appendChild(div);
         });
-        setText("sp-description", data.description);
-
+if (data.description && data.description.trim() !== "") {
+    setText("sp-description", data.description);
+} else {
+    document.getElementById("beschreibung").style.display = "none";
+}
     }
 
 
