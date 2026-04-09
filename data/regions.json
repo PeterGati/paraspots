@@ -49,7 +49,11 @@
         {
           "slug": "radsberg",
           "name": "Radsberg"
-        }
+        },
+        {
+         "slug": "goldeck",
+         "name": "Goldeck"
+}
       ]
     }
   ]
