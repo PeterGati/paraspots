@@ -1,0 +1,73 @@
+{
+  "region": "kaernten",
+  "site": "rottenstein",
+  "name": "Rottenstein",
+  "coordinates": {
+    "lat": 46.76944,
+    "lon": 13.23306
+  },
+  "talHeight": 630,
+  "operator": {
+    "name": "FlyCarinthia",
+    "url": "www.flycarinthia.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Gasthaus Moser ca. 100m vor dem Start"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": ["S"],
+  "webcam": null,
+  "approachDescription": "Von Steinfeld mit dem Auto zum Startplatz. Auffahrt gut beschildert, etwa 15 Minuten.",
+  "description": "Kleines aber feines Fluggebiet mit gutem Streckenflugpotential. Schlechte Parkplatzmöglichkeiten, nicht an der Straße parken. Große Landewiese von Stromleitungen umgeben.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Rottenstein",
+      "coordinates": {
+        "lat": 46.76944,
+        "lon": 13.23306
+      },
+      "startHeight": 1380,
+      "heightDifference": 750,
+      "launchDirections": ["S"],
+      "difficulty": "leicht",
+      "windSensitivity": "Südstart, meist Gleitflug.",
+      "description": "Einfacher Wiesenstart südexponiert. Mit dem Auto erreichbar. Gute Schulungsbedingungen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Steinfeld",
+      "coordinates": {
+        "lat": 46.75972,
+        "lon": 13.24583
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch möglich.",
+      "description": "Große Landewiese westlich vom Ort. Stromleitungen beachten."
+    },
+    {
+      "name": "Radlach",
+      "coordinates": {
+        "lat": 46.75444,
+        "lon": 13.22139
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind möglich.",
+      "description": "Alternative Landemöglichkeit im Tal."
+    }
+  ]
+}
