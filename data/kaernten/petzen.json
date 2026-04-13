@@ -1,0 +1,56 @@
+{
+  "region": "kaernten",
+  "site": "Petzen",
+  "slug": "petzen",
+  "name": "Petzen",
+  "coordinates": {
+    "lat": 46.50861,
+    "lng": 14.78778
+  },
+  "talHeight": 490,
+  "operator": "",
+  "access": ["cableCar"],
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": ["S","SW","W"],
+  "webcam": null,
+  "approachDescription": "Mit der Petzen Bergbahn bis zur Bergstation. Von dort wenige Minuten zum Startplatz auf freiem Almgelände.",
+  "description": "Großes Fluggebiet an der slowenischen Grenze mit sehr gutem XC Potential. Funktioniert vor allem bei Süd- bis Westlagen. Starke Thermik möglich. Bei Nordwind im Lee. Talwindsystem am Nachmittag beachten.",
+  "siteRatings": {
+    "thermal": 5,
+    "soaring": 4,
+    "xc": 5,
+    "overall": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Petzen Süd",
+      "coordinates": {
+        "lat": 46.50861,
+        "lng": 14.78778
+      },
+      "startHeight": 1700,
+      "heightDifference": 1210,
+      "launchDirections": ["S","SW","W"],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Nordwind Lee. Stark thermisch ab Mittag.",
+      "description": "Großer Almstart mit viel Platz. Sanfte Neigung. Thermischer Hausbart direkt vor dem Start. Bei starkem Talwind auf ausreichende Höhe achten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Petzen Tal",
+      "coordinates": {
+        "lat": 46.50472,
+        "lng": 14.78306
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Nachmittags Talwind.",
+      "description": "Großer offizieller Landeplatz im Tal. Flach und gut einteilbar. Windsack vorhanden."
+    }
+  ]
+}
