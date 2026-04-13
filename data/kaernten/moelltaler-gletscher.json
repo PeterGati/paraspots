@@ -1,0 +1,53 @@
+{
+  "region": "kaernten",
+  "site": "moelltaler-gletscher",
+  "name": "Mölltaler Gletscher",
+  "coordinates": {
+    "lat": 46.93611,
+    "lon": 13.33056
+  },
+  "talHeight": 2800,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": false,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Mölltaler Gletscherbahn"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": false,
+    "crossCountry": false,
+    "skiAndFly": true
+  },
+  "windDirections": [],
+  "webcam": null,
+  "approachDescription": "Mit der Mölltaler Gletscherbahn bis zum Gletscher Restaurant Eisseebahn. Start im Gletscherbereich auf 3200 Meter.",
+  "description": "Hochalpiner Gletscherstart auf 3200 Meter. Start im Schnee bzw. auf Gletscherfläche. Soaring möglich. Kein klassisches Thermikgebiet. Ski & Fly möglich. Hochalpines Gelände mit entsprechender Ausrüstung erforderlich.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Mölltaler Gletscher",
+      "coordinates": {
+        "lat": 46.93611,
+        "lon": 13.33056
+      },
+      "startHeight": 3200,
+      "heightDifference": 400,
+      "launchDirections": [],
+      "difficulty": "mittel",
+      "windSensitivity": "Hochalpines Gelände, Wind kann schnell zunehmen.",
+      "description": "Start auf Gletscherfläche oberhalb des Gletscher Restaurants. Schnee- oder Eisuntergrund. Großzügiger Startbereich. Hochalpines Umfeld."
+    }
+  ],
+  "landeplaetze": []
+}
