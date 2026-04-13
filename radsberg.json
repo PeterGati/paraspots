@@ -1,0 +1,56 @@
+{
+  "region": "kaernten",
+  "site": "Radsberg",
+  "slug": "radsberg",
+  "name": "Radsberg",
+  "coordinates": {
+    "lat": 46.58667,
+    "lng": 14.35639
+  },
+  "talHeight": 540,
+  "operator": "",
+  "access": ["car", "hike"],
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": false
+  },
+  "windDirections": ["N","NO","O","SO"],
+  "webcam": null,
+  "approachDescription": "Parken beim Gasthof Radsberg. Von dort wenige Minuten zu Fuß zum Start. Start liegt auf freier Wiese unterhalb des Gipfels.",
+  "description": "Kleines lokales Fluggebiet oberhalb von Klagenfurt. Funktioniert bei schwachen Nord- bis Ostlagen. Bei stärkerem Südwind Rotor vom Gipfel. Thermik meist schwach, eher Soaring-Gelände mit kurzen Gleitflügen Richtung Osten.",
+  "siteRatings": {
+    "thermal": 3,
+    "soaring": 3,
+    "xc": 2,
+    "overall": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Radsberg",
+      "coordinates": {
+        "lat": 46.58667,
+        "lng": 14.35639
+      },
+      "startHeight": 800,
+      "heightDifference": 260,
+      "launchDirections": ["N","NO","O","SO"],
+      "difficulty": "leicht",
+      "windSensitivity": "Empfindlich auf Südwind, Rotor vom Gipfel möglich.",
+      "description": "Große Wiese mit moderater Neigung. Start nach Norden bis Südost möglich. Bei Nordlagen sauberer Abflug, bei Ost thermisch. Bei Süd vorsichtig wegen Lee hinter dem Rücken."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Radsberg Landeplatz",
+      "coordinates": {
+        "lat": 46.58222,
+        "lng": 14.36111
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Mittags thermisch und leicht turbulent.",
+      "description": "Große flache Wiese im Tal. Gute Einteilung möglich. Bei Thermik unruhig. Keine nennenswerten Hindernisse."
+    }
+  ]
+}
