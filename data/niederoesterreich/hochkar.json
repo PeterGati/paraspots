@@ -1,0 +1,87 @@
+{
+  "region": "niederoesterreich",
+  "site": "hochkar",
+  "name": "Hochkar",
+  "coordinates": {
+    "lat": 47.71083,
+    "lon": 14.91000
+  },
+  "talHeight": 680,
+  "operator": {
+    "name": "",
+    "url": "https://www.hochkar.com",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Talstation Hochkar Alpenstraße / Mautstelle"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "N",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Über B25 nach Lassing, weiter Hochkar Alpenstraße zur Talstation. Auffahrt mit Sesselliften möglich.",
+  "description": "Alpines Fluggebiet mit zwei Hauptstartplätzen. Südstart beim Geischlägerhaus, Nordweststart beim Scheineck. Offizieller Landeplatz bei der Mautstelle. Teilweise starke Turbulenzen möglich.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Geischlägerhaus",
+      "coordinates": {
+        "lat": 47.71028,
+        "lon": 14.90972
+      },
+      "startHeight": 1765,
+      "heightDifference": 1085,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Alpine Thermik",
+      "description": "Südstart nahe Bergstation."
+    },
+    {
+      "name": "Scheineck",
+      "coordinates": {
+        "lat": 47.71250,
+        "lon": 14.90556
+      },
+      "startHeight": 1770,
+      "heightDifference": 1090,
+      "launchDirections": [
+        "N",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nordwest geeignet",
+      "description": "Nordweststart nahe Lift."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Mautstelle Hochkar",
+      "coordinates": {
+        "lat": 47.74778,
+        "lon": 14.90194
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Offizieller Landeplatz nahe Mautstation."
+    }
+  ]
+}
