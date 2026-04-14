@@ -9,8 +9,12 @@
           "name": "Hohe Wand"
         },
         {
-  "slug": "gemeindealpe",
-  "name": "Gemeindealpe"
+      "slug": "gemeindealpe",
+      "name": "Gemeindealpe"
+        },
+        {
+        "slug": "hocheck",
+        "name": "Hocheck"
         }
       ]
     },
