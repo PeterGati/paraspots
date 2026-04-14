@@ -1,0 +1,71 @@
+{
+  "region": "niederoesterreich",
+  "site": "hocheck",
+  "name": "Hocheck",
+  "coordinates": {
+    "lat": 47.99817,
+    "lon": 15.95738
+  },
+  "talHeight": 422,
+  "operator": {
+    "name": "",
+    "url": "www.hocheckwirt.at",
+    "phone": ""
+  },
+  "access": {
+    "car": false,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Hocheck Schutzhaus Parkplatz (Privatstraße / Walk & Fly)"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": false,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Furth an der Triesting oder Thenneberg zu Fuß auf Wanderwegen zum Hocheck Schutzhaus. Privatstraße, Walk & Fly Gelände.",
+  "description": "Kein offizielles Fluggebiet. Start in Waldschneise unterhalb des Sattels. Rotoranfällig bei unpassendem Wind. Geeignet für Nordlagen zum Soaren entlang des Kamms.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Nordschneise",
+      "coordinates": {
+        "lat": 47.99817,
+        "lon": 15.95738
+      },
+      "startHeight": 950,
+      "heightDifference": 528,
+      "launchDirections": [
+        "N",
+        "NO",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Rotoranfällig, Waldschneise",
+      "description": "Start unterhalb Sattel in Waldschneise. Äste und Baumstümpfe beachten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Außenlandeplätze Triestingtal",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": null,
+      "windSensitivity": "Talwind abhängig",
+      "description": "Je nach Soaring im gesamten Tal zwischen Altenmarkt und Hainfeld."
+    }
+  ]
+}
