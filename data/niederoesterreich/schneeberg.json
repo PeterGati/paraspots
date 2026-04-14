@@ -1,0 +1,114 @@
+{
+  "region": "niederoesterreich",
+  "site": "schneeberg",
+  "name": "Schneeberg",
+  "coordinates": {
+    "lat": 47.76806,
+    "lon": 15.80444
+  },
+  "talHeight": 577,
+  "operator": {
+    "name": "Schneebergbahn",
+    "url": "https://www.schneebergbahn.at",
+    "phone": "+43 2636 3661"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Parkplätze Puchberg oder Losenheim"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "W"
+  ],
+  "webcam": "http://www.schneeberg.tv/",
+  "approachDescription": "A2 Wiener Neustadt West, majd B26 Puchberg. Alternatív megközelítés Losenheim felől.",
+  "description": "Hochalpines Fluggebiet über Baumgrenze mit Startmöglichkeiten in fast alle Richtungen. Stark windanfällig und nicht für Einsteiger geeignet. Gute XC Möglichkeiten.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Klosterwappen",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2075,
+      "heightDifference": 1498,
+      "launchDirections": [
+        "O",
+        "S",
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Stark windanfällig",
+      "description": "Gipfelstart oberhalb Baumgrenze."
+    },
+    {
+      "name": "Waxriegel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1880,
+      "heightDifference": 1303,
+      "launchDirections": [
+        "O",
+        "S"
+      ],
+      "difficulty": null,
+      "windSensitivity": "Thermisch aktiv",
+      "description": "Start auf Südseite."
+    },
+    {
+      "name": "Faden Edelweißhütte",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1230,
+      "heightDifference": 653,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Start nahe Edelweißhütte."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Losenheim",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": null,
+      "windSensitivity": "Talwind",
+      "description": "Landung bei Losenheim."
+    },
+    {
+      "name": "Puchberg",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": null,
+      "windSensitivity": "Talwind",
+      "description": "Landung bei Puchberg."
+    }
+  ]
+}
