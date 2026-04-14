@@ -1,0 +1,96 @@
+{
+  "region": "niederoesterreich",
+  "site": "gemeindealpe",
+  "name": "Gemeindealpe",
+  "coordinates": {
+    "lat": 47.81111,
+    "lon": 15.24694
+  },
+  "talHeight": 789,
+  "operator": {
+    "name": "Hänge- und Paragleiterclub Mariazell",
+    "url": "https://www.gemeindealpe.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Talstation Mitterbach neben Landeplatz"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": "https://www.windfinder.com/forecast/gemeindealpe",
+  "approachDescription": "Talstation Mitterbach am Erlaufsee. Auffahrt mit Sessellift in zwei Sektionen oder zu Fuß vom Zellerrain bzw. von der Talstation.",
+  "description": "Flugberg mit Startmöglichkeiten in fast alle Richtungen. Sehr gute Soaringmöglichkeiten. Sessellift direkt zu Start und Landeplatz. Achtung Segelflugplatzbereich und Höhenbeschränkung. Jagdzeit Flugverbot 10. September bis 10. Oktober.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Richtung Mitterbach",
+      "coordinates": {
+        "lat": 47.81111,
+        "lon": 15.24694
+      },
+      "startHeight": 1626,
+      "heightDifference": 837,
+      "launchDirections": ["O","SO"],
+      "difficulty": "mittel",
+      "windSensitivity": "Lee bei Nordlagen",
+      "description": "Wiesenstart nahe Bergstation."
+    },
+    {
+      "name": "Richtung Erlaufsee",
+      "coordinates": {
+        "lat": 47.81111,
+        "lon": 15.24694
+      },
+      "startHeight": 1626,
+      "heightDifference": 837,
+      "launchDirections": ["SO","S","SW"],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Großer Hangstart."
+    },
+    {
+      "name": "Richtung Ötscher",
+      "coordinates": {
+        "lat": 47.81111,
+        "lon": 15.24694
+      },
+      "startHeight": 1626,
+      "heightDifference": 837,
+      "launchDirections": ["W","NW"],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Schmaler Start",
+      "description": "Schmaler Startplatz, steil abfallend."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Große Wiese",
+      "coordinates": {
+        "lat": 47.81111,
+        "lon": 15.29250
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind",
+      "description": "Großer Landeplatz neben Talstation."
+    }
+  ]
+}
