@@ -1,0 +1,104 @@
+{
+  "region": "niederoesterreich",
+  "site": "sonnwendstein",
+  "name": "Sonnwendstein",
+  "coordinates": {
+    "lat": 47.62940,
+    "lon": 15.86040
+  },
+  "talHeight": 720,
+  "operator": {
+    "name": "",
+    "url": "http://www.mariaschutz.at",
+    "phone": "+43 2663 8525"
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Maria Schutz Kirche / ehemalige Liftstation"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "N"
+  ],
+  "webcam": null,
+  "approachDescription": "S6 Mariaschutz Abfahrt, majd gyalog a Gebirgsjägersteig vagy Hirschenkogel felől.",
+  "description": "Hike & Fly jellegű XC hegy. Tavasszal erős termik, télen gyakran köd fölé emelkedik. Talwind erős lehet landingnél.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Erzkogel Oststart",
+      "coordinates": {
+        "lat": 47.62940,
+        "lon": 15.86040
+      },
+      "startHeight": 1504,
+      "heightDifference": 784,
+      "launchDirections": [
+        "NO",
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Lee bei Nord möglich",
+      "description": "Start unterhalb Kreuz, steiles Gelände."
+    },
+    {
+      "name": "Sender Südweststart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1500,
+      "heightDifference": 780,
+      "launchDirections": [
+        "S",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Verwirbelungen bei West",
+      "description": "Ebene Startfläche am SW Hang."
+    },
+    {
+      "name": "Nordstart Schiabfahrt",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1450,
+      "heightDifference": 730,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Schmale Schneise",
+      "description": "Steiler und schwieriger Schneisenstart."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Mariaschutz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind",
+      "description": "Geneigte Wiesen, schwer erkennbar aus der Luft."
+    }
+  ]
+}
