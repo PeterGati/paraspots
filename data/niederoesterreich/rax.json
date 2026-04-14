@@ -1,0 +1,70 @@
+{
+  "region": "niederoesterreich",
+  "site": "rax",
+  "name": "Rax",
+  "coordinates": {
+    "lat": 47.71742,
+    "lon": 15.77953
+  },
+  "talHeight": 558,
+  "operator": {
+    "name": "Raxseilbahn",
+    "url": "https://www.raxseilbahn.com",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Parkplatz Raxseilbahn Hirschwang"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S"
+  ],
+  "webcam": "https://www.raxseilbahn.com",
+  "approachDescription": "S6 Gloggnitz, majd Reichenau és Hirschwang irányába. Parkoló a Raxseilbahn mellett.",
+  "description": "Erősen termikus XC hegy. Déli fal mentén kiváló soaring. Erős talwind a Hirschwang landingnél. Föhn veszély SW helyzetben.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Bergstation",
+      "coordinates": {
+        "lat": 47.71730,
+        "lon": 15.77953
+      },
+      "startHeight": 1540,
+      "heightDifference": 982,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Starke Thermik mittags",
+      "description": "Start direkt neben Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Hirschwang",
+      "coordinates": {
+        "lat": 47.70720,
+        "lon": 15.81458
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Starker Talwind möglich",
+      "description": "Landewiese neben Museumsbahn."
+    }
+  ]
+}
