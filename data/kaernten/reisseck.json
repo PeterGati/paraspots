@@ -1,0 +1,67 @@
+{
+  "region": "kaernten",
+  "site": "Reisseck",
+  "name": "Reisseck",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 620,
+  "operator": {
+    "name": "Reisseck Bergbahnen",
+    "url": "www.flycarinthia.at",
+    "phone": "+43 (4783) 2410"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Reisseckbahn"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "A10 Knoten Spittal Richtung Lienz, rechts ins Mölltal und der Beschilderung der Reisseckbahn folgen. Mit der Standseilbahn erreichbar.",
+  "description": "Flacher Start Richtung Südost Richtung Mühldorfer Bach. Talwind macht sich häufig bis zum Start bemerkbar. Früher Start empfohlen wegen östlicher Ausrichtung. Achtung auf meist sehr starken Talwind im Mölltal. Direkt im Talort kein Landeplatz vorhanden und wegen vieler Leitungen nicht empfehlenswert.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Schoberboden",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2200,
+      "heightDifference": 1580,
+      "launchDirections": [
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind im Mölltal oft stark",
+      "description": "Wiesenstart, Turbulenzen bei Starkwind möglich."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Göriach",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": null,
+      "windSensitivity": "Talwind möglich",
+      "description": "Im Talbereich, Leitungen beachten, eingeschränkte Landemöglichkeiten."
+    }
+  ]
+}
