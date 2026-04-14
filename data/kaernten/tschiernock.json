@@ -1,0 +1,118 @@
+{
+  "region": "kaernten",
+  "site": "tschiernock",
+  "name": "Tschiernock",
+  "coordinates": {
+    "lat": 46.85917,
+    "lon": 13.55278
+  },
+  "talHeight": 800,
+  "operator": {
+    "name": "",
+    "url": "www.flycarinthia.at",
+    "phone": "+43/644/1406690"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Hansbauer Parkplatz / Mautstraße"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Treffling führt eine Mautstraße ins Skigebiet bis Hansbauer mit Parkplatz. Weitere Startplätze zu Fuß erreichbar. Teilweise Walk&Fly.",
+  "description": "Mehrere Startplätze am Tschiernock mit großem Höhenbereich. Soaring bei Südwind möglich. Walk&Fly Optionen vorhanden. Teile des Gebiets zeitweise gesperrt. Gipfelstart nach kurzer Gehzeit erreichbar. Gute Thermik- und Streckenflugmöglichkeiten.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Gipfel",
+      "coordinates": {
+        "lat": 46.86444,
+        "lon": 13.56667
+      },
+      "startHeight": 2088,
+      "heightDifference": 1288,
+      "launchDirections": ["SO","S","SW","W","NW"],
+      "difficulty": "leicht",
+      "windSensitivity": "Soaring bei Südwind",
+      "description": "Gipfelstart nach kurzer Gehzeit. Mehrere Startrichtungen möglich."
+    },
+    {
+      "name": "Hansbauer",
+      "coordinates": {
+        "lat": 46.85917,
+        "lon": 13.55278
+      },
+      "startHeight": 1680,
+      "heightDifference": 880,
+      "launchDirections": ["S"],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Hauptstartplatz nahe Mautstraße erreichbar."
+    },
+    {
+      "name": "Alexanderhütte",
+      "coordinates": {
+        "lat": 46.83611,
+        "lon": 13.60417
+      },
+      "startHeight": 1780,
+      "heightDifference": 980,
+      "launchDirections": ["S"],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur zu Fuß erreichbar",
+      "description": "Sehr schöner Startplatz, Hausbart direkt vor der Hütte."
+    },
+    {
+      "name": "Bergwunder",
+      "coordinates": {
+        "lat": 46.84694,
+        "lon": 13.53167
+      },
+      "startHeight": 1000,
+      "heightDifference": 200,
+      "launchDirections": ["S"],
+      "difficulty": "leicht",
+      "windSensitivity": "Zwischenstart",
+      "description": "Einsteiger- und Zwischenfluggelände."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Treffling",
+      "coordinates": {
+        "lat": 46.84750,
+        "lon": 13.51806
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Landewiese nördlich Treffling."
+    },
+    {
+      "name": "Waldrast",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": null,
+      "windSensitivity": "",
+      "description": "Alternativer Landeplatz laut Paragliding365."
+    }
+  ]
+}
