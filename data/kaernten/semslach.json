@@ -1,0 +1,69 @@
+{
+  "region": "kaernten",
+  "site": "semslach",
+  "name": "Semslach",
+  "coordinates": {
+    "lat": 46.94833,
+    "lon": 13.16889
+  },
+  "talHeight": 830,
+  "operator": {
+    "name": "",
+    "url": "www.flycarinthia.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Beim Gasthof Semslacherhof"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "O",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Tauernautobahn A10 Salzburg–Villach, Knoten Seeboden, B106 Richtung Lurnfeld, Obervellach. Alternativ über Lienz B107 Richtung Winklern, B106 Richtung Obervellach. Zufahrt bis Gasthof Semslacherhof.",
+  "description": "Kleines Fluggebiet im Talwindsystem des Mölltals mit sehr guten Soaringbedingungen im Bereich Himmelbauer. Start direkt oberhalb des Gasthofs. Thermik möglich, häufig längeres Soaring. Start und Landung nahe Gasthof.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Semslach",
+      "coordinates": {
+        "lat": 46.94833,
+        "lon": 13.16889
+      },
+      "startHeight": 1350,
+      "heightDifference": 520,
+      "launchDirections": [
+        "O",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem Mölltal",
+      "description": "Wiesenstart oberhalb Almgasthof, sehr gute Soaringmöglichkeiten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Gasthof Semslacherhof",
+      "coordinates": {
+        "lat": 46.93528,
+        "lon": 13.18278
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Wiese direkt beim Gasthof."
+    }
+  ]
+}
