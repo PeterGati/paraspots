@@ -1,0 +1,133 @@
+{
+  "region": "niederoesterreich",
+  "site": "muckenkogel",
+  "name": "Muckenkogel",
+  "coordinates": {
+    "lat": 48.00833,
+    "lon": 15.60556
+  },
+  "talHeight": 415,
+  "operator": {
+    "name": "Paraclub Traisental",
+    "url": "https://www.paraclubtraisental.at",
+    "phone": "+43 2762 52229"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Talstation Sessellift Lilienfeld oder Hauptlandeplatz"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SW",
+    "W",
+    "NW",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "A1 St. Pölten Süd, majd B20 Lilienfeld. Sessellift a Muckenkogelre. Gyalog is megközelíthető.",
+  "description": "Nord- bis Nordost-Flugberg mit mehreren anspruchsvollen Startplätzen. Enges Tal beim Landeplatz. Turbulenzen bei Westlagen möglich. Hauptstart Nord-Ost empfehlenswert.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Windhag",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1080,
+      "heightDifference": 665,
+      "launchDirections": ["N","NO","O"],
+      "difficulty": "mittel",
+      "windSensitivity": "Lee bei Ostwind möglich",
+      "description": "Hauptstart westlich der Bergstation."
+    },
+    {
+      "name": "Kesselboden",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1160,
+      "heightDifference": 745,
+      "launchDirections": ["O"],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Schmale Schneise",
+      "description": "Schwieriger Schneisenstart."
+    },
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1180,
+      "heightDifference": 765,
+      "launchDirections": ["O"],
+      "difficulty": null,
+      "windSensitivity": "Schmal",
+      "description": "Schneisenstart unterhalb Nordstart."
+    },
+    {
+      "name": "Weststart / Klippenstart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1220,
+      "heightDifference": 805,
+      "launchDirections": ["SW","W","NW"],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Turbulent",
+      "description": "Steiler Klippenstart."
+    },
+    {
+      "name": "Hinteralm",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1310,
+      "heightDifference": 895,
+      "launchDirections": ["S","SW"],
+      "difficulty": null,
+      "windSensitivity": "Lee bei SO",
+      "description": "Südstart nahe Gipfel."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Innerfahrafeld Schusterwirt",
+      "coordinates": {
+        "lat": 47.94583,
+        "lon": 15.59972
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind",
+      "description": "Hauptlandeplatz nahe Talstation."
+    },
+    {
+      "name": "Lilienfeld Kalkmühle",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Enges Tal",
+      "description": "Alternativer Landeplatz."
+    }
+  ]
+}
