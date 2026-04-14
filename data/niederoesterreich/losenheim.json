@@ -1,0 +1,81 @@
+{
+  "region": "niederoesterreich",
+  "site": "losenheim",
+  "name": "Losenheim",
+  "coordinates": {
+    "lat": 47.71722,
+    "lon": 15.26472
+  },
+  "talHeight": 800,
+  "operator": {
+    "name": "",
+    "url": "http://www.schneebergbahn.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Losenheim Talstation"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "A2 Wiener Neustadt West, majd Puchberg irányába. Puchberg után Losenheim Talstation.",
+  "description": "Ost főszélirány. Jó soaring 20–30 km/h között. Schneeberg lee veszély dél szélben. Több lehetséges, részben nem hivatalos landolási lehetőség.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Losenheim Start",
+      "coordinates": {
+        "lat": 47.71722,
+        "lon": 15.26472
+      },
+      "startHeight": 1222,
+      "heightDifference": 422,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Lee bei Südwind vom Schneeberg",
+      "description": "Start neben alter Bergstation, großer Hang."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Offizieller Landeplatz Losenheim",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Leicht geneigte Wiese",
+      "description": "Gegenüber Schlepplift, offizieller Landeplatz."
+    },
+    {
+      "name": "Wiese Losenheim",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind",
+      "description": "Große geduldete Landewiese."
+    }
+  ]
+}
