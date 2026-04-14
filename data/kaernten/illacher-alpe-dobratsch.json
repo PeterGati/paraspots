@@ -1,0 +1,113 @@
+{
+  "region": "kaernten",
+  "site": "villacher-alpe-dobratsch",
+  "name": "Villacher Alpe / Dobratsch",
+  "coordinates": {
+    "lat": 46.60319,
+    "lon": 13.68706
+  },
+  "talHeight": 531,
+  "operator": {
+    "name": "Naturpark Dobratsch",
+    "url": "http://www.naturparkdobratsch.info",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Rosstratte am Ende der Villacher Alpenstraße"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": "https://www.it-wms.com",
+  "approachDescription": "Autobahn Villach West Richtung Zentrum, Villacher Alpenstraße bis Rosstratte. Parkplatz vorhanden. Fußmarsch ca. 45 Minuten zum 12er Nock.",
+  "description": "Sehr thermisch aktiver Berg. Besonders an der Südwand starke Thermik. Talwind im Gailtal beachten. Für Anfänger nur bei ruhigen Bedingungen geeignet. Große XC Möglichkeiten Richtung Gailtal und Bleiberger Hochtal.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "12er Nock",
+      "coordinates": {
+        "lat": 46.60319,
+        "lon": 13.68706
+      },
+      "startHeight": 2049,
+      "heightDifference": 1518,
+      "launchDirections": ["N","NO","O","SO","S","SW"],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Starke Thermik an der Südwand",
+      "description": "Großer Wiesenstart, massenstarttauglich, 45min Fußmarsch."
+    },
+    {
+      "name": "6er Kehre",
+      "coordinates": {
+        "lat": 46.58882,
+        "lon": 13.75260
+      },
+      "startHeight": 1340,
+      "heightDifference": 809,
+      "launchDirections": ["S"],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Nur bei passendem Wind",
+      "description": "Technischer Start, Einzelstarts empfohlen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Leininger Bad Bleiberg",
+      "coordinates": {
+        "lat": 46.62582,
+        "lon": 13.65478
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind",
+      "description": "Große Wiese ohne Hindernisse."
+    },
+    {
+      "name": "Kaserin",
+      "coordinates": {
+        "lat": 46.59631,
+        "lon": 13.74750
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch aktiv",
+      "description": "Baumstümpfe beachten."
+    },
+    {
+      "name": "Autobahnraststätte Hermagor",
+      "coordinates": {
+        "lat": 46.57313,
+        "lon": 13.69727
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind",
+      "description": "Sandbank neben Gail."
+    },
+    {
+      "name": "Nötsch",
+      "coordinates": {
+        "lat": 46.58676,
+        "lon": 13.62758
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Wechselnder Talwind",
+      "description": "Große 7ha Landewiese."
+    }
+  ]
+}
