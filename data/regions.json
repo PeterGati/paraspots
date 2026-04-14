@@ -35,6 +35,10 @@
         {
         "slug": "rax",
         "name": "Rax"
+        },
+        {
+        "slug": "schneeberg",
+        "name": "Schneeberg"
         }
       ]
     },
