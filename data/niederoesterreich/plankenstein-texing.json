@@ -1,0 +1,69 @@
+{
+  "region": "niederoesterreich",
+  "site": "plankenstein-texing",
+  "name": "Plankenstein (Texing)",
+  "coordinates": {
+    "lat": 48.02250,
+    "lon": 15.28944
+  },
+  "talHeight": 400,
+  "operator": {
+    "name": "Flugschule Kilb",
+    "url": "https://www.flugschule-kilb.at",
+    "phone": "+43 2748 60015"
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei Texing / Plankenstein"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "O"
+  ],
+  "webcam": null,
+  "approachDescription": "Zufahrt über Texing Richtung Plankenstein. Kontakt mit Flugschule Kilb empfohlen.",
+  "description": "Schulungsgelände der Flugschule Kilb. Gute Soaringbedingungen bei starkem Ostwind. Toplanding möglich. Wind stark von Donautalströmung abhängig.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Habetsberg",
+      "coordinates": {
+        "lat": 48.02222,
+        "lon": 15.28889
+      },
+      "startHeight": 735,
+      "heightDifference": 335,
+      "launchDirections": [
+        "N",
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Donautalwind abhängig",
+      "description": "Flacher Wiesenstart, Toplanding möglich."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Texing Umgebung",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind",
+      "description": "Landung in Wiesen im Tal möglich."
+    }
+  ]
+}
