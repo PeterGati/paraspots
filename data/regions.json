@@ -15,6 +15,10 @@
         {
         "slug": "hocheck",
         "name": "Hocheck"
+        },
+        {
+        "slug": "hochkar",
+        "name": "Hochkar"
         }
       ]
     },
