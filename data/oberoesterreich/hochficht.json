@@ -1,0 +1,93 @@
+{
+  "region": "oberoesterreich",
+  "site": "Hochficht",
+  "name": "Hochficht",
+  "coordinates": {
+    "lat": 48.73861,
+    "lon": 13.91556
+  },
+  "talHeight": 650,
+  "operator": {
+    "name": "Hochficht Flyers",
+    "url": "www.hochfichtflyers.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Skigebiet Hochficht (L2)"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Zufahrt zum Skigebiet Hochficht (Parkplatz L2). Von dort zu Fuß entlang des Nordwaldkammwegs Richtung Stinglfelsen zum Startplatz.",
+  "description": "Anspruchsvolles Fluggebiet in sensibler Naturregion. Nur geduldet, daher Regeln strikt einhalten. Gute Thermik und XC-Potenzial im Mühlviertel. Vorsicht bei Nord- und Ostwind (starke Turbulenzen) sowie bei Süd/Südwest Leebedingungen. Baumlandungen durch geringe Geländeabstände möglich.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Hochficht Startplatz",
+      "coordinates": {
+        "lat": 48.73861,
+        "lon": 13.91556
+      },
+      "startHeight": 1320,
+      "heightDifference": 670,
+      "launchDirections": [
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nicht bei Nord- oder Ostwind starten, Leebedingungen bei Süd/SW",
+      "description": "Start ca. 100 m unterhalb der Bergstation neben der Seilbahn."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Pfaffetschlag",
+      "coordinates": {
+        "lat": 48.70750,
+        "lon": 13.89889
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Relativ ruhig",
+      "description": "Empfohlener Hauptlandeplatz."
+    },
+    {
+      "name": "Parkplatz Hochficht",
+      "coordinates": {
+        "lat": 48.73722,
+        "lon": 13.89917
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Sehr turbulent durch Windkanalisation",
+      "description": "Nur bedingt geeignet, starke Turbulenzen möglich."
+    },
+    {
+      "name": "Rehberg",
+      "coordinates": {
+        "lat": 48.74194,
+        "lon": 13.89611
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Ruhiger als Parkplatz",
+      "description": "Alternative Landewiese."
+    }
+  ]
+}
