@@ -1,0 +1,71 @@
+{
+  "region": "oberoesterreich",
+  "site": "Sender Kleinerberg",
+  "name": "Sender Kleinerberg",
+  "coordinates": {
+    "lat": 47.73361,
+    "lon": 14.36694
+  },
+  "talHeight": 614,
+  "operator": {
+    "name": "HPGC Garstnertal",
+    "url": "www.hpgc-garstnertal.eu/",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Transport meist über Clubbus oder organisiert"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "S",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Zugang meist organisiert über Flugschule oder Club (Bus oder Privatfahrzeug).",
+  "description": "Sehr gutes Streckenfluggebiet bei Windischgarsten mit solider Infrastruktur. Startplätze in mehrere Richtungen ermöglichen flexible Flugplanung. Achtung: An thermisch aktiven Tagen kann sich am frühen Nachmittag Nordwind am Startplatz durchsetzen, was das Starten gefährlich macht.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Sender Startplatz",
+      "coordinates": {
+        "lat": 47.73361,
+        "lon": 14.36694
+      },
+      "startHeight": 1285,
+      "heightDifference": 671,
+      "launchDirections": [
+        "O",
+        "S",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nordwind kann mittags einsetzen",
+      "description": "Mehrere Startmöglichkeiten rund um den Sender, flexibel je nach Windrichtung."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Villa Sonnwend",
+      "coordinates": {
+        "lat": 47.73583,
+        "lon": 14.32472
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind möglich",
+      "description": "Offizieller Landeplatz nahe Windischgarsten."
+    }
+  ]
+}
