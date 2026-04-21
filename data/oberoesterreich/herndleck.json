@@ -1,0 +1,92 @@
+{
+  "region": "oberoesterreich",
+  "site": "Herndleck",
+  "name": "Herndleck",
+  "coordinates": {
+    "lat": 47.92806,
+    "lon": 14.32833
+  },
+  "talHeight": 343,
+  "operator": {
+    "name": "",
+    "url": "www.ternbergblick.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Sammelauffahrt empfohlen, Treffpunkt Clubgasthof Kratochwil"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Zufahrt über Ternberg, Sammelauffahrt wird empfohlen. Startplätze sind in wenigen Minuten erreichbar.",
+  "description": "Unscheinbarer bewaldeter Bergrücken mit überraschend gutem XC-Potenzial in Richtung Süden und Westen. Große, einfache Start- und Landeplätze. Achtung vor Verwirbelungen im Bereich des Rückens vor dem Bäckengraben, besonders bei West- bis Nordwind. Gebührenpflicht und lokale Regeln beachten.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Herndleck Gipfelstart",
+      "coordinates": {
+        "lat": 47.92806,
+        "lon": 14.32833
+      },
+      "startHeight": 1026,
+      "heightDifference": 683,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermik und Rücken beachten",
+      "description": "Hauptstartplatz mit guter Höhendifferenz und XC-Potenzial."
+    },
+    {
+      "name": "Brandkogel Start",
+      "coordinates": {
+        "lat": 47.93722,
+        "lon": 14.33333
+      },
+      "startHeight": 825,
+      "heightDifference": 482,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO",
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Rotorgefahr bei Westwind",
+      "description": "Alternativer Startplatz mit geringerer Höhendifferenz."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Westliches Ennsufer",
+      "coordinates": {
+        "lat": 47.93500,
+        "lon": 14.35028
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Landeplatz nahe Ennsufer bei Ternberg."
+    }
+  ]
+}
