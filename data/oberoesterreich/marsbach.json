@@ -1,0 +1,81 @@
+{
+  "region": "oberoesterreich",
+  "site": "Marsbach",
+  "name": "Marsbach",
+  "coordinates": {
+    "lat": 48.46306,
+    "lon": 13.81694
+  },
+  "talHeight": 290,
+  "operator": {
+    "name": "GSC Marsbach",
+    "url": "https://gsc-marsbach.jimdo.com/",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Freizell (Zufahrt zum Startplatz organisiert durch Vereinsmitglieder)"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Zufahrt über Freizell, lokale Organisation beachten. Tagesmitgliedschaft erforderlich.",
+  "description": "Kleines, aber leistungsfähiges Fluggebiet im Donautal mit starkem Thermikpotenzial und guten Soaringbedingungen ab ca. 15 km/h Wind. XC-Flüge entlang der Donau sind üblich, bei guten Bedingungen auch sehr weite Strecken möglich. Besondere Aufmerksamkeit erfordert das \"Loch\" (Hausbart), welches bei bestimmten Windlagen im Lee liegen kann. Lokale Regeln und Gebührenpflicht beachten.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Marsbach Startplatz",
+      "coordinates": {
+        "lat": 48.46250,
+        "lon": 13.81694
+      },
+      "startHeight": 560,
+      "heightDifference": 270,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Soaring ab ca. 15 km/h möglich",
+      "description": "Nicht sehr steiler Startplatz, geeignet für Vorwärts- und Rückwärtsstart."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz 1",
+      "coordinates": {
+        "lat": 48.46000,
+        "lon": 13.81361
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Beengte Verhältnisse, Talwind beachten",
+      "description": "Hauptlandeplatz nahe Donau, schmal und anspruchsvoll."
+    },
+    {
+      "name": "Landeplatz 2",
+      "coordinates": {
+        "lat": 48.46050,
+        "lon": 13.82000
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Wind und Gelände beachten",
+      "description": "Alternativer Landeplatz Richtung Osten beim Campingplatz."
+    }
+  ]
+}
