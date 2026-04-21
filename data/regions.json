@@ -127,6 +127,14 @@
           "name": "Goldeck"
         }
       ]
-    }
+    },
+     {
+      "slug": "oberoesterreich",
+      "name": "Oberösterreich",
+      "sites": [
+        {
+        "slug": "brandkogel",
+        "name": "Brandkogel"
+        }
   ]
 }
