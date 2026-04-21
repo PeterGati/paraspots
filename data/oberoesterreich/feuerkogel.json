@@ -1,0 +1,129 @@
+{
+  "region": "oberoesterreich",
+  "site": "Feuerkogel",
+  "name": "Feuerkogel",
+  "coordinates": {
+    "lat": 47.81583,
+    "lon": 13.72250
+  },
+  "talHeight": 440,
+  "operator": {
+    "name": "",
+    "url": "www.flyingswans.at",
+    "phone": ""
+  },
+  "access": {
+    "car": false,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Ebensee, begrenzte Parkmöglichkeiten nahe Landeplatz"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "O",
+    "SO"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrt mit der Seilbahn von Ebensee. Startplätze befinden sich nahe der Bergstation oder sind in wenigen Minuten zu Fuß erreichbar.",
+  "description": "Sehr vielseitiges Fluggebiet am Traunsee mit starkem XC-Potenzial und guten Soaringbedingungen. Besonders bei Nordlagen kann am Haslergupf großflächig und ruhig gesoart werden. Der Berg ist jedoch kein Starkwindberg – bereits bei mäßigem Wind sind starke Turbulenzen möglich. Vorsicht vor Leewalzen und scheinbaren Aufwinden. Nordstart ist sehr anspruchsvoll und nur für erfahrene Piloten geeignet.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Bergstation Sessellift",
+      "coordinates": {
+        "lat": 47.81583,
+        "lon": 13.72250
+      },
+      "startHeight": 1600,
+      "heightDifference": 1160,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei ruhigen Bedingungen",
+      "description": "Start nahe der Bergstation, gut erreichbar."
+    },
+    {
+      "name": "Nordstart",
+      "coordinates": {
+        "lat": 47.81650,
+        "lon": 13.72000
+      },
+      "startHeight": 1650,
+      "heightDifference": 1210,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Sehr empfindlich, nur für erfahrene Piloten",
+      "description": "Klippenstart, sehr anspruchsvoll."
+    },
+    {
+      "name": "Drachen-Rampe",
+      "coordinates": {
+        "lat": 47.81620,
+        "lon": 13.72100
+      },
+      "startHeight": 1630,
+      "heightDifference": 1190,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Empfindlich bei Wind",
+      "description": "Rampe für Drachenflieger, auch für erfahrene Piloten."
+    },
+    {
+      "name": "Bucheggerkurve",
+      "coordinates": {
+        "lat": 47.81200,
+        "lon": 13.73000
+      },
+      "startHeight": 1300,
+      "heightDifference": 860,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nicht bei Westwind (Lee)",
+      "description": "Wiesenstart entlang der Skiabfahrt."
+    },
+    {
+      "name": "Alpenvereinshütte",
+      "coordinates": {
+        "lat": 47.81400,
+        "lon": 13.72800
+      },
+      "startHeight": 1500,
+      "heightDifference": 1060,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Ruhige Bedingungen erforderlich",
+      "description": "Startplatz östlich der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Ebensee Landeplatz",
+      "coordinates": {
+        "lat": 47.80183,
+        "lon": 13.78556
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Nordwind oft stark",
+      "description": "Große Landewiese nahe Ebensee, Windsack vorhanden."
+    }
+  ]
+}
