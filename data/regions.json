@@ -137,8 +137,12 @@
         "name": "Brandkogel"
         },
         {
-      "slug": "burg-altpernstein-hirschwaldstein",
-      "name": "Burg Altpernstein - Hirschwaldstein"
+        "slug": "burg-altpernstein-hirschwaldstein",
+        "name": "Burg Altpernstein - Hirschwaldstein"
+        },
+        {
+        "slug": "feuerkogel",
+        "name": "Feuerkogel"
         }
       ]
     }
