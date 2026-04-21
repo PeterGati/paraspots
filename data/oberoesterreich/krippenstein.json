@@ -1,0 +1,89 @@
+{
+  "region": "oberoesterreich",
+  "site": "Krippenstein",
+  "name": "Krippenstein",
+  "coordinates": {
+    "lat": 47.52447,
+    "lon": 13.69170
+  },
+  "talHeight": 510,
+  "operator": {
+    "name": "",
+    "url": "www.dachstein-salzkammergut.com",
+    "phone": "+43 6131 27316"
+  },
+  "access": {
+    "car": false,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Dachsteinbahn Obertraun"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "W",
+    "NW",
+    "NO",
+    "O",
+    "SO"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrt mit der Dachsteinbahn von Obertraun, danach kurzer Fußweg (ca. 5–10 Minuten) zu den Startplätzen.",
+  "description": "Spektakuläres Hochgebirgs-Fluggebiet über dem Hallstätter See, ideal für Technik- und Sicherheitstraining sowie ausgedehnte Streckenflüge. Bei Ostwind liegt der Berg im Lee, zudem entsteht an thermischen Tagen oft starker Seewind. Vorsicht vor Seilbahnkabeln und Stromleitungen im Landeanflug.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Gipfelstartplatz",
+      "coordinates": {
+        "lat": 47.52447,
+        "lon": 13.69170
+      },
+      "startHeight": 2109,
+      "heightDifference": 1599,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Ostwind Lee, Seewind beachten",
+      "description": "Großer Startplatz nahe Gipfel, gut erreichbar."
+    },
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.52500,
+        "lon": 13.69500
+      },
+      "startHeight": 2070,
+      "heightDifference": 1560,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Empfindlich bei Wind",
+      "description": "Technisch anspruchsvoller Startplatz für Ostlagen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Obertraun Landeplatz",
+      "coordinates": {
+        "lat": 47.55760,
+        "lon": 13.68112
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Seewind und Leitungen beachten",
+      "description": "Große Wiese nahe Sportplatz, nicht auf dem Fußballfeld landen."
+    }
+  ]
+}
