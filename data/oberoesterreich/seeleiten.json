@@ -1,0 +1,69 @@
+{
+  "region": "oberoesterreich",
+  "site": "Seeleiten",
+  "name": "Seeleiten",
+  "coordinates": {
+    "lat": 47.86278,
+    "lon": 13.57333
+  },
+  "talHeight": 472,
+  "operator": {
+    "name": "",
+    "url": "www.hotel-bramosen.at",
+    "phone": ""
+  },
+  "access": {
+    "car": false,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Gasthof Hotel Bramosen (Alexenau)"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Start beim Gasthof Bramosen, ca. 45 Minuten Fußmarsch über steilen Wanderweg zum kleinen Startplatz im Wald.",
+  "description": "Kleines Fluggebiet über dem Attersee mit sehr schönem Panorama und ruhigen Soaringbedingungen. Startplatz schwer zu finden, klein und technisch anspruchsvoll. Start nur bei Aufwind sinnvoll. Ideal für ruhige Flüge, kein klassisches XC-Gebiet.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Seeleiten Startplatz",
+      "coordinates": {
+        "lat": 47.86278,
+        "lon": 13.57333
+      },
+      "startHeight": 888,
+      "heightDifference": 416,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei Aufwind startbar",
+      "description": "Kleiner Startplatz in Waldschneise, schwer zu finden und technisch anspruchsvoll."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Alexenau Übungsgelände",
+      "coordinates": {
+        "lat": 47.87417,
+        "lon": 13.56944
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind gering",
+      "description": "Landeplatz beim Gasthof Bramosen, direkt am Übungsgelände."
+    }
+  ]
+}
