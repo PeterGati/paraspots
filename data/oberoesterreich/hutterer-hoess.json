@@ -1,0 +1,100 @@
+{
+  "region": "oberoesterreich",
+  "site": "Hutterer Hoess",
+  "name": "Hutterer Hoess",
+  "coordinates": {
+    "lat": 47.66472,
+    "lon": 14.16972
+  },
+  "talHeight": 660,
+  "operator": {
+    "name": "",
+    "url": "www.hiwu.at",
+    "phone": "+43 7564 5275"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Mautstraße bis Mittelstation oder Talstation Hinterstoder"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "W",
+    "N",
+    "NO"
+  ],
+  "webcam": "https://www.hiwu.at/hinterstoder/de/6/04-2789491/impressionen/live-cam_bergstation_hoessexpress.html",
+  "approachDescription": "Mit der Seilbahn oder über die Mautstraße bis zur Mittelstation, danach ca. 90 Minuten zu Fuß zu den Startplätzen.",
+  "description": "Sehr leistungsfähiges Fluggebiet mit großem XC-Potenzial Richtung Windischgarsten, Ennstal, Kremstal und Almtal. Starke Thermik möglich. Achtung auf Flugverbotszonen im Weißenbachtal (Wildschutz). Talwind kann sehr stark werden, besonders an thermischen Tagen. Vorsicht bei Ost-, Südwind und Föhn. Leebedingungen und Rückenwind am Startplatz möglich.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Hauptstartplatz West",
+      "coordinates": {
+        "lat": 47.66472,
+        "lon": 14.16972
+      },
+      "startHeight": 1798,
+      "heightDifference": 1138,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nachmittags oft Rückenwind möglich",
+      "description": "Start ca. 10 Minuten unterhalb der Bergstation entlang der Piste."
+    },
+    {
+      "name": "Winterstartplatz",
+      "coordinates": {
+        "lat": 47.66722,
+        "lon": 14.17583
+      },
+      "startHeight": 1858,
+      "heightDifference": 1198,
+      "launchDirections": [
+        "N",
+        "NO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Achtung auf Skifahrer",
+      "description": "Direkt bei der Bergstation, hauptsächlich im Winter genutzt."
+    },
+    {
+      "name": "Nordstartplatz",
+      "coordinates": {
+        "lat": 47.66889,
+        "lon": 14.17639
+      },
+      "startHeight": 1750,
+      "heightDifference": 1090,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Windanfällig",
+      "description": "Alternative Startmöglichkeit bei Nordwind."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Hinterstoder Landeplatz",
+      "coordinates": {
+        "lat": 47.69883,
+        "lon": 14.15145
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind kann stark werden",
+      "description": "Große Landewiese am westlichen Ortsrand, Windsack vorhanden."
+    }
+  ]
+}
