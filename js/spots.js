@@ -140,6 +140,19 @@ async function loadAllSpots() {
     } catch (err) {
         console.error("regions.json konnte nicht geladen werden:", err);
     }
+    // ======================
+// SORT CARDS (A-Z)
+// ======================
+
+const cards = Array.from(container.children);
+
+cards.sort((a, b) => {
+    const nameA = a.querySelector("h3").textContent.trim();
+    const nameB = b.querySelector("h3").textContent.trim();
+    return nameA.localeCompare(nameB, 'de');
+});
+
+cards.forEach(card => container.appendChild(card));
 
     // ======================
     // RESTORE STATE (FIX)
