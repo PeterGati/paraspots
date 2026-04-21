@@ -1,0 +1,99 @@
+{
+  "region": "oberoesterreich",
+  "site": "Brandkogel",
+  "name": "Brandkogel",
+  "coordinates": {
+    "lat": 47.93516,
+    "lon": 14.34997
+  },
+  "talHeight": 375,
+  "operator": {
+    "name": "Flugsport Ternberg",
+    "url": "www.flugsport.com",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz nahe Startplatz, ca. 5 Minuten Fußweg"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Startplätze sind vom Parkplatz in wenigen Minuten zu Fuß erreichbar.",
+  "description": "Ein eher unspektakulär wirkender bewaldeter Bergrücken südwestlich von Ternberg, der dennoch überraschend gute Streckenflüge in Richtung Süden und Westen ermöglicht. Große, einfache Start- und Landeplätze. Vorsicht bei Nord- und Nordwestwind am Weststartplatz: Verwirbelungen am Rücken vor dem Bäckengraben können gefährlich sein.",
+  "siteRatings": {
+    "overallRating": 2.5,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Oststartplatz",
+      "coordinates": {
+        "lat": 47.93516,
+        "lon": 14.34997
+      },
+      "startHeight": 820,
+      "heightDifference": 445,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch ab Mittag möglich",
+      "description": "Sehr einfacher Startplatz mit großzügiger Fläche."
+    },
+    {
+      "name": "Weststartplatz",
+      "coordinates": {
+        "lat": 47.93516,
+        "lon": 14.34997
+      },
+      "startHeight": 820,
+      "heightDifference": 445,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Rotor bei Nord- und Nordwestwind",
+      "description": "Start nur bei leichtem West- bis Südwestwind empfehlenswert."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Ternberg",
+      "coordinates": {
+        "lat": 47.93516,
+        "lon": 14.34997
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Schwaches Talwindsystem",
+      "description": "Große, einfache Landewiese nahe Ternberg."
+    },
+    {
+      "name": "Landeplatz Übungsgelände",
+      "coordinates": {
+        "lat": 47.94861,
+        "lon": 14.33278
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Ruhige Bedingungen",
+      "description": "Sehr große Landewiese der Flugschule."
+    }
+  ]
+}
