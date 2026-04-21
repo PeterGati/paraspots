@@ -1,0 +1,112 @@
+{
+  "region": "oberoesterreich",
+  "site": "Schoberstein",
+  "name": "Schoberstein",
+  "coordinates": {
+    "lat": 47.90550,
+    "lon": 14.32889
+  },
+  "talHeight": 370,
+  "operator": {
+    "name": "",
+    "url": "www.flugsport.com",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz beim Gasthaus Klausriegler oder Zugang über Molln"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "NO",
+    "O"
+  ],
+  "webcam": null,
+  "approachDescription": "Aufstieg ca. 1–1,5 Stunden von Ternberg oder Molln. Zugang über markierte Wanderwege zum Schobersteinhaus und weiter zu den Startplätzen.",
+  "description": "Reiner Walk & Fly Berg mit sehr guter Thermikentwicklung. Anspruchsvoll durch starke Thermik und schwierige Toplandebedingungen. Gute XC-Möglichkeiten Richtung Süden und Westen. Startmöglichkeiten in mehrere Richtungen, jedoch windabhängig. Achtung auf Tageszeit und Thermikstärke.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Südost-Startplatz",
+      "coordinates": {
+        "lat": 47.90472,
+        "lon": 14.32500
+      },
+      "startHeight": 1237,
+      "heightDifference": 867,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Starke Thermik möglich",
+      "description": "Hauptstartplatz mit guter Exposition."
+    },
+    {
+      "name": "Süd-Startplatz",
+      "coordinates": {
+        "lat": 47.90528,
+        "lon": 14.32806
+      },
+      "startHeight": 1231,
+      "heightDifference": 861,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch anspruchsvoll",
+      "description": "Start mit stärkerer thermischer Aktivität."
+    },
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.90528,
+        "lon": 14.32861
+      },
+      "startHeight": 1225,
+      "heightDifference": 855,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "NO nur bei schwachem Wind",
+      "description": "Sehr einfacher Startplatz für mehrere Windrichtungen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Ternberg",
+      "coordinates": {
+        "lat": 47.93433,
+        "lon": 14.35013
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Großer, einfacher Landeplatz im Tal."
+    },
+    {
+      "name": "Klausriegler",
+      "coordinates": {
+        "lat": 47.91270,
+        "lon": 14.34411
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Gelände beachten",
+      "description": "Alternative Landemöglichkeit nahe Gasthaus."
+    }
+  ]
+}
