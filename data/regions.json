@@ -171,6 +171,10 @@
         {
           "slug": "marsbach",
           "name": "Marsbach"
+        },
+        {
+        "slug": "schoberstein",
+        "name": "Schoberstein"
         }
       ]
     }
