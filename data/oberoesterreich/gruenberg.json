@@ -1,0 +1,69 @@
+{
+  "region": "oberoesterreich",
+  "site": "Grünberg",
+  "name": "Grünberg",
+  "coordinates": {
+    "lat": 47.89821,
+    "lon": 13.81778
+  },
+  "talHeight": 430,
+  "operator": {
+    "name": "Flying Swans",
+    "url": "www.flyingswans.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze bei der Grünbergseilbahn oder Mülibankerl"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrt mit der Grünbergseilbahn oder ca. 40–60 Minuten Fußmarsch von den Parkplätzen zur Startstelle.",
+  "description": "Schön gelegenes Fluggebiet am Traunsee mit Blick auf den Traunstein. Gut für Soaring und Thermik bei Westlagen. Start ist technisch durch kurze Startfläche und mögliche Rückenwind-Situationen anspruchsvoll. Landung ebenfalls anspruchsvoll, daher für Anfänger weniger geeignet. Achtung auf Seilbahnkabel und Talwindsystem.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Grünberg Startplatz",
+      "coordinates": {
+        "lat": 47.89821,
+        "lon": 13.81778
+      },
+      "startHeight": 980,
+      "heightDifference": 550,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei Westlagen, Talwind beachten",
+      "description": "Start in einer Waldschneise nahe dem Sendemast."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Talstation Grünberg",
+      "coordinates": {
+        "lat": 47.89800,
+        "lon": 13.84000
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind kann stark sein",
+      "description": "Landeplatz nahe der Talstation, Windsack vorhanden."
+    }
+  ]
+}
