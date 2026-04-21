@@ -1,0 +1,100 @@
+{
+  "region": "oberoesterreich",
+  "site": "Burg Altpernstein - Hirschwaldstein",
+  "name": "Burg Altpernstein - Hirschwaldstein",
+  "coordinates": {
+    "lat": 47.91417,
+    "lon": 14.21111
+  },
+  "talHeight": 500,
+  "operator": {
+    "name": "Skybird Kremstal",
+    "url": "www.skybird-kremstal.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Gasthaus Veits / Reitergut Weißenhof als zentrale Anlaufstelle"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "W",
+    "NW",
+    "S"
+  ],
+  "webcam": "http://www.bergfex.at/sommer/micheldorf-in-oberoesterreich/webcams/c9685/",
+  "approachDescription": "Ausgangspunkt ist das Gasthaus Veits. Von dort ca. 30 Minuten zum Burgstartplatz bzw. 50 Minuten zum Hirschwaldstein. Alternativ von der Burg Altpernstein etwa 20 Minuten Fußweg zum Startplatz Hirschwaldstein.",
+  "description": "Sehr leistungsfähiges Fluggebiet im Kremstal mit großem XC-Potenzial. Lokalflüge von mehreren Stunden sind üblich, ebenso anspruchsvolle Streckenflüge bis Dachstein, Salzburg oder Mariazell. Achtung auf Segelflugverkehr vom Flugplatz Micheldorf. Bei Südwind ist Fliegen nicht möglich. Zentrale Organisation über den Weißenhof, inklusive Starttaxi-Regelung und Gebührenpflicht für Gastflieger.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Burgstartplatz",
+      "coordinates": {
+        "lat": 47.91417,
+        "lon": 14.21111
+      },
+      "startHeight": 800,
+      "heightDifference": 300,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Hauptwindrichtung West bis Nordwest",
+      "description": "Start nahe der Burg Altpernstein, gut erreichbar und häufig genutzt."
+    },
+    {
+      "name": "Hirschwaldstein",
+      "coordinates": {
+        "lat": 47.92000,
+        "lon": 14.22000
+      },
+      "startHeight": 960,
+      "heightDifference": 460,
+      "launchDirections": [
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Taxizugang an Wochenenden, Wind beachten",
+      "description": "Höher gelegener Startplatz mit größerem Höhenunterschied und XC-Potenzial."
+    },
+    {
+      "name": "Südstartplatz",
+      "coordinates": {
+        "lat": 47.91417,
+        "lon": 14.21111
+      },
+      "startHeight": 800,
+      "heightDifference": 300,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei geeigneten Südbedingungen",
+      "description": "Seltener genutzter Startplatz für spezielle Bedingungen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Veits",
+      "coordinates": {
+        "lat": 47.90000,
+        "lon": 14.21000
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem möglich",
+      "description": "Große Landewiese beim Reitergut Weißenhof, zentrale Infrastruktur."
+    }
+  ]
+}
