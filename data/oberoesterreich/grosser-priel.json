@@ -1,0 +1,71 @@
+{
+  "region": "oberoesterreich",
+  "site": "Großer Priel",
+  "name": "Großer Priel",
+  "coordinates": {
+    "lat": 47.70944,
+    "lon": 14.06528
+  },
+  "talHeight": 590,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Seilbahn Hinterstoder oder beim Johannisgut (kostenpflichtig)"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Hinterstoder Richtung Johannisgut, dann Wanderweg (201) zum Prielschutzhaus (ca. 2,5h). Von dort weitere 300–500 m Aufstieg zu den Startplätzen.",
+  "description": "Sehr gutes Streckenfluggebiet mit großem XC-Potenzial in Richtung Windischgarsten, Ennstal, Kremstal oder Almtal. Teilweise starke Thermik. Weite Hänge mit Wiesen und felsigen Abschnitten. Achtung auf Materialseilbahn zum Prielschutzhaus.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Priel O/SO/S",
+      "coordinates": {
+        "lat": 47.70944,
+        "lon": 14.06528
+      },
+      "startHeight": 1700,
+      "heightDifference": 1110,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch, Gelände beachten",
+      "description": "Großzügige Startmöglichkeiten oberhalb des Prielschutzhauses."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Hinterstoder",
+      "coordinates": {
+        "lat": 47.69889,
+        "lon": 14.15139
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem möglich",
+      "description": "Landeplatz im Tal bei Hinterstoder."
+    }
+  ]
+}
