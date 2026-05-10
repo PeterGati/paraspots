@@ -1,0 +1,76 @@
+{
+  "region": "tirol",
+  "site": "goldried-skigebiet-grossglockner-resort",
+  "name": "Goldried (Skigebiet Großglockner Resort)",
+
+  "coordinates": {
+    "lat": 47.01056,
+    "lon": 12.53083
+  },
+
+  "talHeight": 900,
+
+  "operator": {
+    "name": "Goldried Bergbahnen",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Goldriedbahn Matrei"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [],
+
+  "webcam": null,
+
+  "approachDescription": "Mit der Goldriedbahn zur Bergstation fahren. Der Startplatz befindet sich unterhalb des kleinen Schleppliftes etwa 200 Meter talabwärts entlang der Skipiste.",
+
+  "description": "Fluggebiet oberhalb von Matrei in Osttirol im Großglockner Resort. Der Startplatz liegt direkt auf der Skipiste. Im Winter besondere Vorsicht wegen Skifahrern. Im Sommer entwickelt sich ab Mittag häufig starker Talwind.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Goldried Bergstation",
+      "coordinates": {
+        "lat": 47.01056,
+        "lon": 12.53083
+      },
+      "startHeight": 2100,
+      "heightDifference": 1200,
+      "launchDirections": [],
+      "difficulty": null,
+      "windSensitivity": "Starker Talwind ab Mittag",
+      "description": "Startplatz direkt auf der Skipiste unterhalb des kleinen Schlepplifts."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Matrei Goldried Talstation",
+      "coordinates": {
+        "lat": 46.99639,
+        "lon": 12.53694
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind beachten",
+      "description": "Landewiese bei der Talstation, markiert durch eine Windhose an einer Hütte."
+    }
+  ]
+}
