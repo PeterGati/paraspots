@@ -1,0 +1,101 @@
+{
+  "region": "tirol",
+  "site": "hahnenkamm-reutte",
+  "name": "Hahnenkamm - Reutte",
+
+  "coordinates": {
+    "lat": 47.46667,
+    "lon": 10.65000
+  },
+
+  "talHeight": 900,
+
+  "operator": {
+    "name": "Reuttener Bergbahn AG",
+    "url": "https://www.reuttener-seilbahnen.at",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze an der Talstation vorhanden"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "O",
+    "SO",
+    "SW",
+    "W"
+  ],
+
+  "webcam": "https://www.reuttener-seilbahnen.at",
+
+  "approachDescription": "Über die A7 via Memmingen, Kempten und Füssen nach Reutte und weiter Richtung Lechtal bis Höfen. Dort den Schildern zur Bergbahn Hahnenkamm folgen. Von der Bergstation führen Wanderwege zum Ost- und Weststart.",
+
+  "description": "Vielseitiges Fluggebiet im Talkessel von Reutte mit Streckenflugmöglichkeiten Richtung Lechtal, Zugspitze oder Tannheimer Tal. Vorherrschend sind Westlagen mit teils kräftiger Leethermik und turbulenten Talwindsystemen. Vorsicht bei Landungen nahe Gaicht wegen Wildschutzgebiet. Im Frühjahr und Sommer mittags oft turbulent. Im Winter eingeschränkte Startmöglichkeiten.",
+
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.46667,
+        "lon": 10.65000
+      },
+      "startHeight": 1805,
+      "heightDifference": 905,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind und Leethermik",
+      "description": "Leichter Startplatz nahe der Bergstation. Im Sommer Start von der Skipiste."
+    },
+
+    {
+      "name": "Weststart",
+      "coordinates": {
+        "lat": 47.46861,
+        "lon": 10.63972
+      },
+      "startHeight": 1930,
+      "heightDifference": 1030,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei starkem Westwind empfehlenswert",
+      "description": "Weststart Richtung Tannheimer Tal. Etwa 25 Minuten Fußmarsch von der Bergstation."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Höfen",
+      "coordinates": {
+        "lat": 47.47194,
+        "lon": 10.67083
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Mittags oft turbulent",
+      "description": "Offizieller Landeplatz etwa 400 Meter von der Talstation entfernt. Zufahrt mit PKW verboten."
+    }
+  ]
+}
