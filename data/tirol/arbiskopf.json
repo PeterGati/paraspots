@@ -1,0 +1,176 @@
+{
+  "region": "tirol",
+  "site": "arbiskopf",
+  "name": "Arbiskopf",
+
+  "coordinates": {
+    "lat": 47.21972,
+    "lon": 11.82639
+  },
+
+  "talHeight": 609,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": true,
+    "parking": "Parkplatz Arbiskopf / Zillertaler Höhenstraße"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Via Inntal Wörgl–Innsbruck, bei Jenbach/Strass auf die B169 ins Zillertal Richtung Mayrhofen bis Hippach. Von dort rechts nach Schwendau Richtung Talstation Horbergbahn und Mühlbacher Hof. Auffahrt per Taxi, Linienbus Schwendberg-Linie oder eigenem PKW. Ab der Sportalm mautpflichtig.",
+
+  "description": "Hier beginnt für viele der Einstieg in den 'Pinzgauer Spaziergang'. Das komfortable Revier besticht durch den immensen Höhenunterschied über dem Zillertal. Die Infrastruktur ist vorzüglich und es gibt diverse Landeplätze. Kräftige Aufwinde an den Südflanken im Frühjahr. Die Ostseite eignet sich besonders für Einsteiger mit stabileren Bedingungen. XC-Flüge Richtung Norden, Kraxentrager, Fügen oder Rastkogel möglich. Achtung auf starken Talwind aus dem Inntal, mögliche Düseneffekte bei Mayrhofen sowie hohe Föhnanfälligkeit des Zillertals.",
+
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Gipfel",
+      "coordinates": {
+        "lat": 47.21972,
+        "lon": 11.82917
+      },
+      "startHeight": 2133,
+      "heightDifference": 1524,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind am Nachmittag möglich",
+      "description": "Naturstartplatz mit hohem Gras. Etwa 30 Minuten Fußmarsch vom Parkplatz."
+    },
+
+    {
+      "name": "Südstart",
+      "coordinates": {
+        "lat": 47.21972,
+        "lon": 11.82917
+      },
+      "startHeight": 2030,
+      "heightDifference": 1421,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch ab Mittag",
+      "description": "Einfacher Südstart nahe Gipfelbereich."
+    },
+
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.21972,
+        "lon": 11.82917
+      },
+      "startHeight": 2020,
+      "heightDifference": 1411,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Stabile Bedingungen am Vormittag",
+      "description": "Beliebter Startplatz für Einsteiger."
+    },
+
+    {
+      "name": "Berghof Perler",
+      "coordinates": {
+        "lat": 47.20064,
+        "lon": 11.84558
+      },
+      "startHeight": 1140,
+      "heightDifference": 531,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind beachten",
+      "description": "Startplatz bei Berghof Perler."
+    },
+
+    {
+      "name": "Perler",
+      "coordinates": {
+        "lat": 47.20064,
+        "lon": 11.84608
+      },
+      "startHeight": 1100,
+      "heightDifference": 491,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Telefonleitungen rechts nach dem Start beachten",
+      "description": "Relativ steiler Startplatz. Höhenfluggelände der Zillertaler Flugschule."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Sidan",
+      "coordinates": {
+        "lat": 47.18836,
+        "lon": 11.86306
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind am Nachmittag",
+      "description": "Großer Landeplatz südlich der Horbergbahn-Talstation."
+    },
+
+    {
+      "name": "Landeplatz Bruggerstube",
+      "coordinates": {
+        "lat": 47.18131,
+        "lon": 11.87027
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Hochspannungsleitungen westlich des Platzes beachten",
+      "description": "Große Landewiese neben dem Büro der Zillertaler Flugschule."
+    },
+
+    {
+      "name": "Hauptlandeplatz",
+      "coordinates": {
+        "lat": 47.18836,
+        "lon": 11.86306
+      },
+      "difficulty": null,
+      "windSensitivity": "Talwind möglich",
+      "description": "Großer Hauptlandeplatz bei Pizzeria Sidan."
+    }
+  ]
+}
