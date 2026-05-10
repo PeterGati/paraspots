@@ -1,0 +1,32 @@
+{
+  "region": "tirol",
+  "site": "hinterhornalm",
+  "name": "Hinterhornalm",
+
+  "coordinates": {
+    "lat": 47.33447,
+    "lon": 11.56519
+  },
+
+  "talHeight": 870,
+
+  "operator": {
+    "name": "DCI Innsbrucker Drachenfliegerverein",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Schattiger Parkplatz beim Landeplatz"
+  },
+
+  "airspaces": [
+    "CTR Innsbruck beachten"
+  ],
+
+  "flightCharacteristics": {
+    "soaring": false
