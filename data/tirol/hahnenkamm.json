@@ -1,0 +1,97 @@
+{
+  "region": "tirol",
+  "site": "hahnenkamm",
+  "name": "Hahnenkamm",
+
+  "coordinates": {
+    "lat": 47.41889,
+    "lon": 12.36667
+  },
+
+  "talHeight": 790,
+
+  "operator": {
+    "name": "Bergbahn Kitzbühel",
+    "url": "",
+    "phone": "+43 (0)5356 6951"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": true,
+    "parking": "Großer Parkplatz an der Hahnenkammbahn"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+
+  "windDirections": [
+    "N",
+    "SO"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Von Norden über Kufstein, Wörgl und Hopfgarten nach Kitzbühel. Von Süden über Mittersill und den Pass Thurn. Direkt vor der Talstation befindet sich ein Bahnhof. Gastflieger sollen sich an der Talstation registrieren und dort die Start-/Landegebühren entrichten.",
+
+  "description": "Ruhiger Flugberg nahe der bekannten Streif-Abfahrt in Kitzbühel. Sommer- und Winterbetrieb möglich. Besonders eindrucksvoll ist der Flug entlang der legendären Skiabfahrt. Bei westlichen Winden und föhnigen Wetterlagen sollte nicht gestartet werden. Im Sommer oft kräftiger Talwind und nur wenige Außenlandemöglichkeiten.",
+
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Mausefalle",
+      "coordinates": {
+        "lat": 47.41889,
+        "lon": 12.36667
+      },
+      "startHeight": 1645,
+      "heightDifference": 855,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Westwind turbulent",
+      "description": "Steiler Wiesenstart direkt oberhalb der berühmten Streif-Abfahrt."
+    },
+
+    {
+      "name": "Asten",
+      "coordinates": {
+        "lat": 47.41806,
+        "lon": 12.36722
+      },
+      "startHeight": 1665,
+      "heightDifference": 875,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": null,
+      "windSensitivity": "Föhnlagen vermeiden",
+      "description": "Startplatz links des Weges Richtung Ehrenbachgraben."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Wiese Talstation",
+      "coordinates": {
+        "lat": 47.44528,
+        "lon": 12.39194
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Hindernisse beachten",
+      "description": "Große Wiese südlich der Talstation, begrenzt durch Bahnseil, Häuser und Bahngleise."
+    }
+  ]
+}
