@@ -1,0 +1,75 @@
+{
+  "region": "tirol",
+  "site": "gabler",
+  "name": "Gabler",
+
+  "coordinates": {
+    "lat": 47.18917,
+    "lon": 12.14139
+  },
+
+  "talHeight": 1405,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": false,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Finkau / Durlasboden"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "W",
+    "NW",
+    "N",
+    "NNO"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Aufstieg von Finkau/Durlasboden in 2–3 Stunden zur Zittauer Hütte auf 2328 m. Von dort weitere etwa 2 Stunden bis zum Gipfel. Gletscherausrüstung erforderlich.",
+
+  "description": "Hochalpines Gletscherfluggebiet zwischen Reichenspitze und Wildkar. Gestartet wird etwa 30 Meter unterhalb des Gipfels an der sogenannten 'Glatze'. Traumhafte Hochgebirgslandschaft und lange Flüge Richtung Salzachtal möglich. Im Hochsommer besonders attraktiv. Vorsicht auf Wildschutzgebiete am Durlasboden sowie mögliche Gletscherspalten unterhalb der Glatze.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Glatze unterhalb Gipfel",
+      "coordinates": {
+        "lat": 47.18917,
+        "lon": 12.14139
+      },
+      "startHeight": 3263,
+      "heightDifference": 1858,
+      "launchDirections": [
+        "W",
+        "NW",
+        "N",
+        "NNO"
+      ],
+      "difficulty": null,
+      "windSensitivity": "Gletscherspalten unterhalb des Starts",
+      "description": "Startmöglichkeiten etwa 30 Meter unterhalb des Gipfels auf der sogenannten Glatze."
+    }
+  ],
+
+  "landeplaetze": []
+}
