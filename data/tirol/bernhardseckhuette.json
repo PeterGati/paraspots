@@ -1,0 +1,95 @@
+{
+  "region": "tirol",
+  "site": "bernhardseckhuette",
+  "name": "Bernhardseckhütte",
+
+  "coordinates": {
+    "lat": 47.28813,
+    "lon": 10.39478
+  },
+
+  "talHeight": 1039,
+
+  "operator": {
+    "name": "",
+    "url": "https://www.bernhardseck.at",
+    "phone": ""
+  },
+
+  "access": {
+    "car": false,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": ""
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "O",
+    "SO",
+    "S",
+    "SW"
+  ],
+
+  "webcam": "https://www.bernhardseck.at",
+
+  "approachDescription": "Ausgangspunkt ist Elbigenalp im Lechtal. Von dort führt eine oft begangene Forststraße zur Bernhardseckhütte. Der Weg kann durch Waldpfade abgekürzt werden. Alternativ führt ein Sommerweg entlang des Stienebachs durch den Wald. Für Übernachtungsgäste kann der Gleitschirm zur Hütte transportiert werden.",
+
+  "description": "Nur zu Fuß erreichbar. Je nach Route etwa 780–1000 Höhenmeter Aufstieg. Gestartet wird oberhalb der Bernhardseckhütte oder auf den großen Wiesen der Mutte. Thermisch sehr interessant mit guten Einstiegen. Vom Start sind Flüge entlang des Lechtals oder bei ausreichender Höhe Richtung Allgäu möglich.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Bernhardseckhütte",
+      "coordinates": {
+        "lat": 47.28813,
+        "lon": 10.39478
+      },
+      "startHeight": 1920,
+      "heightDifference": 881,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Thermik aus dem Stienebachtal",
+      "description": "Start oberhalb der Bernhardseckhütte auf großen Wiesenflächen."
+    },
+
+    {
+      "name": "Auf der Mutte",
+      "coordinates": {
+        "lat": 47.29088,
+        "lon": 10.37491
+      },
+      "startHeight": 2187,
+      "heightDifference": 1148,
+      "launchDirections": [
+        "N",
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nordstart kann langen Rückmarsch verursachen",
+      "description": "Höchster Punkt des Muttegrates mit großem Wiesenkessel und sehr gutem Thermikeinstieg."
+    }
+  ],
+
+  "landeplaetze": []
+}
