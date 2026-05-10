@@ -1,114 +1,97 @@
 {
   "region": "tirol",
+  "site": "hintertux",
   "name": "Hintertux",
-  "overview": {
-    "operator": {
-      "name": null,
-      "url": null
-    },
-    "access": {
-      "type": null,
-      "description": null
-    },
-    "parking": null,
-    "airspace": [],
-    "flightOptions": {
-      "soaring": null,
-      "thermal": null,
-      "crossCountry": null
-    },
-    "startRate": 1,
-    "thermalRate": 2.5,
-    "reachableWindDirections": [
-      "E",
-      "W"
-    ],
-    "flightDescription": null,
-    "webcam": null
-  },
-  "startpunkte": [
-    {
-      "name": "Sommerberg Hintertuxer Gletscher",
-      "coordinates": {
-        "lat": null,
-        "lon": null
-      },
-      "startHeight": 2000,
-      "heightDifference": 0,
-      "direction": [
-        "O"
-      ],
-      "difficulty": null,
-      "windSensitivity": null,
-      "startRate": null,
-      "googleMaps": null,
-      "description": "Der erste Abschnitt der Gletscherbahn bringt Euch bis fast an den Start - es sind dann noch rund 15 Minuten zu Fuß.",
-      "launchDirections": [],
-      "startRating": null
-    },
-    {
-      "name": "Gefrorene Wand",
-      "coordinates": {
-        "lat": null,
-        "lon": null
-      },
-      "startHeight": 3250,
-      "heightDifference": 0,
-      "direction": [
-        "W"
-      ],
-      "difficulty": null,
-      "windSensitivity": null,
-      "startRate": null,
-      "googleMaps": null,
-      "description": "Zum Start auf dem Hintertuxer Gletscher fahrt Ihr mit der Bahn ganz bis nach oben. Gleih unter der Bergstation ist der bei Ostwind wegen der Höhenlage unglaublich anfällige Platz. (Leerotoren)",
-      "launchDirections": [],
-      "startRating": null
-    }
-  ],
-  "landeplaetze": [
-    {
-      "name": "Hintertux",
-      "coordinates": {
-        "lat": null,
-        "lon": null
-      },
-      "height": 1500,
-      "difficulty": null,
-      "googleMaps": null,
-      "description": "Leider gibt es keinen offiziellen Landeplatz - also erkundigt Euch voher bei den Wieseneigentümern, wo Ihr runter dürft.",
-      "windSensitivity": null
-    }
-  ],
-  "siteRatings": {
-    "overallRating": 3,
-    "thermalRating": 5
-  },
+
   "coordinates": {
-    "lat": 0,
-    "lon": 0
+    "lat": 47.11667,
+    "lon": 11.68333
   },
-  "talHeight": 1222,
+
+  "talHeight": 1500,
+
   "operator": {
-    "name": null,
-    "url": null,
-    "phone": null
+    "name": "Tourismusverband Tux",
+    "url": "",
+    "phone": "+43 (0)5287 8506"
   },
+
   "access": {
-    "car": false,
-    "publicTransport": false,
-    "hikeAndFly": true,
+    "car": true,
     "cableCar": true,
-    "parking": null
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": ""
   },
+
   "airspaces": [],
+
   "flightCharacteristics": {
     "soaring": false,
     "thermal": true,
     "crossCountry": true
   },
-  "windDirections": [],
+
+  "windDirections": [
+    "O",
+    "W"
+  ],
+
   "webcam": null,
-  "approachDescription": null,
-  "description": "Es ist ein Probe version."
+
+  "approachDescription": "Über die A12 bis zur Ausfahrt Zillertal und weiter über die B169 bis Mayrhofen. Anschließend der Tuxer Landesstraße bis Hintertux folgen. Die Straße ist ganzjährig befahrbar, bei Schnee und Eis sind Ketten erforderlich. Mit der Hintertuxer Gletscherbahn gelangt man direkt zu den Startplätzen.",
+
+  "description": "Extrem hochalpines Ganzjahresfluggebiet am Hintertuxer Gletscher. Kein offizielles Fluggebiet und daher ohne offizielle Landeplätze. Fantastische Hochgebirgsflüge über Gletscherterrain und Skipisten, jedoch nur für erfahrene Piloten geeignet. Der Oststart unterhalb der Bergstation ist wegen der Höhenlage extrem anfällig für Leethermik und Turbulenzen. Direkt beim Start verlaufen Kabel. Vor einem Flug unbedingt aktuelle Informationen bei der Zillertaler Flugschule einholen.",
+
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 1
+  },
+
+  "startpunkte": [
+    {
+      "name": "Sommerberg Hintertuxer Gletscher",
+      "coordinates": {
+        "lat": 47.11750,
+        "lon": 11.68333
+      },
+      "startHeight": 2000,
+      "heightDifference": 500,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Leethermik und Kabel direkt am Start",
+      "description": "Startplatz nahe der ersten Sektion der Gletscherbahn. Noch etwa 15 Minuten Fußweg."
+    },
+
+    {
+      "name": "Gefrorene Wand",
+      "coordinates": {
+        "lat": 47.07028,
+        "lon": 11.67194
+      },
+      "startHeight": 3250,
+      "heightDifference": 1750,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Extrem exponierter Hochgebirgsstart",
+      "description": "Start direkt unterhalb der Bergstation am Gletscher. Wegen der Höhe sehr wind- und turbulenceanfällig."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Hintertux Tal",
+      "coordinates": {
+        "lat": 47.11667,
+        "lon": 11.68333
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Keine offiziellen Landeflächen vorhanden",
+      "description": "Vor der Landung unbedingt Erlaubnis der Wieseneigentümer einholen."
+    }
+  ]
 }
