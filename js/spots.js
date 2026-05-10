@@ -125,11 +125,14 @@ async function loadAllSpots() {
                     });
 
                     allSpots.push({
-                        card,
-                        region: regionSlug,
-                        directions,
-                        access: [...accessSet]
-                    });
+    card,
+    region: regionSlug,
+    directions,
+    access: [...accessSet],
+
+    // 🔍 SEARCH
+    name: siteData.name.toLowerCase()
+});
 
                 } catch (e) {
                     console.warn("Site konnte nicht geladen werden:", file);
@@ -226,20 +229,57 @@ window.toggle = function(el) {
 
 function applyFilters() {
 
+    // 🔍 KERESŐ SZÖVEG
+    const searchText = document
+        .getElementById("siteSearch")
+        ?.value
+        .toLowerCase()
+        .trim() || "";
+
     allSpots.forEach(s => {
 
         let visible = true;
 
-        if (filters.region.length && !filters.region.includes(s.region)) visible = false;
+        // REGION FILTER
+        if (
+            filters.region.length &&
+            !filters.region.includes(s.region)
+        ) {
+            visible = false;
+        }
 
-        if (filters.wind.length && !s.directions.some(d => filters.wind.includes(d))) visible = false;
+        // WIND FILTER
+        if (
+            filters.wind.length &&
+            !s.directions.some(d =>
+                filters.wind.includes(d)
+            )
+        ) {
+            visible = false;
+        }
 
-        if (filters.access.length && !s.access.some(a => filters.access.includes(a))) visible = false;
+        // ACCESS FILTER
+        if (
+            filters.access.length &&
+            !s.access.some(a =>
+                filters.access.includes(a)
+            )
+        ) {
+            visible = false;
+        }
 
-        s.card.style.display = visible ? "block" : "none";
+        // 🔍 SEARCH FILTER
+        if (
+            searchText &&
+            !s.name.includes(searchText)
+        ) {
+            visible = false;
+        }
+
+        s.card.style.display =
+            visible ? "block" : "none";
     });
 }
-
 // ======================
 // RESET
 // ======================
