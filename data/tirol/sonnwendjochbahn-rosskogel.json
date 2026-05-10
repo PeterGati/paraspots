@@ -1,7 +1,7 @@
 {
   "region": "tirol",
-  "site": "bergstation-sonnwendjochbahn-rosskogel",
-  "name": "Bergstation Sonnwendjochbahn / Rosskogel",
+  "site": "sonnwendjochbahn-rosskogel",
+  "name": "Sonnwendjochbahn / Rosskogel",
 
   "coordinates": {
     "lat": 47.46333,
