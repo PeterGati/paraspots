@@ -1,0 +1,126 @@
+{
+  "region": "tirol",
+  "site": "bergstation-sonnwendjochbahn-rosskogel",
+  "name": "Bergstation Sonnwendjochbahn / Rosskogel",
+
+  "coordinates": {
+    "lat": 47.46333,
+    "lon": 11.82900
+  },
+
+  "talHeight": 520,
+
+  "operator": {
+    "name": "Sonnwendjoch Bergbahn",
+    "url": "",
+    "phone": "+43 (0)5337/62563"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Talstation Sonnwendjochbahn"
+  },
+
+  "airspaces": [
+    "CTA Innsbruck"
+  ],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "O",
+    "S"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Über das Inntal Wörgl–Innsbruck nach Kramsach. Von der Talstation entlang des stillgelegten Skiwegs und der alten Skipiste zur Bergstation. Alternativ Auffahrt mit der Sonnwendjochbahn.",
+
+  "description": "Das zum Rofan zählende Revier eignet sich besonders für Spätsommer und Herbst. Die Thermik entwickelt sich an der Ostseite früh am Tag. Wenig frequentiertes Fluggebiet mit großem XC-Potential entlang des Inntals bis ins Engadin oder nach Vorarlberg. Achtung auf die CTA Innsbruck. Nachmittags oft starke Talwinde und turbulente Landebedingungen. Im Winter wird der Hauptlandeplatz teilweise durch Skibetrieb eingeschränkt.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+
+  "startpunkte": [
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.46291,
+        "lon": 11.82954
+      },
+      "startHeight": 2220,
+      "heightDifference": 1700,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": null,
+      "windSensitivity": "Am Gipfel turbulent bei stärkerem Wind",
+      "description": "Schöner Startrasen unter der Funkanlage."
+    },
+
+    {
+      "name": "Südstart",
+      "coordinates": {
+        "lat": 47.46291,
+        "lon": 11.82954
+      },
+      "startHeight": 2220,
+      "heightDifference": 1700,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Thermik beachten",
+      "description": "Startplatz im Gipfelbereich."
+    },
+
+    {
+      "name": "direkt Neben der Bergstation",
+      "coordinates": {
+        "lat": 47.46291,
+        "lon": 11.82954
+      },
+      "startHeight": 1800,
+      "heightDifference": 1280,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Sofort nach dem Start Seilbahn überfliegen",
+      "description": "Kleiner flacher Startplatz direkt neben der Bergstation mit anschließend steilem Gelände."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Kramsach Kirchfeld",
+      "coordinates": {
+        "lat": 47.44924,
+        "lon": 11.88747
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Nachmittags starker Talwind",
+      "description": "Große Wiese nahe Dorfzentrum. Später am Tag wegen Talwind problematisch."
+    },
+
+    {
+      "name": "Talstation",
+      "coordinates": {
+        "lat": 47.45000,
+        "lon": 11.86667
+      },
+      "difficulty": "schwer",
+      "windSensitivity": "Sehr starker Talwind möglich",
+      "description": "Landeplatz nahe Talstation. Im Winter teils durch Skibetrieb eingeschränkt."
+    }
+  ]
+}
