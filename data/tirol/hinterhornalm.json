@@ -21,12 +21,66 @@
     "cableCar": false,
     "hikeAndFly": true,
     "publicTransport": false,
-    "parking": "Schattiger Parkplatz beim Landeplatz"
+    "parking": "Schattiger Parkplatz direkt beim Landeplatz"
   },
 
   "airspaces": [
-    "CTR Innsbruck beachten"
+    "CTR Innsbruck"
   ],
 
   "flightCharacteristics": {
-    "soaring": false
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "SO",
+    "S",
+    "SW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Autobahnabfahrt Hall-Mitte nehmen und Richtung Absam/Gnadenwald fahren. In Gnadenwald der Beschilderung Hinterhornalm folgen. Teilweise Mitfahrgelegenheit ab dem Mauthäuschen möglich. Keine Seilbahn vorhanden.",
+
+  "description": "Beliebtes Hike-&-Fly Gebiet oberhalb von Gnadenwald mit sehr schönen Flugmöglichkeiten entlang des gesamten Inntals. Der eigentliche PG-Start befindet sich nördlich hinter der Hinterhornalm auf einem steilen freien Feld. Der weiter unten gelegene Startplatz gilt als gefährlich. Am Nachmittag oft kräftiger Talwind aus östlicher Richtung. Bei starkem überregionalem Südwind sollte nicht gestartet werden. Der Landeplatz liegt nahe der CTR Innsbruck und sollte hangnah angeflogen werden.",
+
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Hinterhorner Alm",
+      "coordinates": {
+        "lat": 47.33447,
+        "lon": 11.56519
+      },
+      "startHeight": 1550,
+      "heightDifference": 680,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Ab 13:30 oft kräftiger Osttalwind",
+      "description": "Paragleiterstart auf dem oberen steilen Feld nördlich hinter der Alm. Der untere Startplatz gilt als gefährlich."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Gnadenwald St. Martin",
+      "coordinates": {
+        "lat": 47.32217,
+        "lon": 11.56186
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Lee-Rotor am östlichen Haus möglich",
+      "description": "Großer komfortabler Landeplatz direkt bei der Straße. Wegen CTR möglichst hangnah einlanden."
+    }
+  ]
+}
