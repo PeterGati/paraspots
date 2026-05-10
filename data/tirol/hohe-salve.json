@@ -1,0 +1,187 @@
+{
+  "region": "tirol",
+  "site": "hohe-salve",
+  "name": "Hohe Salve",
+
+  "coordinates": {
+    "lat": 47.46528,
+    "lon": 12.20417
+  },
+
+  "talHeight": 620,
+
+  "operator": {
+    "name": "Bergbahnen Hopfgarten / Bergbahnen Söll",
+    "url": "https://www.skiwelt.at",
+    "phone": "+43 (0)5335 2238"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze an den Talstationen Hopfgarten und Hochsöll"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NW",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Anfahrt über Wörgl Richtung Hopfgarten oder Söll. Mit den Bergbahnen bis nahe zum Gipfel. Von Hochsöll kurzer aber steiler Aufstieg, alternativ längerer Weg über die Kraftalm.",
+
+  "description": "Sehr vielseitiges XC-Fluggebiet mit Startmöglichkeiten in nahezu alle Richtungen. Besonders im Frühjahr und Frühsommer thermisch stark aktiv. Beliebter Ausgangspunkt für Streckenflüge Richtung Wilder Kaiser, Choralpe und Pinzgau. Auf der Südseite entsteht durch Nord- und Bayrischen Wind oft turbulente, aber zuverlässige Thermik. Achtung auf Dust Devils im Sommer sowie starke Talwinde und Stromleitungen an den Landeplätzen.",
+
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "N-NW",
+      "coordinates": {
+        "lat": 47.46528,
+        "lon": 12.20417
+      },
+      "startHeight": 1829,
+      "heightDifference": 1209,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Im Winter eingeschränkt nutzbar",
+      "description": "Startplatz unmittelbar westlich der Söller Gondelbahn."
+    },
+
+    {
+      "name": "O-SO",
+      "coordinates": {
+        "lat": 47.46583,
+        "lon": 12.20556
+      },
+      "startHeight": 1810,
+      "heightDifference": 1190,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch aktiv",
+      "description": "Etwa 50 Meter östlich der Kapelle."
+    },
+
+    {
+      "name": "Gipfelkreuz",
+      "coordinates": {
+        "lat": 47.46528,
+        "lon": 12.20417
+      },
+      "startHeight": 1800,
+      "heightDifference": 1180,
+      "launchDirections": [
+        "S",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Exponierter Gipfelstart",
+      "description": "Start nahe dem Gipfelkreuz mit fantastischer Aussicht."
+    },
+
+    {
+      "name": "SW-S",
+      "coordinates": {
+        "lat": 47.46472,
+        "lon": 12.20333
+      },
+      "startHeight": 1780,
+      "heightDifference": 1160,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch stark aktiv",
+      "description": "Sehr beliebter Drachen- und Gleitschirmstart nahe altem Sessellift."
+    },
+
+    {
+      "name": "SÜD",
+      "coordinates": {
+        "lat": 47.46444,
+        "lon": 12.20444
+      },
+      "startHeight": 1829,
+      "heightDifference": 1209,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Walzen und Dust Devils möglich",
+      "description": "Perfekter Gleitschirmstart direkt unterhalb der Gipfelkapelle."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Söll",
+      "coordinates": {
+        "lat": 47.50333,
+        "lon": 12.19389
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind und Stromleitungen",
+      "description": "Großes Feld östlich der Straße zur Bergbahn Hochsöll."
+    },
+
+    {
+      "name": "Hopfgarten",
+      "coordinates": {
+        "lat": 47.44944,
+        "lon": 12.15694
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Nordwind-Düse möglich",
+      "description": "Landefeld nahe Straße Richtung Kelchsau und Zugbrücke."
+    },
+
+    {
+      "name": "Westendorf",
+      "coordinates": {
+        "lat": 47.43056,
+        "lon": 12.21472
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Nicht bei Südwind verwenden",
+      "description": "Alternative Landemöglichkeit beim Choralpe-Gebiet."
+    },
+
+    {
+      "name": "Hochsöll",
+      "coordinates": {
+        "lat": 47.50111,
+        "lon": 12.21083
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind in Bodennähe",
+      "description": "Wiesenlandeplatz unmittelbar beim Sessellift."
+    }
+  ]
+}
