@@ -1,0 +1,138 @@
+{
+  "region": "tirol",
+  "site": "brandstadl",
+  "name": "Brandstadl",
+
+  "coordinates": {
+    "lat": 47.49222,
+    "lon": 12.24583
+  },
+
+  "talHeight": 680,
+
+  "operator": {
+    "name": "Bergbahn Scheffau",
+    "url": "",
+    "phone": "+43 (0)5358/2320"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Scheffau"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "SW",
+    "W"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Via Inntal und Wörgl über die B312 Richtung Söll/St. Johann in Tirol bis Scheffau. Auffahrt mit der Bergbahn Scheffau.",
+
+  "description": "Ein ruhiges Fluggebiet ohne große Besonderheiten. Bei guten Bedingungen ist Soaren über dem Berg möglich. XC-Optionen Richtung Wilder Kaiser, Hahnenkamm oder Hohe Salve. Vorsicht bei Gipfelstarts sowie bei Landungen wegen Seilbahn- und Stromleitungen.",
+
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Südlift",
+      "coordinates": {
+        "lat": 47.49222,
+        "lon": 12.24583
+      },
+      "startHeight": 1620,
+      "heightDifference": 940,
+      "launchDirections": [
+        "SW"
+      ],
+      "difficulty": "schwer",
+      "windSensitivity": "Benötigt guten Höhengewinn wegen Bäumen",
+      "description": "Fünf Minuten von der Station Richtung Brandstadlalm."
+    },
+
+    {
+      "name": "Gipfelkreuz",
+      "coordinates": {
+        "lat": 47.49222,
+        "lon": 12.24583
+      },
+      "startHeight": 1650,
+      "heightDifference": 970,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "schwer",
+      "windSensitivity": "Graben nahe Startbereich",
+      "description": "Diffiziler Gipfelstart mit baumbeeinflusstem Gelände."
+    },
+
+    {
+      "name": "Bergrestaurant",
+      "coordinates": {
+        "lat": 47.49222,
+        "lon": 12.24583
+      },
+      "startHeight": 1630,
+      "heightDifference": 950,
+      "launchDirections": [
+        "N",
+        "NO"
+      ],
+      "difficulty": null,
+      "windSensitivity": "Thermisch und eng",
+      "description": "Zwischen Bergstation und Bergrestaurant gelegener Startplatz."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Waldhof",
+      "coordinates": {
+        "lat": 47.51972,
+        "lon": 12.24694
+      },
+      "difficulty": null,
+      "windSensitivity": "Thermisch und nahe Hochspannungsleitung",
+      "description": "Offizieller Landeplatz mit Windsack hinter Häuserreihe zwischen Baumreihe und Hochspannungsleitung."
+    },
+
+    {
+      "name": "Sportplatz",
+      "coordinates": {
+        "lat": 47.51028,
+        "lon": 12.25139
+      },
+      "difficulty": null,
+      "windSensitivity": "Lokale Thermik möglich",
+      "description": "Landeplatz neben Sportplatz und Hotel Kaiser."
+    },
+
+    {
+      "name": "Blaiken",
+      "coordinates": {
+        "lat": 47.50361,
+        "lon": 12.24139
+      },
+      "difficulty": null,
+      "windSensitivity": "Nur mit Sondergenehmigung",
+      "description": "Privater Landeplatz bei der Talstation für Mitglieder des Clubs Kaiseradler."
+    }
+  ]
+}
