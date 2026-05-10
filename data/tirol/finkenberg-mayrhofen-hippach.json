@@ -1,0 +1,226 @@
+{
+  "region": "tirol",
+  "site": "finkenberg-mayrhofen-hippach",
+  "name": "Finkenberg-Mayrhofen-Hippach",
+
+  "coordinates": {
+    "lat": 47.16667,
+    "lon": 11.86667
+  },
+
+  "talHeight": 580,
+
+  "operator": {
+    "name": "Mayrhofener Bergbahnen",
+    "url": "",
+    "phone": "+43 (0)5285 62277"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": true,
+    "parking": "Parkplatz an der Ahornbahn inklusive"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NW",
+    "NO",
+    "S",
+    "SW",
+    "W"
+  ],
+
+  "webcam": "https://www.feratel.com/",
+
+  "approachDescription": "Anfahrt über das Inntal nach Jenbach/Strass und weiter über die B169 ins Zillertal nach Mayrhofen. Alternativ über Mittersill und den Gerlospass. Öffentlich erreichbar über Bahnhof Jenbach und die Zillertalbahn. Startplätze erreichbar mit Penkenbahn, Ahornbahn, Finkenberger Almbahn oder per Bus/Fliegertaxi zum Melchboden.",
+
+  "description": "Großes und komfortables Fluggebiet rund um Mayrhofen, Finkenberg und Hippach mit zahlreichen Start- und Landeplätzen. Ideal als Übungsrevier und XC-Einstieg im Zillertal. Besonders die Startplätze Richtung Zillertal bieten enorme Höhenunterschiede und starke Thermik. Stark föhnanfälliges Gebiet mit teils heftigen Talwindsystemen und Düseneffekten zwischen Ahorn und Penken. Bei Südföhn sofort landen.",
+
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 5
+  },
+
+  "startpunkte": [
+    {
+      "name": "Mayrhofen-Penken Nordost",
+      "coordinates": {
+        "lat": 47.16861,
+        "lon": 11.85861
+      },
+      "startHeight": 2000,
+      "heightDifference": 1420,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind und Liftnähe beachten",
+      "description": "Mit Penkenbahn und Sessellift erreichbarer Hauptstartplatz Richtung Zillertal."
+    },
+
+    {
+      "name": "Finkenberg-Penken Süd",
+      "coordinates": {
+        "lat": 47.16028,
+        "lon": 11.85167
+      },
+      "startHeight": 2080,
+      "heightDifference": 1500,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Thermik über dem Sattel",
+      "description": "Großer Südstart nahe Hasenmuldenlift."
+    },
+
+    {
+      "name": "Mayrhofen-Ahorn/Filzen",
+      "coordinates": {
+        "lat": 47.15583,
+        "lon": 11.85889
+      },
+      "startHeight": 2080,
+      "heightDifference": 1500,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Rückwärtsstart bei Soaring sinnvoll",
+      "description": "Sommerstart unterhalb des Filzenköpfls, erreichbar nach Fußmarsch ab Ahornbahn."
+    },
+
+    {
+      "name": "Finkenberg-Penken West",
+      "coordinates": {
+        "lat": 47.15972,
+        "lon": 11.84778
+      },
+      "startHeight": 2095,
+      "heightDifference": 1515,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "schwer",
+      "windSensitivity": "Kurz und steil, Gefahr durch Skifahrer",
+      "description": "Kleiner und anspruchsvoller Weststart an der Katzenmoosbahn."
+    },
+
+    {
+      "name": "Mayrhofen-Penken Süd",
+      "coordinates": {
+        "lat": 47.16333,
+        "lon": 11.85306
+      },
+      "startHeight": 2050,
+      "heightDifference": 1470,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "schwer",
+      "windSensitivity": "Nähe zur Penkenbahn",
+      "description": "Kleiner Startplatz oberhalb der Sesselliftstation."
+    },
+
+    {
+      "name": "Hippach-Melchboden SW",
+      "coordinates": {
+        "lat": 47.21222,
+        "lon": 11.87250
+      },
+      "startHeight": 2030,
+      "heightDifference": 1450,
+      "launchDirections": [
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Westwind Alternative zum NO-Start",
+      "description": "Sommerstart westlich der Bushaltestelle am Melchboden."
+    },
+
+    {
+      "name": "Hippach-Melchboden NO",
+      "coordinates": {
+        "lat": 47.21417,
+        "lon": 11.87583
+      },
+      "startHeight": 2000,
+      "heightDifference": 1420,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind kann täuschen",
+      "description": "Großer Hauptstartplatz am höchsten Punkt der Zillertaler Höhenstraße."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Laimach",
+      "coordinates": {
+        "lat": 47.21056,
+        "lon": 11.88444
+      },
+      "difficulty": null,
+      "windSensitivity": "Talwind beachten",
+      "description": "Landemöglichkeit zwischen Laimach und Ziller."
+    },
+
+    {
+      "name": "Finkenberg",
+      "coordinates": {
+        "lat": 47.15556,
+        "lon": 11.82250
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Wechselnde Winde und thermisch aktiv",
+      "description": "Schwieriger Landeplatz nahe der Talstation Finkenberger Almbahn."
+    },
+
+    {
+      "name": "Schwendau Pizzeria Sidan",
+      "coordinates": {
+        "lat": 47.18833,
+        "lon": 11.86306
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind am Nachmittag",
+      "description": "Große und einfache Landewiese bei der Pizzeria Sidan."
+    },
+
+    {
+      "name": "Hollenzen Bruggerstube",
+      "coordinates": {
+        "lat": 47.18139,
+        "lon": 11.87028
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Großräumig anfliegen",
+      "description": "Großer Drachen- und Gleitschirm-Landeplatz bei der Bruggerstube."
+    },
+
+    {
+      "name": "Mayrhofen Edenlehen",
+      "coordinates": {
+        "lat": 47.16611,
+        "lon": 11.86056
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Lee hinter Hotel Edenlehen",
+      "description": "Große Landewiese neben dem Hotel Edenlehen."
+    }
+  ]
+}
