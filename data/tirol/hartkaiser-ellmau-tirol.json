@@ -1,0 +1,153 @@
+{
+  "region": "tirol",
+  "site": "hartkaiser-ellmau-tirol",
+  "name": "Hartkaiser-Ellmau/Tirol",
+
+  "coordinates": {
+    "lat": 47.49361,
+    "lon": 12.27278
+  },
+
+  "talHeight": 800,
+
+  "operator": {
+    "name": "Hartkaiserbahn Ellmau",
+    "url": "https://www.wilderkaiser.info",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Öffentliche Parkplätze bei der Talstation und am Fußballplatz"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "NW",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+
+  "webcam": "https://www.feratel.com/",
+
+  "approachDescription": "Mautfrei über die A12 bis Kufstein Süd, anschließend über die B173 und B178 Richtung Ellmau. Der Hartkaiser ist mit der neuen 10er Gondelbahn erreichbar. Gastflieger dürfen nur nach Registrierung, gültiger Lizenz, Versicherung und Einweisung starten.",
+
+  "description": "Sehr vielseitiges Fluggebiet am Wilden Kaiser mit mehreren Startplätzen für nahezu alle Windrichtungen. Thermisch ist die Nordseite meist schwächer, jedoch liefert die bewaldete Nordostflanke früh im Jahr gute Thermik. XC-Flüge Richtung Hohe Salve, Westendorf oder Wilder Kaiser möglich. Die Ostroute erfordert eine spezielle Einweisung. Bei West- und Nordstart sind Sicherheitsabstände zum Lift einzuhalten.",
+
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "West WEST-NEU",
+      "coordinates": {
+        "lat": 47.49361,
+        "lon": 12.27278
+      },
+      "startHeight": 1500,
+      "heightDifference": 700,
+      "launchDirections": [
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Westwind sofort nach Norden abbiegen",
+      "description": "Neuer Weststart auf steil abfallender Kuppe nahe Sessellift."
+    },
+
+    {
+      "name": "Nord NORD-NEU",
+      "coordinates": {
+        "lat": 47.49361,
+        "lon": 12.27278
+      },
+      "startHeight": 1525,
+      "heightDifference": 725,
+      "launchDirections": [
+        "N",
+        "NO",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "See und Waldkante überfliegen",
+      "description": "Direkt an der Bergstation gelegener Nordstartplatz."
+    },
+
+    {
+      "name": "OST Startplatz",
+      "coordinates": {
+        "lat": 47.49361,
+        "lon": 12.27278
+      },
+      "startHeight": 1520,
+      "heightDifference": 720,
+      "launchDirections": [
+        "NO",
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Ostroute nur mit Einweisung",
+      "description": "Oststart nahe der Almbahn mit möglicher Grabenfalle bei falscher Route."
+    },
+
+    {
+      "name": "Süd-Ost Start",
+      "coordinates": {
+        "lat": 47.49361,
+        "lon": 12.27278
+      },
+      "startHeight": 1505,
+      "heightDifference": 705,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermikunterstützt",
+      "description": "Sehr einfacher Start an südostausgerichteter Kante."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Club-Landeplatz offizieller Landeplatz",
+      "coordinates": {
+        "lat": 47.51361,
+        "lon": 12.29444
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Schwacher bis mäßiger Wind aus wechselnden Richtungen",
+      "description": "Großer gepflegter offizieller Landeplatz mit Windsack und markiertem Landekreis."
+    },
+
+    {
+      "name": "Widauer - Winter",
+      "coordinates": {
+        "lat": 47.51194,
+        "lon": 12.28972
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Skifahrer und Nordwind beachten",
+      "description": "Winterlandeplatz auf Anfängerpiste südlich ansteigend."
+    }
+  ]
+}
