@@ -1,0 +1,133 @@
+{
+  "region": "tirol",
+  "site": "hochzeiger",
+  "name": "Hochzeiger",
+
+  "coordinates": {
+    "lat": 47.12194,
+    "lon": 10.75139
+  },
+
+  "talHeight": 970,
+
+  "operator": {
+    "name": "Hochzeiger Bergbahnen",
+    "url": "https://www.hochzeiger.com",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": ""
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Anfahrt über die Inntalautobahn bis Ausfahrt Imst und weiter ins Pitztal nach Jerzens. Mit der Hochzeigerbahn bis zum Hochzeigerrestaurant und weiter mit dem Sessellift Richtung Sechszeiger.",
+
+  "description": "Bekanntes Fluggebiet im Pitztal mit sehr vielseitigen Startmöglichkeiten. Vom Sechszeiger kann praktisch in alle Richtungen gestartet werden. Besonders beliebt für Thermik- und Streckenflüge. Die Landeplätze sollten vorher genau besichtigt werden. In Wenns verlaufen markante Hochspannungsleitungen nahe des Landeplatzes. Das Gebiet ist thermisch aktiv und bei starken Bedingungen anspruchsvoll.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Sechszeiger",
+      "coordinates": {
+        "lat": 47.12194,
+        "lon": 10.75139
+      },
+      "startHeight": 2370,
+      "heightDifference": 1400,
+      "launchDirections": [
+        "O",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch aktiv",
+      "description": "Start direkt neben der oberen Liftstation."
+    },
+
+    {
+      "name": "Gipfelkreuz",
+      "coordinates": {
+        "lat": 47.12472,
+        "lon": 10.75194
+      },
+      "startHeight": 2450,
+      "heightDifference": 1480,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Exponierter Gipfelstart",
+      "description": "Etwa 15 Minuten Fußweg vom Sessellift zum großen Gipfelstart mit viel Platz."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Jerzens",
+      "coordinates": {
+        "lat": 47.15139,
+        "lon": 10.74611
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind beachten",
+      "description": "Wiese nahe der Kirche in Jerzens."
+    },
+
+    {
+      "name": "Wenns",
+      "coordinates": {
+        "lat": 47.16611,
+        "lon": 10.73389
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Hochspannungsleitungen nahe Endanflug",
+      "description": "Landeplatz hinter der Tennishalle. Die Stromleitungen wirken gefährlicher als sie tatsächlich sind."
+    },
+
+    {
+      "name": "Talstation Bergbahn",
+      "coordinates": {
+        "lat": 47.14500,
+        "lon": 10.73583
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Zwischen Häusern einlanden",
+      "description": "Nicht offiziell zugelassene Landewiese oberhalb des Hotels Panorama."
+    }
+  ]
+}
