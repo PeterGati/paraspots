@@ -1,0 +1,82 @@
+{
+  "region": "tirol",
+  "site": "elfer",
+  "name": "Elfer",
+
+  "coordinates": {
+    "lat": 47.09853,
+    "lon": 11.32419
+  },
+
+  "talHeight": 970,
+
+  "operator": {
+    "name": "11er Gondelbahn Neustift",
+    "url": "https://www.stubai.at",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Elferbahn Neustift"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NW"
+  ],
+
+  "webcam": "https://www.stubai.at",
+
+  "approachDescription": "Über die A12 bis Innsbruck, dort auf die A13 Richtung Brenner wechseln. Abfahrt Schönberg Richtung Stubaital bis Neustift. Auffahrt mit der Elfer-Gondelbahn, danach den Schildern zum Startplatz folgen.",
+
+  "description": "Ideal bei Ost-, Nord- und Nordwestwind. Im Sommer fast tägliches Soaren im Talwind. Das Stubaital besitzt ein günstiges Mikroklima und ermöglicht oft noch gute Flüge, wenn andere Gebiete bereits zu stark oder unflybar sind. Das Gebiet eignet sich hervorragend für Anfänger, Thermiktraining und Soaring.",
+
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 5
+  },
+
+  "startpunkte": [
+    {
+      "name": "Schulungstart Seilbahn",
+      "coordinates": {
+        "lat": 47.09853,
+        "lon": 11.32419
+      },
+      "startHeight": 1790,
+      "heightDifference": 820,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Laminarer Talwind",
+      "description": "Großer Schulungsstartplatz unterhalb der Seilbahn. Für Freiflieger nur bei wenig oder keinem Schulungsbetrieb nutzbar."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Neustift",
+      "coordinates": {
+        "lat": 47.11280,
+        "lon": 11.31529
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Meist Taleinwind",
+      "description": "Großer offizieller Landeplatz direkt bei der Elferbahn. Idealer Platz für Schüler und Wenigflieger."
+    }
+  ]
+}
