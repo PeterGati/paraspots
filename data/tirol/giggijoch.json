@@ -1,0 +1,86 @@
+{
+  "region": "tirol",
+  "site": "giggijoch",
+  "name": "Giggijoch",
+
+  "coordinates": {
+    "lat": 46.96667,
+    "lon": 10.96667
+  },
+
+  "talHeight": 1100,
+
+  "operator": {
+    "name": "Giggijochbahn",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Giggijochbahn Sölden"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Mit der Giggijochbahn nach oben fahren. Von der Bergstation nach rechts Richtung Restaurant gehen. Hinter den kleinen Holzhütten mit Windfahne befindet sich der Startplatz. Im Winter oft nur bei gewalzter Fläche oder wenig Schnee ohne Ski startbar.",
+
+  "description": "Sölden ist primär ein Winterfluggebiet. Im Sommer treten häufig kräftige Nordtalwinde sowie starke Abendabwinde vom Rettenbachgletscher auf. Bei Südwind bildet sich am Alpenhauptkamm oft eine Föhnmauer. Das langgezogene Ötztal wird gerne als XC-Route Richtung Süden genutzt. Achtung auf Düseneffekte in den Quertälern und die Materialseilbahn von Farst.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Giggijoch",
+      "coordinates": {
+        "lat": 46.96667,
+        "lon": 10.96667
+      },
+      "startHeight": 2300,
+      "heightDifference": 1200,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind und Turbulenzen in Quertälern",
+      "description": "Leichter Startplatz nahe der Bergstation. Im Winter oft nur mit Ski oder bei wenig Schnee startbar."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Shell Tankstelle am Ortseingang",
+      "coordinates": {
+        "lat": 46.96972,
+        "lon": 11.00722
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind beachten",
+      "description": "Große Wiese beim Hainbacher Hof mit Windsack zur Straße hin."
+    }
+  ]
+}
