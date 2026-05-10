@@ -75,7 +75,11 @@
         {
         "slug": "bergstation-sonnwendjochbahn-rosskogel",
         "name": "Bergstation Sonnwendjochbahn / Rosskogel"
-        }
+        },
+        {
+  "slug": "bernhardseckhuette",
+  "name": "Bernhardseckhütte"
+}
       ]
     },
     {
