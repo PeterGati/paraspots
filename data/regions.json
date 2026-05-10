@@ -86,9 +86,13 @@
         {
   "slug": "brennkopf",
   "name": "Brennkopf"
-}
+},
       ]
     },
+    {
+  "slug": "choralpe",
+  "name": "Choralpe"
+}
     {
       "slug": "kaernten",
       "name": "Kärnten",
