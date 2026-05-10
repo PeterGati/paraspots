@@ -1,0 +1,118 @@
+{
+  "region": "tirol",
+  "site": "choralpe",
+  "name": "Choralpe",
+
+  "coordinates": {
+    "lat": 47.41361,
+    "lon": 12.24722
+  },
+
+  "talHeight": 785,
+
+  "operator": {
+    "name": "Alpenrosenbahn Westendorf",
+    "url": "https://www.westendorf.at/",
+    "phone": "+43 (0)5334 6223"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Alpenrosenbahn Westendorf"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "SW",
+    "W"
+  ],
+
+  "webcam": "https://www.feratel.com/",
+
+  "approachDescription": "Über das Inntal nach Wörgl und weiter über die B170 Richtung Hopfgarten/Kitzbühel. In Westendorf den Schildern zur Alpenrosenbahn und Flugschule folgen.",
+
+  "description": "Das Fluggebiet Westendorf eignet sich für Anfänger und fortgeschrittene Piloten. Drei verschiedene Startplätze ermöglichen Flüge bei Windrichtungen von NO bis W. Durch die Lage in einem großen Talkessel sind lange Flugtage und erste Thermikerfahrungen möglich. Besonders beliebt ist das Gebiet für Talrestitutions- und Jojo-Flüge zwischen Choralpe und Hohe Salve. Bei Südwind sollte nicht gestartet werden.",
+
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 5
+  },
+
+  "startpunkte": [
+    {
+      "name": "W-SW",
+      "coordinates": {
+        "lat": 47.41361,
+        "lon": 12.24722
+      },
+      "startHeight": 1800,
+      "heightDifference": 1015,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind ermöglicht gutes Soaren",
+      "description": "Direkt mit dem Sessellift erreichbarer Startplatz unterhalb der Bergstation."
+    },
+
+    {
+      "name": "SO",
+      "coordinates": {
+        "lat": 47.41361,
+        "lon": 12.24722
+      },
+      "startHeight": 1800,
+      "heightDifference": 1015,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Südwind problematisch",
+      "description": "Vom Bergrestaurant aus Richtung Osten erreichbar."
+    },
+
+    {
+      "name": "O-NO",
+      "coordinates": {
+        "lat": 47.41361,
+        "lon": 12.24722
+      },
+      "startHeight": 1780,
+      "heightDifference": 995,
+      "launchDirections": [
+        "NO",
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Turbulenzen bei starkem Nordwind",
+      "description": "Steilhangstart östlich des Bergrestaurants."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Talstation",
+      "coordinates": {
+        "lat": 47.42861,
+        "lon": 12.21194
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Meist unkompliziert",
+      "description": "Große hindernisfreie Landewiese direkt bei der Alpenrosenbahn-Talstation."
+    }
+  ]
+}
