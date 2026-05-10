@@ -1,0 +1,84 @@
+{
+  "region": "tirol",
+  "site": "grosser-moeseler",
+  "name": "Grosser Möseler",
+
+  "coordinates": {
+    "lat": 47.03722,
+    "lon": 11.77083
+  },
+
+  "talHeight": 1780,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Schlegeisspeicher"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "W",
+    "NW",
+    "SW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Vom Parkplatz Schlegeisspeicher in knapp 2 Stunden zur Furtschaglhütte und anschließend etwa 4 Stunden weiter zum Gipfel. Für die letzten 200 Höhenmeter ist Gletscherausrüstung erforderlich. Davor leichte Blockkletterei in einer Rinne.",
+
+  "description": "Hochalpines Hike-&-Fly Gebiet in den Zillertaler Alpen. Start direkt vom Gipfel in westliche Richtungen mit beeindruckendem Überflug des Gletscherabbruchs. Traumhafte Hochgebirgslandschaft und weiter Blick über die Zillertaler Alpen. Anspruchsvolle alpine Tour mit Gletscherkontakt.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Gipfelstart Grosser Möseler",
+      "coordinates": {
+        "lat": 47.03722,
+        "lon": 11.77083
+      },
+      "startHeight": 3480,
+      "heightDifference": 1700,
+      "launchDirections": [
+        "W",
+        "NW",
+        "SW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpines Gelände mit Gletscherkontakt",
+      "description": "Start direkt vom Gipfel in westliche Richtungen. Gletscherausrüstung für den Zustieg erforderlich."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Parkplatz Schlegeisspeicher",
+      "coordinates": {
+        "lat": 47.04028,
+        "lon": 11.69972
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind möglich",
+      "description": "Landung beim Parkplatz am Schlegeisspeicher."
+    }
+  ]
+}
