@@ -1,0 +1,86 @@
+{
+  "region": "tirol",
+  "site": "brennkopf",
+  "name": "Brennkopf",
+
+  "coordinates": {
+    "lat": 47.67611,
+    "lon": 12.27917
+  },
+
+  "talHeight": 660,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz beim Moorwirt"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Autobahn A93 Rosenheim–Kufstein, Ausfahrt Oberaudorf. Weiter über die B172 Richtung Walchsee. Im Ort links Richtung Maurach bis zum Parkplatz Moorwirt. Aufstieg über Weg 54 etwa 2 Stunden. Auffahrt mit dem Auto gegen Maut möglich.",
+
+  "description": "Seit Juni 2007 offiziell gesperrt wegen Fehlverhaltens einiger Piloten und entzogener Genehmigung der Grundstückseigentümer. Der kleine Berg im Voralpenland bietet ein eindrucksvolles Panorama auf das Kaisergebirge und starke Thermikentwicklung. Der eigentliche Hausbart befindet sich am Brennköpfl südöstlich des Brennkopfs.",
+
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Brennkopf, Wiese unterhalb des Gipfels",
+      "coordinates": {
+        "lat": 47.67611,
+        "lon": 12.27917
+      },
+      "startHeight": 1353,
+      "heightDifference": 693,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch aktiv ab Mittag",
+      "description": "Startplatz auf einer Wiese unterhalb des Gipfels mit Startmöglichkeiten von Ost bis Südwest."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Wiese Moorwirt",
+      "coordinates": {
+        "lat": 47.66444,
+        "lon": 12.29750
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Lokale Talwindsysteme beachten",
+      "description": "Östliche Wiese beim Moorwirt mit Windsack."
+    }
+  ]
+}
