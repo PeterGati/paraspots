@@ -1,0 +1,126 @@
+{
+  "region": "tirol",
+  "site": "grubigstein",
+  "name": "Grubigstein",
+
+  "coordinates": {
+    "lat": 47.39111,
+    "lon": 10.84667
+  },
+
+  "talHeight": 1000,
+
+  "operator": {
+    "name": "Berglifte Giselher Langes GmbH & Co KG",
+    "url": "https://www.langes.at",
+    "phone": "+43 5673 2323"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Talstation Grubigsteinbahn Lermoos"
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "W",
+    "NW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Mit den Bergbahnen Langes direkt zur Grubigalm/Gamsjet Bergstation auf etwa 2060 m. Von dort sind mehrere Startplätze in wenigen Minuten erreichbar. Die Wolfratshauser Hütte erreicht man in etwa 15–20 Minuten zu Fuß.",
+
+  "description": "Sehr vielseitiges Fluggebiet in der Tiroler Zugspitzarena mit zahlreichen Startmöglichkeiten unterschiedlicher Schwierigkeit. Besonders beliebt als XC-Gebiet, da bereits früh gestartet werden kann. Traumhafte Aussicht auf die Zugspitze und den Alpenhauptkamm. Starkes Talwindsystem und föhnanfällig. Achtung auf Stromleitungen oberhalb des Landefeldes. Der Weststart ist nur für erfahrene Piloten geeignet.",
+
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Gamsbödele",
+      "coordinates": {
+        "lat": 47.38500,
+        "lon": 10.84667
+      },
+      "startHeight": 2060,
+      "heightDifference": 1060,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "SO",
+        "S",
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Weststart im Lee möglich",
+      "description": "Hauptstartplatz direkt bei der Bergstation mit zahlreichen Windrichtungen."
+    },
+
+    {
+      "name": "Wolfratshauser Hütte",
+      "coordinates": {
+        "lat": 47.39111,
+        "lon": 10.84889
+      },
+      "startHeight": 1750,
+      "heightDifference": 750,
+      "launchDirections": [
+        "NO",
+        "O",
+        "S"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind beachten",
+      "description": "Leichter Naturstartplatz, etwa 15–20 Minuten zu Fuß von der Grubigalm erreichbar."
+    },
+
+    {
+      "name": "Weststart Grubigstein",
+      "coordinates": {
+        "lat": 47.38694,
+        "lon": 10.84472
+      },
+      "startHeight": 2250,
+      "heightDifference": 1250,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Klippenstart nur für Könner",
+      "description": "Anspruchsvoller Weststart oberhalb der Grubigalmhütte."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Grubigsteinbahn",
+      "coordinates": {
+        "lat": 47.40139,
+        "lon": 10.88056
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Stromleitung beachten",
+      "description": "Landeplatz oberhalb der Talstation mit Windsack und markierten Begrenzungen."
+    }
+  ]
+}
