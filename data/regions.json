@@ -79,7 +79,8 @@
         {
   "slug": "bernhardseckhuette",
   "name": "Bernhardseckhütte"
-},{
+},
+        {
   "slug": "brandstadl",
   "name": "Brandstadl"
 },
@@ -87,8 +88,6 @@
   "slug": "brennkopf",
   "name": "Brennkopf"
 },
-      ]
-    },
     {
   "slug": "choralpe",
   "name": "Choralpe"
