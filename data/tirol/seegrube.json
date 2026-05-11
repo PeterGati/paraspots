@@ -1,0 +1,113 @@
+{
+  "region": "tirol",
+  "site": "seegrube",
+  "name": "Seegrube",
+  "coordinates": {
+    "lat": 47.30525,
+    "lon": 11.37742
+  },
+  "talHeight": 620,
+  "operator": {
+    "name": "Nordkettenbahnen Innsbruck",
+    "url": "https://nordkette.com",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": true,
+    "parking": "Gratis Parkmöglichkeit in der Tiefgarage des Kongresshauses mit Weiterfahrt per Hungerburgbahn"
+  },
+  "airspaces": [
+    "Kontrollzone Innsbruck CTR",
+    "Nordkette max. 8000 ft",
+    "Glider Area B max. 11000 ft"
+  ],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": "http://www1.tirol.gv.at/",
+  "approachDescription": "Mit der Hungerburgbahn und anschließend der Nordkettenbahn von Innsbruck zur Seegrube oder zum Hafelekar fahren. Alternativ mit der IVB-Buslinie J bis zur Talstation.",
+  "description": "Alpines Fluggebiet direkt oberhalb von Innsbruck innerhalb der Kontrollzone Innsbruck. Streckenflüge nach Osten und Westen entlang der Nordkette möglich. Vor jedem Flug muss geprüft werden, ob die freigegebenen Flugräume offen sind. Besonders im Frühjahr entwickelt sich starke Thermik, wodurch an den Startplätzen Rückenwind entstehen kann. Landungen nur niedrig anfliegen und keinesfalls ins Inntal einfliegen.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Seegrube West",
+      "coordinates": {
+        "lat": 47.30525,
+        "lon": 11.37742
+      },
+      "startHeight": 1900,
+      "heightDifference": 1280,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Mittags oft Rückenwind durch starke Thermik",
+      "description": "Südstart westlich der Mittelstation nahe Sessellift und kleinem Plateau."
+    },
+    {
+      "name": "Seegrube Ost",
+      "coordinates": {
+        "lat": 47.30722,
+        "lon": 11.38583
+      },
+      "startHeight": 1900,
+      "heightDifference": 1280,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Thermik direkt vor dem Startplatz",
+      "description": "Östlicher Startplatz über Geröllfeld erreichbar."
+    },
+    {
+      "name": "Hafelekar",
+      "coordinates": {
+        "lat": 47.31250,
+        "lon": 11.38444
+      },
+      "startHeight": 2310,
+      "heightDifference": 1690,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Oft Starkwindstart",
+      "description": "Hochalpiner Startplatz nur für geübte Piloten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Arzl",
+      "coordinates": {
+        "lat": 47.28708,
+        "lon": 11.43744
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Bei starkem Talwind turbulente Leewirbel",
+      "description": "Landeplatz am nördlichen Rand der CTR Innsbruck. Niedriger Anflug vorgeschrieben."
+    }
+  ]
+}
