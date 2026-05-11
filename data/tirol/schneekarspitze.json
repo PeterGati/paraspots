@@ -1,0 +1,83 @@
+{
+  "region": "tirol",
+  "site": "schneekarspitze",
+  "name": "Schneekarspitze",
+  "coordinates": {
+    "lat": 47.14556,
+    "lon": 12.08778
+  },
+  "talHeight": 1100,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Talende Issanger im Schönachtal"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Gerlos mit Auto oder Mountainbike ins Schönachtal bis zum Talende Issanger auf 1471 m fahren. Danach zu Fuß weiter durchs Tal und über den Gletscher zur Schönachschneid oder Schneekarspitze aufsteigen. Aufstieg etwa 5 Stunden.",
+  "description": "Sehr abgelegenes und hochalpines Walk-and-Fly-Gebiet mit beeindruckender Gletscherkulisse. Startmöglichkeiten an der Schönachschneid nach Norden oder an der Schneekarspitze nach Süden. Besonders geeignet für erfahrene Hike-and-Fly- und Biwakpiloten. Der Flug zurück Richtung Issanger gilt als einfach. Der Gletscheraufstieg kann steil und anspruchsvoll sein.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Schönachschneid",
+      "coordinates": {
+        "lat": 47.14361,
+        "lon": 12.08194
+      },
+      "startHeight": 3000,
+      "heightDifference": 1900,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpines Gelände und Gletscherwind beachten",
+      "description": "Nordstart nahe der Schönachschneid mit Blick ins Schönachtal."
+    },
+    {
+      "name": "Schneekarspitze Südstart",
+      "coordinates": {
+        "lat": 47.14556,
+        "lon": 12.08778
+      },
+      "startHeight": 3205,
+      "heightDifference": 2105,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Nur bei stabilen Hochgebirgsbedingungen",
+      "description": "Südstart direkt am Grat der Schneekarspitze."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Issanger",
+      "coordinates": {
+        "lat": 47.10972,
+        "lon": 12.05528
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem beachten",
+      "description": "Einfacher Landeplatz am Talende des Schönachtals."
+    }
+  ]
+}
