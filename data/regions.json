@@ -151,6 +151,30 @@
         {
   "slug": "joechelspitze",
   "name": "Jöchelspitze"
+},
+        {
+  "slug": "koessen-unterberghorn",
+  "name": "Kössen - Unterberghorn"
+},
+        {
+  "slug": "markbachjoch",
+  "name": "Markbachjoch"
+},
+        {
+  "slug": "melchboden",
+  "name": "Melchboden"
+},
+        {
+  "slug": "neunerkoepfle",
+  "name": "Neunerköpfle"
+},
+        {
+  "slug": "niederau-markbachjoch",
+  "name": "Niederau Markbachjoch"
+},
+        {
+  "slug": "pardatschgrat-ischgl",
+  "name": "Pardatschgrat, Ischgl"
 }
         
     ]
