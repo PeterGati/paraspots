@@ -1,0 +1,141 @@
+{
+  "region": "tirol",
+  "site": "schoenjoch",
+  "name": "Schönjoch",
+  "coordinates": {
+    "lat": 47.07441,
+    "lon": 10.58805
+  },
+  "talHeight": 880,
+  "operator": {
+    "name": "Bergbahnen Serfaus-Fiss-Ladis",
+    "url": "https://www.serfaus-fiss-ladis.at",
+    "phone": "+43 5476 6396"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Parkmöglichkeiten beim Landeplatz Fiss und an den Talstationen"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": "https://www.serfaus-fiss-ladis.at/de/service/webcams",
+  "approachDescription": "Anfahrt über die Inntalautobahn bis Landeck und weiter nach Fiss. Mit öffentlichen Verkehrsmitteln per Bahn bis Landeck und weiter mit Bus oder Taxi nach Serfaus-Fiss-Ladis. Auffahrt mit den Bergbahnen möglich.",
+  "description": "Großes und vielseitiges Fluggebiet am Südosthang der Samnaungruppe mit mehreren Start- und Landeplätzen für unterschiedliche Windrichtungen. Bereits früh am Tag thermisch aktiv. Streckenflüge ins Unterengadin und ins Inntal sind möglich. Bei stärkerem Wind am Grat kann alternativ von Steinegg gestartet werden. Vorsicht bei Föhntendenz und beim Umfliegen des Berges vom Nordstart am Speichersee wegen möglicher Lee-Effekte.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Schönjoch",
+      "coordinates": {
+        "lat": 47.07441,
+        "lon": 10.58805
+      },
+      "startHeight": 2420,
+      "heightDifference": 1540,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Föhnlagen vorsichtig",
+      "description": "Hauptstartplatz direkt bei der Schirmbar, etwa 5–7 Minuten von der Bergstation entfernt."
+    },
+    {
+      "name": "Süd-Start Kurve",
+      "coordinates": {
+        "lat": 47.07657,
+        "lon": 10.59827
+      },
+      "startHeight": 2480,
+      "heightDifference": 1600,
+      "launchDirections": [
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Geeignet bei stärkerem Wind am Grat",
+      "description": "Flacherer Alternativstartplatz etwa 200 Meter entlang des Weges."
+    },
+    {
+      "name": "Nord-Start Speichersee",
+      "coordinates": {
+        "lat": 47.07866,
+        "lon": 10.59831
+      },
+      "startHeight": 2460,
+      "heightDifference": 1580,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Lee beim Umfliegen des Berges beachten",
+      "description": "Nordstart beim Speichersee, meist ab Mittag aktiv."
+    },
+    {
+      "name": "Steinegg",
+      "coordinates": {
+        "lat": 47.06587,
+        "lon": 10.59477
+      },
+      "startHeight": 1940,
+      "heightDifference": 1060,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Gut bei starkem Wind am Grat",
+      "description": "Alternativer tiefer gelegener Startplatz oberhalb der Mittelstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Ried",
+      "coordinates": {
+        "lat": 47.05959,
+        "lon": 10.65350
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind ab Mittag berücksichtigen",
+      "description": "Großer Landeplatz bergseits des Inns mit Windsack."
+    },
+    {
+      "name": "Fiss",
+      "coordinates": {
+        "lat": 47.05762,
+        "lon": 10.62262
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Im Winter auf Skibetrieb achten",
+      "description": "Landeplatz unterhalb des Restaurants Sonnenburg an der Mittelstation."
+    }
+  ]
+}
