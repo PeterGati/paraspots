@@ -175,6 +175,26 @@
         {
   "slug": "pardatschgrat-ischgl",
   "name": "Pardatschgrat, Ischgl"
+},
+        {
+  "slug": "pfannkogel",
+  "name": "Pfannkogel"
+},
+        {
+  "slug": "pfunds-kreuzjoch",
+  "name": "Pfunds Kreuzjoch"
+},
+        {
+  "slug": "rofangebirge",
+  "name": "Rofangebirge"
+},
+        {
+  "slug": "schneekarspitze",
+  "name": "Schneekarspitze"
+},
+        {
+  "slug": "schoenjoch",
+  "name": "Schönjoch"
 }
         
     ]
