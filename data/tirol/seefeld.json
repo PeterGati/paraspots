@@ -1,0 +1,103 @@
+{
+  "region": "tirol",
+  "site": "seefeld",
+  "name": "Seefeld",
+  "coordinates": {
+    "lat": 47.32861,
+    "lon": 11.22667
+  },
+  "talHeight": 1180,
+  "operator": {
+    "name": "Bergbahnen Rosshütte / Gschwandkopflifte",
+    "url": "https://www.seefeld.com",
+    "phone": "+43 5212 2416"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": true,
+    "parking": "Parkmöglichkeiten an den Talstationen und nahe den Landeplätzen"
+  },
+  "airspaces": [
+    "Nähe Flughafen Innsbruck – Flüge ins Inntal verboten",
+    "Naturschutzgebiet Karwendel beachten"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "NW",
+    "SW",
+    "W"
+  ],
+  "webcam": "https://www.human-eagle.com",
+  "approachDescription": "Anfahrt über Innsbruck oder Garmisch-Partenkirchen nach Seefeld. Mehrere Bergbahnen erschließen die unterschiedlichen Startplätze rund um Rosshütte, Härmele und Gschwandtkopf.",
+  "description": "Vielseitiges Fluggebiet mit mehreren alpinen Startplätzen rund um das Seefelder Plateau. Gute Thermik am Nachmittag und hervorragende Möglichkeiten für Streckenflüge entlang des Inntals Richtung Ost oder West. Nachmittags setzt häufig der sogenannte Bayrische Wind ein. Das Gebiet liegt nahe der Kontrollzone Innsbruck – Flüge ins Inntal und Talquerungen sind streng verboten. Der Gschwandtkopf eignet sich hervorragend zum Soaren bei Nordlagen.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Härmelekopf",
+      "coordinates": {
+        "lat": 47.32861,
+        "lon": 11.22667
+      },
+      "startHeight": 2050,
+      "heightDifference": 870,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Nordwind turbulent",
+      "description": "Kleiner Startplatz direkt neben der Bergstation mit Matten ausgelegt."
+    },
+    {
+      "name": "Joch",
+      "coordinates": {
+        "lat": 47.34111,
+        "lon": 11.23972
+      },
+      "startHeight": 2070,
+      "heightDifference": 890,
+      "launchDirections": [
+        "NO",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Exponierte Lage",
+      "description": "Hochalpiner Startplatz unterhalb der Aussichtsplattform hinter der Bergstation."
+    },
+    {
+      "name": "Nördlinger Hütte",
+      "coordinates": {
+        "lat": 47.32000,
+        "lon": 11.23694
+      },
+      "startHeight": 2200,
+      "heightDifference": 1020,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Sehr steiler alpiner Start",
+      "description": "Nur für versierte Piloten geeignet. Rund 45 Minuten Fußmarsch von der Bergstation Härmele."
+    },
+    {
+      "name": "Gschwandtkopf",
+      "coordinates": {
+        "lat": 47.31417,
+        "lon": 11.17944
+      },
+      "startHeight": 1500,
+      "heightDifference": 320,
+      "launchDirections": [
+        "N",
+        "
