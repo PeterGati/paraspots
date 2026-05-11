@@ -1,0 +1,106 @@
+{
+  "region": "tirol",
+  "site": "pfannkogel",
+  "name": "Pfannkogel",
+  "coordinates": {
+    "lat": 47.24722,
+    "lon": 12.11944
+  },
+  "talHeight": 1400,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten vor der Brücke am Durlaßboden-Stausee, Parkverbote beachten"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Vom Gerlos-Pass beim Durlaßboden-Stausee auf der Westseite des Sees etwa 800 Meter der Straße folgen und anschließend über Kehren zur Mitterbrandalm aufsteigen. Weiter über Silberkarl und Silberkopf Richtung Pfannkogel.",
+  "description": "Wunderschönes Walk-and-Fly-Gebiet nahe dem Nationalpark Hohe Tauern mit beeindruckender Kulisse rund um Gabler, Reichenspitze und Wildkar. Mehrere Startmöglichkeiten entlang des Aufstiegs in fast alle Richtungen außer Süd und Südwest. Rückflugmöglichkeiten Richtung Finkau, Gerlos, See oder Pinzgau. Im Winter beliebtes Tourenski-&-Fly-Gebiet. Lawinengefahr beachten. Das Gelände gilt als einfach, dennoch Wind- und Wetterentwicklung aufmerksam beobachten.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Pfannkogel Hauptstart",
+      "coordinates": {
+        "lat": 47.24722,
+        "lon": 12.11944
+      },
+      "startHeight": 2310,
+      "heightDifference": 910,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "SO",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Wind am Grat sorgfältig prüfen",
+      "description": "Startmöglichkeiten entlang des Gipfelbereichs und am Aufstieg vorhanden."
+    },
+    {
+      "name": "Silberkarl",
+      "coordinates": {
+        "lat": 47.24250,
+        "lon": 12.12500
+      },
+      "startHeight": 2100,
+      "heightDifference": 700,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermische Bedingungen beachten",
+      "description": "Alternative Startmöglichkeit für kürzeren Aufstieg."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Finkau",
+      "coordinates": {
+        "lat": 47.23861,
+        "lon": 12.10472
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem beachten",
+      "description": "Großzügige Landemöglichkeiten nahe dem Gasthof Finkau."
+    },
+    {
+      "name": "Durlaßboden",
+      "coordinates": {
+        "lat": 47.24194,
+        "lon": 12.11611
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Lee am Seeufer möglich",
+      "description": "Landemöglichkeiten im Bereich des Stausees Durlaßboden."
+    }
+  ]
+}
