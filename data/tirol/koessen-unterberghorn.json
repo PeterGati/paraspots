@@ -1,0 +1,136 @@
+{
+  "region": "tirol",
+  "site": "koessen-unterberghorn",
+  "name": "Kössen - Unterberghorn",
+  "coordinates": {
+    "lat": 47.62444,
+    "lon": 12.43722
+  },
+  "talHeight": 589,
+  "operator": {
+    "name": "Bergbahnen Kössen",
+    "url": "https://www.fly-koessen.at",
+    "phone": "+43 5375 6226"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Großer Parkplatz an der Talstation"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "W"
+  ],
+  "webcam": "https://www.fly-koessen.at",
+  "approachDescription": "Anfahrt über die A93 Rosenheim–Kufstein, Ausfahrt Oberaudorf, weiter über Niederndorf und Walchsee nach Kössen. Alternativ über die A8 via Chiemsee und Marquartstein oder über St. Johann in Tirol. Im Ortsteil Hütte Richtung Unterberg/Talstation abbiegen.",
+  "description": "Eines der bekanntesten Fluggebiete der Alpen mit hervorragenden Thermik- und Soaringbedingungen. Ideal für Training und Streckenflug. Sichere Start- und Landeplätze sowie ausgezeichnete Infrastruktur. Vorsicht im Niederhauser Tal ('Bermuda-Dreieck') – keine Landemöglichkeiten und häufig Lee-Turbulenzen durch Talwind. Flugrichtung meist Richtung Osten über Fellhorn nach Lofer. An Wochenenden und in der Hochsaison oft sehr voll.",
+  "siteRatings": {
+    "overallRating": 5,
+    "thermalRating": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Bergstation",
+      "coordinates": {
+        "lat": 47.62444,
+        "lon": 12.43722
+      },
+      "startHeight": 1720,
+      "heightDifference": 1131,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Lee bei Nordlagen beachten",
+      "description": "Wiesenhang nahe der Bergstation und Bärenhütte. Hauptstartplatz für Westlagen."
+    },
+    {
+      "name": "NO-O",
+      "coordinates": {
+        "lat": 47.62444,
+        "lon": 12.43722
+      },
+      "startHeight": 1670,
+      "heightDifference": 1081,
+      "launchDirections": [
+        "NO",
+        "O"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Morgens oft ruhiger",
+      "description": "Startplatz für Nordost- und Ostlagen."
+    },
+    {
+      "name": "Nordstartplätze für GS",
+      "coordinates": {
+        "lat": 47.62444,
+        "lon": 12.43722
+      },
+      "startHeight": 1200,
+      "heightDifference": 611,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nordwind erforderlich",
+      "description": "Mehrere Möglichkeiten entlang des nördlichen Rückens."
+    },
+    {
+      "name": "Scheibenwaldhütte",
+      "coordinates": {
+        "lat": 47.62444,
+        "lon": 12.43722
+      },
+      "startHeight": 1140,
+      "heightDifference": 551,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem beachten",
+      "description": "Kleinerer Nordstart nahe der Scheibenwaldhütte."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Kössener Tal",
+      "coordinates": {
+        "lat": 47.66944,
+        "lon": 12.40556
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind am Nachmittag möglich",
+      "description": "Großes Landefeld im Talbereich östlich der Talstation."
+    },
+    {
+      "name": "Fliegerbar",
+      "coordinates": {
+        "lat": 47.66944,
+        "lon": 12.40556
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Bei starkem Talwind aktiv anfliegen",
+      "description": "Großzügiger Hauptlandeplatz bei der Fliegerbar mit Punktlandewürfel."
+    },
+    {
+      "name": "Seilbahn",
+      "coordinates": {
+        "lat": 47.66944,
+        "lon": 12.40556
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem beachten",
+      "description": "Landeplatz nahe der Talstation, hauptsächlich als Ausweichmöglichkeit."
+    }
+  ]
+}
