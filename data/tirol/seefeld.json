@@ -10,18 +10,18 @@
   "operator": {
     "name": "Bergbahnen Rosshütte / Gschwandkopflifte",
     "url": "https://www.seefeld.com",
-    "phone": "+43 5212 2416"
+    "phone": "+43 5212 2416-0"
   },
   "access": {
     "car": true,
     "cableCar": true,
     "hikeAndFly": false,
     "publicTransport": true,
-    "parking": "Parkmöglichkeiten an den Talstationen und nahe den Landeplätzen"
+    "parking": "Parkmöglichkeiten an den Talstationen der Bergbahnen und bei den Landeplätzen"
   },
   "airspaces": [
-    "Nähe Flughafen Innsbruck – Flüge ins Inntal verboten",
-    "Naturschutzgebiet Karwendel beachten"
+    "Kontrollzone Innsbruck",
+    "Naturschutzgebiet Karwendel"
   ],
   "flightCharacteristics": {
     "soaring": true,
@@ -36,8 +36,8 @@
     "W"
   ],
   "webcam": "https://www.human-eagle.com",
-  "approachDescription": "Anfahrt über Innsbruck oder Garmisch-Partenkirchen nach Seefeld. Mehrere Bergbahnen erschließen die unterschiedlichen Startplätze rund um Rosshütte, Härmele und Gschwandtkopf.",
-  "description": "Vielseitiges Fluggebiet mit mehreren alpinen Startplätzen rund um das Seefelder Plateau. Gute Thermik am Nachmittag und hervorragende Möglichkeiten für Streckenflüge entlang des Inntals Richtung Ost oder West. Nachmittags setzt häufig der sogenannte Bayrische Wind ein. Das Gebiet liegt nahe der Kontrollzone Innsbruck – Flüge ins Inntal und Talquerungen sind streng verboten. Der Gschwandtkopf eignet sich hervorragend zum Soaren bei Nordlagen.",
+  "approachDescription": "Anfahrt über Innsbruck oder Garmisch-Partenkirchen nach Seefeld. Verschiedene Bergbahnen erschließen die Startplätze rund um Rosshütte, Härmele und Gschwandtkopf.",
+  "description": "Vielseitiges alpines Fluggebiet am Seefelder Plateau mit Thermik-, Soaring- und Streckenflugmöglichkeiten. Gute XC-Möglichkeiten entlang des Inntals Richtung Ost und West. Das Gebiet liegt nahe der Kontrollzone Innsbruck – Flüge ins Inntal und Talquerungen sind streng verboten. Nachmittags setzt häufig der sogenannte Bayrische Wind ein. Der Gschwandtkopf eignet sich besonders gut zum Soaren bei Nordlagen.",
   "siteRatings": {
     "overallRating": 4,
     "thermalRating": 4
@@ -57,7 +57,7 @@
       ],
       "difficulty": "leicht",
       "windSensitivity": "Bei Nordwind turbulent",
-      "description": "Kleiner Startplatz direkt neben der Bergstation mit Matten ausgelegt."
+      "description": "Kleiner Startplatz direkt neben der Bergstation mit ausgelegten Matten."
     },
     {
       "name": "Joch",
@@ -72,7 +72,7 @@
         "SW"
       ],
       "difficulty": "leicht",
-      "windSensitivity": "Exponierte Lage",
+      "windSensitivity": "Exponierte Lage bei starkem Wind",
       "description": "Hochalpiner Startplatz unterhalb der Aussichtsplattform hinter der Bergstation."
     },
     {
@@ -88,7 +88,7 @@
       ],
       "difficulty": "anspruchsvoll",
       "windSensitivity": "Sehr steiler alpiner Start",
-      "description": "Nur für versierte Piloten geeignet. Rund 45 Minuten Fußmarsch von der Bergstation Härmele."
+      "description": "Nur für erfahrene Piloten geeignet. Rund 45 Minuten Fußweg von der Bergstation Härmele."
     },
     {
       "name": "Gschwandtkopf",
@@ -100,4 +100,34 @@
       "heightDifference": 320,
       "launchDirections": [
         "N",
-        "
+        "NO",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ideal bei Bayrischem Wind",
+      "description": "Beliebter Soaring-Startplatz mit einfacher Startwiese."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Tennisplätze am Gschwandkopf",
+      "coordinates": {
+        "lat": 47.32472,
+        "lon": 11.17722
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Nordwind am Abend möglich",
+      "description": "Landeplatz bei den Tennisplätzen am Gschwandtkopf."
+    },
+    {
+      "name": "Seefeld Golfakademie",
+      "coordinates": {
+        "lat": 47.32472,
+        "lon": 11.19556
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Thermik beachten",
+      "description": "Große Landewiese nahe der Golfakademie. Nicht direkt auf dem Golfplatz landen."
+    }
+  ]
+}
