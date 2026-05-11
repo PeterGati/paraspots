@@ -1,0 +1,114 @@
+{
+  "region": "tirol",
+  "site": "rofangebirge",
+  "name": "Rofangebirge",
+  "coordinates": {
+    "lat": 47.44472,
+    "lon": 11.76417
+  },
+  "talHeight": 950,
+  "operator": {
+    "name": "Rofan Seilbahn",
+    "url": "",
+    "phone": "+43 5243 5292"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Talstation der Rofanseilbahn in Maurach"
+  },
+  "airspaces": [
+    "CTA Innsbruck Ost (max. 9500 ft / ca. 2850 m)"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": "https://holfuy.com/de/weather/388",
+  "approachDescription": "Anfahrt über das Inntal bis Jenbach und weiter auf der B181 Richtung Maurach am Achensee. Auffahrt mit der Rofanseilbahn zur Bergstation möglich. Von dort kurze Wanderungen zu den verschiedenen Startplätzen.",
+  "description": "Ausgezeichnetes Thermikfluggebiet über dem Achensee mit mehreren Startmöglichkeiten. Die Mauritzalm eignet sich gut für Thermik- und Trainingsflüge, während der Dalfazalm-Start direkt in starke Thermik führt. Nachmittags kann der Talwind am Achensee deutlich auf Nord drehen. Bei Föhnlagen entsteht durch den Düseneffekt zwischen Ebner Joch, Stanser Joch und Bärenkopf oft stärkerer Südwind im Tal als am Berg. Das Gebiet liegt im CTA Innsbruck Ost mit Höhenlimit 9500 ft. Flugbeschränkungen beachten.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Erfurter Hütte",
+      "coordinates": {
+        "lat": 47.44472,
+        "lon": 11.76417
+      },
+      "startHeight": 1829,
+      "heightDifference": 879,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei stärkerem Westwind anspruchsvoll",
+      "description": "Startbereich nahe der Erfurter Hütte. Für Drachenflieger existiert eine Startrampe."
+    },
+    {
+      "name": "Dalfaz-Alm",
+      "coordinates": {
+        "lat": 47.44139,
+        "lon": 11.75639
+      },
+      "startHeight": 1730,
+      "heightDifference": 780,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Direkter Thermikeinstieg",
+      "description": "Steiler Weststart etwa 25 Minuten von der Bergstation entfernt."
+    },
+    {
+      "name": "Mauritzalm",
+      "coordinates": {
+        "lat": 47.44667,
+        "lon": 11.76833
+      },
+      "startHeight": 1870,
+      "heightDifference": 920,
+      "launchDirections": [
+        "SW",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nachmittags oft Rückenwind und Turbulenzen",
+      "description": "Start auf der Schipiste etwa 7 Minuten von der Bergstation entfernt."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Maurach",
+      "coordinates": {
+        "lat": 47.42333,
+        "lon": 11.74564
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Windwechsel am Nachmittag beachten",
+      "description": "Große Landewiese nahe Kreisverkehr unterhalb der Bahnlinie."
+    },
+    {
+      "name": "Buchau-Seeufer",
+      "coordinates": {
+        "lat": 47.43250,
+        "lon": 11.74889
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei ruhigen Bedingungen empfehlenswert",
+      "description": "Landemöglichkeit nahe dem Achenseeufer bei Buchau."
+    }
+  ]
+}
