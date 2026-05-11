@@ -1,0 +1,91 @@
+{
+  "region": "tirol",
+  "site": "neunerkoepfle",
+  "name": "Neunerköpfle",
+  "coordinates": {
+    "lat": 47.49911,
+    "lon": 10.52542
+  },
+  "talHeight": 1120,
+  "operator": {
+    "name": "Tannheimer Liftgesellschaft",
+    "url": "https://www.tannheimer-bergbahnen.at",
+    "phone": "+43 5675 6260"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Großer Parkplatz direkt an der Talstation in Tannheim"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": "https://holfuy.com/de/weather/413",
+  "approachDescription": "Anfahrt über die A7 Kempten–Füssen, Ausfahrt Oy/Mittelberg Richtung Oberjoch und weiter ins Tannheimer Tal. Alternativ über Reutte und den Gaichtpass. Parkplatz direkt an der Talstation der Gondelbahn.",
+  "description": "Eines der bekanntesten Fluggebiete im Tannheimer Tal mit Ost- und Weststartplatz für fast alle Windrichtungen. Sehr großes und einfaches Landefeld direkt bei der Talstation. Thermik meist ab Mittag gut nutzbar und ideal für erste Thermikerfahrungen. Das Gebiet eignet sich für Anfänger bis Streckenpiloten. Achtung: Im Seitental Richtung Vilsalpsee herrscht Flugverbot wegen Naturschutzgebiet. Bei NW-Wind ist am Weststart Vorsicht geboten. Im September teilweise starker Talwind.",
+  "siteRatings": {
+    "overallRating": 5,
+    "thermalRating": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Weststart",
+      "coordinates": {
+        "lat": 47.49911,
+        "lon": 10.52542
+      },
+      "startHeight": 1820,
+      "heightDifference": 700,
+      "launchDirections": [
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Vorsicht bei NW-Wind",
+      "description": "Weststartplatz etwa 3 Minuten zu Fuß von der Gondelbahn entfernt."
+    },
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.49911,
+        "lon": 10.52542
+      },
+      "startHeight": 1800,
+      "heightDifference": 680,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ideal bei Ostlagen",
+      "description": "Kleinerer Oststartplatz nahe der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Tannheim",
+      "coordinates": {
+        "lat": 47.50036,
+        "lon": 10.52222
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Im Herbst teils starker Talwind",
+      "description": "Sehr große Landewiese direkt neben der Talstation und der Flugschule."
+    }
+  ]
+}
