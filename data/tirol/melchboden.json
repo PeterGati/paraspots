@@ -1,0 +1,91 @@
+{
+  "region": "tirol",
+  "site": "melchboden",
+  "name": "Melchboden",
+  "coordinates": {
+    "lat": 47.18781,
+    "lon": 11.86478
+  },
+  "talHeight": 625,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Parkplätze direkt am Startplatz an der Zillertaler Höhenstraße"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt über Hippach Richtung Schwendberg auf der Zillertaler Höhenstraße. Erreichbar mit PKW, Buslinie 8340 oder Parataxi. Der Startplatz liegt direkt an der Straße beim Kiosk und der Bushaltestelle.",
+  "description": "NO-, O- und SO-Startplatz mit großem Höhenunterschied über dem Zillertal. Zahlreiche Waldschneisen erzeugen ab Mittag gute Thermik. Die Schlucht im Bereich Keilkeller-Wasserfall zwischen Schwendberg und Kleinschwendberg sollte wegen Leegefahr in geringer Höhe gemieden werden. Landeplätze Edenlehen und Sidan werden regelmäßig von der Flugschule genutzt. Hochspannungsleitung beim Landeplatz Edenlehen beachten.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Melchboden",
+      "coordinates": {
+        "lat": 47.18781,
+        "lon": 11.86478
+      },
+      "startHeight": 2025,
+      "heightDifference": 1400,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ab Mittag thermisch aktiv",
+      "description": "Großzügiger Startplatz direkt an der Zillertaler Höhenstraße."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Hippach",
+      "coordinates": {
+        "lat": 47.20336,
+        "lon": 11.87311
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem beachten",
+      "description": "Offizieller Landeplatz im Tal bei Hippach."
+    },
+    {
+      "name": "Sidan",
+      "coordinates": {
+        "lat": 47.20250,
+        "lon": 11.87650
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Nachmittags thermisch",
+      "description": "Großer Landeplatz südöstlich von Hippach über dem Ziller."
+    },
+    {
+      "name": "Edenlehen",
+      "coordinates": {
+        "lat": 47.20139,
+        "lon": 11.87083
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Hochspannungsleitung beachten",
+      "description": "Schulungslandeplatz direkt bei der Flugschule."
+    }
+  ]
+}
