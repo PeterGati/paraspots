@@ -1,0 +1,99 @@
+{
+  "region": "tirol",
+  "site": "niederau-markbachjoch",
+  "name": "Niederau Markbachjoch",
+  "coordinates": {
+    "lat": 47.43192,
+    "lon": 12.09425
+  },
+  "talHeight": 830,
+  "operator": {
+    "name": "Markbachjoch Bergbahn",
+    "url": "https://www.wildschoenau.com",
+    "phone": "+43 5339 8212"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz bei der Talstation in Niederau"
+  },
+  "airspaces": [
+    "CTA Innsbruck-Ost"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "NW"
+  ],
+  "webcam": "https://wildschoenau.viewbito.com",
+  "approachDescription": "Anfahrt über das Inntal Richtung Wörgl und weiter nach Niederau/Wildschönau. Die Talstation befindet sich etwa 80 Meter nach der Abzweigung Richtung Hopfgarten. Auffahrt mit der Gondelbahn oder zu Fuß in etwa 1–1,5 Stunden.",
+  "description": "Ruhiges Flug- und Schulungsgelände mit schwacher Thermik und meist geringem Talwind. Ideal für Anfänger, Wiedereinsteiger und entspanntes Soaring im Frühling und Sommer. Vormittags kann bei sonnigem Wetter Südostwind über den Grat schwappen und eine gefährliche Walze erzeugen. Der Windsack zeigt dabei teilweise fälschlich Nordwind an. Zusätzlich die Windfahne auf der Alm beachten. Das Gebiet liegt unter Beobachtung der CTA Innsbruck-Ost.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Hütte Markbachjoch",
+      "coordinates": {
+        "lat": 47.43192,
+        "lon": 12.09425
+      },
+      "startHeight": 1450,
+      "heightDifference": 620,
+      "launchDirections": [
+        "N",
+        "NO",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei NO etwas böig",
+      "description": "Großer schulungsgeeigneter Startplatz nahe der Seilbahnstation."
+    },
+    {
+      "name": "Weststartplatz",
+      "coordinates": {
+        "lat": 47.43192,
+        "lon": 12.09128
+      },
+      "startHeight": 1448,
+      "heightDifference": 618,
+      "launchDirections": [
+        "N",
+        "NO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Optimal bei 8–20 km/h Nordwind",
+      "description": "Kleiner, steiler und schmaler Startplatz westlich des Hauptstartplatzes."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Talstation",
+      "coordinates": {
+        "lat": 47.44772,
+        "lon": 12.09303
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Parallel zur Straße anfliegen",
+      "description": "Anspruchsvollere Landewiese direkt neben der Talstation. Nur für A-Schein-Piloten, SoPi und Tandem erlaubt."
+    },
+    {
+      "name": "Harfenwirt",
+      "coordinates": {
+        "lat": 47.44600,
+        "lon": 12.09150
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Auf Schulungsbetrieb achten",
+      "description": "Große Wiese beim Wirtshaus, bevorzugt im gemähten Bereich landen."
+    }
+  ]
+}
