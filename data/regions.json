@@ -195,6 +195,14 @@
         {
   "slug": "schoenjoch",
   "name": "Schönjoch"
+},
+        {
+  "slug": "seefeld",
+  "name": "Seefeld"
+},
+        {
+  "slug": "seegrube",
+  "name": "Seegrube"
 }
         
     ]
