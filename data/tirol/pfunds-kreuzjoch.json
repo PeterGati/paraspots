@@ -1,0 +1,63 @@
+{
+  "region": "tirol",
+  "site": "pfunds-kreuzjoch",
+  "name": "Pfunds Kreuzjoch",
+  "coordinates": {
+    "lat": 46.96861,
+    "lon": 10.54861
+  },
+  "talHeight": 970,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parken hinter der Fußgängerbrücke beim Billa oder MPreis, etwa 6 Minuten vom Landeplatz entfernt"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [],
+  "webcam": null,
+  "approachDescription": "Aufstieg Richtung Kobler Bergwiesen. Sehr schönes Hike-and-Fly-Gebiet von April bis Dezember. Fahrverbot zum Startplatz ab 1500 Meter beachten.",
+  "description": "Kleines aber sehr feines Fluggebiet mit Wiesenstartplatz für Gleitschirm- und Drachenpiloten. Interessante Streckenflugmöglichkeiten Richtung Südtirol und Schweiz. Das Gebiet reagiert empfindlich auf Südföhnlagen.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Kreuzjoch",
+      "coordinates": {
+        "lat": 46.96861,
+        "lon": 10.54861
+      },
+      "startHeight": 2150,
+      "heightDifference": 1180,
+      "launchDirections": [],
+      "difficulty": "leicht",
+      "windSensitivity": "Sehr sensibel bei Südföhnlagen",
+      "description": "Wiesenstartplatz für Paragleiter und Drachenflieger."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Pfunds Dorf",
+      "coordinates": {
+        "lat": 46.96944,
+        "lon": 10.54194
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Windsack am südlichen Ende beachten",
+      "description": "Landeplatz am südlichen Ortsende von Pfunds, etwa 200 Meter hinter der Pension Schöne Aussicht."
+    }
+  ]
+}
