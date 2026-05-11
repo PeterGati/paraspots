@@ -1,0 +1,110 @@
+{
+  "region": "tirol",
+  "site": "pardatschgrat-ischgl",
+  "name": "Pardatschgrat, Ischgl",
+  "coordinates": {
+    "lat": 46.99222,
+    "lon": 10.32528
+  },
+  "talHeight": 1400,
+  "operator": {
+    "name": "Silvretta Seilbahn AG",
+    "url": "https://www.ischgl.com",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten in Ischgl bei den Gondelbahnen"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": "https://www.ischgl.com",
+  "approachDescription": "Anfahrt über Füssen, Reutte, Fernpass, Imst und Landeck ins Paznauntal nach Ischgl. Im Winter ist die Silvretta Hochalpenstraße gesperrt. Auffahrt mit mehreren Gondelbahnen direkt zum Pardatschgrat möglich.",
+  "description": "Bekanntes Ski-&-Fly-Gebiet im Paznaun mit hervorragender Infrastruktur und Gondelzugang zu den Startplätzen. Winterflüge und Soaring entlang des Pardatschgrates sind besonders beliebt. Achtung auf Turbulenzen beim Einfliegen ins Haupttal Paznaun durch überlagerte Talwindsysteme. Der ehemalige Startplatz Idjoch ist offiziell gesperrt, aktuell ist nur der Start am Pardatschgrat erlaubt beziehungsweise toleriert. Keine Landungen auf Skipisten erlaubt.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Pardatschgrat",
+      "coordinates": {
+        "lat": 46.99222,
+        "lon": 10.32528
+      },
+      "startHeight": 2624,
+      "heightDifference": 1224,
+      "launchDirections": [
+        "N",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Turbulenzen beim Einfliegen ins Paznauntal möglich",
+      "description": "Hauptstartplatz nahe der Bergstation. Besonders gut für Winter- und Schistarts geeignet."
+    },
+    {
+      "name": "Idjoch",
+      "coordinates": {
+        "lat": 46.98950,
+        "lon": 10.33700
+      },
+      "startHeight": 2760,
+      "heightDifference": 1360,
+      "launchDirections": [
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Sehr flacher SW-Start, nur bei sauberem Gegenwind",
+      "description": "Ehemaliger Startplatz, derzeit offiziell gesperrt wegen Problemen mit Seilbahnabständen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Ischgl",
+      "coordinates": {
+        "lat": 47.01139,
+        "lon": 10.28722
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Langlaufloipe und Talwind beachten",
+      "description": "Hauptlandeplatz westlich des Fußballplatzes neben der Umfahrungsstraße."
+    },
+    {
+      "name": "Notlandeplatz Pardatschalpe",
+      "coordinates": {
+        "lat": 46.99556,
+        "lon": 10.30306
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Turbulenz möglich",
+      "description": "Notlandeplatz bei unzureichender Höhe oder schwierigen Bedingungen."
+    },
+    {
+      "name": "Ausweichlandeplatz Westwind",
+      "coordinates": {
+        "lat": 47.00450,
+        "lon": 10.29200
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Bei starkem Westwind bevorzugen",
+      "description": "Ausweichlandeplatz am Ortsanfang nordöstlich der Tankstelle."
+    }
+  ]
+}
