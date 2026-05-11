@@ -1,0 +1,116 @@
+{
+  "region": "tirol",
+  "site": "joechelspitze",
+  "name": "Jöchelspitze",
+  "coordinates": {
+    "lat": 47.28250,
+    "lon": 10.35917
+  },
+  "talHeight": 1060,
+  "operator": {
+    "name": "Lechtaler Bergbahnen GmbH",
+    "url": "https://www.lechtaler-bergbahnen.at",
+    "phone": "+43 5634 6207"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Talstation in Bach im Lechtal"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Osten über Füssen nach Reutte und dem Lech entlang bis Bach im Lechtal. Von Westen über den Bregenzerwald und den Hochtannbergpass nach Warth und weiter Richtung Bach. Auffahrt mit der Jöchelspitzbahn möglich.",
+  "description": "Hervorragendes Gebiet für Einsteiger im Streckenflug. Besonders gute Bedingungen von Februar bis Juni. Früh einsetzende Thermik, starke Bedingungen an der Südseite der Klimmspitze. Soaring entlang der südseitigen Hänge des Lechtals möglich, abends auch Querung zum Sonnenkogel. Der NO-Talwind und später der sogenannte 'Bayrische Wind' aus Norden können kritisch werden. Bei NW- und N-Wind ungeeignet. Die Bahnkabel müssen mit mindestens 50 m Höhenabstand überflogen werden. Das Gebiet kann bei stärkerem Wind turbulent werden.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Südweststart",
+      "coordinates": {
+        "lat": 47.28250,
+        "lon": 10.35917
+      },
+      "startHeight": 1800,
+      "heightDifference": 740,
+      "launchDirections": [
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind aus NO ab Nachmittag möglich",
+      "description": "Direkt neben der Bergstation gelegen. Gut geeignet für Soaring entlang der Südhänge."
+    },
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.28250,
+        "lon": 10.35917
+      },
+      "startHeight": 1800,
+      "heightDifference": 740,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch früh aktiv",
+      "description": "Oststart in der Nähe der Bergstation."
+    },
+    {
+      "name": "Wasserbassin",
+      "coordinates": {
+        "lat": 47.28250,
+        "lon": 10.35917
+      },
+      "startHeight": 1900,
+      "heightDifference": 840,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Starke Thermik ab Mittag",
+      "description": "Südstart im Bereich des Wasserbassins."
+    },
+    {
+      "name": "Lachenkopf",
+      "coordinates": {
+        "lat": 47.28250,
+        "lon": 10.35917
+      },
+      "startHeight": 1950,
+      "heightDifference": 890,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch und bei Talwind anspruchsvoller",
+      "description": "Rund 20 Minuten Fußmarsch oberhalb der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Bach (Onair)",
+      "coordinates": {
+        "lat": 47.26722,
+        "lon": 10.39944
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Ostwind Rechtslandevolte, bei Westwind Linkslandevolte",
+      "description": "Großes Landefeld westlich von Bach. Stromleitung und Straße beachten."
+    }
+  ]
+}
