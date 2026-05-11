@@ -1,0 +1,69 @@
+{
+  "region": "tirol",
+  "site": "markbachjoch",
+  "name": "Markbachjoch",
+  "coordinates": {
+    "lat": 47.44861,
+    "lon": 12.03889
+  },
+  "talHeight": 900,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkplatz bei der Talstation Wildschönau"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO"
+  ],
+  "webcam": null,
+  "approachDescription": "Zufahrt über Wildschönau zur Talstation der Markbachjochbahn. Auffahrt mit der Seilbahn direkt zum Startplatzbereich.",
+  "description": "Eines der sichersten Fluggebiete Europas. Besonders gut für Einsteiger geeignet. Große Landewiese bei der Flugschule. Einfaches Gelände mit unkompliziertem Zugang und guten Schulungsbedingungen.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Markbachjoch",
+      "coordinates": {
+        "lat": 47.44861,
+        "lon": 12.03889
+      },
+      "startHeight": 1300,
+      "heightDifference": 400,
+      "launchDirections": [
+        "N",
+        "NO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Nordlagen ideal",
+      "description": "Einfacher Wiesenstart nahe der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landewiese Wildschönau",
+      "coordinates": {
+        "lat": 47.41250,
+        "lon": 12.03472
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Meist unkompliziert",
+      "description": "Große Landewiese bei der Flugschule im Tal."
+    }
+  ]
+}
