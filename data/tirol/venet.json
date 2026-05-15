@@ -1,0 +1,96 @@
+{
+  "region": "tirol",
+  "site": "venet",
+  "name": "Venet",
+  "coordinates": {
+    "lat": 47.15444,
+    "lon": 10.57972
+  },
+  "talHeight": 767,
+  "operator": {
+    "name": "Venet Bergbahnen",
+    "url": "https://www.venet.at/de",
+    "phone": "+43-5442-62663-14"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation der Venet Bergbahnen in Zams"
+  },
+  "airspaces": [
+    "CTR Innsbruck"
+  ],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrt mit den Venet Bergbahnen ab Zams. Informationen zu den geltenden Flugregeln wegen der CTR Innsbruck befinden sich an der Talstation und auf www.venetflieger.at.",
+  "description": "Thermikdominiertes und anspruchsvolles Fluggebiet oberhalb von Zams. Die konstanten Aufwinde ermöglichen ausgedehnte Streckenflüge Richtung Engadin, Ötztal, Inntal und Vorarlberg, erzeugen jedoch auch Turbulenzen. Im Sommer häufig starker Talwind, bei Föhn besondere Vorsicht. Zwei Startmulden nahe der Bergstation erlauben Starts bei vielen Windrichtungen.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Krahberg",
+      "coordinates": {
+        "lat": 47.15444,
+        "lon": 10.57972
+      },
+      "startHeight": 2208,
+      "heightDifference": 1438,
+      "launchDirections": [
+        "N",
+        "NO",
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Im Sommer oft starker Talwind, Vorsicht bei Föhn",
+      "description": "Zwei Startmöglichkeiten in südlicher und nördlicher Mulde wenige Minuten von der Bergstation entfernt."
+    },
+    {
+      "name": "Zwischenstation",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": null,
+      "heightDifference": null,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind beachten",
+      "description": "West- bis Nordweststart nahe der Zwischenstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Zams",
+      "coordinates": {
+        "lat": 47.15444,
+        "lon": 10.57972
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Im Sommer starker Talwind am Inn",
+      "description": "Landeplatz direkt am Inn bei Zams."
+    }
+  ]
+}
