@@ -1,0 +1,67 @@
+{
+  "region": "salzburg",
+  "site": "filbling",
+  "name": "Filbling",
+  "coordinates": {
+    "lat": 47.78813,
+    "lon": 13.27105
+  },
+  "talHeight": 730,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz am Fuschlsee"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "N"
+  ],
+  "webcam": null,
+  "approachDescription": "Vom Parkplatz am Fuschlsee etwa 1 Stunde 15 Minuten Fußmarsch. Der Weg ist gut beschildert und führt durch den Wald. Nach etwa zwei Dritteln des Weges passiert man den Filblingsee. Die letzten 10 Minuten sind steinig.",
+  "description": "Klassischer Walk & Fly Berg am Fuschlsee im Salzkammergut. Start nach Norden. Hohes Gras auf der Startwiese kann das Aufziehen erschweren. Als Landehilfe dient ein Windsack am Fußballplatz. Laut Kommentar existieren Hinweisschilder bezüglich eines möglichen Flugverbots – lokale Regelung vor Ort prüfen.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Filbling Nordstart",
+      "coordinates": {
+        "lat": 47.78813,
+        "lon": 13.27105
+      },
+      "startHeight": 1250,
+      "heightDifference": 520,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Kleine Nordbrise hilfreich. Hohes Gras kann Starts erschweren.",
+      "description": "Naturstartwiese mit Blick auf den Fuschlsee. Reiner Walk & Fly Startplatz."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Fuschl Fußballplatz",
+      "coordinates": {
+        "lat": 47.79315,
+        "lon": 13.30291
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Lokale Talwinde beachten.",
+      "description": "Landemöglichkeit bei der unteren Wiese nahe Fußballplatz mit Windsack."
+    }
+  ]
+}
