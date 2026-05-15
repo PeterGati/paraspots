@@ -1,0 +1,163 @@
+{
+  "region": "salzburg",
+  "site": "fulseck",
+  "name": "Fulseck",
+  "coordinates": {
+    "lat": 47.23528,
+    "lon": 13.14806
+  },
+  "talHeight": 820,
+  "operator": {
+    "name": "Dorfgasteiner Bergbahnen",
+    "url": "",
+    "phone": "+43-6433-72230"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkplatz bei der Fulseckbahn und beim Solarbad Dorfgastein"
+  },
+  "airspaces": [
+    "Naturschutzgebiet Heukareck–Schuhflicker–Paarsee",
+    "Vogelschutzgebiet Rauris",
+    "Nationalpark Hohe Tauern"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "O",
+    "SO",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Über die A10 Tauernautobahn bis Bischofshofen, weiter über die B311 Richtung St. Johann im Pongau und bei Lend in das Gasteinertal. In Dorfgastein den Schildern zur Bergbahn folgen und mit der Fulseckbahn auffahren.",
+  "description": "Vielseitiges Fluggebiet für Genussflüge, Thermik- und Streckenflüge Sommer wie Winter. Besonders im Frühjahr starke Thermik und gute XC-Möglichkeiten Richtung Gasteiner Runde oder Pinzgauer Spaziergang. Das Gasteiner Tal ist föhnanfällig. Achtung auf Leeturbulenzen bei West- und Nordwestwind sowie zahlreiche Hochspannungsleitungen an den Landeplätzen. Flugverbote und Mindesthöhen im Bereich Arltörl, Naturschutzgebiet und Nationalpark Hohe Tauern beachten.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Gipfel",
+      "coordinates": {
+        "lat": 47.23528,
+        "lon": 13.14806
+      },
+      "startHeight": 2033,
+      "heightDifference": 1213,
+      "launchDirections": [
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Sehr gute Soaringbedingungen bei W- und NW-Wind.",
+      "description": "Großer und einfacher Weststartplatz nahe der Bergstation."
+    },
+    {
+      "name": "Drachenrampe",
+      "coordinates": {
+        "lat": 47.23528,
+        "lon": 13.14806
+      },
+      "startHeight": 2033,
+      "heightDifference": 1213,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Steiler Anlauf, nur für geübte Piloten.",
+      "description": "Ostseitige Drachenrampe direkt am Grat."
+    },
+    {
+      "name": "Winterstartplatz für Paragleiter",
+      "coordinates": {
+        "lat": 47.23750,
+        "lon": 13.14861
+      },
+      "startHeight": 2020,
+      "heightDifference": 1200,
+      "launchDirections": [
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Sehr gute Bedingungen bei Westlagen.",
+      "description": "Präparierter Winterstartplatz nördlich der Bergstation."
+    },
+    {
+      "name": "Oststartplatz für Paragleiter",
+      "coordinates": {
+        "lat": 47.23528,
+        "lon": 13.14806
+      },
+      "startHeight": 2030,
+      "heightDifference": 1210,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Sehr steiler Anlauf, empfindlich auf Windwechsel.",
+      "description": "Kleiner und schwieriger Oststartplatz für erfahrene Piloten."
+    },
+    {
+      "name": "Mittelstation",
+      "coordinates": {
+        "lat": 47.23986,
+        "lon": 13.12725
+      },
+      "startHeight": 1540,
+      "heightDifference": 720,
+      "launchDirections": [
+        "N",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Lokale Thermik und Talwind beachten.",
+      "description": "Einfache Wiesenstartmöglichkeit nahe der Mittelstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Maierhofen",
+      "coordinates": {
+        "lat": 47.25053,
+        "lon": 13.10242
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Leeturbulenzen bei starkem W-/NW-Wind.",
+      "description": "Landeplatz nahe Schwimmbad und Talstation. Rechtsvolte vorgeschrieben, Stromleitungen beachten."
+    },
+    {
+      "name": "Mienerbauer / Dorfgastein",
+      "coordinates": {
+        "lat": 47.24700,
+        "lon": 13.10600
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hoch- und Niederspannungsleitungen im Anflugbereich.",
+      "description": "Kleiner anspruchsvoller Landeplatz nahe Dorfgastein."
+    },
+    {
+      "name": "Harbach / Stöckelbauer / Clubwiese",
+      "coordinates": {
+        "lat": 47.22517,
+        "lon": 13.10889
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Lokale Talwinde beachten.",
+      "description": "Großer offizieller Club-Landeplatz südlich von Dorfgastein."
+    }
+  ]
+}
