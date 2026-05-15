@@ -1,0 +1,120 @@
+{
+  "region": "salzburg",
+  "site": "grießenkar",
+  "name": "Grießenkar",
+
+  "coordinates": {
+    "lat": 47.32487,
+    "lon": 13.34754
+  },
+
+  "talHeight": 860,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze bei der Flying Mozart Talstation in Wagrain sowie in Flachau vorhanden."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "W"
+  ],
+
+  "webcam": "https://www.flachau.com/de/live-info/webcams",
+
+  "approachDescription": "Von Wagrain mit der Flying Mozart Seilbahn fast bis zum Gipfel. Danach wenige Minuten zu Fuß zum Startplatz neben dem Gipfelkreuz. Alternativ von Flachau im Winter über Space Jet 1+2 und Star Jet 3 erreichbar.",
+
+  "description": "Ganzjähriges Allround-Fluggebiet mit Soaring, Thermik- und Streckenflugmöglichkeiten am Tauern-Nordrand. Im Winter hervorragendes Soaring, ab Februar Thermikentwicklung. Mehrere Startmöglichkeiten je nach Windrichtung. Achtung auf zahlreiche Hochspannungsleitungen im Tal zwischen Wagrain und Flachau. Talwindsystem bei Ostlagen teilweise sehr dynamisch mit plötzlichen Windänderungen.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Flachau",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1840,
+      "heightDifference": 980,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Ostlagen starke Talwindänderungen möglich.",
+      "description": "Startplatz nahe Gipfelbereich mit mehreren Windrichtungen. Geeignet für Soaring und Thermikflug."
+    },
+    {
+      "name": "Wagrain",
+      "coordinates": {
+        "lat": 47.32429,
+        "lon": 13.34755
+      },
+      "startHeight": 1840,
+      "heightDifference": 980,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Rotoren und Leeturbulenzen bei Starkwind möglich.",
+      "description": "Weststart direkt neben dem Gipfelkreuz. Überflug über die Kogelalmbahn nach dem Start."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Wagrain",
+      "coordinates": {
+        "lat": 47.32868,
+        "lon": 13.30409
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Starkwind Leeturbulenzen durch Bäume und Häuser.",
+      "description": "Kleiner Fußballplatz gegenüber dem Seilbahnparkplatz. Windsack vorhanden."
+    },
+    {
+      "name": "Sportplatz Wagrain",
+      "coordinates": {
+        "lat": 47.33439,
+        "lon": 13.30705
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Hochspannungsleitungen im Anflugbereich beachten.",
+      "description": "Landefeld hinter dem Schwimmbad Wagrain."
+    },
+    {
+      "name": "Flachauer Guthof",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Überlandleitungen bergseitig beachten.",
+      "description": "Große Landewiese nahe dem Guthof. Nicht die Wiese neben der Bar 'Kuhstall' benutzen."
+    }
+  ]
+}
