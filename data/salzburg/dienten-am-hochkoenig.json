@@ -1,0 +1,69 @@
+{
+  "region": "salzburg",
+  "site": "dienten-am-hochkoenig",
+  "name": "Dienten am Hochkönig",
+  "coordinates": {
+    "lat": 47.65333,
+    "lon": 12.79639
+  },
+  "talHeight": 1138,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Talstation in Dienten"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt nach Dienten oder Hinterthal. Auffahrt mit dem 2er Sessellift bis zur Gabühel-Hütte möglich. Alternativ Walk & Fly Aufstieg.",
+  "description": "Gemütliches kleines Fluggebiet für entspannte Abgleiter nach einem Skitag. Die Landung erfolgt nahe der Hütte beziehungsweise im Bereich links der Gondel über den Häusern. Besonders im Winter beliebt.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Gabühel-Hütte",
+      "coordinates": {
+        "lat": 47.65333,
+        "lon": 12.79639
+      },
+      "startHeight": 1673,
+      "heightDifference": 535,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Vor allem für ruhige Bedingungen geeignet.",
+      "description": "Sehr einfacher Start direkt bei der Gabühel-Hütte. Besonders beliebt im Winter für kurze Genussflüge."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Dienten Landewiese",
+      "coordinates": {
+        "lat": 47.64650,
+        "lon": 12.79350
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Lokale Talwindsysteme beachten.",
+      "description": "Landung links der Gondel über den Häusern mit ausreichend Platz."
+    }
+  ]
+}
