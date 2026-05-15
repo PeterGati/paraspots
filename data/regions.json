@@ -57,7 +57,31 @@
         {
           "slug": "abtenau-karkogel",
           "name": "Abtenau Karkogel"
-        }
+        },
+        {
+  "slug": "aineck",
+  "name": "Aineck"
+},
+        {
+  "slug": "baumgartgeier",
+  "name": "Baumgartgeier"
+},
+        {
+  "slug": "berghof-pihapperspitze",
+  "name": "Berghof/Pihapperspitze"
+},
+        {
+  "slug": "dienten-am-hochkoenig",
+  "name": "Dienten am Hochkönig"
+},
+        {
+  "slug": "filbling",
+  "name": "Filbling"
+},
+        {
+  "slug": "fulseck",
+  "name": "Fulseck"
+}
       ]
     },
     {
