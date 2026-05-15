@@ -1,0 +1,96 @@
+{
+  "region": "tirol",
+  "site": "silvretta-predigberg-adamberg-ballunspitze",
+  "name": "Silvretta - Predigberg-Adamberg-Ballunspitze",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 1568,
+  "operator": {
+    "name": "Flugschule ELMAR GANAHL",
+    "url": "http://www.flugschule.galtuer.at",
+    "phone": "+43-5543-8256"
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Fliegertreff beim Gasthof/Hotel Silbertaler in Galtür"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt über Landeck Richtung Westen zum Paznauntal. Abzweig in Pians nach Galtür. Vom Bodenseeraum auch über Montafon und die Silvretta-Hochalpenstraße erreichbar (Wintersperre beachten). Die Flugschule organisiert Shuttlefahrten zu den Startplätzen.",
+  "description": "Hochalpines Fluggebiet mit Startmöglichkeiten für Ost- und Westwind. Bei Westwind Soaring Richtung Jamtal nach Süden, bei Ostwind Soaring an der Ballunspitze. Traumflüge bis 4000 m ins Jamtal und Richtung Fluchthorn sowie zu den Gletschern möglich. Talwindsysteme beachten. Hochalpines Gelände. Große Infrastruktur mit Hotel, Flugschule und Shuttle-Service. Auch für weniger geübte Piloten durch Betreuung der Flugschule geeignet.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Ballunspitze",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": null,
+      "heightDifference": null,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Ostwind geeignet, hochalpines Gelände beachten",
+      "description": "Startplatz im Schigebiet Wirl. Soaring an der Ballunspitze bei Ostwind."
+    },
+    {
+      "name": "Adamberg",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": null,
+      "heightDifference": null,
+      "launchDirections": [],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsysteme beachten",
+      "description": "Hochalpiner Startplatz oberhalb Galtür."
+    },
+    {
+      "name": "Predigberg",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": null,
+      "heightDifference": null,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Westwind sehr gute Soaringbedingungen",
+      "description": "Soaringflug entlang des Jamtals Richtung Süden."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Hauptlandeplatz Galtür",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind am Nachmittag möglich",
+      "description": "Großer Landeplatz mit großem Windsack direkt neben der Straße nach Ischgl, etwa 1 km östlich vom Ortseingang Galtür."
+    }
+  ]
+}
