@@ -1,0 +1,71 @@
+{
+  "region": "tirol",
+  "site": "st-anton-kapall",
+  "name": "St. Anton - Kapall",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 1200,
+  "operator": {
+    "name": "Flight Connection Arlberg",
+    "url": "http://www.fca.at",
+    "phone": "+43-664-1415166"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Bei der Nassereinbahn Talstation"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Mit der Gampenbahn oder alternativ der Nassereinbahn und anschließend mit dem 6er-Sessellift Kapall zum Startplatz. Die Nassereinbahn wird empfohlen, da sich dort auch der Landeplatz befindet.",
+  "description": "Gut erreichbares Fluggebiet für Sommer- und Winterflüge oberhalb von St. Anton am Arlberg. Der Startplatz liegt nahe der Bergstation der Kapallbahn. Viele Liftseile und Hochspannungsleitungen im Talbereich erfordern erhöhte Aufmerksamkeit. Die Leitungen müssen beim Anflug auf den Landeplatz mit ausreichender Höhe überflogen werden.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Kapall",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2330,
+      "heightDifference": 1050,
+      "launchDirections": [
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei starkem Wind anspruchsvoll, Liftseile beachten",
+      "description": "Startbereich rechts neben einer kleinen Holzhütte mit Tandemflugwerbung nahe der Bergstation der Kapallbahn."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Kinderland",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Hochspannungsleitungen im Anflug beachten",
+      "description": "Landeplatz etwa 300 m Richtung St. Anton oberhalb der Talstation der Nassereinbahn direkt neben dem Ski-Kinderland."
+    }
+  ]
+}
