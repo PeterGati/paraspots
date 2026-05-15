@@ -1,0 +1,100 @@
+{
+  "region": "salzburg",
+  "site": "keeskogel",
+  "name": "Keeskogel",
+
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+
+  "talHeight": 1000,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Hopffeldboden."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "W",
+    "SW",
+    "O",
+    "NO"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Start wie beim Großvenediger: Auto in Hopffeldboden abstellen, per Taxi zur Materialseilbahn und über den Sommerweg zur Kürsinger Hütte aufsteigen. Von dort etwa 2 Stunden einfacher Anstieg zum Gipfel. Für den östlichen Start traversiert man etwa 150 Meter nach Norden zu einem geneigten Schneefeld.",
+
+  "description": "Hochalpines Walk&Fly Gebiet mit beeindruckendem Panorama auf den Großvenediger. Flug ins Obersulzbachtal oder alternativ über das Untersulzbachtal möglich. Gute Thermik an südostexponierten Talflanken bereits am Vormittag. Sehr abgelegenes Gebiet mit alpinen Bedingungen und Eigenverantwortung.",
+
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+
+  "startpunkte": [
+    {
+      "name": "Keeskogel Weststart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3200,
+      "heightDifference": 2200,
+      "launchDirections": [
+        "W",
+        "SW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpines Gelände mit stark wechselnden Bedingungen.",
+      "description": "Direkter Gipfelstart Richtung Westen oder Südwesten."
+    },
+    {
+      "name": "Keeskogel Oststart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3200,
+      "heightDifference": 2200,
+      "launchDirections": [
+        "O",
+        "NO"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Schneefeldstart mit alpinen Windbedingungen.",
+      "description": "Östlicher Start über geneigtes Schneefeld nördlich des Gipfels."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Hopffeldboden",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwindsysteme im Obersulzbachtal beachten.",
+      "description": "Landung auf den Wiesen im Bereich Hopffeldboden."
+    }
+  ]
+}
