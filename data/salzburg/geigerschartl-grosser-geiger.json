@@ -1,0 +1,84 @@
+{
+  "region": "salzburg",
+  "site": "geigerschartl-grosser-geiger",
+  "name": "Geigerschartl(Grosser Geiger)",
+
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+
+  "talHeight": 858,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Pinzgau Hopffeldboden bei der Materialseilbahn Kürsinger Hütte."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "NW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Ausgangspunkt ist Pinzgau Hopffeldboden bei der Materialseilbahn Kürsinger Hütte. Von dort zur Türkischen Zeltstadt, westlich am kleinen See vorbei zum Gletscher. Danach Richtung Kleiner Maurerkeeskopf zum Punkt 2717 und direkt zur Scharte.",
+
+  "description": "Hochalpines Walk&Fly Gebiet im Bereich des Grossen Geigers. Wunderschöner Flug über eines der größten Gletschergebiete der Ostalpen Richtung Postalm im Obersulzbachtal. Die Spaltensituation kann kritisch sein, besonders im Bereich der Scharte. Sehr sichere Beherrschung von Steigeisen erforderlich. Start direkt an der steilen Scharte sportlich und anspruchsvoll.",
+
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+
+  "startpunkte": [
+    {
+      "name": "Geigerschartl",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3142,
+      "heightDifference": 2284,
+      "launchDirections": [
+        "N",
+        "NO",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Sehr steiler alpiner Start, sensible Windbedingungen an der Scharte.",
+      "description": "Direktstart an der Scharte möglich, jedoch sehr steil und nur für erfahrene Alpinpiloten geeignet. Alternativ 250 Höhenmeter tiefer einfacher Start möglich."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Postalm Obersulzbachtal",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwindsysteme im Obersulzbachtal beachten.",
+      "description": "Landung im Bereich der Postalm im Obersulzbachtal."
+    }
+  ]
+}
