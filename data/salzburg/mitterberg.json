@@ -1,0 +1,89 @@
+{
+  "region": "salzburg",
+  "site": "mitterberg",
+  "name": "Mitterberg",
+
+  "coordinates": {
+    "lat": 47.11687,
+    "lon": 13.72820
+  },
+
+  "talHeight": 1025,
+
+  "operator": {
+    "name": "",
+    "url": "https://www.lungau.at",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Gfrererstadl in Unternberg."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": false,
+    "crossCountry": false
+  },
+
+  "windDirections": [],
+
+  "webcam": null,
+
+  "approachDescription": "Vom Gfrererstadl in Unternberg hinauf zum Frimlhof und weiter zum Fuchsen- oder Kreilstartplatz.",
+
+  "description": "Kleines Walk&Fly Gebiet im Lungau, besonders geeignet wenn stärkere Windbedingungen andere Fluggebiete wie Aineck oder Katschberg unmöglich machen. Einfacher Höhenunterschied und gute Soaringmöglichkeiten.",
+
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+
+  "startpunkte": [
+    {
+      "name": "Fuchsenstartplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1525,
+      "heightDifference": 500,
+      "launchDirections": [],
+      "difficulty": "mittel",
+      "windSensitivity": "Geeignet bei stärkerem Wind als alternative Flugoption.",
+      "description": "Walk&Fly Startplatz oberhalb Unternberg."
+    },
+    {
+      "name": "Kreilstartplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1525,
+      "heightDifference": 500,
+      "launchDirections": [],
+      "difficulty": "mittel",
+      "windSensitivity": "Alternative Startmöglichkeit bei unterschiedlichen Windbedingungen.",
+      "description": "Alternative Startstelle im Bereich Mitterberg."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Unternberg",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Lokale Talwindsysteme beachten.",
+      "description": "Landemöglichkeiten im Talbereich von Unternberg."
+    }
+  ]
+}
