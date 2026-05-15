@@ -1,0 +1,89 @@
+{
+  "region": "salzburg",
+  "site": "berghof-pihapperspitze",
+  "name": "Berghof/Pihapperspitze",
+  "coordinates": {
+    "lat": 47.26531,
+    "lon": 12.42708
+  },
+  "talHeight": 812,
+  "operator": {
+    "name": "DFC Wildkogelfalken",
+    "url": "",
+    "phone": "+43-6565-6668"
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": true,
+    "parking": "Parkplatz beim Gasthaus Berghof"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Mit dem Auto über Zell am See und Mittersill nach Hollersbach. Auffahrt zum Gasthaus Berghof möglich. Alternativ per Bahn bis Zell am See und weiter mit der Krimmler Bahn Richtung Hollersbach/Krimml.",
+  "description": "Entspanntes Fluggebiet mit sehr guter Thermik zwischen Juni und August. Gute Streckenflugmöglichkeiten zwischen den Krimmler Wasserfällen und dem Maiskogel. Der über den Pass Thurn einströmende Nordwind ermöglicht großflächiges Steigen. Beste Flugzeit am späten Nachmittag zwischen 16 und 20 Uhr. Am Abend kann in der Talmitte Umkehrthermik entstehen, wodurch es turbulent wird. Besonders am Badesee-Landeplatz entstehen durch Kaltluftausströmungen starke Windscherungen. Im Zweifel besser nach Bramberg ausweichen.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Berghof/Pihapperspitze",
+      "coordinates": {
+        "lat": 47.26531,
+        "lon": 12.42708
+      },
+      "startHeight": 1145,
+      "heightDifference": 333,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nordwind bringt gutes Steigen. Abends mögliche Umkehrthermik und turbulente Bedingungen.",
+      "description": "Wiesenstart neben einer kleinen Scheune mit Windsack. Toplanding direkt neben dem Gasthaus Berghof häufig möglich."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Wiese Hollersbach",
+      "coordinates": {
+        "lat": 47.27366,
+        "lon": 12.41910
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Windrichtungswechsel am Abend möglich.",
+      "description": "Offizielle Landewiese südlich des Flusses bei Hollersbach."
+    },
+    {
+      "name": "Badesee Hollersbach",
+      "coordinates": {
+        "lat": 47.26701,
+        "lon": 12.41314
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Abends starke Windscherungen durch Kaltluftausströmungen.",
+      "description": "Landeplatz beim Badesee mit wechselnden Windrichtungen und anspruchsvollen Abendbedingungen."
+    },
+    {
+      "name": "Berghof Toplanding",
+      "coordinates": {
+        "lat": 47.26531,
+        "lon": 12.42708
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Häufige Windwechsel und lokale Windscherungen beachten.",
+      "description": "Toplanding direkt neben dem Gasthaus Berghof auf großer Wiese."
+    }
+  ]
+}
