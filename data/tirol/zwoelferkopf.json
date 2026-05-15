@@ -1,0 +1,101 @@
+{
+  "region": "tirol",
+  "site": "zwoelferkopf",
+  "name": "Zwölferkopf",
+  "coordinates": {
+    "lat": 47.42752,
+    "lon": 11.69620
+  },
+  "talHeight": 943,
+  "operator": {
+    "name": "Karwendel Bergbahn / Gleitschirmschule Achensee",
+    "url": "https://www.karwendel-bergbahn.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Talstation der Karwendelbahn in Pertisau"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "N",
+    "O",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrt mit der Karwendel Bergbahn ab Pertisau. Von der Bergstation kurze Wanderungen von 5 bis 45 Minuten zu den jeweiligen Startplätzen.",
+  "description": "Vielseitiges Fluggebiet über dem Achensee mit spektakulärem Panorama zwischen Karwendel und Rofan. Besonders beliebt für Soaring bei Nordwind am Abend. Typische Talwindsysteme können am Landeplatz starke Turbulenzen und gefährliche Leewirkungen erzeugen. Bei kräftigem Nordwind wird teilweise eine Landung Richtung Maurach empfohlen. Durch häufig anwesende Fluglehrer auch für Wenigflieger interessant.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Skipiste",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1450,
+      "heightDifference": 507,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ideal bei Abendsoaring mit Nordwind",
+      "description": "Startplatz auf der Skipiste etwa fünf Minuten nördlich der Bergstation."
+    },
+    {
+      "name": "Bergstation Ost",
+      "coordinates": {
+        "lat": 47.42752,
+        "lon": 11.69620
+      },
+      "startHeight": 1465,
+      "heightDifference": 522,
+      "launchDirections": [
+        "N",
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Talwindsysteme beachten",
+      "description": "Startplatz direkt neben der Bergstation Richtung Norden und Osten."
+    },
+    {
+      "name": "Bergstation West",
+      "coordinates": {
+        "lat": 47.42706,
+        "lon": 11.69461
+      },
+      "startHeight": 1452,
+      "heightDifference": 509,
+      "launchDirections": [
+        "N",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nordwind kann stark werden",
+      "description": "Weststart direkt neben der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Wiesenhof",
+      "coordinates": {
+        "lat": 47.43769,
+        "lon": 11.70109
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Nordtalwind gefährliche Leeturbulenzen",
+      "description": "Landeplatz wenige Gehminuten von der Talstation entfernt. Mehrere Windsäcke vorhanden, unterschiedliche Windrichtungen möglich."
+    }
+  ]
+}
