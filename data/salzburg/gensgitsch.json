@@ -1,0 +1,112 @@
+{
+  "region": "salzburg",
+  "site": "gensgitsch",
+  "name": "Gensgitsch",
+
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+
+  "talHeight": 1100,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Wielandhof im Lignitztal."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "SO",
+    "S",
+    "SW",
+    "NO",
+    "NW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Ausgangspunkt ist der Wielandhof im Lignitztal. Zunächst über die Forststraße bergauf, nach etwa 200 Höhenmetern an der Wegkreuzung rechts. Nach einer kurzen Sackgasse kleinen Wasserlauf queren und weiter zur bergwärtsführenden Forststraße. Anschließend dem markierten Wanderweg über den Rücken bis zum Gipfel folgen.",
+
+  "description": "Ganzjährig interessantes Walk&Fly Gebiet im Lungau mit mehreren Startmöglichkeiten. Landschaftlich außergewöhnlich schöner Flugberg. Wiederholt wurden Gleitflüge bis Mariapfarr/Bruckdorf durchgeführt. Achtung auf das Talwindsystem an thermischen Tagen, besonders im engen Lignitztal. Landeflächen im Tal relativ einfach, jedoch auf Leitungen achten.",
+
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+
+  "startpunkte": [
+    {
+      "name": "Gensgitschalm",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2100,
+      "heightDifference": 1000,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem an thermischen Tagen beachten.",
+      "description": "Leichter Wiesenstart im Bereich der Alm."
+    },
+    {
+      "name": "Gensgitsch Gipfel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2279,
+      "heightDifference": 1179,
+      "launchDirections": [
+        "NO",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Selektiver Gipfelstart mit alpinen Bedingungen.",
+      "description": "Klippenstart hinter dem Gipfelkreuz. Nur für geübte Paraalpinisten geeignet."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Bruckdorf",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind und Stromleitungen beachten.",
+      "description": "Flaches Feld neben der Landesstraße mit Windfahne bei Tischlerei Pichler."
+    },
+    {
+      "name": "Wielandhof",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem im Lignitztal beachten.",
+      "description": "Relativ einfache Landemöglichkeit im Talbereich beim Wielandhof."
+    }
+  ]
+}
