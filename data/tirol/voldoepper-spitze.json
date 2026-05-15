@@ -1,0 +1,67 @@
+{
+  "region": "tirol",
+  "site": "voldoepper-spitze",
+  "name": "Voldöpper Spitze",
+  "coordinates": {
+    "lat": 47.47503,
+    "lon": 11.88971
+  },
+  "talHeight": 525,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz am Reintaler See"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Ausgangspunkt ist der Parkplatz am Reintaler See. Von dort führt ein gut beschilderter Wanderweg auf die Voldöpper Spitze.",
+  "description": "Ruhiges und wenig beflogenes Hike-and-Fly Gebiet mit etwa 1000 Höhenmetern Aufstieg. Im Frühjahr sehr thermischer Starthang. Im Sommer teilweise starker Talwind. Landungen auf den umliegenden Wiesen am Reintaler See oder Krummsee vermeiden, da dies zu Problemen mit den Grundeigentümern führt.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Startplatz Süd",
+      "coordinates": {
+        "lat": 47.47503,
+        "lon": 11.88971
+      },
+      "startHeight": 1509,
+      "heightDifference": 984,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Im Sommer teilweise starker Talwind",
+      "description": "Thermischer Südstart auf der Voldöpper Spitze."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Talbereich Kramsach",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind beachten",
+      "description": "Keine Landung auf den Wiesen am Reintaler See oder Krummsee."
+    }
+  ]
+}
