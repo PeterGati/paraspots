@@ -1,0 +1,73 @@
+{
+  "region": "salzburg",
+  "site": "aineck",
+  "name": "Aineck",
+  "coordinates": {
+    "lat": 47.05556,
+    "lon": 13.63806
+  },
+  "talHeight": 1035,
+  "operator": {
+    "name": "Aineckbahnen GmbH & CoKG",
+    "url": "https://www.aineck.at",
+    "phone": "+43-4734-83888"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Talstation und im Bereich Katschberghöhe"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NW",
+    "W",
+    "SW"
+  ],
+  "webcam": "https://www.katschberg.at/de/livecams",
+  "approachDescription": "Tauernautobahn A10 Salzburg Richtung Süden/Villach, Abfahrt St. Michael. Der Landeplatz befindet sich im Ortsteil St. Martin. Auffahrt bis zur Katschberghöhe und anschließend mit der Seilbahn auf den Gipfel. Alternativ Hike & Fly von der Katschberghöhe ca. 1 Stunde oder von St. Margarethen ca. 2,5 Stunden.",
+  "description": "Das Aineck ist ganzjährig befliegbar und bekannt für gute Thermik sowie ausgezeichnete Soaringbedingungen. Der Gipfel eignet sich wegen seines idealen Profils hervorragend zum Soaren. Achtung bei starkem Südwind: Gefahr von Turbulenzen durch Düseneffekt am Katschberg. Im Winter Auffahrt mit der Seilbahn von Anfang Dezember bis Mitte April möglich. Im Sommer eingeschränkte Betriebszeiten der Bahn. Großzügiger Landeplatz bei St. Martin direkt beim Clubhaus des DFC Lungau.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Aineck",
+      "coordinates": {
+        "lat": 47.05556,
+        "lon": 13.63806
+      },
+      "startHeight": 2220,
+      "heightDifference": 1185,
+      "launchDirections": [
+        "N",
+        "NW",
+        "W",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei starkem Südwind Turbulenzgefahr durch Düseneffekt am Katschberg.",
+      "description": "Sehr einfacher, großzügiger Startplatz mit hervorragenden Soaringbedingungen und guter Thermikentwicklung."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "St. Martin",
+      "coordinates": {
+        "lat": 47.09583,
+        "lon": 13.65639
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind am Nachmittag möglich.",
+      "description": "Große und einfache Landewiese direkt beim Clubhaus des DFC Lungau."
+    }
+  ]
+}
