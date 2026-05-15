@@ -1,0 +1,77 @@
+{
+  "region": "salzburg",
+  "site": "baumgartgeier",
+  "name": "Baumgartgeier",
+  "coordinates": {
+    "lat": 47.08333,
+    "lon": 12.00000
+  },
+  "talHeight": 1430,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten im Bereich Ronach an der alten Gerlosstraße"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Kufstein oder Zillertal über den Gerlospass nach Ronach. Hinter Ronach führt eine Straße in den Wald. Erste Abzweigung links auf den Fußweg, nach etwa 100 Metern nordwärts dem Grat bis zum Gipfel folgen. Reiner Hike & Fly Startplatz, Aufstieg etwa zwei Stunden.",
+  "description": "Kleiner, oft übersehener Berg nahe Gerlospass und Pinzgauer Spaziergang. Besonders im Winter ein hervorragendes Walk & Fly Gebiet mit sehr guten Soaringmöglichkeiten bei Westwind. Der Grat zwischen Baumgartgeier und Ronachgeier eignet sich ideal zum dynamischen Soaren. Achtung am Landeplatz Ronach: mehrere Stromleitungen im Bereich der Landewiese. Beste Landeeinteilung aus Südost, kurz vor der Landung die Straße queren und nahe dem Restaurant landen.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Summit",
+      "coordinates": {
+        "lat": 47.08333,
+        "lon": 12.00000
+      },
+      "startHeight": 2392,
+      "heightDifference": 962,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ideal bei Westwind. Bei winterlichen Bedingungen oft sehr gute Soaringbedingungen.",
+      "description": "Großzügiger alpiner Gipfelstart mit Startmöglichkeiten von Ost bis Nordwest. Besonders beliebt als Winter Walk & Fly Tour."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Ronach",
+      "coordinates": {
+        "lat": 47.09167,
+        "lon": 12.00833
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Mehrere Stromleitungen im Anflugbereich beachten.",
+      "description": "Landung nahe dem Restaurant in Ronach. Beste Anflugrichtung aus Südost."
+    }
+  ]
+}
