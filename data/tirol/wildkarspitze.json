@@ -1,0 +1,67 @@
+{
+  "region": "tirol",
+  "site": "wildkarspitze",
+  "name": "Wildkarspitze",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 1420,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei Finkau / Durlaßboden"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt über Zillertal oder Salzachtal Richtung Gerlos bis Finkau. Aufstieg von der Finkau über die Trisslalm, weiter ostwärts durch den Wald über die Wildkar-Hochalm und die Seekarscharte zum Gipfel.",
+  "description": "Hochalpines Walk-and-Fly Gebiet am Gerlospass, geeignet für Sommer- und Wintertouren. Anspruchsvolle Tour mit langer Gehzeit und hoher körperlicher Belastung, besonders im Winter bei tiefem Schnee. Start unterhalb des Gipfels Richtung Norden mit Landung bei der Finkau.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Wildkarspitze Nordstart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3073,
+      "heightDifference": 1653,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpines Gelände, Winterbedingungen und Schneelage kritisch",
+      "description": "Start knapp unterhalb des Gipfels Richtung Norden. Hochalpiner Schnee- oder Firnstart."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Finkau",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind möglich",
+      "description": "Landung im Talbereich bei der Finkau."
+    }
+  ]
+}
