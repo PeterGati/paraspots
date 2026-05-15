@@ -1,0 +1,79 @@
+{
+  "region": "tirol",
+  "site": "similaun",
+  "name": "Similaun",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 1895,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": ""
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt nach Vent im Ötztal. Von Vent Aufstieg zur Martin-Busch-Hütte und weiter zur Similaunhütte am Niederjoch, insgesamt etwa 4 Stunden. Von dort in knapp 2 Stunden über den Gletscher mit Steigeisen und Pickel auf den Gipfel.",
+  "description": "Hochalpines Walk-and-Fly Gebiet im Ötztal mit spektakulären Gletscherlandschaften und anspruchsvollem Rückflug nach Vent. Thermisch aktives Gelände mit oft kräftiger Thermik. Der Flug vom Gipfel nach Vent bietet eindrucksvolle Ausblicke und etwa 12 km Flugstrecke. Früh starten empfohlen, da die Ost- und Südosthänge später starke Thermik und problematische Startwinde entwickeln können. Nur bei prognostiziert windstillen Bedingungen geeignet.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Similaun Gipfel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3599,
+      "heightDifference": 1704,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei windstillen Bedingungen starten, Thermikentwicklung ab spätem Vormittag",
+      "description": "Steiler Firn- und Schotterhang knapp unterhalb des Gipfels mit Panorama auf Marzellspitze und Hintere Schwärze. Weitere Startmöglichkeiten auf etwa 3500 m sowie am Gletscherbereich um 3300 m."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Vent Tal",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindentwicklung möglich",
+      "description": "Großzügige Landemöglichkeiten rund um Vent entlang des Talbodens."
+    }
+  ]
+}
