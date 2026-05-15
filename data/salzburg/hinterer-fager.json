@@ -1,0 +1,92 @@
+{
+  "region": "salzburg",
+  "site": "hinterer-fager",
+  "name": "Hinterer Fager",
+
+  "coordinates": {
+    "lat": 47.32636,
+    "lon": 13.53905
+  },
+
+  "talHeight": 1000,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Gasthof Waldherr an der B99."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": false
+  },
+
+  "windDirections": [
+    "W",
+    "NW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Ausgangspunkt ist der Gasthof Waldherr direkt an der B99. Von dort über Forstwege ostwärts bergauf. Ab etwa 1580 m geht es querfeldein weiter bis zum Startplatz. Im Winter alternativ mit den Bergbahnen des Skigebiets Forstau bis zur Trinkeralm und anschließend etwa 2 km entlang des Grates.",
+
+  "description": "Schönes Walk&Fly Gebiet in den Radstädter Tauern mit traumhafter Aussicht. Der Flug führt entweder westlich ins Taurachtal oder nordwestlich Richtung Radstadt ins Ennstal. Im Sommer Vorsicht wegen engem Tal und Talwindsystem. Kein offizielles Fluggebiet, daher nur wilde Landemöglichkeiten auf Wiesen im Talbereich.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Hinterer Fager",
+      "coordinates": {
+        "lat": 47.32636,
+        "lon": 13.53905
+      },
+      "startHeight": 1898,
+      "heightDifference": 898,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Im Sommer auf Talwind im engen Tal achten.",
+      "description": "Relativ flacher Startplatz mit zunehmend steilerem Gelände. Platz für mindestens zwei Schirme nebeneinander."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Diverse Landemöglichkeiten Untertauern",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwindsystem beachten.",
+      "description": "Wilde Landemöglichkeiten auf Wiesen im Taurachtal bei Untertauern."
+    },
+    {
+      "name": "Diverse Landemöglichkeiten Radstadt",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Talwind im Ennstal beachten.",
+      "description": "Wilde Landemöglichkeiten auf Wiesen im Ennstal bei Radstadt."
+    }
+  ]
+}
