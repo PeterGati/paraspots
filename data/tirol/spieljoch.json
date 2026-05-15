@@ -1,0 +1,87 @@
+{
+  "region": "tirol",
+  "site": "spieljoch",
+  "name": "Spieljoch",
+  "coordinates": {
+    "lat": 47.35000,
+    "lon": 11.84972
+  },
+  "talHeight": 550,
+  "operator": {
+    "name": "Spieljochbahn",
+    "url": "",
+    "phone": "+43-5288-62920-0"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Spieljochbahn"
+  },
+  "airspaces": [
+    "CTA Innsbruck-Ost"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO"
+  ],
+  "webcam": null,
+  "approachDescription": "Über die Inntalautobahn Wörgl–Innsbruck bis Jenbach/Strass und dort auf die B169 ins Zillertal Richtung Zell am Ziller bzw. Mayrhofen bis Fügen. Auffahrt mit der Spieljochbahn.",
+  "description": "Zusammen mit dem Zillertal bietet das Gebiet eines der abwechslungsreichsten Flugreviere Tirols. Bereits früh am Tag entstehen gute Aufwinde. Über dem Larchkopf treffen sich häufig Soaringpiloten. Streckenflüge entlang des Zillertals bis ins Pinzgau sind möglich. Hochspannungsleitungen im Talbereich beachten. Bei West bis Südwest ist der Start nicht empfehlenswert. Talwindeinfluss aus dem Zillertal und Lee Richtung Inntal berücksichtigen.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Sommerstart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1775,
+      "heightDifference": 1225,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei West bis Südwest ungeeignet, Talwind beachten",
+      "description": "Wiesenstart knapp unterhalb der Bergstation der Spieljochbahn."
+    },
+    {
+      "name": "Onkeljoch",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1800,
+      "heightDifference": 1250,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind aus dem Zillertal möglich",
+      "description": "Komfortabler Wiesenstarthang am Onkeljoch mit guter Thermikanbindung."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Wiese bei Talstation",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Leicht abschüssig, Hochspannungsleitungen beachten",
+      "description": "Wiesenlandung etwa fünf Minuten von der Talstation entfernt."
+    }
+  ]
+}
