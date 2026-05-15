@@ -1,0 +1,84 @@
+{
+  "region": "tirol",
+  "site": "oetztal-oetz",
+  "name": "Ötztal - Ötz",
+  "coordinates": {
+    "lat": 47.20861,
+    "lon": 10.93528
+  },
+  "talHeight": 767,
+  "operator": {
+    "name": "Bergbahnen Oetz-Hochoetz",
+    "url": "",
+    "phone": "+43-5252-6385"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation der Bergbahnen Oetz-Hochoetz"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Anreise über die Inntalautobahn via Innsbruck oder über den Fernpass und Imst bis nach Ötz. Die Bergbahnen Oetz-Hochoetz sind im Sommer nicht in Betrieb, daher ist dann nur der untere Startplatz oder ein Aufstieg zu Fuß möglich.",
+  "description": "Hervorragendes Thermikfluggebiet am Eingang des Ötztales mit starken alpinen Bedingungen. Die schroffen Gipfel rund um den Acherkogel erzeugen intensive Thermik und teils bis ins Tal reichende Leewinde. Besonders im Sommer sind die rauen Aufwinde für Einsteiger ungeeignet. Flüge bis 3800 m sind möglich. Vorsicht bei Südlagen und Föhn, da der Südwind bis zum Talgrund durchschlagen kann.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Bergstation-Hochötz",
+      "coordinates": {
+        "lat": 47.20873,
+        "lon": 10.93525
+      },
+      "startHeight": 2136,
+      "heightDifference": 1369,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Starke Thermik und mögliche Querwinde",
+      "description": "Gleitschirm- und Drachenstartplatz oberhalb des Bergrestaurants Hochoetz."
+    },
+    {
+      "name": "Alte Mittelstation",
+      "coordinates": {
+        "lat": 47.20855,
+        "lon": 10.91783
+      },
+      "startHeight": 1430,
+      "heightDifference": 663,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Querwinde im oberen Bereich möglich",
+      "description": "Startplatz oberhalb der Jausenstation Schönblick. Mit Auto bis zur Jausenstation erreichbar."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landewiese Ötz",
+      "coordinates": {
+        "lat": 47.20414,
+        "lon": 10.88956
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind und Föhn beachten",
+      "description": "Große Landewiese im Norden von Ötz."
+    }
+  ]
+}
