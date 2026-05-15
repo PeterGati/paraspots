@@ -1,0 +1,67 @@
+{
+  "region": "tirol",
+  "site": "oetztal-umhausen",
+  "name": "Ötztal - Umhausen",
+  "coordinates": {
+    "lat": 47.13266,
+    "lon": 10.94904
+  },
+  "talHeight": 1020,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten in Umhausen und bei Bichl"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Ötz dem Talverlauf bis Umhausen folgen. Von dort sind Wege Richtung Wasserfall Niederthai ausgeschildert. Auf der oberen Höhe des Wasserfalls Richtung Bichl weitergehen. Der Startplatz befindet sich hinter den letzten Häusern.",
+  "description": "Einfach erreichbares Thermikfluggebiet im mittleren Ötztal. Obwohl die Höhendifferenz relativ gering ist, ermöglicht die Thermik ab Mittag gute Höhengewinne. Das Gelände eignet sich für Flüge entlang des Ötztales Richtung Norden oder Süden. Vorsicht am Wasserfall von Niederthai: Dort können Turbulenzen entstehen.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Bichl",
+      "coordinates": {
+        "lat": 47.13266,
+        "lon": 10.94904
+      },
+      "startHeight": 1620,
+      "heightDifference": 600,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Linksseitig beim Wasserfall Turbulenzen möglich",
+      "description": "Ausreichend lange und angenehm geneigte Startwiese hinter den letzten Häusern von Bichl."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Umhausen",
+      "coordinates": {
+        "lat": 47.13556,
+        "lon": 10.93389
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Leichter Talwind möglich",
+      "description": "Große, leicht nach Norden geneigte Landewiese am Ortsrand von Umhausen."
+    }
+  ]
+}
