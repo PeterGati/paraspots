@@ -81,7 +81,64 @@
         {
   "slug": "fulseck",
   "name": "Fulseck"
+},
+        {
+  "slug": "gaisberg",
+  "name": "Gaisberg"
+},
+        {
+  "slug": "geigerschartl-grosser-geiger",
+  "name": "Geigerschartl(Grosser Geiger)"
+},
+        {
+  "slug": "gensgitsch",
+  "name": "Gensgitsch"
+},
+        {
+  "slug": "granatspitze",
+  "name": "Granatspitze"
+},
+        {
+  "slug": "grießenkar",
+  "name": "Grießenkar"
+},
+        {
+  "slug": "großvenediger",
+  "name": "Großvenediger"
+},
+        {
+  "slug": "gumma",
+  "name": "Gumma"
+},
+        {
+  "slug": "hinterer-fager",
+  "name": "Hinterer Fager"
+},
+        {
+  "slug": "hochkönig",
+  "name": "Hochkönig"
+},
+        {
+  "slug": "keeskogel",
+  "name": "Keeskogel"
+},
+        {
+  "slug": "mitterberg",
+  "name": "Mitterberg"
+},
+        {
+  "slug": "obertauern-zehnerkar",
+  "name": "Obertauern/Zehnerkar"
+},
+        {
+  "slug": "reitlehen",
+  "name": "Reitlehen"
+},
+        {
+  "slug": "rossfeld",
+  "name": "Rossfeld"
 }
+        
       ]
     },
     {
