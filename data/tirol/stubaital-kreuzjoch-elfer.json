@@ -1,0 +1,99 @@
+{
+  "region": "tirol",
+  "site": "stubaital-kreuzjoch-elfer",
+  "name": "Stubaital - Kreuzjoch / Elfer",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 937,
+  "operator": {
+    "name": "Flugschule Parafly Stubaital GmbH",
+    "url": "https://www.parafly.at",
+    "phone": "+43-5225-62270"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Großer Landeplatz nahe der Elfer-Talstation in Fulpmes/Medraz"
+  },
+  "airspaces": [
+    "CTA Innsbruck"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "O",
+    "SO",
+    "S"
+  ],
+  "webcam": "https://www.parafly.at",
+  "approachDescription": "Über die A13 Brennerautobahn bis Ausfahrt Schönberg/Stubaital, anschließend über die B183 über Mieders und Telfes nach Fulpmes. Auffahrt mit der Schlick 2000 Bahn oder der Elferbahn möglich.",
+  "description": "Ganzjährig befliegbares Thermikfluggebiet im Stubaital mit zwei nahe beieinanderliegenden Flugbergen: Kreuzjoch und Elfer. Bereits ab Ende Januar sind thermische Flüge möglich. Das lokale Mikroklima ermöglicht oft Flugbedingungen selbst bei schlechterem Wetter in anderen Regionen Österreichs. Talwind aus dem Inntal ermöglicht häufig Soaring am Elfer. Achtung auf starken Talwind, Föhn und intensiven Schulungsbetrieb. Die CTA Innsbruck begrenzt den Flugraum Richtung Norden.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Kreuzjoch",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2170,
+      "heightDifference": 1233,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind und Föhn beachten",
+      "description": "Naturstartplatz oberhalb der Bergstation. Rechts unterhalb der Drachenrampe befindet sich der PG-Startplatz."
+    },
+    {
+      "name": "Elfer",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2206,
+      "heightDifference": 1269,
+      "launchDirections": [
+        "N",
+        "O"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Starker Talwind ab Mittag möglich",
+      "description": "Ideal bei Ost-, Nord- und Nordwestwind. Häufige Soaring- und Thermikflüge durch Stubaital-Mikroklima."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Elfer",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Keine klassische Landevolte wegen Talwind",
+      "description": "Große Wiese zwischen Fulpmes und Medraz wenige Meter östlich der Elfer-Talstation."
+    },
+    {
+      "name": "Kreuzjoch Landewiese",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind beachten",
+      "description": "Großzügige Landewiese auf etwa 937 m Höhe nahe Fulpmes."
+    }
+  ]
+}
