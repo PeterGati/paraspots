@@ -1,0 +1,101 @@
+{
+  "region": "salzburg",
+  "site": "granatspitze",
+  "name": "Granatspitze",
+
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+
+  "talHeight": 1464,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Enzingerboden."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": false
+  },
+
+  "windDirections": [
+    "O",
+    "N",
+    "S",
+    "W"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Vom Parkplatz Enzingerboden mit der Seilbahn zur Rudolfshütte. Von dort etwa 2 Stunden Skitour zur Granatspitze. Im Gipfelbereich teilweise ausgesetzt. Wegen Lawinengefahr sollte die östlichere Route gewählt werden.",
+
+  "description": "Hochalpines Walk&Fly Gebiet im Nationalparkbereich. Startmöglichkeiten hauptsächlich Richtung Ost direkt im Gipfelbereich, zusätzlich bieten Scharten, Gletscher und der benachbarte Sonnblick Abflüge in nahezu alle Himmelsrichtungen. Traumhafte Hochgebirgslandschaft. Landebereich im Enzingerboden sorgfältig prüfen, da zahlreiche Leitungen vorhanden sind.",
+
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+
+  "startpunkte": [
+    {
+      "name": "Granatspitze Gipfel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3086,
+      "heightDifference": 1622,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Starker Wind im Gipfelbereich möglich, hochalpines Gelände.",
+      "description": "Start direkt im Gipfelbereich Richtung Ost. Hochalpiner Start mit ausgesetzten Passagen."
+    },
+    {
+      "name": "Scharten und Gletscher",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3000,
+      "heightDifference": 1536,
+      "launchDirections": [
+        "N",
+        "S",
+        "W",
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Je nach Scharte und Gelände unterschiedliche Windbedingungen.",
+      "description": "Alternative Abflugmöglichkeiten an Scharten, Gletscherflächen und beim Sonnblick."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Enzingerboden",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Leitungen im Landebereich beachten.",
+      "description": "Großzügiger Tal-Landeplatz im Bereich Enzingerboden, jedoch mit mehreren störenden Leitungen."
+    }
+  ]
+}
