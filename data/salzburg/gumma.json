@@ -1,0 +1,100 @@
+{
+  "region": "salzburg",
+  "site": "gumma",
+  "name": "Gumma",
+
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+
+  "talHeight": 1197,
+
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Wildbachhütte in Lessach oder Zufahrt bis Haus Esei in Göriach."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Zwei Zustiegsmöglichkeiten: Von Lessach Oberdorf über die Wildbachhütte und weiter direkt zum Gipfel. Alternativ von Göriach bis Haus Esei, danach über Forststraße zur Granglitzalm und weiter zum Gipfel. Im Winter wird der Aufstieg von Lessach empfohlen.",
+
+  "description": "Ganzjährig interessanter Walk&Fly Berg im Lungau mit großem Höhenunterschied. Je nach Bedingungen sind Toplandungen, Gleitflüge oder XC-Flüge möglich, inklusive Verbindungen Richtung Gensgitsch. Bei Westwind sind gute Soaringbedingungen möglich. Achtung auf Stromleitungen bei den Landewiesen rund um Lessach und Göriach.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Gumma",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2270,
+      "heightDifference": 1073,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei thermischen Bedingungen verlässlicher Bart vor dem Weststart.",
+      "description": "Großzügiger Rückenstart mit vielen Startrichtungen. Toplandungen sind ebenfalls möglich."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Lessach",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Stromleitungen beachten.",
+      "description": "Mehrere flache Wiesen rund um den Ortskern als Landemöglichkeiten."
+    },
+    {
+      "name": "Göriach",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Stromleitungen und Talwindsystem beachten.",
+      "description": "Flache Landewiesen im Talbereich von Göriach."
+    }
+  ]
+}
