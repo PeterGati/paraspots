@@ -1,0 +1,63 @@
+{
+  "region": "tirol",
+  "site": "wilder-kaiser",
+  "name": "Wilder Kaiser",
+  "coordinates": {
+    "lat": 47.51361,
+    "lon": 12.29444
+  },
+  "talHeight": 780,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Standseilbahn in Ellmau"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [],
+  "webcam": null,
+  "approachDescription": "Aufstieg ab Ellmau zur Gruttenhütte und weiter Richtung Wilder Kaiser. Walk and Fly ist erlaubt, Starts im Naturschutzgebiet jedoch verboten.",
+  "description": "Der Wilde Kaiser war früher ein beliebtes Herbstfluggebiet, inzwischen besteht jedoch ein absolutes Startverbot im Naturschutzgebiet aufgrund von Fehlverhalten einzelner Piloten. Walk and Fly ist zwar erlaubt, Starts sind jedoch untersagt. Im Talbereich sind meist moderate Bedingungen mit typischem Talwind aus West bis Nordwest am Nachmittag und Talauswind aus Süd am Abend anzutreffen.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Wilder Kaiser",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2344,
+      "heightDifference": 1564,
+      "launchDirections": [],
+      "difficulty": "mittel",
+      "windSensitivity": "Naturschutzgebiet mit absolutem Startverbot",
+      "description": "Historischer Startplatz oberhalb der Gruttenhütte. Starts sind verboten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Club Landeplatz",
+      "coordinates": {
+        "lat": 47.51361,
+        "lon": 12.29444
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Im Sommer meist Talwind aus West bis Nordwest",
+      "description": "Offizieller Landeplatz nahe der Talstation der Standseilbahn neben dem Fußballplatz. Windsäcke gut sichtbar."
+    }
+  ]
+}
