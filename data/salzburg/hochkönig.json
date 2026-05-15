@@ -1,0 +1,88 @@
+{
+  "region": "salzburg",
+  "site": "hochkönig",
+  "name": "Hochkönig",
+
+  "coordinates": {
+    "lat": 47.42035,
+    "lon": 13.06235
+  },
+
+  "talHeight": 1510,
+
+  "operator": {
+    "name": "",
+    "url": "https://www.hochkoenig.at",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz beim Arthurhaus bzw. Götschenhütte."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+
+  "webcam": "https://www.hochkoenig.at",
+
+  "approachDescription": "Vom Arthurhaus über breiten Schotterweg zur Mitterfeldalm. Weiter über das untere und obere Ochsenkar vorbei an der Torsäule zum Kniebeißer und über die Übergossene Alm zum Matrashaus. Letzter Gipfelanstieg teilweise mit Seilen und Leiter gesichert. Gehzeit etwa 5 Stunden.",
+
+  "description": "Sehr anspruchsvolles hochalpines Walk&Fly Gebiet am höchsten Bergstock der Berchtesgadener Alpen. Große XC-Möglichkeiten Richtung Pinzgauer Spaziergang, Gastein oder Tennengebirge. Der Startplatz direkt beim Matrashaus ist ein ausgesetzter Klippenstart mit wenig Fehlertoleranz. Wetter- und Windentwicklung müssen vor dem Aufstieg sorgfältig geprüft werden.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Matrashaus",
+      "coordinates": {
+        "lat": 47.42035,
+        "lon": 13.06227
+      },
+      "startHeight": 2940,
+      "heightDifference": 1430,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpiner Klippenstart mit wenig Spielraum für Fehler.",
+      "description": "Start direkt beim Matrashaus. Ausreichend Platz zum Auslegen, danach sofort steiles Gelände."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Götschenhütte",
+      "coordinates": {
+        "lat": 47.41084,
+        "lon": 13.12909
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Leicht abschüssiges Gelände Richtung Westen.",
+      "description": "Große Wiese direkt beim Parkplatz nahe der Götschenhütte."
+    }
+  ]
+}
