@@ -1,0 +1,75 @@
+{
+  "region": "tirol",
+  "site": "stableinalm",
+  "name": "Stableinalm",
+  "coordinates": {
+    "lat": 46.83333,
+    "lon": 11.20000
+  },
+  "talHeight": 1900,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Bei der Talstation in Vent"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt nach Vent im Ötztal. Auffahrt mit der Seilbahn zur Stableinalm.",
+  "description": "Ruhiges Fluggebiet oberhalb von Vent, das überwiegend im Winter genutzt wird. Gute Thermik am Vormittag, am Nachmittag entsteht häufig starker Talwind aus Richtung Sölden. Die Landschaft rund um Vent gilt als deutlich ruhiger und alpiner als das nahegelegene Sölden.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Stableinalm",
+      "coordinates": {
+        "lat": 46.83333,
+        "lon": 11.20000
+      },
+      "startHeight": 2350,
+      "heightDifference": 450,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nachmittags starker Talwind aus Richtung Sölden möglich",
+      "description": "Gestartet werden kann praktisch überall, wo genügend Platz zum Auslegen des Schirms vorhanden ist."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Vent Ort",
+      "coordinates": {
+        "lat": 46.83333,
+        "lon": 11.16667
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind beachten",
+      "description": "Großzügige Landeflächen rund um Vent vorhanden."
+    }
+  ]
+}
