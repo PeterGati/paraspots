@@ -1,0 +1,80 @@
+{
+  "region": "salzburg",
+  "site": "reitlehen",
+  "name": "Reitlehen",
+
+  "coordinates": {
+    "lat": 47.30972,
+    "lon": 13.56778
+  },
+
+  "talHeight": 856,
+
+  "operator": {
+    "name": "",
+    "url": "https://www.eben.at",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Zufahrt über Altenmarkt bis zur Reitlehen Alm."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "W"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Über Altenmarkt zur Reitlehen Alm fahren, anschließend zu Fuß über die Piste weiter zum Startplatz. Die Seilbahn ist nur im Winter in Betrieb.",
+
+  "description": "Anspruchsvolles Fluggebiet für erfahrene Piloten. Gute Thermik ermöglicht Streckenflüge in alle Richtungen. Besonders im Winter als Ski&Fly Gebiet interessant.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Hauptstartplatz",
+      "coordinates": {
+        "lat": 47.30972,
+        "lon": 13.56778
+      },
+      "startHeight": 1348,
+      "heightDifference": 492,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Westwind erforderlich, für Könner geeignet.",
+      "description": "Startplatz oberhalb der Reitlehen Alm mit Thermik- und XC-Potenzial."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Eben",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwindsystem beachten.",
+      "description": "Landemöglichkeiten im Talbereich von Eben."
+    }
+  ]
+}
