@@ -1,0 +1,97 @@
+{
+  "region": "salzburg",
+  "site": "großvenediger",
+  "name": "Großvenediger",
+
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+
+  "talHeight": 1000,
+
+  "operator": {
+    "name": "Nationalpark Hohe Tauern",
+    "url": "https://www.hohetauern.at/",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Großer Parkplatz mit Parkautomat in Hopffeldboden."
+  },
+
+  "airspaces": [
+    "Nationalpark Hohe Tauern Sonderregelungen",
+    "Teilweise Genehmigungspflicht für Gleitschirmflüge"
+  ],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Auto in Hopffeldboden abstellen und per Taxi zur Materialseilbahn fahren. Von dort Aufstieg zur Kürsinger Hütte und weiter über den Gletscher auf den Großvenediger. Im Frühjahr häufig als Skihochtour durchgeführt. Auf Gletscherspalten achten.",
+
+  "description": "Extrem hochalpines Walk&Fly Gebiet im Nationalpark Hohe Tauern. Grandiose Panorama- und Streckenflugmöglichkeiten über das Untersulzbachtal. Startmöglichkeiten nahezu in alle Himmelsrichtungen direkt am Gipfelbereich. Sehr lange Talquerung bis Hopffeldboden. Die rechtliche Situation im Nationalpark sollte vor dem Flug unbedingt abgeklärt werden. Sehr anspruchsvolle Hochtour mit Gletscherpassagen und Spaltengefahr.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Großvenediger Gipfel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 3666,
+      "heightDifference": 2666,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpiner Gletscherstart mit stark wechselnden Bedingungen.",
+      "description": "Start direkt vom Gipfelbereich über Gletscherabbrüche. Abflugmöglichkeiten in nahezu alle Richtungen."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Hopffeldboden",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwindsystem und lange Gleitstrecke beachten.",
+      "description": "Landung auf den Wiesen beim Parkplatz Hopffeldboden im Untersulzbachtal."
+    }
+  ]
+}
