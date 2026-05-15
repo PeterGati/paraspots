@@ -203,6 +203,57 @@
         {
   "slug": "seegrube",
   "name": "Seegrube"
+},
+        {
+  "slug": "silvretta-predigberg-adamberg-ballunspitze",
+  "name": "Silvretta - Predigberg-Adamberg-Ballunspitze"
+},
+        {
+  "slug": "similaun",
+  "name": "Similaun"
+},
+        {
+  "slug": "spieljoch",
+  "name": "Spieljoch"
+},
+        {
+  "slug": "st-anton-kapall",
+  "name": "St. Anton - Kapall"
+},{
+  "slug": "stableinalm",
+  "name": "Stableinalm"
+},
+        {
+  "slug": "stubaital-kreuzjoch-elfer",
+  "name": "Stubaital - Kreuzjoch / Elfer"
+},
+        {
+  "slug": "venet",
+  "name": "Venet"
+},
+        {
+  "slug": "voldoepper-spitze",
+  "name": "Voldöpper Spitze"
+},
+        {
+  "slug": "wilder-kaiser",
+  "name": "Wilder Kaiser"
+},
+        {
+  "slug": "wildkarspitze",
+  "name": "Wildkarspitze"
+},
+        {
+  "slug": "zwoelferkopf",
+  "name": "Zwölferkopf"
+},
+        {
+  "slug": "oetztal-oetz",
+  "name": "Ötztal - Ötz"
+},
+        {
+  "slug": "oetztal-umhausen",
+  "name": "Ötztal - Umhausen"
 }
         
     ]
