@@ -1,0 +1,88 @@
+{
+  "region": "salzburg",
+  "site": "gaisberg",
+  "name": "Gaisberg",
+
+  "coordinates": {
+    "lat": 47.80444,
+    "lon": 13.11064
+  },
+
+  "talHeight": 440,
+
+  "operator": {
+    "name": "1. Drachenflieger- und Paragleiterclub Salzburg / Fly4Fun",
+    "url": "https://www.paragleiter.com/",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Parken beim Campingplatz Aigen erlaubt. Weitere Parkmöglichkeiten beim Campingplatz."
+  },
+
+  "airspaces": [
+    "CTR Salzburg",
+    "SOPI Flugberechtigung erforderlich",
+    "Anmeldung beim Flughafen Salzburg erforderlich"
+  ],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "NO",
+    "NW",
+    "SW"
+  ],
+
+  "webcam": "https://www.paragleiter.com/gaisberg/flugordnung/",
+
+  "approachDescription": "Von Salzburg über die B158 Richtung St. Gilgen bis Heuberg und dort rechts auf die Gaisbergstraße. Alternativ von Süden über Elsbethen Richtung Vorderfager und Oberwinkl zur Gaisbergstraße. Zu Fuß vom Landeplatz Aigen über Waldweg und Almwiesen Richtung Zistelalm und weiter entlang der alten Zahnradbahntrasse bis zum Gipfel. Gehzeit 70–100 Minuten. Buslinie fährt stündlich auf den Gipfel.",
+
+  "description": "Thermik- und Streckenflugmöglichkeiten ganzjährig nutzbar, besonders gut von Januar bis Juli. XC-Flüge bevorzugt früh starten, meist Richtung Süden. Fluggebiet liegt innerhalb der CTR Salzburg, daher gelten spezielle Flugregeln und Mindestflughöhen. Eintragung in die Startkladde sowie Zahlung der Landegebühr erforderlich. Achtung auf Rotoren bei Seitenwind und Talwindsysteme. Mehrere Wiesenstarts für unterschiedliche Windrichtungen vorhanden.",
+
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Naturstart",
+      "coordinates": {
+        "lat": 47.80444,
+        "lon": 13.11064
+      },
+      "startHeight": 1280,
+      "heightDifference": 840,
+      "launchDirections": [
+        "NO",
+        "SW",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Rotoren bei Seitenwind von rechts möglich, thermisch aktiv ab Mittag.",
+      "description": "Großer Wiesenstart mit mehreren Startrichtungen. Geeignet für Gleitschirme und Drachen. Achtung auf Rotoren durch Bäume und Geländeformen."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Campingplatz Aigen",
+      "coordinates": {
+        "lat": 47.78083,
+        "lon": 13.08944
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Rotoren und enge Anflugbedingungen durch Bäume und Häuser.",
+      "description": "Wiese nördlich des Campingplatzes Aigen. Groß genug für Gleitschirme, für Drachen eher eng. Flugregeln beachten."
+    }
+  ]
+}
