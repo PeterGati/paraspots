@@ -1,0 +1,112 @@
+{
+  "region": "salzburg",
+  "site": "obertauern-zehnerkar",
+  "name": "Obertauern/Zehnerkar",
+
+  "coordinates": {
+    "lat": 47.25000,
+    "lon": 13.53306
+  },
+
+  "talHeight": 1665,
+
+  "operator": {
+    "name": "Liftgemeinschaft Obertauern",
+    "url": "",
+    "phone": "+43 (0)6456/7554"
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei den Liftanlagen und im Ortsgebiet Obertauern."
+  },
+
+  "airspaces": [],
+
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+
+  "windDirections": [
+    "N",
+    "NW",
+    "SO",
+    "S",
+    "SW"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Anfahrt über die A10 Salzburg/Villach bis St. Michael und weiter über die B99 nach Obertauern. Alternativ über Radstadt. Auffahrt mit den Liften der Liftgemeinschaft Obertauern.",
+
+  "description": "Hochalpines Fluggebiet in Passlage mit schnellen Wetterumschwüngen und Druckausgleich zwischen Nord- und Südseite. Trotz geringer Höhendifferenz anspruchsvolle Bedingungen. Besonders im Winter interessante Flüge zwischen den Skipisten möglich. Gute Flugerfahrung und routinierte Starttechnik erforderlich.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 3
+  },
+
+  "startpunkte": [
+    {
+      "name": "Zehnerkar",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2185,
+      "heightDifference": 520,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Schnelle Wetterwechsel sowie Rücken- und Seitenwind kritisch.",
+      "description": "Start westlich der Gipfelstation. Sehr routinierte Starttechnik erforderlich."
+    },
+    {
+      "name": "Seekarecklift",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2150,
+      "heightDifference": 480,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Passlage erzeugt rasch wechselnde Windbedingungen.",
+      "description": "Einfacher Startplatz im Bereich des Seekarecklifts."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Talstation Grünwaldkopf",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Zwischen den Skipisten auf Turbulenzen achten.",
+      "description": "Landemöglichkeiten im Bereich der Talstation Grünwaldkopf."
+    },
+    {
+      "name": "Zehnerkar Parkplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Windkanalisierung im Passbereich möglich.",
+      "description": "Landung im Bereich des Zehnerkar-Parkplatzes."
+    }
+  ]
+}
