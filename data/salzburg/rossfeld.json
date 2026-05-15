@@ -1,0 +1,100 @@
+{
+  "region": "salzburg",
+  "site": "rossfeld",
+  "name": "Rossfeld",
+
+  "coordinates": {
+    "lat": 47.62750,
+    "lon": 13.09556
+  },
+
+  "talHeight": 430,
+
+  "operator": {
+    "name": "",
+    "url": "https://www.festei.de",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Zufahrt über die Rossfeld Höhenstraße direkt zum Startplatz, mautpflichtig."
+  },
+
+  "airspaces": [
+    "CTR Salzburg",
+    "CTA Hallein (300m GND)"
+  ],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "O",
+    "SO"
+  ],
+
+  "webcam": null,
+
+  "approachDescription": "Anfahrt über Kuchl oder Hallein-Dürrnberg über die Rossfeld Höhenstraße direkt zum Startplatz. Alternativ mit öffentlichem Bus von Berchtesgaden bis Rossfeld Hennenköpfl.",
+
+  "description": "Thermik- und Soaringgebiet mit etwa 1100 Höhenmetern. Thermik setzt oft schon früh am Morgen ein. Anschlussmöglichkeiten Richtung Kehlsteinhaus, Hoher Göll, Jenner und Dürrnberg. Aufgrund der kontrollierten Lufträume und anspruchsvollen Startplätze nur für erfahrene Piloten empfohlen.",
+
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 4
+  },
+
+  "startpunkte": [
+    {
+      "name": "Rossfeld Gipfel Oststart",
+      "coordinates": {
+        "lat": 47.62750,
+        "lon": 13.09556
+      },
+      "startHeight": 1519,
+      "heightDifference": 1089,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Steiler und teilweise bewachsener Startplatz, Thermikbeginn oft früh am Morgen.",
+      "description": "Anspruchsvoller Oststart nahe dem Gipfelbereich."
+    },
+    {
+      "name": "Rossfeld NW-Start",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1519,
+      "heightDifference": 1089,
+      "launchDirections": [
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Sehr flacher Start, ausreichend Beschleunigung erforderlich.",
+      "description": "NW-Startplatz beim Gipfelkreuz. Nutzung laut Grundeigentümer offiziell nicht gestattet."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Kein offizieller Landeplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und kontrollierte Lufträume beachten.",
+      "description": "Individuelle Landewiesen im Talbereich nach vorheriger Prüfung auswählen."
+    }
+  ]
+}
