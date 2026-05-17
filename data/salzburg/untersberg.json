@@ -1,0 +1,71 @@
+{
+  "region": "salzburg",
+  "site": "untersberg",
+  "name": "Untersberg",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 459,
+  "operator": {
+    "name": "Paragleiterclub Luftikus",
+    "url": "https://www.paragleiter.com/",
+    "phone": "+43 6246 72477-0"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze bei der Talstation und beim Gasthof Esterer"
+  },
+  "airspaces": [
+    "CTR Salzburg"
+  ],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NW"
+  ],
+  "webcam": "https://www.untersbergbahn.at",
+  "approachDescription": "Aufstieg ab Fürstenbrunn/Glanegg über Dopplersteig oder Reitsteig zum Zeppezauerhaus und weiter zur Bergstation. Alternativ Auffahrt mit der Untersbergbahn.",
+  "description": "Anspruchsvolles alpines Fluggebiet nahe Salzburg mit CTR-Problematik. Stundenlange Thermikflüge möglich, Streckenflüge jedoch selten. Jährliches Flugverbot vom 10. September bis 5. Oktober. Toplanden im Bereich Klingeralm verboten.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Hauptstartplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1805,
+      "heightDifference": 1346,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Bei Westwind besser Salzburger Hochthron nutzen",
+      "description": "Kleiner Naturstartplatz oberhalb des Zeppezauerhauses nahe der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "CTR Salzburg und max. 100m GND beachten",
+      "description": "Großer offizieller Landeplatz neben dem Gasthof Esterer in Fürstenbrunn."
+    }
+  ]
+}
