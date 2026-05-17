@@ -1,0 +1,117 @@
+{
+  "region": "salzburg",
+  "site": "wildkogel",
+  "name": "Wildkogel",
+  "coordinates": {
+    "lat": 47.27944,
+    "lon": 12.29611
+  },
+  "talHeight": 835,
+  "operator": {
+    "name": "Wildkogelbahnen",
+    "url": "",
+    "phone": "+43 6565 6405"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz an der Talstation Neukirchen"
+  },
+  "airspaces": [
+    "Tiroler Luftraumregelungen"
+  ],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt über Mittersill nach Neukirchen am Großvenediger. Auffahrt mit der Wildkogelbahn oder kurzer Fußmarsch zum Gipfelstart.",
+  "description": "Großes XC-Gebiet im Pinzgau mit ausgezeichnetem Streckenflugpotenzial entlang des Pinzgauer Spaziergangs. Vorsicht bei Nordwind und starkem Osttalwind. Oft bereits ab Mittag Rückenwind am Start.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "SO-S-SW-N",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2225,
+      "heightDifference": 1390,
+      "launchDirections": [
+        "N",
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ab Mittag oft Rückenwind",
+      "description": "Großflächiger Gipfelstart nahe dem Wildkogelgipfel."
+    },
+    {
+      "name": "SO-S",
+      "coordinates": {
+        "lat": 47.27944,
+        "lon": 12.29611
+      },
+      "startHeight": 1950,
+      "heightDifference": 1115,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind aus Osten beachten",
+      "description": "Startplatz unterhalb des Wildkogelhauses."
+    },
+    {
+      "name": "S-SW",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2090,
+      "heightDifference": 1255,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nordwind erzeugt kräftige Leeturbulenzen",
+      "description": "Startplatz nahe der Wildkogelbahn."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Bramberg",
+      "coordinates": {
+        "lat": 47.27278,
+        "lon": 12.34194
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem beachten",
+      "description": "Landeplatz zwischen Kirche und Weichseldorf."
+    },
+    {
+      "name": "Neukirchen",
+      "coordinates": {
+        "lat": 47.25047,
+        "lon": 12.28369
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Windsack und Bahnlinie beachten",
+      "description": "Große Landewiese südlich der Bahngleise nahe dem Sportplatz."
+    }
+  ]
+}
