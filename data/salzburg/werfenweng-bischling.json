@@ -1,0 +1,103 @@
+{
+  "region": "salzburg",
+  "site": "werfenweng-bischling",
+  "name": "Werfenweng - Bischling",
+  "coordinates": {
+    "lat": 47.46306,
+    "lon": 13.29833
+  },
+  "talHeight": 930,
+  "operator": {
+    "name": "Bergbahnen Werfenweng",
+    "url": "https://www.bergbahnen-werfenweng.com",
+    "phone": "+43 6466 614"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze bei der Talstation der Bischlingbahn"
+  },
+  "airspaces": [
+    "Salzburg Luftraumstruktur"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "W"
+  ],
+  "webcam": "https://livecam.feratel.at/cam/werfenweng/5305/index.jsp",
+  "approachDescription": "Anfahrt über die A10 bis Pfarrwerfen, danach über die L229 nach Werfenweng. Auffahrt mit der Ikarus-Kabinenbahn oder zu Fuß.",
+  "description": "Sehr vielseitiges Fluggebiet mit Schutz vor vielen Windrichtungen. Gute Thermik und hervorragendes XC-Potenzial Richtung Dachstein, Salzburg und Schmittenhöhe. Achtung auf Seilbahnseile, Nordwindlagen beim Landen und die seit 2017 geänderte Luftraumstruktur.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Bischlinghöhe Ost",
+      "coordinates": {
+        "lat": 47.46444,
+        "lon": 13.29944
+      },
+      "startHeight": 1800,
+      "heightDifference": 870,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei gutem Ostwind sicher",
+      "description": "Kurzer und anspruchsvollerer Oststart nördlich der Bergstation."
+    },
+    {
+      "name": "Südgrat",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1800,
+      "heightDifference": 870,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch ab Mittag",
+      "description": "Einfacher Startplatz am Südgrat."
+    },
+    {
+      "name": "Alpengasthof Bischlinghöhe",
+      "coordinates": {
+        "lat": 47.46310,
+        "lon": 13.29830
+      },
+      "startHeight": 1820,
+      "heightDifference": 890,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei wenig Wind überfüllt und längere Wartezeiten",
+      "description": "Hauptstartplatz direkt beim Alpengasthof Bischlinghöhe."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Zaglau",
+      "coordinates": {
+        "lat": 47.45905,
+        "lon": 13.26904
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Nordwind kann den Landeanflug erschweren",
+      "description": "Große offizielle Landewiese westlich der Talstation."
+    }
+  ]
+}
