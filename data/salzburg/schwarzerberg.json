@@ -1,0 +1,72 @@
+{
+  "region": "salzburg",
+  "site": "schwarzerberg",
+  "name": "Schwarzerberg",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 483,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Ghf Bachrain"
+  },
+  "airspaces": [
+    "CTA Hallein",
+    "SRA 2"
+  ],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "A10 Ausfahrt Kuchl Richtung Golling, danach Richtung Strubau und weiter Richtung Ghf Bachrain. Markierter Wanderweg teilweise steil bis zum Gipfel.",
+  "description": "Sehr schöner Thermikberg in exponierter Lage im Salzachtal. Nach dem Start oft direkt nutzbare Thermik. Achtung auf CTA Hallein / SRA 2 mit maximal erlaubter Flughöhe von 1828 m. Im Tal teilweise kräftiger Nordtalwind.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Hauptstart",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1580,
+      "heightDifference": 1097,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind aus Nord im Salzachtal beachten",
+      "description": "Einfacher Wiesenstart im Gipfelbereich."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Kellau",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Teilweise starker Talwind und Stromleitungen",
+      "description": "Landungen auf verschiedenen Wiesen im Bereich Kellau möglich."
+    }
+  ]
+}
