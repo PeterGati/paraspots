@@ -1,0 +1,71 @@
+{
+  "region": "salzburg",
+  "site": "stubnerkogel",
+  "name": "Stubnerkogel",
+  "coordinates": {
+    "lat": 47.11639,
+    "lon": 13.10500
+  },
+  "talHeight": 1100,
+  "operator": {
+    "name": "",
+    "url": "https://www.fetzenflieger.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze an der Talstation Stubnerkogelbahn"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "O",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Ausgangspunkt an der Talstation der Stubnerkogelbahn südlich von Bad Gastein. Etwa 10 Minuten Fußweg zur Talstation.",
+  "description": "Alpines Thermik- und Streckenfluggebiet direkt am Alpenhauptkamm. Besonders im Winter beliebt. Sehr föhnanfällig. Vormittags kann der Start thermisch im Lee liegen, mittags sind Dust Devils möglich.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Stubnerkogel",
+      "coordinates": {
+        "lat": 47.11339,
+        "lon": 13.09947
+      },
+      "startHeight": 2220,
+      "heightDifference": 1120,
+      "launchDirections": [
+        "N",
+        "O",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Vormittags oft thermisch im Lee, föhnanfällig",
+      "description": "Alpiner Gipfelstartplatz mit großem XC-Potenzial."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "LP",
+      "coordinates": {
+        "lat": 47.09539,
+        "lon": 13.12189
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Mittags Dust Devils möglich",
+      "description": "Offizieller Landeplatz im Talbereich von Bad Gastein."
+    }
+  ]
+}
