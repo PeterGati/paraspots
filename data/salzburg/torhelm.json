@@ -1,0 +1,62 @@
+{
+  "region": "salzburg",
+  "site": "torhelm",
+  "name": "Torhelm",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 1191,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei Kühle Rast"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Zugang ab Kühle Rast bei Gerlos über Weissbachlalm, Mitterleger und Graben Torhelm. Aufstieg etwa 3,5 Stunden entlang des Weissbachl-Tals.",
+  "description": "Beliebtes Ski-and-Fly Gebiet nahe Gerlos und dem Zillertal. Besonders geeignet für Low-Flying und Speedflying-ähnliche Winterflüge bei wenig Wind. Sehr ruhiges Gelände abseits der touristischen Hotspots.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "summit",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2452,
+      "heightDifference": 1261,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Abhängig von Wetter und Schneelage",
+      "description": "Winterlicher Gipfelstartplatz für Ski-and-Fly und Low-Flying."
+    }
+  ],
+  "landeplaetze": []
+}
