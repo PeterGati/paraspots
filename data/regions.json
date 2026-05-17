@@ -137,6 +137,70 @@
         {
   "slug": "rossfeld",
   "name": "Rossfeld"
+},
+        {
+  "slug": "saalbach-hinterglemm-zwoelferkogel-schattberg",
+  "name": "Saalbach Hinterglemm Zwölferkogel / Schattberg"
+},
+        {
+  "slug": "schlenken",
+  "name": "Schlenken"
+},
+        {
+  "slug": "schafberg",
+  "name": "Schafberg"
+},
+        {
+  "slug": "schmittenhoehe",
+  "name": "Schmittenhöhe"
+},
+        {
+  "slug": "schwarzerberg",
+  "name": "Schwarzerberg"
+},
+        {
+  "slug": "speiereck",
+  "name": "Speiereck"
+},
+        {
+  "slug": "stubnerkogel",
+  "name": "Stubnerkogel"
+},
+        {
+  "slug": "torhelm",
+  "name": "Torhelm"
+},
+        {
+  "slug": "trattberg",
+  "name": "Trattberg"
+},
+        {
+  "slug": "untersberg",
+  "name": "Untersberg"
+},
+        {
+  "slug": "vorderes-labeneck",
+  "name": "Vorderes Labeneck"
+},
+        {
+  "slug": "walkfly-arena-weisspriachtal",
+  "name": "Walk+Fly Arena Weißpriachtal"
+},
+        {
+  "slug": "werfenweng-bischling",
+  "name": "Werfenweng - Bischling"
+},
+        {
+  "slug": "wildkogel",
+  "name": "Wildkogel"
+},
+        {
+  "slug": "zechnerkarspitze",
+  "name": "Zechnerkarspitze"
+},
+        {
+  "slug": "zwoelferhorn-12er-horn",
+  "name": "Zwölferhorn, 12er-Horn"
 }
         
       ]
