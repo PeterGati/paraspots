@@ -1,0 +1,100 @@
+{
+  "region": "salzburg",
+  "site": "schlenken",
+  "name": "Schlenken",
+
+  "coordinates": {
+    "lat": 47.68139,
+    "lon": 13.21333
+  },
+
+  "talHeight": 500,
+
+  "operator": {
+    "name": "SkyOne",
+    "url": "http://www.skyone.at",
+    "phone": ""
+  },
+
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten in Zillreith oder Vigaun"
+  },
+
+  "airspaces": [
+    "CTR Salzburg",
+    "CTA Hallein (300m GND)"
+  ],
+
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+
+  "windDirections": [
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+
+  "webcam": "http://www.skyone.at",
+
+  "approachDescription": "Anfahrt über Hallein – Adnet – Zillreith. Ausgangspunkt Adnet Zillreith oder Vigaun. Der Schlenken ist gut beschildert. Je nach Route 1,5 bis 3 Stunden Gehzeit. Über die Jägernase ist etwas Trittsicherheit erforderlich.",
+
+  "description": "Beliebter Walk-and-Fly Flugberg mit großen Wiesenstartplätzen und idealer Hangneigung. Einige Steine und Latschen erschweren den Start. Gute Soaringbedingungen bei Südwest- bis Westwind. Achtung auf Flugbeschränkungen durch CTR Salzburg und CTA Hallein. Während der Weidezeit von Juni bis September ist Fliegen verboten.",
+
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+
+  "startpunkte": [
+    {
+      "name": "Schlenken Gipfel",
+
+      "coordinates": {
+        "lat": 47.68139,
+        "lon": 13.21333
+      },
+
+      "startHeight": 1650,
+
+      "heightDifference": 1150,
+
+      "launchDirections": [
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+
+      "difficulty": "mittel",
+
+      "windSensitivity": "Bei Starkwind Vorsicht, Schirm kann leicht im Stacheldraht landen. Gute Soaringbedingungen bei Südwest- bis Westwind.",
+
+      "description": "Großer Wiesenstartplatz direkt am Gipfel. Starten und Fliegen nur erlaubt wenn kein Weidevieh am Berg ist."
+    }
+  ],
+
+  "landeplaetze": [
+    {
+      "name": "Kein offizieller Landeplatz",
+
+      "coordinates": {
+        "lat": 47.69250,
+        "lon": 13.18111
+      },
+
+      "difficulty": "mittel",
+
+      "windSensitivity": "Talwind und hohe Vegetation beachten.",
+
+      "description": "Landungen auf gemähten Wiesen im Tal bei Adnet möglich. Nicht im hohen Gras landen."
+    }
+  ]
+}
