@@ -1,0 +1,115 @@
+{
+  "region": "salzburg",
+  "site": "zechnerkarspitze",
+  "name": "Zechnerkarspitze",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 1115,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeit beim Schranken am Platsch in Kraischaberg"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Zufahrt über Mariapfarr Richtung Zankwarn, Grabendorf und Kraischaberg bis zum Platsch. Danach 2–3 Stunden Aufstieg über markierten Wanderweg ins Granitzlkar und weiter zum Gipfel.",
+  "description": "Selektiver hochalpiner Flugberg für erfahrene Paraalpinisten. Schwierige Windverhältnisse und Lawinengefahr bei Schneelage beachten. Gute Thermik- und Soaringmöglichkeiten oberhalb der Granitzlhütte.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Gipfel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2452,
+      "heightDifference": 1337,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Schwierige hochalpine Windverhältnisse",
+      "description": "Steile Wiese direkt unterhalb des Gipfelkreuzes."
+    },
+    {
+      "name": "SW Schulter",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2400,
+      "heightDifference": 1285,
+      "launchDirections": [
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Direkter Thermikeinstieg",
+      "description": "Startplatz auf der südwestlichen Schulter."
+    },
+    {
+      "name": "Südgrat Granitzstein",
+      "coordinates": {
+        "lat": 47.20397,
+        "lon": 13.70098
+      },
+      "startHeight": 2050,
+      "heightDifference": 935,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Gut bei Ostwind geeignet",
+      "description": "Einfacher Wiesenstart am Fuß des Südgrats vom Granitzstein."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Wielandhof Lignitztal",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Leitung und Talwindsystem beachten",
+      "description": "Schöne Wiesen rund um die Jausenstation."
+    },
+    {
+      "name": "Weißpriach",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwindsystem beachten",
+      "description": "Diverse Landemöglichkeiten im Talbereich."
+    }
+  ]
+}
