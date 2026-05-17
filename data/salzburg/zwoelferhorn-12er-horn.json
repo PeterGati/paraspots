@@ -1,0 +1,105 @@
+{
+  "region": "salzburg",
+  "site": "zwoelferhorn-12er-horn",
+  "name": "Zwölferhorn, 12er-Horn",
+  "coordinates": {
+    "lat": 47.74272,
+    "lon": 13.35175
+  },
+  "talHeight": 600,
+  "operator": {
+    "name": "Zwölferhorn-Seilbahn",
+    "url": "https://www.12erhorn.at/",
+    "phone": "+43 6227 2350"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze bei der Zwölferhornbahn in St. Gilgen"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "NW",
+    "O",
+    "SO",
+    "S"
+  ],
+  "webcam": "https://www.12erhorn.at/html/wetter.html",
+  "approachDescription": "Anfahrt über die A1 Abfahrt Mondsee und weiter über die B154 nach St. Gilgen. Die Zwölferhornbahn liegt direkt an der Bundesstraße Richtung Bad Ischl.",
+  "description": "Panoramafluggebiet über dem Wolfgangsee mit hervorragenden Soaring- und Thermikmöglichkeiten. Vorsicht bei Rotoren am Gipfelstart bei Westwind sowie thermisch anspruchsvollem Landeplatz im Frühling und Sommer.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Gipfel",
+      "coordinates": {
+        "lat": 47.74272,
+        "lon": 13.35175
+      },
+      "startHeight": 1505,
+      "heightDifference": 905,
+      "launchDirections": [
+        "N",
+        "NO",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Westwind Rotoren hinter den Bäumen beachten",
+      "description": "Wiesenstartplatz oberhalb der Bergstation nahe dem Gipfelkreuz."
+    },
+    {
+      "name": "Süd",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 1505,
+      "heightDifference": 905,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Sehr steiler Südstart",
+      "description": "Selektiver Südstart auf der Rückseite des Gipfels."
+    },
+    {
+      "name": "Jagafleck",
+      "coordinates": {
+        "lat": 47.74389,
+        "lon": 13.35903
+      },
+      "startHeight": 1365,
+      "heightDifference": 765,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Ostlagen ideal",
+      "description": "Großer und einfacher Ausweichstartplatz unterhalb der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Laim",
+      "coordinates": {
+        "lat": 47.76736,
+        "lon": 13.35833
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Abends oft Talwind und thermische Bedingungen",
+      "description": "Große Landewiese mit Windsack im Ortsteil Laim westlich der Talstation."
+    }
+  ]
+}
