@@ -1,0 +1,137 @@
+{
+  "region": "salzburg",
+  "site": "walkfly-arena-weisspriachtal",
+  "name": "Walk+Fly Arena Weißpriachtal",
+  "coordinates": {
+    "lat": null,
+    "lon": null
+  },
+  "talHeight": 1300,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz im hinteren Weißpriachtal bei der Diktlerhütte"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt über die A10 bis St. Michael, weiter Richtung Mariapfarr und Weißpriach. Zufahrt über mautpflichtige Schotterstraße bis zum letzten Parkplatz. Zustieg zu den Gipfeln meist mehrere Stunden.",
+  "description": "Anspruchsvolles Walk-and-Fly Gebiet in hochalpiner Umgebung mit vielen Gipfelstartmöglichkeiten. Starke Talwindsysteme und die Nähe zum Alpenhauptkamm beachten.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Berner Nock",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2398,
+      "heightDifference": 1098,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Talwindsysteme beachten",
+      "description": "Selektiver Hochgebirgsstartplatz mit Wiesenstart am Grat."
+    },
+    {
+      "name": "Gr. Gurpitscheck",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2490,
+      "heightDifference": 1190,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Nähe zum Hauptkamm beachten",
+      "description": "Startmöglichkeiten Richtung Rupanin und Schönalm unterhalb des NW-Grats."
+    },
+    {
+      "name": "Roßkogel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2098,
+      "heightDifference": 798,
+      "launchDirections": [
+        "N",
+        "O"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Klippenstart nach Norden",
+      "description": "Weglos erreichbarer Gipfelstart mit einfacherem Oststart."
+    },
+    {
+      "name": "Kl. Gurpitscheck",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2378,
+      "heightDifference": 1078,
+      "launchDirections": [
+        "N",
+        "O",
+        "S",
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Alpine Bedingungen",
+      "description": "Großer Hochgebirgsstart mit mehreren Startrichtungen."
+    },
+    {
+      "name": "Lungauer Kalkspitze",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2465,
+      "heightDifference": 1165,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Rotor aus der Westwand an thermischen Nachmittagen",
+      "description": "Relativ einfacher Wiesenstart südlich des Gipfels."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Granglerhütte",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind beachten",
+      "description": "Schöne Landewiese neben der Hütte mit Windfahne."
+    }
+  ]
+}
