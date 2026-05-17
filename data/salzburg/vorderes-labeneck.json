@@ -1,0 +1,71 @@
+{
+  "region": "salzburg",
+  "site": "vorderes-labeneck",
+  "name": "Vorderes Labeneck",
+  "coordinates": {
+    "lat": 47.33537,
+    "lon": 13.47113
+  },
+  "talHeight": 836,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Gasthof Hammerwirt"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO"
+  ],
+  "webcam": null,
+  "approachDescription": "Ausgangspunkt beim Gasthof Hammerwirt in Untertauern. Aufstieg über Forstwege und später weglos zum Gipfel. Im Winter Schneeschuhe oder Tourenski empfohlen.",
+  "description": "Wunderschöner Walk-and-Fly Berg besonders im Winter bei stabiler Hochdrucklage und wenig Wind. Kein offizielles Fluggebiet und keine offiziellen Start- oder Landeplätze.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Vorderes Labeneck",
+      "coordinates": {
+        "lat": 47.33537,
+        "lon": 13.47113
+      },
+      "startHeight": 1800,
+      "heightDifference": 964,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Im Sommer bei Talwind deutlich anspruchsvoller",
+      "description": "Steiler Gipfelstartplatz, im Winter bei Schneelage deutlich einfacher."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Diverse Landemöglichkeiten",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Im Sommer nur auf gemähten Wiesen oder Wegen landen",
+      "description": "Mehrere wilde Landemöglichkeiten im Taurachtal und Ennstal."
+    }
+  ]
+}
