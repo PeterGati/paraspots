@@ -1,0 +1,73 @@
+{
+  "region": "salzburg",
+  "site": "trattberg",
+  "name": "Trattberg",
+  "coordinates": {
+    "lat": 47.63799,
+    "lon": 13.26983
+  },
+  "talHeight": 1075,
+  "operator": {
+    "name": "Ikarus Abtenau",
+    "url": "https://www.ikarus-abtenau.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkplatz Seewaldsee, Park- und Landegebühr 1,50€"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Anfahrt über die A10 bis Kuchl, danach Richtung St. Koloman/Pernegg. Über die mautpflichtige Trattbergstraße oder zu Fuß ab Parkplatz Seewaldsee über die Enzianhütte zum Gipfel.",
+  "description": "Beliebtes Thermik- und XC-Gebiet mit großen Wiesenstartplätzen und hervorragenden Bedingungen bei Westlagen. Soaring bei 10–15 km/h West- oder Südostwind möglich. Achtung auf Modellflieger sowie saisonales Flugverbot während der Weidezeit von Juni bis September.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Trattberg",
+      "coordinates": {
+        "lat": 47.63800,
+        "lon": 13.26983
+      },
+      "startHeight": 1750,
+      "heightDifference": 675,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Modellflieger und Weidebetrieb beachten",
+      "description": "Großer Wiesenstartplatz mit optimaler Hangneigung nahe dem Gipfel."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Seewaldsee",
+      "coordinates": {
+        "lat": 47.62778,
+        "lon": 13.26972
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Hindernisse vorher prüfen",
+      "description": "Große Landewiese direkt beim Parkplatz Seewaldsee."
+    }
+  ]
+}
