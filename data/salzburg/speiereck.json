@@ -1,0 +1,182 @@
+{
+  "region": "salzburg",
+  "site": "speiereck",
+  "name": "Speiereck",
+  "coordinates": {
+    "lat": 47.12083,
+    "lon": 13.64222
+  },
+  "talHeight": 1045,
+  "operator": {
+    "name": "Bergbahnen Lungau",
+    "url": "https://www.bergbahnen-lungau.at",
+    "phone": "+43 6477 8913"
+  },
+  "access": {
+    "car": false,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze bei den Talstationen in St. Martin und Mauterndorf"
+  },
+  "airspaces": [
+    "CTA C",
+    "CTA Glockner",
+    "MTMA Zeltweg"
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": "http://www.bergbahnen-lungau.at/webcams.html",
+  "approachDescription": "Anfahrt über die A10 bis Ausfahrt St. Michael/Lungau, danach über die B99 Richtung St. Martin oder Mauterndorf. Zugang per Bergbahn, Clubbus oder zu Fuß über markierte Wege.",
+  "description": "Sehr vielseitiges Ganzjahresfluggebiet im Lungau mit außergewöhnlich guter Thermik und hoher Wolkenbasis. Streckenflüge bis 100 km FAI-Dreiecke möglich. Achtung auf Südföhn, starke Talwinde sowie Lufträume CTA C, CTA Glockner und MTMA Zeltweg.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Speiereck Peterbauerkreuz",
+      "coordinates": {
+        "lat": 47.12097,
+        "lon": 13.64125
+      },
+      "startHeight": 2010,
+      "heightDifference": 965,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Thermisch ab Vormittag",
+      "description": "Großer Sommerstartplatz mit Windsack nahe Peterbauerkreuz."
+    },
+    {
+      "name": "Speiereck Gipfel Süd",
+      "coordinates": {
+        "lat": 47.12597,
+        "lon": 13.62528
+      },
+      "startHeight": 2330,
+      "heightDifference": 1285,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Südföhn beachten",
+      "description": "Beliebter Winter-Gipfelstartplatz auf der Südseite."
+    },
+    {
+      "name": "Kl Lanschütz Gipfel",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": 2355,
+      "heightDifference": 1310,
+      "launchDirections": [
+        "O",
+        "W"
+      ],
+      "difficulty": "schwer",
+      "windSensitivity": "Nur für routinierte Starter",
+      "description": "Selektiver Außenstartplatz für erfahrene Piloten."
+    },
+    {
+      "name": "Speiereck Peterbauerhütte",
+      "coordinates": {
+        "lat": 47.11972,
+        "lon": 13.64722
+      },
+      "startHeight": 1935,
+      "heightDifference": 890,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "schwer",
+      "windSensitivity": "Kein Start bei starkem Westwind",
+      "description": "Acro-geeigneter Außenstart durch eine Schneise."
+    },
+    {
+      "name": "Speiereck Gipfel Nordost",
+      "coordinates": {
+        "lat": 47.12722,
+        "lon": 13.62625
+      },
+      "startHeight": 2350,
+      "heightDifference": 1305,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei schwachem Nordost",
+      "description": "Winterstartplatz nahe der Bergstation."
+    },
+    {
+      "name": "Speiereck Piste Ost",
+      "coordinates": {
+        "lat": 47.12229,
+        "lon": 13.63750
+      },
+      "startHeight": 2100,
+      "heightDifference": 1055,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nur Sommerbetrieb",
+      "description": "Startmöglichkeit entlang der Ostpiste."
+    },
+    {
+      "name": "Speiereck Piste Nordost",
+      "coordinates": {
+        "lat": 47.12342,
+        "lon": 13.63519
+      },
+      "startHeight": 2130,
+      "heightDifference": 1085,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur Sommerbetrieb",
+      "description": "Nordoststartplatz bei der Pistenkreuzung."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "St. Martin Liftstation",
+      "coordinates": {
+        "lat": 47.10000,
+        "lon": 13.64972
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Lee der Sträucher entlang der Straße",
+      "description": "Große offizielle Landewiese nahe der Liftstation."
+    },
+    {
+      "name": "St. Martin Clubhütte",
+      "coordinates": {
+        "lat": 47.09597,
+        "lon": 13.65681
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Im Frühjahr gute Dachthermik",
+      "description": "Großzügiger offizieller Clublandeplatz beim DFC Lungau."
+    }
+  ]
+}
