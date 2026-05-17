@@ -1,0 +1,101 @@
+{
+  "region": "salzburg",
+  "site": "schafberg",
+  "name": "Schafberg",
+  "coordinates": {
+    "lat": 47.79306,
+    "lon": 13.43167
+  },
+  "talHeight": 546,
+  "operator": {
+    "name": "Schafbergbahn",
+    "url": "https://www.schafbergbahn.at",
+    "phone": "+43 6138 2232-0"
+  },
+  "access": {
+    "car": false,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": ""
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Auf der A1 Salzburg–Linz Ausfahrt Mondsee nehmen. Über B154 Richtung St. Gilgen und B158 Richtung Bad Ischl. In Strobl links nach St. Wolfgang oder in Abersee Richtung Reith zur Fähre. Wanderweg ab St. Gilgen Winkl, Gehzeit ca. 2–3,5 Stunden bis zum Gipfel und den Startplätzen.",
+  "description": "Der Schafberg bietet spektakuläre Panoramaflüge über das Salzkammergut. Sehr gute Soaringbedingungen bei SO-SW Wind. Ab Mittag starke Thermikentwicklung. Der Endanflug über den Wolfgangsee kann durch Abwind anspruchsvoll werden – ausreichende Sicherheitsreserve notwendig.",
+  "siteRatings": {
+    "overallRating": null,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Berghotel",
+      "coordinates": {
+        "lat": 47.77639,
+        "lon": 13.43222
+      },
+      "startHeight": 1780,
+      "heightDifference": 1234,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch ab Mittag",
+      "description": "Großzügiger alpiner Startplatz knapp unterhalb des Berghotels."
+    },
+    {
+      "name": "Weststart",
+      "coordinates": {
+        "lat": 47.79306,
+        "lon": 13.43167
+      },
+      "startHeight": 1780,
+      "heightDifference": 1234,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nur bei sauber anstehendem Wind starten",
+      "description": "Leicht geneigter Startplatz westlich des Gipfels mit steil abfallendem Gelände."
+    },
+    {
+      "name": "Schafbergalm",
+      "coordinates": {
+        "lat": 47.76861,
+        "lon": 13.41889
+      },
+      "startHeight": 1320,
+      "heightDifference": 774,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind am Nachmittag",
+      "description": "Tiefern gelegener Startplatz bei der Schafbergalm."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Abersee-Reith",
+      "coordinates": {
+        "lat": 47.73583,
+        "lon": 13.42917
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Abwind über dem Wolfgangsee",
+      "description": "Große Landewiese am Seeufer bei Abersee-Reith."
+    }
+  ]
+}
