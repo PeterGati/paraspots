@@ -1,0 +1,110 @@
+{
+  "region": "salzburg",
+  "site": "schmittenhoehe",
+  "name": "Schmittenhöhe",
+  "coordinates": {
+    "lat": 47.32835,
+    "lon": 12.73650
+  },
+  "talHeight": 755,
+  "operator": {
+    "name": "Schmittenhöhebahn",
+    "url": "https://www.schmitten.at",
+    "phone": "+43 6542 789116"
+  },
+  "access": {
+    "car": false,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Parkplätze an der Talstation der Schmittenhöhebahn"
+  },
+  "airspaces": [
+    "LOWZ CTR/TIZ",
+    "TMA Zell am See"
+  ],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": "https://www.schmitten.at",
+  "approachDescription": "Anfahrt über die A10 bis Bischofshofen, danach über die B311 nach Zell am See. Alternativ über Pass Thurn oder Lofer erreichbar. Die Schmittenhöhebahn ist ausgeschildert.",
+  "description": "Berühmtes XC-Gebiet im Pinzgau mit dem bekannten 'Pinzgauer Spaziergang'. Sehr gute Thermik von April bis August. Achtung auf dichten Flugverkehr, West- und Nordwind sowie Föhnlagen. Der Flugplatz LOWZ liegt direkt im Talbereich nahe der Landeplätze. TMA- und Platzrundenregeln unbedingt beachten.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": null
+  },
+  "startpunkte": [
+    {
+      "name": "Gipfel",
+      "coordinates": {
+        "lat": 47.32835,
+        "lon": 12.73650
+      },
+      "startHeight": 1965,
+      "heightDifference": 1210,
+      "launchDirections": [
+        "N",
+        "NO",
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Föhn sowie West- und Nordwind problematisch",
+      "description": "Großer Gipfelstartplatz direkt an der Bergstation."
+    },
+    {
+      "name": "Bergstation Areit III",
+      "coordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "startHeight": null,
+      "heightDifference": null,
+      "launchDirections": [
+        "SO",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Kabel der Liftanlage beachten",
+      "description": "Einfacher Startplatz direkt bei der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Fürth",
+      "coordinates": {
+        "lat": 47.28745,
+        "lon": 12.74613
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Platzrunde LOWZ beachten",
+      "description": "Landewiese südlich der Bahngleise beim Gasthof Schett."
+    },
+    {
+      "name": "Piesendorf",
+      "coordinates": {
+        "lat": 47.28847,
+        "lon": 12.74569
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind am Nachmittag",
+      "description": "Große Wiesenlandung beim Bahnübergang."
+    }
+  ]
+}
