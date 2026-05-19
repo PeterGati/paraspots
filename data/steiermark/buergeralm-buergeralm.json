@@ -1,0 +1,82 @@
+{
+  "region": "steiermark",
+  "site": "buergeralm-buergeralm",
+  "name": "Buergeralm / Bürgeralm",
+  "coordinates": {
+    "lat": 47.57819,
+    "lon": 15.22408
+  },
+  "talHeight": 750,
+  "operator": {
+    "name": "Aflenz Bürgeralm",
+    "url": "https://www.aflenz-buergeralm.at",
+    "phone": "+43 3861 2400"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplätze bei der Talstation Sessellift sowie beim ehemaligen Gasthaus Pierer vorhanden."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW",
+    "NW"
+  ],
+  "webcam": "https://www.aflenz-buergeralm.at",
+  "approachDescription": "Mit dem 2er-Sessellift von Aflenz auf die Bürgeralm und anschließend etwa 40 Minuten Fußmarsch Richtung Schönleitenhaus. Alternativ Alm-Taxi oder vollständiger Aufstieg von der Talstation. Vom ehemaligen Gasthaus Pierer verkürzt sich der Aufstieg um etwa 200 Höhenmeter.",
+  "description": "Eines der imposantesten Fluggebiete der Region mit großartigem Panorama Richtung Hochschwab, Schöckl, Rax und Präbichl. Thermisch sehr aktives Gebiet mit guten XC-Möglichkeiten. Soaring bei SW bis NW möglich. Bei Rückenwind und starken thermischen Bedingungen anspruchsvoll. Im Sommer Almbetrieb mit Weidevieh beachten. Militärische Flugübungen möglich – vorher Airspace Use Plan prüfen. Zwei offizielle Landeplätze vorhanden.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Bürgeralm / Schönleitenhaus",
+      "coordinates": {
+        "lat": 47.57819,
+        "lon": 15.22408
+      },
+      "startHeight": 1770,
+      "heightDifference": 1020,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei nördlichem Rückenwind Rotor- und Leegefahr. Thermik kann sehr kräftig werden.",
+      "description": "Großzügiger Wiesenstart unterhalb des Schönleitenhauses mit mehreren Startvarianten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Tennisplatz",
+      "coordinates": {
+        "lat": 47.54694,
+        "lon": 15.24111
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsystem beachten. Je nach Windrichtung talauswärts oder taleinwärts anfliegen.",
+      "description": "Offizieller Landeplatz mit Windfahne beim Tennisplatz in Aflenz."
+    },
+    {
+      "name": "Aflenz Lindenliftwiese",
+      "coordinates": {
+        "lat": 47.54647,
+        "lon": 15.24114
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Auf Weidebetrieb und hohe Wiesen achten.",
+      "description": "Reserve-Landeplatz hinter der Kirche auf der Lindenliftwiese."
+    }
+  ]
+}
