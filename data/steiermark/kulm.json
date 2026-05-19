@@ -1,0 +1,120 @@
+{
+  "region": "steiermark",
+  "site": "kulm",
+  "name": "Kulm",
+  "coordinates": {
+    "lat": 47.22829,
+    "lon": 15.79521
+  },
+  "talHeight": 390,
+  "operator": {
+    "name": "Fun2Fly",
+    "url": "https://www.fun2fly.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten direkt beim Landefeld am Stubenbergsee."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Anreise meist über die A2 Richtung Hartberg oder Gleisdorf. Nach Schielleiten entlang des Seeufers bis zur dritten Kreuzung links. Nach der Brücke links zum Landefeld oder rechts Richtung Startplatz. Auffahrten werden häufig über die Flugschule Fun2Fly oder Fahrgemeinschaften organisiert.",
+  "description": "Der Kulm liegt geschützt südlich der Fischbacher Alpen und des Wechsel. Aufgrund seiner geringen Höhe und des regionalen Mikroklimas ist er auch bei zweifelhaften Wetterbedingungen oft sicher befliegbar. Das Gebiet eignet sich hervorragend für Einsteiger und Genussflieger, da Thermik meist moderat bleibt und der große hindernisfreie Startplatz stressfreie Flüge ermöglicht. Trotz der einfachen Bedingungen sind auch Streckenflüge möglich, insbesondere Richtung Fischbacher Alpen und Mürztal. Gastflieger sollten die Startplatzregeln wegen der sensiblen Anrainersituation genau beachten.",
+  "siteRatings": {
+    "overallRating": 5,
+    "thermalRating": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Startplatz",
+      "coordinates": {
+        "lat": 47.22829,
+        "lon": 15.79521
+      },
+      "startHeight": 920,
+      "heightDifference": 530,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Sehr wettergeschützt. Thermik meist moderat.",
+      "description": "Großer hindernisfreier Hauptstartplatz mit großzügiger Auslegefläche."
+    },
+    {
+      "name": "Südstart",
+      "coordinates": {
+        "lat": 47.22780,
+        "lon": 15.79480
+      },
+      "startHeight": 920,
+      "heightDifference": 530,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Bei stärkerem Südwind anspruchsvoll.",
+      "description": "Zusätzlicher Südstart für thermisch aktive Bedingungen."
+    },
+    {
+      "name": "Weststart",
+      "coordinates": {
+        "lat": 47.22800,
+        "lon": 15.79420
+      },
+      "startHeight": 920,
+      "heightDifference": 530,
+      "launchDirections": [
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Westwind genau beurteilen.",
+      "description": "Weststartvariante für entsprechende Wetterlagen."
+    },
+    {
+      "name": "Nordweststart",
+      "coordinates": {
+        "lat": 47.22850,
+        "lon": 15.79450
+      },
+      "startHeight": 920,
+      "heightDifference": 530,
+      "launchDirections": [
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Nur bei sauberer Nordwestlage geeignet.",
+      "description": "Technisch anspruchsvollerer Nordweststart."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz",
+      "coordinates": {
+        "lat": 47.22829,
+        "lon": 15.79521
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Bei starkem Sinken frühzeitig Außenlandemöglichkeiten beachten.",
+      "description": "Großes offizielles Landefeld beim Stubenbergsee."
+    }
+  ]
+}
