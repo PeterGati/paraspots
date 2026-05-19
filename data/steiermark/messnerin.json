@@ -1,0 +1,79 @@
+{
+  "region": "steiermark",
+  "site": "messnerin",
+  "name": "Messnerin",
+  "coordinates": {
+    "lat": 47.55611,
+    "lon": 15.08364
+  },
+  "talHeight": 770,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Sehr kleiner Parkplatz im Haringgraben für etwa 10 Fahrzeuge."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Ausgangspunkt ist Tragöss Oberort. Vom kleinen Parkplatz im Haringgraben führt der Weg direkt Richtung Gipfel der Messnerin. Der untere Teil verläuft über Forstwege, der obere Abschnitt bietet eindrucksvolle Ausblicke auf den Grünen See und das Hochschwabmassiv. Der eigentliche Startplatz befindet sich einige hundert Meter unterhalb des Gipfels rechts vom Weg.",
+  "description": "Die Messnerin ist ein selten besuchter Walk&Fly-Berg zwischen Eisenerz und Aflenz. Der lange Aufstieg wird mit grandioser Aussicht und oft ganztägig aktiver Thermik belohnt. Das Fluggebiet eignet sich sowohl für reine Gleitflüge als auch für Thermik- und Streckenflüge. Bei starken Bedingungen kann Richtung Süden über das Tal ausgewichen werden. Besonders eindrucksvoll sind die Blicke auf den Grünen See und das Hochschwabmassiv.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Startplatz Meßnerin Süd",
+      "coordinates": {
+        "lat": 47.55611,
+        "lon": 15.08364
+      },
+      "startHeight": 1730,
+      "heightDifference": 960,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Mittags teils starke Thermik. Bei nordüberregionalem Wind Windverhältnisse am Gipfel prüfen.",
+      "description": "Große hindernisfreie Wiese wenige hundert Meter unterhalb des Gipfels. Leicht abfallendes Gelände unterhalb der Startkante."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Maut Grüner See",
+      "coordinates": {
+        "lat": 47.55850,
+        "lon": 15.07150
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Großes frei angeströmtes Landefeld.",
+      "description": "Große Wiese beim Parkplatz und Mauthäuschen des Grünen Sees."
+    },
+    {
+      "name": "Landewiese bei Fussballplatz",
+      "coordinates": {
+        "lat": 47.55250,
+        "lon": 15.06950
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Nahezu hindernisfrei und sehr großzügig.",
+      "description": "Große Landewiese direkt gegenüber dem Fußballplatz mit Windfahne."
+    }
+  ]
+}
