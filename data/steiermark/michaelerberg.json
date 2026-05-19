@@ -1,0 +1,84 @@
+{
+  "region": "steiermark",
+  "site": "michaelerberg",
+  "name": "Michaelerberg",
+  "coordinates": {
+    "lat": 47.41806,
+    "lon": 13.91444
+  },
+  "talHeight": 680,
+  "operator": {
+    "name": "Sky Club Austria",
+    "url": "https://www.skyclub-austria.com",
+    "phone": "+43 3685 22333"
+  },
+  "access": {
+    "car": false,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Landeplatz und beim Schloss Moosheim."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "NO",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrten sind nur noch mit der Flugschule Sky Club Austria möglich. Von der Auffahrtsstraße kurzer Fußmarsch von etwa fünf Minuten zu den Startplätzen.",
+  "description": "Der Michaelerberg zählt zum Flightpark Dachstein und ist ein ideales Schulungs- und Einsteigergebiet. Das Gelände eignet sich hervorragend für erste Höhenflüge, Checkflüge und Testflüge mit neuen Schirmen. Thermikflüge sind nur selten möglich, meist dient das Gebiet für ruhige Gleitflüge. Der Blick auf Dachstein, Grimming und Stoderzinken macht das Gebiet landschaftlich besonders attraktiv.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Mitte",
+      "coordinates": {
+        "lat": 47.41806,
+        "lon": 13.91444
+      },
+      "startHeight": 1100,
+      "heightDifference": 420,
+      "launchDirections": [
+        "NO",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Ostwind im Lee. Schulungsbetrieb beachten.",
+      "description": "Große einfache Wiese nahe der Auffahrtsstraße. Ideal für Schulungs- und Übungsflüge."
+    },
+    {
+      "name": "Weststart",
+      "coordinates": {
+        "lat": 47.41111,
+        "lon": 13.89389
+      },
+      "startHeight": 1100,
+      "heightDifference": 420,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Laut Sky Club Austria teilweise nicht mehr benutzbar.",
+      "description": "Einfacher Wiesenstart nahe der Straße Richtung Michaelerberghaus."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Michaelerberg",
+      "coordinates": {
+        "lat": 47.42500,
+        "lon": 13.90083
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Landeeinteilung und Schulungsbetrieb beachten.",
+      "description": "Große flache Landewiese zwischen Baumschule und Sky Club Austria Büro."
+    }
+  ]
+}
