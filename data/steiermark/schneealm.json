@@ -1,0 +1,69 @@
+{
+  "region": "steiermark",
+  "site": "schneealm",
+  "name": "Schneealm",
+  "coordinates": {
+    "lat": 47.68278,
+    "lon": 15.60222
+  },
+  "talHeight": 700,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim Badeteich \"Teichanlage Urani\" oder am Ende der Mautstraße."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Ausgangspunkt ist Neuberg an der Mürz bei der Teichanlage Urani. Entweder zu Fuß entlang der Mautstraße oder Auffahrt über die Mautstraße bis zum Parkplatz am Ende möglich. Danach etwa 30 Minuten teilweise steiler Fußmarsch über den Wirtschaftsweg zum Startplatz.",
+  "description": "Die Schneealm steht fliegerisch oft im Schatten der Rax, bietet aber hervorragende Thermik- und Streckenflugmöglichkeiten. Die Thermik setzt etwas später ein als auf der Rax, entwickelt sich danach jedoch oft sehr kräftig. Durch die westliche Ausrichtung sind auch abends noch gute Aufwinde möglich. Aufgrund der exponierten Lage am Alpenostrand treten häufig starke Winde, chaotische Windsysteme und frühe Überentwicklungen auf. Das Gebiet ist nur für routinierte Piloten geeignet. Laut lokalen Informationen war der Startplatz zeitweise nicht mehr offiziell freigegeben.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Schneealm",
+      "coordinates": {
+        "lat": 47.68278,
+        "lon": 15.60222
+      },
+      "startHeight": 1669,
+      "heightDifference": 969,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Häufig starke Winde und turbulente Bedingungen. Bei Nord- und Ostlagen kritisch.",
+      "description": "Sehr kurzer und steiler Startplatz beim Sender mit einigen Löchern in der Wiese. Rechts unterhalb befinden sich größere Felsen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Neuberg an der Mürz",
+      "coordinates": {
+        "lat": 47.66472,
+        "lon": 15.57556
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwindsysteme beachten.",
+      "description": "Landeplatz neben der Tankstelle am Ortsende Richtung Mürzzuschlag."
+    }
+  ]
+}
