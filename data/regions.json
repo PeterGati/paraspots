@@ -471,7 +471,99 @@
         {
       "slug": "buergeralpe",
     "name": "Buergeralpe"
-      }
+      },
+        {
+  "slug": "dachstein",
+  "name": "Dachstein"
+},{
+  "slug": "gasslhoehe-reiteralm",
+  "name": "Gasslhöhe / Reiteralm"
+},
+        {
+  "slug": "gelderkogel",
+  "name": "Gelderkogel"
+},
+        {
+  "slug": "greim",
+  "name": "Greim"
+},
+        {
+  "slug": "grosse-scheibe",
+  "name": "Große Scheibe"
+},
+        {
+  "slug": "buergeralm-buergeralm",
+  "name": "Buergeralm / Bürgeralm"
+},
+        {
+  "slug": "hauser-kaibling",
+  "name": "Hauser Kaibling"
+},
+        {
+  "slug": "heulantsch",
+  "name": "Heulantsch"
+},
+        {
+  "slug": "himmelreich",
+  "name": "Himmelreich"
+},
+        {
+  "slug": "hochwurzen",
+  "name": "Hochwurzen"
+},
+        {
+  "slug": "kreuzkogel",
+  "name": "Kreuzkogel"
+},
+        {
+  "slug": "kulm",
+  "name": "Kulm"
+},
+        {
+  "slug": "loser",
+  "name": "Loser"
+},
+        {
+  "slug": "messnerin",
+  "name": "Messnerin"
+},
+        {
+  "slug": "michaelerberg",
+  "name": "Michaelerberg"
+},
+        {
+  "slug": "planai",
+  "name": "Planai"
+},
+        {
+  "slug": "polster",
+  "name": "Polster"
+},
+        {
+  "slug": "riesneralm",
+  "name": "Riesneralm"
+},
+        {
+  "slug": "rittisberg",
+  "name": "Rittisberg"
+},
+        {
+  "slug": "ruehrer",
+  "name": "Rührer"
+},
+        {
+  "slug": "schneealm",
+  "name": "Schneealm"
+},
+        {
+  "slug": "schoeckel-schoeckl",
+  "name": "Schöckel/Schöckl"
+},
+        {
+  "slug": "stoderzinken",
+  "name": "Stoderzinken"
+}
+        
         ]
        },
      {
