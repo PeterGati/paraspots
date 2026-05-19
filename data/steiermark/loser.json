@@ -1,0 +1,139 @@
+{
+  "region": "steiermark",
+  "site": "loser",
+  "name": "Loser",
+  "coordinates": {
+    "lat": 47.66000,
+    "lon": 13.77083
+  },
+  "talHeight": 723,
+  "operator": {
+    "name": "Skischaukel Sandling-Loser",
+    "url": "https://www.loser.at",
+    "phone": "+43 3622 71315"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten entlang der Loser Panoramastraße und beim Loser Bergrestaurant."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": "https://www.mentalworks.com",
+  "approachDescription": "Anfahrt über Bad Ischl oder Liezen nach Altaussee. Auffahrt entweder mit PKW über die mautpflichtige Loser Panoramastraße oder im Winter mit der Skischaukel Sandling-Loser. Vom Loser Bergrestaurant je nach Startplatz kurze Fußmärsche zwischen 20 und 40 Minuten.",
+  "description": "Der Loser bildet gemeinsam mit dem Krippenstein eines der beeindruckendsten XC-Gebiete der Region. Thermik setzt früh ein und ermöglicht lange Streckenflüge Richtung Ennstaler Alpen oder Dachstein. Das Gelände bietet zahlreiche Startmöglichkeiten für unterschiedliche Windrichtungen. Bei Westwindlagen treten im Bereich der Startplätze gefährliche Leeturbulenzen und Rotoren auf. Teilweise starke Talwindsysteme vorhanden. Das Gebiet ist wegen des alpinen Geländes und der komplexen Bedingungen für Einsteiger nur eingeschränkt geeignet.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Hochanger",
+      "coordinates": {
+        "lat": 47.66300,
+        "lon": 13.77778
+      },
+      "startHeight": 1837,
+      "heightDifference": 1114,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Westwind Rotoren und Leeturbulenzen möglich.",
+      "description": "Großzügiger Wiesenstart nahe dem Sender mit guter thermischer Anbindung."
+    },
+    {
+      "name": "Loserfenster",
+      "coordinates": {
+        "lat": 47.66150,
+        "lon": 13.77150
+      },
+      "startHeight": 1780,
+      "heightDifference": 1057,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nur im Winter bei Schneelage nutzbar.",
+      "description": "Startplatz nahe der Bergstation des Loserfenster-Sessellifts."
+    },
+    {
+      "name": "Graskogel",
+      "coordinates": {
+        "lat": 47.66292,
+        "lon": 13.78881
+      },
+      "startHeight": 1700,
+      "heightDifference": 977,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Talwindsysteme und Westwind beachten.",
+      "description": "Großer alpiner Startplatz mit schönem Panorama."
+    },
+    {
+      "name": "Drachenrampe",
+      "coordinates": {
+        "lat": 47.65950,
+        "lon": 13.77350
+      },
+      "startHeight": 1600,
+      "heightDifference": 877,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Westwindlagen vermeiden.",
+      "description": "Rampe nahe dem Loser Bergrestaurant."
+    },
+    {
+      "name": "Rampe am Kehre 13",
+      "coordinates": {
+        "lat": 47.65450,
+        "lon": 13.76750
+      },
+      "startHeight": 1525,
+      "heightDifference": 802,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Rotorbildung beachten.",
+      "description": "Startmöglichkeit nahe Kehre 13 der Loser Panoramastraße."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Altaussee",
+      "coordinates": {
+        "lat": 47.64050,
+        "lon": 13.76667
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Turbulente Winde im unteren Bereich möglich. Oberen Teil der Wiese bevorzugen.",
+      "description": "Offizieller Landeplatz bei Altaussee mit großem Windsack."
+    }
+  ]
+}
