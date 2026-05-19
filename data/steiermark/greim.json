@@ -1,0 +1,105 @@
+{
+  "region": "steiermark",
+  "site": "greim",
+  "name": "Greim",
+  "coordinates": {
+    "lat": 47.23806,
+    "lon": 14.15194
+  },
+  "talHeight": 820,
+  "operator": {
+    "name": "",
+    "url": "https://www.facebook.com/groups/561835077183368/",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Treffpunkt und Parkmöglichkeit bei der Greimhalle oder Parkplatz Schöneben."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": "http://www.greim.at",
+  "approachDescription": "Von Judenburg Richtung Murau, nach Frojach rechts nach St. Peter am Kammersberg abbiegen. Auffahrt bis zur Greimhütte oder vorher links auf die Schotterstraße Richtung Parkplatz Schöneben. Von dort zu Fuß weiter. Erster Startplatz bereits nach etwa 50 Höhenmetern erreichbar, weitere Starts entlang des Aufstiegs bis zum Gipfel.",
+  "description": "Wunderbares Fluggebiet auf der Südseite der Niederen Tauern mit sehr guten Streckenflugmöglichkeiten entlang der Tauern Richtung Ost und West sowie ins Ennstal. Besonders schöne Herbstflüge möglich. Thermisch aktive Hänge entlang der Kette. Achtung auf Nordwind. Im Frühsommer auf Weidevieh achten und genügend Abstand beim Kurbeln halten. Kein offizieller Landeplatz vorhanden.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Schöneben",
+      "coordinates": {
+        "lat": 47.22556,
+        "lon": 14.16167
+      },
+      "startHeight": 1750,
+      "heightDifference": 930,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nordwind vermeiden.",
+      "description": "Einfacher Wiesenstart oberhalb des Parkplatzes Schöneben."
+    },
+    {
+      "name": "Greim",
+      "coordinates": {
+        "lat": 47.23806,
+        "lon": 14.15083
+      },
+      "startHeight": 2180,
+      "heightDifference": 1360,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nordwind kritisch.",
+      "description": "Großzügiger alpiner Wiesenstart entlang des Aufstiegs zum Gipfel."
+    },
+    {
+      "name": "Greim-Gipfel",
+      "coordinates": {
+        "lat": 47.24778,
+        "lon": 14.15222
+      },
+      "startHeight": 2470,
+      "heightDifference": 1650,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpiner Startplatz. Nordwind vermeiden.",
+      "description": "Start direkt unterhalb des Gipfels. Sehr schöne Herbst- und Streckenflüge."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "St. Peter am Kammersberg",
+      "coordinates": {
+        "lat": 47.18694,
+        "lon": 14.17972
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Nur bei gemähter Wiese landen. Kühe und Talwind beachten.",
+      "description": "Geduldeter Landeplatz südlich von Feistritz beim Rauchsee. Alternativ beim Freizeitzentrum landen."
+    }
+  ]
+}
