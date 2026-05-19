@@ -1,0 +1,83 @@
+{
+  "region": "steiermark",
+  "site": "rittisberg",
+  "name": "Rittisberg",
+  "coordinates": {
+    "lat": 47.41951,
+    "lon": 13.61397
+  },
+  "talHeight": 1183,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Talstation und nahe dem Landeplatz Ramsau Beach."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "O",
+    "SO"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrt mit dem Sessellift am Rittisberg oder kurzer Walk&Fly-Aufstieg von Ramsau. Die Startplätze befinden sich direkt neben der Bergstation.",
+  "description": "Kleiner aber landschaftlich beeindruckender Flugberg mit großartiger Aussicht auf die Dachstein-Südwand. Das Gebiet eignet sich besonders für Genuss-, Soaring- und kurze Thermikflüge. Der Oststart ist sehr einfach und ideal für entspannte Flüge. Der neue Südoststart ermöglicht direkte Starts in den Südhang, ist aber deutlich steiler und anspruchsvoller.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Startplatz Ost",
+      "coordinates": {
+        "lat": 47.41951,
+        "lon": 13.61393
+      },
+      "startHeight": 1486,
+      "heightDifference": 303,
+      "launchDirections": [
+        "O"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Sehr einfacher Startbereich direkt neben dem Sessellift.",
+      "description": "Breiter und unkomplizierter Wiesenstart mit Platz für mehrere ausgelegte Schirme."
+    },
+    {
+      "name": "Startplatz Süd-Ost",
+      "coordinates": {
+        "lat": 47.41899,
+        "lon": 13.61434
+      },
+      "startHeight": 1475,
+      "heightDifference": 292,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Etwas steiler und technisch anspruchsvoller als der Oststart.",
+      "description": "Moderner geschotterter Startplatz mit direktem Start in den Südhang des Rittisbergs."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Ramsau Beach",
+      "coordinates": {
+        "lat": 47.42150,
+        "lon": 13.62419
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Großzügige freie Wiesenflächen.",
+      "description": "Einfache Landewiesen nordöstlich des Startplatzes beim Ramsau Beach."
+    }
+  ]
+}
