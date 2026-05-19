@@ -1,0 +1,67 @@
+{
+  "region": "steiermark",
+  "site": "riesneralm",
+  "name": "Riesneralm",
+  "coordinates": {
+    "lat": 47.37557,
+    "lon": 14.11947
+  },
+  "talHeight": 976,
+  "operator": {
+    "name": "Flugschule Wings",
+    "url": "https://www.wings.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Großer Parkplatz direkt neben dem offiziellen Landeplatz an der Talstation."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO"
+  ],
+  "webcam": "https://www.riesneralm.at/",
+  "approachDescription": "Anfahrt nach Donnersbachwald zur Talstation der Riesneralm-Bergbahnen. Auffahrt im Winter täglich mit der Seilbahn, im Sommer eingeschränkter Betrieb an Wochenenden. Alternativ etwa zwei Stunden Aufstieg zu Fuß.",
+  "description": "Thermisch aktives Fluggebiet mit guter Eignung sowohl für Genussflüge als auch für anspruchsvollere Thermikflüge. Der Startplatz bevorzugt klaren Südostwind. Bei anderen Windrichtungen drohen Rückenwindstarts oder Leebedingungen. Direkt nach dem Start sollte vor dem Geländerücken nach links abgedreht werden, da sich dahinter unabhängig von der Windrichtung Leebereiche bilden können. Talwindsysteme können im engen Tal kräftig werden.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Riesneralm Südost",
+      "coordinates": {
+        "lat": 47.37557,
+        "lon": 14.11947
+      },
+      "startHeight": 1800,
+      "heightDifference": 824,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Funktioniert bevorzugt bei Südostwind. Bei anderen Richtungen Lee- und Rückenwindgefahr.",
+      "description": "Startplatz entlang eines Wanderweges mit thermisch aktiver Hangkante."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Talstation Riesneralm",
+      "coordinates": {
+        "lat": 47.37564,
+        "lon": 14.11969
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind kann im engen Tal stark werden.",
+      "description": "Großer und breiter Landeplatz direkt neben dem Parkplatz der Talstation."
+    }
+  ]
+}
