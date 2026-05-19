@@ -1,0 +1,63 @@
+{
+  "region": "steiermark",
+  "site": "himmelreich",
+  "name": "Himmelreich",
+  "coordinates": {
+    "lat": 47.48000,
+    "lon": 15.38300
+  },
+  "talHeight": 533,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": ""
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [],
+  "webcam": null,
+  "approachDescription": "",
+  "description": "Elegantes Fluggebiet oberhalb von St. Lorenzen im Mürztal. Eignet sich gut als Saisonstartgebiet.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 1
+  },
+  "startpunkte": [
+    {
+      "name": "Himmelreich",
+      "coordinates": {
+        "lat": 47.48000,
+        "lon": 15.38300
+      },
+      "startHeight": 1178,
+      "heightDifference": 645,
+      "launchDirections": [],
+      "difficulty": "mittel",
+      "windSensitivity": "",
+      "description": ""
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "St. Lorenzen / Mürztal",
+      "coordinates": {
+        "lat": 47.47000,
+        "lon": 15.36600
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "",
+      "description": ""
+    }
+  ]
+}
