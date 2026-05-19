@@ -1,0 +1,121 @@
+{
+  "region": "steiermark",
+  "site": "stoderzinken",
+  "name": "Stoderzinken",
+  "coordinates": {
+    "lat": 47.46000,
+    "lon": 13.82686
+  },
+  "talHeight": 680,
+  "operator": {
+    "name": "Sky Club Austria",
+    "url": "https://www.skyclub-austria.com",
+    "phone": "+43 3685 22333"
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten entlang der Stoderzinkenstraße sowie bei der Rosemialm und Stodermaut."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NW",
+    "SO",
+    "S"
+  ],
+  "webcam": "https://holfuy.com/de/weather/392",
+  "approachDescription": "Anfahrt über Gröbming-Winkel und weiter über die Stoderzinkenstraße. Der beliebteste Zustieg erfolgt von der Rosemialm über das Friedenskircherl zum Gipfelplateau. Gehzeit etwa eine Stunde ab Parkplatz Rosemialm beziehungsweise rund 30 Minuten ab der Mautstraße zu den Hauptstartplätzen.",
+  "description": "Der Stoderzinken zählt zu den besten Flugbergen der Ostalpen und bietet hervorragende Panorama-, Thermik- und Streckenflüge. Klassische XC-Routen führen Richtung Dachstein, Grimming und Kammspitz. Die Thermik ist meist sehr zuverlässig und kräftig. Bei Nordostwind entstehen auf der Südseite im Lee turbulente Bedingungen unterhalb des Grates. Trotz der hochalpinen Lage gilt das Gebiet grundsätzlich als gut beherrschbar, sofern die Wetterentwicklung sorgfältig beurteilt wird.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Südstart",
+      "coordinates": {
+        "lat": 47.45889,
+        "lon": 13.82686
+      },
+      "startHeight": 2030,
+      "heightDifference": 1350,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Nordostwind thermisch turbulent im Lee.",
+      "description": "Großer und meistgenutzter Gleitschirmstart unterhalb des Gipfels mit sehr guter Thermikanbindung."
+    },
+    {
+      "name": "Nordstart",
+      "coordinates": {
+        "lat": 47.46000,
+        "lon": 13.83000
+      },
+      "startHeight": 2048,
+      "heightDifference": 1368,
+      "launchDirections": [
+        "N"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Hochalpiner Start mit anspruchsvollen Bedingungen.",
+      "description": "Direkter Gipfelstart mit exponierter Geländeform und alpinem Charakter."
+    },
+    {
+      "name": "Nordweststart",
+      "coordinates": {
+        "lat": 47.45950,
+        "lon": 13.82350
+      },
+      "startHeight": 2000,
+      "heightDifference": 1320,
+      "launchDirections": [
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nordwestlagen sorgfältig beurteilen.",
+      "description": "Rasenstartfläche nahe dem Skilift auf der Nordwestseite."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Moosheim",
+      "coordinates": {
+        "lat": 47.42556,
+        "lon": 13.90361
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Großzügig und einfach anzufliegen.",
+      "description": "Großer Hauptlandeplatz nahe der Flugschule Sky Club Austria."
+    },
+    {
+      "name": "Stodermaut",
+      "coordinates": {
+        "lat": 47.44889,
+        "lon": 13.86667
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Hauptsächlich für Gleitschirme genutzt.",
+      "description": "Schöne ausladende Landewiese direkt neben der Mautstelle."
+    },
+    {
+      "name": "Nerwein",
+      "coordinates": {
+        "lat": 47.43000,
+        "lon": 13.92000
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Südlich der Enns gelegene Landewiese.",
+      "description": "Alternativer Landeplatz südlich der Enns."
+    }
+  ]
+}
