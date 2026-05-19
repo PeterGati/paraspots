@@ -1,0 +1,67 @@
+{
+  "region": "steiermark",
+  "site": "heulantsch",
+  "name": "Heulantsch",
+  "coordinates": {
+    "lat": 47.35778,
+    "lon": 15.48083
+  },
+  "talHeight": 1250,
+  "operator": {
+    "name": "",
+    "url": "https://www.almenland.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkolás a hágónál lévő parkolóban, Breitenau irányába."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Fladnitz an der Teichalm felől a Teichalmra kell felhajtani, majd a tó mellett tovább a Breitenau felé vezető hágóig. A parkolóból 5–15 perc gyaloglás szükséges a megfelelő szélviszonyokig.",
+  "description": "A Heulantsch a stájer pilóták egyik kedvelt játszótere, különösen enyhe délnyugati főnhelyzetekben. Akkor működik igazán jól, amikor más közeli starthelyek már túl erősek. Kiváló gyakorlóterep startokhoz, leszállásokhoz és közeli lejtőrepüléshez lamináris SW szélben. Repülés csak körülbelül októbertől áprilisig engedélyezett a legelő állatok miatt.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Startplatz-Heulansch",
+      "coordinates": {
+        "lat": 47.35778,
+        "lon": 15.48083
+      },
+      "startHeight": 1440,
+      "heightDifference": 190,
+      "launchDirections": [
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Erősödő szélre figyelni kell. Enyhe SW főnhelyzet ideális.",
+      "description": "A legmagasabb startpont a Heulantschon. Gyakran érdemes lejjebb kiteríteni és a kupolával felsétálni."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz-Parkplatz",
+      "coordinates": {
+        "lat": 47.35500,
+        "lon": 15.47083
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Erősebb szélben ne túl közel az autókhoz fordulni végső egyenesben.",
+      "description": "Nagy füves leszálló a hágó parkolója mellett."
+    }
+  ]
+}
