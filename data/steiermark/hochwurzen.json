@@ -1,0 +1,87 @@
+{
+  "region": "steiermark",
+  "site": "hochwurzen",
+  "name": "Hochwurzen",
+  "coordinates": {
+    "lat": 47.35972,
+    "lon": 13.63861
+  },
+  "talHeight": 750,
+  "operator": {
+    "name": "Planai-Hochwurzen-Bahnen",
+    "url": "https://www.planai.at",
+    "phone": "+43 3687 22042 0"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten direkt an der Talstation der Hochwurzenbahn in Pichl vorhanden."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Etwa 8 km östlich von Schladming im Ennstal. Auffahrt mit der Hochwurzenbahn. Die Startplätze befinden sich direkt unterhalb beziehungsweise südlich der Bergstation.",
+  "description": "Ganzjährig befliegbares Fluggebiet, für Südwindlagen ungeeignet. Sehr gute Möglichkeiten für Soaring-, Thermik- und Streckenflüge. Bei ausreichender Höhe sind Flüge Richtung Planai, Gasslhöhe oder Dachstein möglich. Der Nordstart liegt direkt auf der Piste unterhalb der Bergstation. Der Weststart ist ein steiler Schneisenstart mit guter Anströmung. Talwindsysteme und Leewirbel beachten.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Nordstartplatz",
+      "coordinates": {
+        "lat": 47.35972,
+        "lon": 13.63861
+      },
+      "startHeight": 1850,
+      "heightDifference": 1100,
+      "launchDirections": [
+        "N",
+        "NO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nicht bei Westwind starten. Leewirbel hinter den Bäumen möglich.",
+      "description": "Pistenstart direkt unterhalb der Bergstation der Hochwurzenbahn."
+    },
+    {
+      "name": "Weststartplatz",
+      "coordinates": {
+        "lat": 47.35889,
+        "lon": 13.63806
+      },
+      "startHeight": 1840,
+      "heightDifference": 1090,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Bei Starkwind Vorsicht. Talwind reicht oft bis knapp unter den Startplatz.",
+      "description": "Kurzer, steiler Schneisenstart etwa 50 Meter südlich der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Pichl",
+      "coordinates": {
+        "lat": 47.38611,
+        "lon": 13.61889
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Teilweise starker Talwind und turbulenter 'Struppwind' aus dem Preuneggtal möglich.",
+      "description": "Große Landewiese direkt neben der Talstation der Hochwurzenbahn mit Windsack."
+    }
+  ]
+}
