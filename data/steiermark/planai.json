@@ -1,0 +1,86 @@
+{
+  "region": "steiermark",
+  "site": "planai",
+  "name": "Planai",
+  "coordinates": {
+    "lat": 47.37208,
+    "lon": 13.72553
+  },
+  "talHeight": 750,
+  "operator": {
+    "name": "Planai-Hochwurzenbahn",
+    "url": "https://www.planai.at",
+    "phone": "+43 3687 220420"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten bei der Planai-Talstation sowie am Parkplatz bei Willis Hütte."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Anreise über die Tauernautobahn A10 oder über Liezen nach Schladming. Auffahrt mit der Planai-Seilbahn, per PKW über die private Mautstraße oder mit dem Flugtaxi der Flugschule Aufwind.",
+  "description": "Die Planai ist ein einfaches und thermisch meist eher schwaches Fluggebiet und daher ideal für Einsteiger, Genussflieger und Trainingsflüge. Streckenflüge sind nur selten möglich, bei guten Bedingungen jedoch Richtung Hochwurzen, Reiteralm oder Dachstein. Besonders eindrucksvoll ist das Panorama rund um Dachstein und Ennstal. Bei Westwind und Föhnlagen können Probleme auftreten. Über dem Talboden entstehen an thermischen Tagen teilweise kräftige Ostwinde.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 1
+  },
+  "startpunkte": [
+    {
+      "name": "Bergstation",
+      "coordinates": {
+        "lat": 47.37208,
+        "lon": 13.72553
+      },
+      "startHeight": 1880,
+      "heightDifference": 1130,
+      "launchDirections": [
+        "N",
+        "NO",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Westwind und Föhnlagen problematisch.",
+      "description": "Großer Wiesenstart direkt unterhalb der Bergstation. Der Oststart eignet sich auch für Anfänger."
+    },
+    {
+      "name": "Mittelstation",
+      "coordinates": {
+        "lat": 47.38242,
+        "lon": 13.70703
+      },
+      "startHeight": 1460,
+      "heightDifference": 710,
+      "launchDirections": [
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Westwind genau beurteilen.",
+      "description": "Ebene Wiese unterhalb der Kessleralm, etwa drei Minuten von der Mittelstation entfernt."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Große Wiese",
+      "coordinates": {
+        "lat": 47.39833,
+        "lon": 13.70042
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Ostwind Rechtsvolte fliegen. Kräftiger Talwind möglich.",
+      "description": "Großer offizieller Landeplatz östlich von Schladming zwischen Enns und Eisenbahn."
+    }
+  ]
+}
