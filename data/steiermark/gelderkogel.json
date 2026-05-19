@@ -1,0 +1,67 @@
+{
+  "region": "steiermark",
+  "site": "gelderkogel",
+  "name": "Gelderkogel",
+  "coordinates": {
+    "lat": 47.30472,
+    "lon": 15.48000
+  },
+  "talHeight": 700,
+  "operator": {
+    "name": "Flugschule Steiermark",
+    "url": "https://www.flugschule-steiermark.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Nicht beim Bauernhof parken. Parkplatz an der Abzweigung etwa 100 m vor dem Hof."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Über Fladnitz an der Teichalm nach Tober. Vom Landeplatz Richtung Teichalm/Sommeralm fahren. Nach etwa fünf Minuten befindet sich links ein Bauernhaus. An der Kreuzung parken und anschließend zu Fuß weiter zum Startplatz in der Waldschneise. Gehzeit etwa 10 Minuten.",
+  "description": "Unscheinbare südlich der Teichalm vorgelagerte Rippe mit thermisch sehr aktivem Gelände nördlich des Startplatzes. Schulungsgebiet der Flugschule Steiermark. Thermik- und Streckenflüge möglich. Der Start erfolgt in einer Waldschneise. Auf Ost-, West- und Rückenwind achten. Wenn die Baumkronen nach dem Start nicht sicher überflogen werden können, sofort nach links Richtung Osten abdrehen. Große Notlandemöglichkeit vorhanden. Flugverbot vor Sonnenuntergang sowie absolutes Rauchverbot am Startplatz beachten.",
+  "siteRatings": {
+    "overallRating": 1,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Gelder - Schachner",
+      "coordinates": {
+        "lat": 47.30472,
+        "lon": 15.48000
+      },
+      "startHeight": 1100,
+      "heightDifference": 400,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Auf Ost-, West- und Rückenwind achten. Waldschneisenstart.",
+      "description": "Leicht geneigter Wiesenstart in einer großen Waldschneise."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Tober - Übungswiese",
+      "coordinates": {
+        "lat": 47.29417,
+        "lon": 15.49000
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Schulungsbetrieb beachten. Landerichtung meist Ost-West oder West-Ost.",
+      "description": "Große Landewiese der Flugschule in Tober. Landung rechts der Straße zwischen Waldrand und Haus."
+    }
+  ]
+}
