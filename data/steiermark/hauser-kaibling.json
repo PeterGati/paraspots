@@ -1,0 +1,120 @@
+{
+  "region": "steiermark",
+  "site": "hauser-kaibling",
+  "name": "Hauser Kaibling",
+  "coordinates": {
+    "lat": 47.37537,
+    "lon": 13.77984
+  },
+  "talHeight": 780,
+  "operator": {
+    "name": "Tauern Seilbahn",
+    "url": "https://www.hauser-kaibling.at/de/mein-berg/sommer/tauernseilbahn",
+    "phone": "+43 3686 3030 0"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Große Parkmöglichkeiten bei der Talstation der Krummholzbahn in Haus im Ennstal."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "O",
+    "SO",
+    "SW",
+    "NW"
+  ],
+  "webcam": "https://www.hauser-kaibling.at",
+  "approachDescription": "Auffahrt mit der Tauern Seilbahn beziehungsweise Krummholzbahn. Die verschiedenen Startplätze sind von der Bergstation aus in 10 bis 30 Minuten zu Fuß erreichbar.",
+  "description": "Ganzjahresfluggebiet mit zahlreichen Startmöglichkeiten für unterschiedliche Windrichtungen. Gute Thermik- und Streckenflugmöglichkeiten Richtung Osten zu Kochofen und Moosheim. Soaring ist bei passenden Bedingungen möglich. Der große Landeplatz in Haus wird gleichzeitig für Schulungsbetrieb genutzt. Bei Ostwind kann es im Lee schwierig werden. Start- und Landegebühren werden an der Seilbahnkassa bezahlt.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Weststart",
+      "coordinates": {
+        "lat": 47.37537,
+        "lon": 13.77707
+      },
+      "startHeight": 2000,
+      "heightDifference": 1220,
+      "launchDirections": [
+        "SW",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei starkem Westwind turbulent.",
+      "description": "Weststart nahe Gipfelbereich mit guter XC-Anbindung."
+    },
+    {
+      "name": "Nordstart",
+      "coordinates": {
+        "lat": 47.37537,
+        "lon": 13.77984
+      },
+      "startHeight": 1970,
+      "heightDifference": 1190,
+      "launchDirections": [
+        "N",
+        "NO"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Nordlagen genau beurteilen.",
+      "description": "Nordstart unterhalb des Gipfelbereichs."
+    },
+    {
+      "name": "Oststart",
+      "coordinates": {
+        "lat": 47.37537,
+        "lon": 13.77984
+      },
+      "startHeight": 2000,
+      "heightDifference": 1220,
+      "launchDirections": [
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Morgendliche Talwindsysteme beachten.",
+      "description": "Einfacher Oststart mit guter Thermikentwicklung."
+    },
+    {
+      "name": "Pistenstart",
+      "coordinates": {
+        "lat": 47.37250,
+        "lon": 13.77984
+      },
+      "startHeight": 1800,
+      "heightDifference": 1020,
+      "launchDirections": [
+        "NO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Achtung Gondel unmittelbar links vom Startplatz.",
+      "description": "Breiter Pistenstart unterhalb der Bergstation."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Hauser Kaibling",
+      "coordinates": {
+        "lat": 47.40857,
+        "lon": 13.76438
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Ostwind mögliche Lee-Effekte.",
+      "description": "Sehr großer offizieller Landeplatz nördlich der Talstation. Schulungsbetrieb beachten."
+    }
+  ]
+}
