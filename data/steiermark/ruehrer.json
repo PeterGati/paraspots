@@ -1,0 +1,69 @@
+{
+  "region": "steiermark",
+  "site": "ruehrer",
+  "name": "Rührer",
+  "coordinates": {
+    "lat": 47.47472,
+    "lon": 15.26667
+  },
+  "talHeight": 620,
+  "operator": {
+    "name": "Paragleiter Club Bruck",
+    "url": "https://www.paragleiten-bruck.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Einige Parkplätze in der Nähe des Startplatzes vorhanden."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Ausgangspunkt ist Göritz. Entweder entlang der Forststraße oder über den Wanderweg Richtung Tulzer und weiter zum GH Rührer. Gehzeit etwa 1 Stunde 20 Minuten in gemütlichem Tempo.",
+  "description": "Der Ruehrer ist besonders ab Mitte März bis in den Frühsommer ein Geheimtipp für Thermik- und Streckenflugpiloten. Basishöhen bis 3000 Meter und Strecken über 100 km sind möglich. Das Gebiet ist der Hausberg des Paragleiter Club Bruck. Der Startplatz ist gepflegt und einfach zu nutzen, allerdings sollte bei Nord- oder Ostwind nicht gestartet werden. Direkt hinter dem Startplatz beginnt der Wald. Das Fluggebiet kann zeitweise für militärische Flugübungen genutzt werden, daher sollte der Airspace Use Plan vorher kontrolliert werden.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Startwiese Rührer SW",
+      "coordinates": {
+        "lat": 47.47472,
+        "lon": 15.26667
+      },
+      "startHeight": 1150,
+      "heightDifference": 530,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nord- und Ostwind vermeiden. Startwind über 15 km/h kritisch.",
+      "description": "Einfacher Wiesenstart mit flachem Auslegebereich und mittelsteilem Anlauf. Nach dem Start links zum Grat abbiegen, dort meist thermischer Anschluss."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz bei Kreuzung Göritz",
+      "coordinates": {
+        "lat": 47.46500,
+        "lon": 15.27600
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Auf Stromleitungen achten. Landeplatz liegt innerhalb eines Stromleitungsdreiecks.",
+      "description": "Leicht geneigter Landeplatz nahe der Kreuzung Göritz."
+    }
+  ]
+}
