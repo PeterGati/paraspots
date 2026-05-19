@@ -1,0 +1,69 @@
+{
+  "region": "steiermark",
+  "site": "grosse-scheibe",
+  "name": "Große Scheibe",
+  "coordinates": {
+    "lat": 47.61861,
+    "lon": 15.65111
+  },
+  "talHeight": 700,
+  "operator": {
+    "name": "Parateam Mürzzuschlag",
+    "url": "http://www.muerzer.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten beim offiziellen Landeplatz in Mürzzuschlag."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Anreise nach Mürzzuschlag. Die Auffahrt Richtung Startplatz ist nur ortsansässigen Piloten gestattet. Alternativ Aufstieg vom Landeplatz zur Scheibenhütte, Gehzeit etwa 1,5 bis 2 Stunden.",
+  "description": "Thermisch sehr aktiver Berg direkt über Mürzzuschlag mit gutem Streckenflugpotential in alle Richtungen. Besonders im Frühjahr und Sommer können starke thermische Bedingungen und Turbulenzen auftreten. Der kompakte Startplatz liegt in einer Waldschneise und erfordert sichere Rückwärtsstarttechnik. Bei Nordwind besteht Rotorgefahr. Die Scheibe ist kein Gebiet für Anfänger oder Wenigflieger. Fluggebiet von Anfang November bis Anfang April gesperrt.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Große Scheibe - Scheibenhütte",
+      "coordinates": {
+        "lat": 47.61861,
+        "lon": 15.65111
+      },
+      "startHeight": 1473,
+      "heightDifference": 773,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Rotorgefahr bei Nordwind. Turbulente thermische Bedingungen möglich.",
+      "description": "Kompakter Waldschneisenstart nahe der Scheibenhütte. Rückwärtsstarttechnik erforderlich."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Mürzzuschlag",
+      "coordinates": {
+        "lat": 47.60750,
+        "lon": 15.67250
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Leichte Hangneigung. Lokale schwache Südwinde typisch.",
+      "description": "Großzügiger offizieller Landeplatz direkt bei Mürzzuschlag."
+    }
+  ]
+}
