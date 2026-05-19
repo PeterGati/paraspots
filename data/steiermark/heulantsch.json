@@ -17,7 +17,7 @@
     "cableCar": false,
     "hikeAndFly": true,
     "publicTransport": false,
-    "parking": "Parkolás a hágónál lévő parkolóban, Breitenau irányába."
+    "parking": "Parkplatz direkt am Pass Richtung Breitenau."
   },
   "airspaces": [],
   "flightCharacteristics": {
@@ -29,8 +29,8 @@
     "SW"
   ],
   "webcam": null,
-  "approachDescription": "Fladnitz an der Teichalm felől a Teichalmra kell felhajtani, majd a tó mellett tovább a Breitenau felé vezető hágóig. A parkolóból 5–15 perc gyaloglás szükséges a megfelelő szélviszonyokig.",
-  "description": "A Heulantsch a stájer pilóták egyik kedvelt játszótere, különösen enyhe délnyugati főnhelyzetekben. Akkor működik igazán jól, amikor más közeli starthelyek már túl erősek. Kiváló gyakorlóterep startokhoz, leszállásokhoz és közeli lejtőrepüléshez lamináris SW szélben. Repülés csak körülbelül októbertől áprilisig engedélyezett a legelő állatok miatt.",
+  "approachDescription": "Von Fladnitz an der Teichalm Richtung Teichalm fahren, beim See vorbei weiter Richtung Breitenau bis zum Pass. Direkt am Pass befindet sich rechts der Parkplatz. Von dort 5 bis 15 Minuten Fußmarsch bis zum passenden Startbereich.",
+  "description": "Der Heulantsch ist die Spielwiese der steirischen Piloten. Besonders bei leicht föhnigen Südwestlagen funktioniert das Gebiet hervorragend, wenn andere Flugberge bereits zu stark werden. Ideal zum Trainieren von Starts, Landungen und hangnahem Fliegen bei angenehm laminarem Wind. Geflogen darf nur etwa von Oktober bis April werden, da sich im Sommer Kühe auf der Wiese befinden.",
   "siteRatings": {
     "overallRating": 2,
     "thermalRating": 2
@@ -48,8 +48,8 @@
         "SW"
       ],
       "difficulty": "mittel",
-      "windSensitivity": "Erősödő szélre figyelni kell. Enyhe SW főnhelyzet ideális.",
-      "description": "A legmagasabb startpont a Heulantschon. Gyakran érdemes lejjebb kiteríteni és a kupolával felsétálni."
+      "windSensitivity": "Auf zunehmenden Wind achten. Ideal bei leichtem Südwestföhn.",
+      "description": "Höchster Startpunkt am Heulantsch. Oft wird nur so weit hinauf gegangen, bis der Wind stark genug zum Starten ist."
     }
   ],
   "landeplaetze": [
@@ -60,8 +60,8 @@
         "lon": 15.47083
       },
       "difficulty": "mittel",
-      "windSensitivity": "Erősebb szélben ne túl közel az autókhoz fordulni végső egyenesben.",
-      "description": "Nagy füves leszálló a hágó parkolója mellett."
+      "windSensitivity": "Bei stärkerem Wind nicht zu nahe an den parkenden Autos anfliegen.",
+      "description": "Große Wiese neben dem Parkplatz am Pass."
     }
   ]
 }
