@@ -469,8 +469,8 @@
       "name": "Steiermark",
       "sites": [
         {
-      slug: "buergeralpe",
-    name: "Buergeralpe"
+      "slug": "buergeralpe",
+    "name": "Buergeralpe"
       }
         ]
        },
