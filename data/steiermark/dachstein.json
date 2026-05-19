@@ -1,0 +1,100 @@
+{
+  "region": "steiermark",
+  "site": "dachstein",
+  "name": "Dachstein",
+  "coordinates": {
+    "lat": 47.47569,
+    "lon": 13.60644
+  },
+  "talHeight": 1200,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Zufahrt über die Dachstein Mautstraße. Auffahrt mit der Dachsteinbahn möglich."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "SW"
+  ],
+  "webcam": "https://www.feratel.com/webcams/oesterreich/ramsau-am-dachstein.html",
+  "approachDescription": "Anfahrt über die Dachstein-Tauern Region nach Ramsau am Dachstein. Weiter über die Mautstraße zur Dachsteinbahn. Zugang zu den hochalpinen Startplätzen per Seilbahn und teilweise zu Fuß.",
+  "description": "Hochalpines Fluggebiet mit außergewöhnlichem Streckenflugpotential und sehr aktiver Thermik. Der Dachstein bietet mehrere Startmöglichkeiten in extremer alpiner Umgebung. Die Bedingungen können sich sehr schnell ändern, weshalb das Gebiet nur für erfahrene Piloten geeignet ist. Besonders der hochalpine Schneestart nahe der Bergstation erfordert perfekte Bedingungen und saubere Starttechnik. Soaring, Thermik- und weite XC-Flüge sind möglich. Beste XC-Linien führen Richtung Grimming oder westlich zum Kammspitz.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Gipfel",
+      "coordinates": {
+        "lat": 47.47569,
+        "lon": 13.60644
+      },
+      "startHeight": 2079,
+      "heightDifference": 879,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Nur bei perfekten Bedingungen. Hochalpiner Klippenstart mit schnellen Wetterwechseln.",
+      "description": "Hochalpiner Start oberhalb der Hunerkogl-Seilbahn. Start nur für sehr erfahrene Piloten geeignet."
+    },
+    {
+      "name": "Gutenberghütte",
+      "coordinates": {
+        "lat": 47.47569,
+        "lon": 13.60644
+      },
+      "startHeight": 2400,
+      "heightDifference": 1200,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch aktiv, Wetterwechsel möglich.",
+      "description": "Südstart im Bereich der Gutenberghütte."
+    },
+    {
+      "name": "Nahe Seilbahnstation",
+      "coordinates": {
+        "lat": 47.47111,
+        "lon": 13.62056
+      },
+      "startHeight": 2667,
+      "heightDifference": 1467,
+      "launchDirections": [
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Starker Südföhn und schnelle Wetteränderungen beachten.",
+      "description": "Startplatz nahe der Seilbahnstation mit großartigem Panorama und hochalpinem Charakter."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Rittisberg Nord",
+      "coordinates": {
+        "lat": 47.42322,
+        "lon": 13.65550
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Ostwind Rechtsvolte empfohlen.",
+      "description": "Großer offizieller Landeplatz mit Windsack. Bei Ostwind mit Rechtsvolte anfliegen."
+    }
+  ]
+}
