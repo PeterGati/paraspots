@@ -464,6 +464,16 @@
         }
       ]
     },
+    {
+      "slug": "steiermark",
+      "name": "Steiermark",
+      "sites": [
+        {
+      slug: "buergeralpe",
+    name: "Buergeralpe"
+      }
+        ]
+       },
      {
       "slug": "oberoesterreich",
       "name": "Oberösterreich",
