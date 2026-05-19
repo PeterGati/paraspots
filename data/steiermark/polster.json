@@ -1,0 +1,125 @@
+{
+  "region": "steiermark",
+  "site": "polster",
+  "name": "Polster",
+  "coordinates": {
+    "lat": 47.53224,
+    "lon": 14.96045
+  },
+  "talHeight": 750,
+  "operator": {
+    "name": "Soaringclub Präbichl",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkmöglichkeiten am Präbichlpass und beim Soaringclub-Landeplatz."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Auffahrt über Präbichl. Im Winter Auffahrt mit dem Polster-Classic Sessellift möglich. Alternativ Walk&Fly-Aufstieg oder Auffahrt Richtung Donnersalm. Informationen beim Soaringclub oder Sport Zauner Eisenerz erhältlich.",
+  "description": "Exponierter Flugberg am westlichen Ende des Hochschwabmassivs mit hervorragender thermischer Anbindung. Der Polster bietet ausgezeichnete Soaring-, Thermik- und Streckenflugbedingungen in eindrucksvoller alpiner Landschaft. Besonders beliebt sind die Verbindungen Richtung Pfaffenstein, Rössel und Leobner Mauer. Je nach Geländeform reicht die Thermik von sanft bis sehr kräftig. Bei stärkerem Wind ist auf die Düsenwirkung zwischen Rössel und Polster zu achten.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 5
+  },
+  "startpunkte": [
+    {
+      "name": "Polster - Dreieck",
+      "coordinates": {
+        "lat": 47.53224,
+        "lon": 14.96045
+      },
+      "startHeight": 1810,
+      "heightDifference": 1060,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei Schnee anspruchsvoll. Thermik teils sehr kräftig.",
+      "description": "Steile nach oben schmäler werdende Startwiese mit hervorragender thermischer Anbindung."
+    },
+    {
+      "name": "West - Start",
+      "coordinates": {
+        "lat": 47.53280,
+        "lon": 14.95850
+      },
+      "startHeight": 1840,
+      "heightDifference": 1090,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Westwindlagen ideal für Soaring auf der Eisenerzer Seite.",
+      "description": "Weststartbereich mit mehreren möglichen Startvarianten."
+    },
+    {
+      "name": "Nord Startplatz",
+      "coordinates": {
+        "lat": 47.53350,
+        "lon": 14.96150
+      },
+      "startHeight": 1860,
+      "heightDifference": 1110,
+      "launchDirections": [
+        "N",
+        "NO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ideal für Nordwindsoaring.",
+      "description": "Nordstart in eindrucksvoller hochalpiner Umgebung."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Fußballplatz Eisenerz",
+      "coordinates": {
+        "lat": 47.53350,
+        "lon": 14.88350
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Windsack vorhanden.",
+      "description": "Großer offizieller Landeplatz in Eisenerz."
+    },
+    {
+      "name": "Gsollkurve",
+      "coordinates": {
+        "lat": 47.52000,
+        "lon": 14.95000
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Kein Windsack vorhanden.",
+      "description": "Alternative Landemöglichkeit unterhalb des Präbichlpasses."
+    },
+    {
+      "name": "Soaringclub - Landeplatz",
+      "coordinates": {
+        "lat": 47.52022,
+        "lon": 14.95658
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Bei OSO-Wind rechtzeitig die Landevolte schließen. Bei WNW stärkeres Sinken möglich.",
+      "description": "Langer aber schmaler clubeigener Landeplatz direkt am Präbichlpass."
+    }
+  ]
+}
