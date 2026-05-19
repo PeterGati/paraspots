@@ -1,0 +1,62 @@
+{
+  "region": "steiermark",
+  "site": "kreuzkogel",
+  "name": "Kreuzkogel",
+  "coordinates": {
+    "lat": 47.54800,
+    "lon": 14.56100
+  },
+  "talHeight": 1100,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Großer Schotterparkplatz auf der Kaiserau."
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": null,
+  "approachDescription": "Vom großen Schotterparkplatz auf der Kaiserau über beschilderte Forstwege Richtung Hochalm. Der Aufstieg kann entweder über den steilen Jägersteig oder den einfacheren Normalweg erfolgen. Von der Hochalm weiter über den langen südseitigen Wiesenhang bis zum Grat.",
+  "description": "Wunderschöner Flugberg mit direkter thermischer Anbindung zum Gesäuse. Der riesige Südstart ist in den Richtungen SO bis SW hervorragend fliegbar. Hinter dem Grat befindet sich zusätzlich ein kleiner Nordstartplatz, der allerdings deutlich enger und von Latschen umgeben ist.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Kreuzkogel",
+      "coordinates": {
+        "lat": 47.54800,
+        "lon": 14.56100
+      },
+      "startHeight": 2011,
+      "heightDifference": 911,
+      "launchDirections": [
+        "N",
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nordstart klein und von Latschen umgeben. Südstart sehr groß und offen.",
+      "description": "Großzügige alpine Startwiese am Grat mit hervorragender thermischer Anbindung."
+    }
+  ],
+  "landeplaetze": []
+}
