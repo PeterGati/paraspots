@@ -627,7 +627,8 @@
      {
       "slug": "voralberg",
       "name": "Voralberg",
-      "sites": [
+      "sites": 
+       [
         {
   "slug": "diedamskopf",
   "name": "Diedamskopf"
