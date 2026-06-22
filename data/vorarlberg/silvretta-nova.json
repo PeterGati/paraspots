@@ -1,0 +1,76 @@
+{
+  "region": "vorarlberg",
+  "site": "silvretta-nova",
+  "name": "Silvretta Nova",
+  "coordinates": {
+    "lat": 46.97111,
+    "lon": 10.03611
+  },
+  "talHeight": 1000,
+  "operator": {
+    "name": "Silvretta Montafon",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkplatz Talstation Gaschurn"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [],
+  "webcam": null,
+  "approachDescription": "Im Sommer Start an der Bergstation Versettla. Im Winter von der Bergstation der Valiserabahn. Talstation in Gaschurn.",
+  "description": "Silvretta Nova ist ein klassischer Thermik- und XC-Berg im Montafon. Im Sommer ist der Start an der Versettla meist nur bis etwa 12 Uhr sinnvoll, danach setzt häufig starker Abwind ein. Winterbetrieb erfolgt über die Valiserabahn mit Landung in Galgenul.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Versettla",
+      "coordinates": {
+        "lat": 46.97111,
+        "lon": 10.03611
+      },
+      "startHeight": 2000,
+      "heightDifference": 1000,
+      "launchDirections": [],
+      "difficulty": "leicht",
+      "windSensitivity": "Nach 12 Uhr häufig Abwind",
+      "description": "Sommerstart direkt an der Bergstation Versettla."
+    },
+    {
+      "name": "Valiserabahn",
+      "coordinates": {
+        "lat": 46.97750,
+        "lon": 10.04722
+      },
+      "startHeight": 2000,
+      "heightDifference": 1000,
+      "launchDirections": [],
+      "difficulty": "leicht",
+      "windSensitivity": "Winterbetrieb, windabhängig",
+      "description": "Winterstart an der Bergstation der Valiserabahn."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Galgenul",
+      "coordinates": {
+        "lat": 46.98528,
+        "lon": 10.02778
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind am Nachmittag möglich",
+      "description": "Standardlandeplatz im Winterbetrieb."
+    }
+  ]
+}
