@@ -1,0 +1,87 @@
+{
+  "region": "vorarlberg",
+  "site": "kriegerhorn",
+  "name": "Kriegerhorn",
+  "coordinates": {
+    "lat": 47.20889,
+    "lon": 10.14667
+  },
+  "talHeight": 1460,
+  "operator": {
+    "name": "Lecher Bergbahnen",
+    "url": "https://www.vorarlberg.com",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Lech Talstation"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Im Winter Auffahrt mit Schlegelkopfbahn und Kriegerhornbahn. Im Sommer über Oberlech mit Gondel und Petersbodenbahn, danach ca. 30 Minuten Fußmarsch. Alternativ Rüfikopfbahn und etwa 10 Minuten Fußweg südlich.",
+  "description": "Ganzjahresfluggebiet mit zwei unterschiedlichen Startcharakteren. Im Sommer wird meist der anspruchsvollere NW-Start am Rüfikopf genutzt, im Winter der Südstart am Kriegerhorn. Komfortabler und großer Landeplatz. Im Sommer sind die Startplätze teilweise felsig.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 0
+  },
+  "startpunkte": [
+    {
+      "name": "Kriegerhorn",
+      "coordinates": {
+        "lat": 47.21361,
+        "lon": 10.11472
+      },
+      "startHeight": 2140,
+      "heightDifference": 680,
+      "launchDirections": [
+        "SO",
+        "S"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei SW am Gipfelkreuz starten, im Sommer felsiger Untergrund",
+      "description": "Im Winter planiert. Klassischer Südstart direkt unterhalb des Gipfelbereichs."
+    },
+    {
+      "name": "Rüfikopf",
+      "coordinates": {
+        "lat": 47.20889,
+        "lon": 10.14667
+      },
+      "startHeight": 2260,
+      "heightDifference": 800,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Felsiger Start, exponiert bei Nordwestlagen",
+      "description": "Oberhalb der Lawinenverbauungen, rechts des Wanderwegs, markiert mit Windfahne. Meist genutzter Sommerstart."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Lech",
+      "coordinates": {
+        "lat": 47.20917,
+        "lon": 10.14667
+      },
+      "difficulty": "sehr leicht",
+      "windSensitivity": "Großzügig und wenig sensibel",
+      "description": "Sehr lange Landewiese mit Windsackmarkierung. Komfortabler Standardlandeplatz."
+    }
+  ]
+}
