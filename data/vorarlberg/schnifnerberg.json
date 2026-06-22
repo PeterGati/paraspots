@@ -1,0 +1,106 @@
+{
+  "region": "vorarlberg",
+  "site": "schnifnerberg",
+  "name": "Schnifnerberg",
+  "coordinates": {
+    "lat": 47.21500,
+    "lon": 9.73222
+  },
+  "talHeight": 659,
+  "operator": {
+    "name": "Bergbahn Schnifis",
+    "url": "https://www.fca.at",
+    "phone": "+43 5524 81590"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Parkplatz Bergbahn Schnifis"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": "https://holfuy.com/de/weather/721",
+  "approachDescription": "Auffahrt mit der Bergbahn Schnifis oder alternativ mit dem Auto (Mautstraße). Talstation in Schnifis. Start- und Landekarte erforderlich.",
+  "description": "Schnifnerberg ist ein starkes Frühjahrs- und Herbstfluggebiet mit guter Thermik und XC-Potenzial. Besonders bei südlichen Lagen sehr beliebt, aber auch Westlagen funktionieren. Streckenflüge Richtung Schweiz, Rheintal, Montafon und Arlberg sind möglich. Der aktuelle Rekord liegt bei 198 km. Im Sommer setzt der Talwind oft schnell ein und erzeugt Seiten- oder Rückenwind. Rotoren am Start beachten.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Schnifisberg Hensler",
+      "coordinates": {
+        "lat": 47.22833,
+        "lon": 9.73944
+      },
+      "startHeight": 1285,
+      "heightDifference": 626,
+      "launchDirections": [
+        "SO",
+        "S",
+        "SW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Ab 13 Uhr oft Seiten- oder Rückenwind durch Talwind",
+      "description": "Direkt an der Bergstation, Windsack vorhanden. Hauptstartplatz."
+    },
+    {
+      "name": "Alpila",
+      "coordinates": {
+        "lat": 47.23083,
+        "lon": 9.74750
+      },
+      "startHeight": 1600,
+      "heightDifference": 941,
+      "launchDirections": [
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Kein Windsack, thermisch aktiv",
+      "description": "Etwa 40 Minuten Gehzeit vom Hensler. Höherer XC-Start mit besserem Anschluss."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landeplatz Ried",
+      "coordinates": {
+        "lat": 47.21028,
+        "lon": 9.72250
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Talwind, Rechtslandevolte beachten",
+      "description": "Hauptlandeplatz für PG. Bei starkem Talwind bevorzugt."
+    },
+    {
+      "name": "Sportplatz",
+      "coordinates": {
+        "lat": 47.21361,
+        "lon": 9.73000
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Rotorengefahr bei starkem Talwind",
+      "description": "Kleiner technischer Landeplatz, nur für geübte Piloten."
+    },
+    {
+      "name": "Plateau",
+      "coordinates": {
+        "lat": 47.21389,
+        "lon": 9.73417
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind und Thermik",
+      "description": "Zwischenlandeplatz mit guter Erreichbarkeit zur Talstation."
+    }
+  ]
+}
