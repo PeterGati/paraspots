@@ -1,0 +1,69 @@
+{
+  "region": "burgenland",
+  "site": "winde-deutschkreutz",
+  "name": "Winde Deutschkreutz",
+  "coordinates": {
+    "lat": 47.60944,
+    "lon": 16.59778
+  },
+  "talHeight": 190,
+  "operator": {
+    "name": "Parateam Pannonia",
+    "url": "http://www.parateam-pannonia.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": ""
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "",
+  "description": "Windenschleppgelände bei Deutschkreutz mit etwa 800 Meter Schleppstrecke. Sehr aktives Gelände mit gutem Streckenflugpotential. Gestartet wird meist in Richtung Nord, schöner Flug über das Blaufränkischland. Besonders geeignet bei nördlichen Windrichtungen.",
+  "siteRatings": {
+    "overallRating": 2,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Schleppstart Deutschkreutz",
+      "coordinates": {
+        "lat": 47.60944,
+        "lon": 16.59778
+      },
+      "startHeight": 190,
+      "heightDifference": 0,
+      "launchDirections": [
+        "N",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Optimal bei Nordwind",
+      "description": "Windenschleppstart mit etwa 800 m Schleppstrecke. Geeignet für Einsteiger und Streckenflugtraining."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Landefeld Deutschkreutz",
+      "coordinates": {
+        "lat": 47.60944,
+        "lon": 16.59778
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Großes flaches Gelände",
+      "description": "Landung direkt im Schleppgelände möglich."
+    }
+  ]
+}
