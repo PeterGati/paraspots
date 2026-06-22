@@ -52,7 +52,7 @@
 
 <header class="site-header">
     <div class="site-header-inner">
-        <h1>🧪 Test Weather Page (Kezdőlap mini verzió)</h1>
+        <h1>🧪 Test Weather Page v4.1</h1>
     </div>
 </header>
 
@@ -92,8 +92,8 @@ async function loadWeather() {
                     <p class="gust">Böen: ${Math.round(c.wind_gusts_10m)} km/h</p>
                 </div>
                 <div>
-                    <p>${c.temperature_2m} °C</p>
-                    <p>Niederschlag: ${c.precipitation_probability}%</p>
+                    <p><strong>Temperatur:</strong> ${c.temperature_2m} °C</p>
+                    <p><strong>Niederschlag:</strong> ${c.precipitation_probability}%</p>
                 </div>
             </div>
         `;
@@ -111,7 +111,6 @@ async function loadWeather() {
 
         html += `<div class="weather-status ${statusClass}">${statusText}</div>`;
         
-        // Kattintható sor a részletes oldalra
         html += `
             <p><a href="startplatz.html?region=steiermark&site=planai" class="weather-link">
                 → Wettervorhersage (2 Tage)
@@ -122,7 +121,7 @@ async function loadWeather() {
 
     } catch (e) {
         document.getElementById("weather-result").innerHTML = 
-            `<p style="color:red;">Fehler beim Laden der Wetterdaten.</p>`;
+            `<p style="color:red;">Fehler beim Laden.</p>`;
     }
 }
 
