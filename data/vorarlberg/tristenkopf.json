@@ -1,0 +1,87 @@
+{
+  "region": "vorarlberg",
+  "site": "tristenkopf",
+  "name": "Tristenkopf",
+  "coordinates": {
+    "lat": 47.22889,
+    "lon": 9.73833
+  },
+  "talHeight": 1050,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Talstation Skigebiet Schetteregg"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO",
+    "S",
+    "SW",
+    "W"
+  ],
+  "webcam": null,
+  "approachDescription": "Ausgangspunkt ist die Talstation des Skigebiets Schetteregg. Zustieg zu Fuß in 1–2 Stunden. Alternativ von den Bergstationen Andelsbuch oder Bezau entlang des Grates ostwärts. Im Winter auch mit Schneeschuhen oder Tourenski.",
+  "description": "Walk-and-Fly Gipfel im Schatten von Bezau und Andelsbuch. Startbar in fast alle Windrichtungen. Bei starkem Südwind sind Turbulenzen des Hauptkamms zu beachten. Sehr gute Thermikanschlüsse in den Kessel Richtung Andelsbuch. Landung entweder in Schetteregg oder auf der Hauptlandewiese in Andelsbuch möglich.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Tristenkopf Hauptstart",
+      "coordinates": {
+        "lat": 47.22889,
+        "lon": 9.73833
+      },
+      "startHeight": 1741,
+      "heightDifference": 691,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO",
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei starkem Süd Turbulenzen vom Hauptkamm",
+      "description": "Einfacher Startplatz mit breitem Windfenster. Der körperliche Aufwand des Aufstiegs sollte nicht unterschätzt werden."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Schetteregg",
+      "coordinates": {
+        "lat": 47.22083,
+        "lon": 9.72861
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Windanzeiger über Hotel-Fahnen",
+      "description": "Große Wiese am Rand des Hotels in Schetteregg."
+    },
+    {
+      "name": "Andelsbuch Hauptlandewiese",
+      "coordinates": {
+        "lat": 47.41194,
+        "lon": 9.90861
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Standardlandung, gut erreichbar",
+      "description": "Alternative Hauptlandewiese im Gleitwinkelbereich."
+    }
+  ]
+}
