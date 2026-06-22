@@ -667,6 +667,18 @@
         {
   "slug": "tristenkopf",
   "name": "Tristenkopf"
+}, 
+        {
+      "slug": "salzburg",
+      "name": "Salzburg",
+      "sites": [
+        {
+  "slug": "winde-deutschkreutz",
+  "name": "Winde Deutschkreutz"
+},
+        {
+  "slug": "winde-lutzmannsburg",
+  "name": "Winde Lutzmannsburg"
 }
   ]
 }
