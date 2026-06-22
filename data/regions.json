@@ -635,6 +635,34 @@
         {
   "slug": "golm",
   "name": "Golm"
+},
+        {
+  "slug": "hochjoch",
+  "name": "Hochjoch"
+},
+        {
+  "slug": "kriegerhorn",
+  "name": "Kriegerhorn"
+},
+        {
+  "slug": "niedere",
+  "name": "Niedere"
+},
+        {
+  "slug": "pfaender",
+  "name": "Pfänder"
+},
+        {
+  "slug": "schnifnerberg",
+  "name": "Schnifnerberg"
+},
+        {
+  "slug": "silvretta-nova",
+  "name": "Silvretta Nova"
+},
+        {
+  "slug": "sulzberg",
+  "name": "Sulzberg"
 }
   ]
 }
