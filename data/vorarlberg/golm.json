@@ -1,0 +1,71 @@
+{
+  "region": "vorarlberg",
+  "site": "golm",
+  "name": "Golm",
+  "coordinates": {
+    "lat": 47.07544,
+    "lon": 9.87194
+  },
+  "talHeight": 1000,
+  "operator": {
+    "name": "Golmerbahn",
+    "url": "https://www.golm.at/",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Talstation Latschau"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "NO",
+    "O",
+    "SO"
+  ],
+  "webcam": null,
+  "approachDescription": "Talstation Latschau bei Tschagguns. Auffahrt mit der Golmerbahn, anschließend im Sommer ca. 45 Minuten Fußmarsch bis zum eigentlichen Startplatz. Steiler Aufstieg.",
+  "description": "Golm ist primär als XC-Startberg im Montafon gedacht. Kein klassisches Soaringgebiet. Start- und Landegebühr an der Talstation zu entrichten. Windwirbel im Startbereich beachten, außerdem quert ein Wanderweg den Startplatz. Im Tal kann ab etwa 14 Uhr ein starkes Talwindsystem einsetzen. Wildschutzregelungen strikt beachten.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Golmer Joch",
+      "coordinates": {
+        "lat": 47.06246,
+        "lon": 9.83731
+      },
+      "startHeight": 2030,
+      "heightDifference": 1030,
+      "launchDirections": [
+        "NO",
+        "O",
+        "SO"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Windwirbel möglich, thermisch aktiv, Wanderweg im Startbereich",
+      "description": "Große Startwiese direkt unter dem Golmerjoch. Im Winter unter der Skipiste der Rätikonbahn auslegen."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Schruns",
+      "coordinates": {
+        "lat": 47.07304,
+        "lon": 9.91856
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Lee der umliegenden Häuser, Talwind kann stark werden",
+      "description": "Gut sichtbarer offizieller Landeplatz beim Windsack. Sommerlandeplatz beim 'Haus im Feld', Winterlandeplatz direkt neben dem Parkplatz der Zamangbahn."
+    }
+  ]
+}
