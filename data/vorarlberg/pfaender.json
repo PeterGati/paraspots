@@ -1,0 +1,69 @@
+{
+  "region": "vorarlberg",
+  "site": "pfaender",
+  "name": "Pfänder",
+  "coordinates": {
+    "lat": 47.49972,
+    "lon": 9.77556
+  },
+  "talHeight": 400,
+  "operator": {
+    "name": "Pfänderbahn",
+    "url": "https://www.pfaenderbahn.at",
+    "phone": "+43 5574 42160-0"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": true,
+    "parking": "Talstation Pfänderbahn / Tiefgarage"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "W",
+    "NW"
+  ],
+  "webcam": "https://www.pfaenderbahn.at",
+  "approachDescription": "Startpunkt über die Talstation der Pfänderbahn erreichbar. Alternativ Fußmarsch über das 'Gschlief' (60–80 Minuten), teils steil und im Winter vereist. Mit der Bahn kann der Schirm separat transportiert werden.",
+  "description": "Pfänder ist ein saisonal stark reglementiertes Fluggebiet. Startverbot von Mai bis Ende September bzw. offiziell Oktober bis Ende April freigegeben. Klassischer Abendflugberg mit spektakulärem Bodenseeblick. Thermisch anspruchsvoll und selten XC-tauglich. Der überregionale Wind ist entscheidend; optimal bei W bis NW bis etwa 4 m/s. Bei Ostwind wird der flache Start schwierig. Frühzeitig Richtung Lochau abgleiten, um den Landeplatz sicher zu erreichen.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 3
+  },
+  "startpunkte": [
+    {
+      "name": "Maldona",
+      "coordinates": {
+        "lat": 47.49972,
+        "lon": 9.77556
+      },
+      "startHeight": 1052,
+      "heightDifference": 652,
+      "launchDirections": [
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei starkem West Lee der Bäume, Ostwind problematisch",
+      "description": "Flache Wiese südlich der Bergstation. Start erst nach ausreichendem Höhengewinn über die Baumkante sicher."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Lochau Rupp",
+      "coordinates": {
+        "lat": 47.52528,
+        "lon": 9.74917
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Lee der Gebäude beachten",
+      "description": "Große Landewiese neben dem ehemaligen Ruppkäsle. Landung auf der Pipeline am See ist verboten."
+    }
+  ]
+}
