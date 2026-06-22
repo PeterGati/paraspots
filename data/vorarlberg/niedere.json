@@ -1,0 +1,136 @@
+{
+  "region": "vorarlberg",
+  "site": "niedere",
+  "name": "Niedere",
+  "coordinates": {
+    "lat": 47.40339,
+    "lon": 9.93861
+  },
+  "talHeight": 600,
+  "operator": {
+    "name": "Bergbahnen Bezau",
+    "url": "https://www.bergbahnen-bezau.at",
+    "phone": "+43 5514 2254"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Talstation Bezau oder Andelsbuch"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NO",
+    "W",
+    "NW",
+    "SO",
+    "S",
+    "SW"
+  ],
+  "webcam": "https://www.bergbahnen-bezau.at",
+  "approachDescription": "Startplätze sind sowohl von Bezau als auch von Andelsbuch erreichbar. Auffahrt mit der Bezauer Bergbahn oder zu Fuß in 2–3 Stunden. Gut ausgeschilderte Wanderwege.",
+  "description": "Die Niedere ist eines der bekanntesten Fluggebiete im Bregenzerwald. Die Andelsbucher Seite ist das klassische Sommerfluggebiet (April–September) mit West- bis Nordoststart. Die Bezauer Seite ist das typische Winter- und Südlagengebiet. Sehr gute Thermik und hervorragende Soaringmöglichkeiten. Aufgrund der Popularität oft stark frequentiert, an guten Wochenenden mit über 100 Schirmen gleichzeitig in der Luft. Kollisionen kamen bereits vor. Landevolten strikt beachten.",
+  "siteRatings": {
+    "overallRating": 4,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Andelsbuch - Niedere Alpe",
+      "coordinates": {
+        "lat": 47.40339,
+        "lon": 9.93856
+      },
+      "startHeight": 1586,
+      "heightDifference": 986,
+      "launchDirections": [
+        "N",
+        "NO",
+        "W",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei NW dicht am Hang nach Westen fliegen, sonst Absaufgefahr",
+      "description": "Wiesenstart und Drachenrampe unterhalb der Berghütte, ca. 10 Minuten oberhalb der Bergstation."
+    },
+    {
+      "name": "Andelsbuch - Alpe Älpele - Greber",
+      "coordinates": {
+        "lat": 47.40339,
+        "lon": 9.93861
+      },
+      "startHeight": 1500,
+      "heightDifference": 900,
+      "launchDirections": [
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Exponiert bei Nordwest",
+      "description": "Start westlich des Sessellifts, nach etwa 20 Minuten Fußmarsch erreichbar."
+    },
+    {
+      "name": "Bezau - Baumgartenalpe",
+      "coordinates": {
+        "lat": 47.39931,
+        "lon": 9.93469
+      },
+      "startHeight": 1574,
+      "heightDifference": 974,
+      "launchDirections": [
+        "SO",
+        "SW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Südwindstart, thermisch früh aktiv",
+      "description": "Kleine, steile Startwiese direkt bei der Bergstation."
+    },
+    {
+      "name": "Bezau - Hintere Niedere",
+      "coordinates": {
+        "lat": 47.39903,
+        "lon": 9.94458
+      },
+      "startHeight": 1660,
+      "heightDifference": 1060,
+      "launchDirections": [
+        "N",
+        "SO",
+        "S",
+        "SW",
+        "NW"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Bei Nordwind Leegefahr Richtung Bezau",
+      "description": "Startplatz etwa 10–15 Minuten östlich der Bergstation. Im Winter oft längerer Zustieg."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Bezau",
+      "coordinates": {
+        "lat": 47.40000,
+        "lon": 9.91600
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Thermisch aktiv, abschüssig, Landevolte beachten",
+      "description": "Große Landewiese an der Talstation. Häufig thermisch und leicht geneigt."
+    },
+    {
+      "name": "Andelsbuch",
+      "coordinates": {
+        "lat": 47.41194,
+        "lon": 9.90861
+      },
+      "difficulty": "leicht",
+      "windSensitivity": "Zaun am Rand beachten",
+      "description": "Landewiese mit Windsack an der Straße zur Bergbahn. Gut sichtbar."
+    }
+  ]
+}
