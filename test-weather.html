@@ -14,28 +14,27 @@
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        .main-weather {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            margin-bottom: 20px;
-        }
-        .wind-big {
-            font-size: 3.2rem;
+        .wind-main {
+            font-size: 3.8rem;
             font-weight: 700;
             color: #0a2a5e;
+            line-height: 1;
         }
         .gust {
-            font-size: 1.1rem;
+            font-size: 1.35rem;
             color: #e11d48;
             font-weight: 600;
+        }
+        .temp-small {
+            font-size: 1.6rem;
+            color: #555;
         }
         .weather-status {
             padding: 10px 24px;
             border-radius: 30px;
             font-weight: 600;
             font-size: 1.25rem;
-            margin-top: 12px;
+            margin-top: 15px;
             display: inline-block;
         }
         .good { background:#22c55e; color:white; }
@@ -47,7 +46,7 @@
 
 <header class="site-header">
     <div class="site-header-inner">
-        <h1>🧪 Test Weather Page v3 - Szél fókusz</h1>
+        <h1>🧪 Test Weather Page v4 - Szél fókusz</h1>
     </div>
 </header>
 
@@ -81,25 +80,25 @@ async function loadWeather() {
         const windDir = degreesToDirection(c.wind_direction_10m);
 
         let html = `
-            <div class="main-weather">
+            <div style="display:flex; align-items:center; gap:25px; margin-bottom:15px;">
                 <div>
-                    <span class="wind-big">${windDir} ${Math.round(c.wind_speed_10m)} km/h</span>
+                    <span class="wind-main">${windDir} ${Math.round(c.wind_speed_10m)} km/h</span>
                     <p class="gust">Lökések: ${Math.round(c.wind_gusts_10m)} km/h</p>
                 </div>
-                <div>
-                    <p><strong>Hőmérséklet:</strong> ${c.temperature_2m} °C</p>
-                    <p><strong>Csapadék esély:</strong> ${c.precipitation_probability}%</p>
+                <div class="temp-small">
+                    ${c.temperature_2m} °C<br>
+                    Csapadék: ${c.precipitation_probability}%
                 </div>
             </div>
         `;
 
-        // Repülhetőség
         let statusClass = "caution";
-        let statusText = "Közepes";
+        let statusText = "Közepes körülmények";
+
         if (c.wind_speed_10m < 18 && c.precipitation_probability < 25) {
             statusClass = "good";
             statusText = "🟢 JÓ REPÜLŐ IDŐ";
-        } else if (c.wind_speed_10m > 35 || c.precipitation_probability > 60) {
+        } else if (c.wind_speed_10m > 35 || c.precipitation_probability > 65) {
             statusClass = "bad";
             statusText = "🔴 NEM AJÁNLOTT";
         }
