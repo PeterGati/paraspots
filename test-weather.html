@@ -9,32 +9,38 @@
         .weather-test {
             max-width: 960px;
             margin: 40px auto;
-            padding: 30px;
+            padding: 25px;
             background: white;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .wind-main {
-            font-size: 3.8rem;
+            font-size: 3.6rem;
             font-weight: 700;
             color: #0a2a5e;
             line-height: 1;
         }
         .gust {
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             color: #e11d48;
             font-weight: 600;
         }
-        .temp-small {
-            font-size: 1.6rem;
-            color: #555;
+        .weather-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #0a2a5e;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .weather-link:hover {
+            text-decoration: underline;
         }
         .weather-status {
-            padding: 10px 24px;
+            padding: 8px 20px;
             border-radius: 30px;
             font-weight: 600;
-            font-size: 1.25rem;
-            margin-top: 15px;
+            font-size: 1.1rem;
+            margin-top: 10px;
             display: inline-block;
         }
         .good { background:#22c55e; color:white; }
@@ -46,14 +52,14 @@
 
 <header class="site-header">
     <div class="site-header-inner">
-        <h1>🧪 Test Weather Page v4 - Szél fókusz</h1>
+        <h1>🧪 Test Weather Page (Kezdőlap mini verzió)</h1>
     </div>
 </header>
 
 <div class="weather-test">
-    <h2>Planai – Időjárás teszt</h2>
+    <h2>Planai</h2>
     <div id="weather-result">
-        <p>Ladom az adatokat...</p>
+        <p>Lade Wetterdaten...</p>
     </div>
 </div>
 
@@ -80,36 +86,43 @@ async function loadWeather() {
         const windDir = degreesToDirection(c.wind_direction_10m);
 
         let html = `
-            <div style="display:flex; align-items:center; gap:25px; margin-bottom:15px;">
+            <div style="display:flex; align-items:center; gap:25px;">
                 <div>
                     <span class="wind-main">${windDir} ${Math.round(c.wind_speed_10m)} km/h</span>
-                    <p class="gust">Lökések: ${Math.round(c.wind_gusts_10m)} km/h</p>
+                    <p class="gust">Böen: ${Math.round(c.wind_gusts_10m)} km/h</p>
                 </div>
-                <div class="temp-small">
-                    ${c.temperature_2m} °C<br>
-                    Csapadék: ${c.precipitation_probability}%
+                <div>
+                    <p>${c.temperature_2m} °C</p>
+                    <p>Niederschlag: ${c.precipitation_probability}%</p>
                 </div>
             </div>
         `;
 
         let statusClass = "caution";
-        let statusText = "Közepes körülmények";
+        let statusText = "Mittel";
 
         if (c.wind_speed_10m < 18 && c.precipitation_probability < 25) {
             statusClass = "good";
-            statusText = "🟢 JÓ REPÜLŐ IDŐ";
+            statusText = "🟢 Gut zu fliegen";
         } else if (c.wind_speed_10m > 35 || c.precipitation_probability > 65) {
             statusClass = "bad";
-            statusText = "🔴 NEM AJÁNLOTT";
+            statusText = "🔴 Nicht empfohlen";
         }
 
         html += `<div class="weather-status ${statusClass}">${statusText}</div>`;
+        
+        // Kattintható sor a részletes oldalra
+        html += `
+            <p><a href="startplatz.html?region=steiermark&site=planai" class="weather-link">
+                → Wettervorhersage (2 Tage)
+            </a></p>
+        `;
 
         document.getElementById("weather-result").innerHTML = html;
 
     } catch (e) {
         document.getElementById("weather-result").innerHTML = 
-            `<p style="color:red;">Hiba: ${e.message}</p>`;
+            `<p style="color:red;">Fehler beim Laden der Wetterdaten.</p>`;
     }
 }
 
