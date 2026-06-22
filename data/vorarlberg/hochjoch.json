@@ -1,0 +1,105 @@
+{
+  "region": "vorarlberg",
+  "site": "hochjoch",
+  "name": "Hochjoch",
+  "coordinates": {
+    "lat": 47.08278,
+    "lon": 9.91722
+  },
+  "talHeight": 690,
+  "operator": {
+    "name": "Montafoner Hochjochbahnen",
+    "url": "https://www.hochjoch.com",
+    "phone": "+43 5556 72126"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "Talstation Schruns / Zamangbahn"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "webcam": null,
+  "approachDescription": "Talstation in Schruns. Auffahrt mit der Hochjochbahn oder Zamangbahn, danach Sessellift zum Sennigrat. Im Sommer zusätzliche Startoptionen an Kapell und Wormser Hütte.",
+  "description": "Ganzjahres-Fluggebiet im Montafon. Bereits im Frühjahr oft gute Thermik, im Sommer starker Talwind. Vom ruhigen Morgenflug bis zum XC-Startberg alles möglich. Typisches Föhngebiet, herannahende Fronten und Gewitter können Bedingungen sehr schnell verschärfen. Landeplatz liegt im Lee von Häusern. Das Gebiet gilt insgesamt als anspruchsvoll.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Sennigrat",
+      "coordinates": {
+        "lat": 47.06896,
+        "lon": 9.97328
+      },
+      "startHeight": 2280,
+      "heightDifference": 1590,
+      "launchDirections": [
+        "S",
+        "SW",
+        "W"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Starker Talwind im Hochsommer, thermisch aktiv",
+      "description": "Hauptstartplatz am Grat taleinwärts am Wanderweg zur Wormser Hütte. Im Winter ausschließlich hier erlaubt."
+    },
+    {
+      "name": "Kapell",
+      "coordinates": {
+        "lat": 47.08278,
+        "lon": 9.91722
+      },
+      "startHeight": 0,
+      "heightDifference": null,
+      "launchDirections": [
+        "SW",
+        "W"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "Nur im Sommer nutzbar, Talwind beachten",
+      "description": "Sommerstart oberhalb der Talstation des Sennigrat-Sesselliftes direkt von der Piste."
+    },
+    {
+      "name": "Wormser Hütte",
+      "coordinates": {
+        "lat": 47.06385,
+        "lon": 9.97434
+      },
+      "startHeight": 2320,
+      "heightDifference": 1630,
+      "launchDirections": [
+        "SW",
+        "W",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Thermisch stark aktiv, exponiert",
+      "description": "Steile Wiese direkt vor der Wormser Hütte unterhalb des Weges. Vorteil: Versorgung direkt vor dem Start."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Schruns",
+      "coordinates": {
+        "lat": 47.08278,
+        "lon": 9.91722
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Lee der Häuser, Talwind und Turbulenzen in Bodennähe",
+      "description": "Sommerlandeplatz beim 'Haus im Feld', Winterlandeplatz direkt beim Parkplatz der Zamangbahn."
+    }
+  ]
+}
