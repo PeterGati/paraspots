@@ -7,60 +7,97 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .weather-test {
-            max-width: 900px;
+            max-width: 960px;
             margin: 40px auto;
             padding: 30px;
             background: white;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        .loading { color: #666; font-style: italic; }
+        .weather-current {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .big-temp {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #0a2a5e;
+        }
+        .weather-status {
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.15rem;
+        }
+        .good { background:#22c55e; color:white; }
+        .caution { background:#eab308; color:#1f2a36; }
+        .bad { background:#ef4444; color:white; }
     </style>
 </head>
 <body>
 
 <header class="site-header">
     <div class="site-header-inner">
-        <h1>🧪 Test Weather Page</h1>
-        <p>Csak tesztelésre - nem látható a menüből</p>
+        <h1>🧪 Test Weather Page (Biztonságos teszt)</h1>
+        <p>Ez az oldal nem látható a menüből. Csak tesztelésre van.</p>
     </div>
 </header>
 
 <div class="weather-test">
-    <h2>Planai teszt (Steiermark)</h2>
+    <h2>Planai – Időjárás teszt</h2>
     <div id="weather-result">
-        <p class="loading">Időjárás betöltése...</p>
+        <p>Ladom az adatokat...</p>
     </div>
 </div>
 
 <script>
 // ==================== OPEN-METEO TESZT ====================
 async function loadWeather() {
-    const lat = 47.37208;   // Planai
+    const lat = 47.37208;
     const lon = 13.72553;
 
-    const url = `https://api.open-meteo.com/v1/forecast?` +
-        `latitude=${lat}&longitude=${lon}` +
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
         `&current=wind_speed_10m,wind_direction_10m,wind_gusts_10m,temperature_2m,precipitation_probability` +
-        `&hourly=wind_speed_10m,wind_direction_10m,wind_gusts_10m,temperature_2m,precipitation_probability,cape` +
+        `&hourly=temperature_2m,wind_speed_10m,wind_direction_10m,wind_gusts_10m,precipitation_probability,cape` +
         `&forecast_days=2&timezone=Europe/Vienna`;
 
     try {
-        const response = await fetch(url);
-        const data = await response.json();
+        const res = await fetch(url);
+        const data = await res.json();
 
-        console.log("Open-Meteo válasz:", data); // ellenőrzéshez
+        let html = `<h3>Aktuális (${new Date().toLocaleTimeString('de-AT')})</h3>`;
 
-        let html = `<h3>Aktuális időjárás (Planai)</h3>`;
-        html += `<p><strong>Hőmérséklet:</strong> ${data.current.temperature_2m} °C</p>`;
-        html += `<p><strong>Szél:</strong> ${data.current.wind_direction_10m}° ${data.current.wind_speed_10m} km/h (lökés: ${data.current.wind_gusts_10m} km/h)</p>`;
-        html += `<p><strong>Csapadék esély:</strong> ${data.current.precipitation_probability}%</p>`;
+        const c = data.current;
+        const windDir = Math.round(c.wind_direction_10m);
+
+        html += `<div class="weather-current">`;
+        html += `<div><span class="big-temp">${c.temperature_2m}°C</span></div>`;
+        html += `<div>`;
+        html += `<p><strong>Szél:</strong> ${windDir}° — ${c.wind_speed_10m} km/h</p>`;
+        html += `<p><strong>Lökések:</strong> ${c.wind_gusts_10m} km/h</p>`;
+        html += `<p><strong>Csapadék esély:</strong> ${c.precipitation_probability}%</p>`;
+        html += `</div></div>`;
+
+        // Egyszerű repülhetőség
+        let status = "caution";
+        let text = "Közepes";
+        if (c.wind_speed_10m < 18 && c.precipitation_probability < 30) {
+            status = "good";
+            text = "🟢 JÓ REPÜLŐ IDŐ";
+        } else if (c.wind_speed_10m > 35 || c.precipitation_probability > 70) {
+            status = "bad";
+            text = "🔴 NEM AJÁNLOTT";
+        }
+
+        html += `<div class="weather-status ${status}">${text}</div>`;
 
         document.getElementById("weather-result").innerHTML = html;
 
-    } catch (err) {
+    } catch (e) {
         document.getElementById("weather-result").innerHTML = 
-            `<p style="color:red;">Hiba történt: ${err.message}</p>`;
+            `<p style="color:red;">Hiba: ${e.message}</p>`;
     }
 }
 
