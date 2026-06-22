@@ -14,26 +14,29 @@
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        .weather-current {
+        .main-weather {
             display: flex;
-            gap: 25px;
             align-items: center;
-            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 20px;
         }
-        .big-temp {
-            font-size: 3.4rem;
+        .wind-big {
+            font-size: 3.2rem;
             font-weight: 700;
             color: #0a2a5e;
         }
-        .wind-info {
-            font-size: 1.25rem;
+        .gust {
+            font-size: 1.1rem;
+            color: #e11d48;
+            font-weight: 600;
         }
         .weather-status {
-            padding: 10px 22px;
+            padding: 10px 24px;
             border-radius: 30px;
             font-weight: 600;
-            font-size: 1.2rem;
-            margin-top: 10px;
+            font-size: 1.25rem;
+            margin-top: 12px;
+            display: inline-block;
         }
         .good { background:#22c55e; color:white; }
         .caution { background:#eab308; color:#1f2a36; }
@@ -44,8 +47,7 @@
 
 <header class="site-header">
     <div class="site-header-inner">
-        <h1>🧪 Test Weather Page v2</h1>
-        <p>Csak tesztelésre</p>
+        <h1>🧪 Test Weather Page v3 - Szél fókusz</h1>
     </div>
 </header>
 
@@ -57,11 +59,10 @@
 </div>
 
 <script>
-// Segédfüggvény: fokból irány
-function degreesToDirection(degrees) {
+// Fokból irány
+function degreesToDirection(deg) {
     const dirs = ["N", "NO", "O", "SO", "S", "SW", "W", "NW"];
-    const index = Math.round(degrees / 45) % 8;
-    return dirs[index];
+    return dirs[Math.round(deg / 45) % 8];
 }
 
 async function loadWeather() {
@@ -77,28 +78,28 @@ async function loadWeather() {
         const data = await res.json();
         const c = data.current;
 
-        const windDirText = degreesToDirection(c.wind_direction_10m);
+        const windDir = degreesToDirection(c.wind_direction_10m);
 
         let html = `
-            <div class="weather-current">
+            <div class="main-weather">
                 <div>
-                    <span class="big-temp">${c.temperature_2m}°C</span>
+                    <span class="wind-big">${windDir} ${Math.round(c.wind_speed_10m)} km/h</span>
+                    <p class="gust">Lökések: ${Math.round(c.wind_gusts_10m)} km/h</p>
                 </div>
-                <div class="wind-info">
-                    <p><strong>Szél:</strong> ${windDirText} ${Math.round(c.wind_speed_10m)} km/h</p>
-                    <p><strong>Lökések:</strong> ${Math.round(c.wind_gusts_10m)} km/h</p>
-                    <p><strong>Csapadék:</strong> ${c.precipitation_probability}%</p>
+                <div>
+                    <p><strong>Hőmérséklet:</strong> ${c.temperature_2m} °C</p>
+                    <p><strong>Csapadék esély:</strong> ${c.precipitation_probability}%</p>
                 </div>
             </div>
         `;
 
         // Repülhetőség
         let statusClass = "caution";
-        let statusText = "Közepes körülmények";
-        if (c.wind_speed_10m < 18 && c.precipitation_probability < 30) {
+        let statusText = "Közepes";
+        if (c.wind_speed_10m < 18 && c.precipitation_probability < 25) {
             statusClass = "good";
             statusText = "🟢 JÓ REPÜLŐ IDŐ";
-        } else if (c.wind_speed_10m > 35 || c.precipitation_probability > 70) {
+        } else if (c.wind_speed_10m > 35 || c.precipitation_probability > 60) {
             statusClass = "bad";
             statusText = "🔴 NEM AJÁNLOTT";
         }
