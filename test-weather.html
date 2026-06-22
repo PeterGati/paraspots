@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Open-Meteo Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .weather-test {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .loading { color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <h1>🧪 Test Weather Page</h1>
+        <p>Csak tesztelésre - nem látható a menüből</p>
+    </div>
+</header>
+
+<div class="weather-test">
+    <h2>Planai teszt (Steiermark)</h2>
+    <div id="weather-result">
+        <p class="loading">Időjárás betöltése...</p>
+    </div>
+</div>
+
+<script>
+// ==================== OPEN-METEO TESZT ====================
+async function loadWeather() {
+    const lat = 47.37208;   // Planai
+    const lon = 13.72553;
+
+    const url = `https://api.open-meteo.com/v1/forecast?` +
+        `latitude=${lat}&longitude=${lon}` +
+        `&current=wind_speed_10m,wind_direction_10m,wind_gusts_10m,temperature_2m,precipitation_probability` +
+        `&hourly=wind_speed_10m,wind_direction_10m,wind_gusts_10m,temperature_2m,precipitation_probability,cape` +
+        `&forecast_days=2&timezone=Europe/Vienna`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        console.log("Open-Meteo válasz:", data); // ellenőrzéshez
+
+        let html = `<h3>Aktuális időjárás (Planai)</h3>`;
+        html += `<p><strong>Hőmérséklet:</strong> ${data.current.temperature_2m} °C</p>`;
+        html += `<p><strong>Szél:</strong> ${data.current.wind_direction_10m}° ${data.current.wind_speed_10m} km/h (lökés: ${data.current.wind_gusts_10m} km/h)</p>`;
+        html += `<p><strong>Csapadék esély:</strong> ${data.current.precipitation_probability}%</p>`;
+
+        document.getElementById("weather-result").innerHTML = html;
+
+    } catch (err) {
+        document.getElementById("weather-result").innerHTML = 
+            `<p style="color:red;">Hiba történt: ${err.message}</p>`;
+    }
+}
+
+loadWeather();
+</script>
+
+</body>
+</html>
