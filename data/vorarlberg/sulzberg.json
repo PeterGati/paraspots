@@ -1,0 +1,69 @@
+{
+  "region": "vorarlberg",
+  "site": "sulzberg",
+  "name": "Sulzberg",
+  "coordinates": {
+    "lat": 47.53333,
+    "lon": 9.91667
+  },
+  "talHeight": 1000,
+  "operator": {
+    "name": "",
+    "url": "",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": false,
+    "hikeAndFly": false,
+    "publicTransport": false,
+    "parking": "100 Meter vor dem Bauernhof beim Gasthof"
+  },
+  "airspaces": [],
+  "flightCharacteristics": {
+    "soaring": false,
+    "thermal": false,
+    "crossCountry": false
+  },
+  "windDirections": [
+    "NW",
+    "N"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Bregenz über Langen auf der L4. Etwa 1,5 km nach Langen links Richtung Sulzberg. Nach 2,1 km links bei einem Hügel mit Bauernhof, der Startplatz liegt rückseitig.",
+  "description": "Nachmittagsfluggebiet am Nordhang des Sulzbergs zwischen Oberstaufen und Bregenz. Nur für Drachenflieger freigegeben. Gut bei Nordwestwind, seltener Nordwind. Wenn im Gebirge Feuchte oder Wind hängt, ist Sulzberg oft fliegbar. Nach dem Start links Richtung Landeplatz halten. Startgeld von 5 Euro am Scheunentor hinterlegen.",
+  "siteRatings": {
+    "overallRating": 3,
+    "thermalRating": 2
+  },
+  "startpunkte": [
+    {
+      "name": "Sulzberg Hauptstart",
+      "coordinates": {
+        "lat": 47.52269,
+        "lon": 9.88544
+      },
+      "startHeight": 838,
+      "heightDifference": -162,
+      "launchDirections": [
+        "NW",
+        "N"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Klein, steil und windkritisch",
+      "description": "Kleiner und steiler Startplatz hinter dem Bauernhof. Nur für erfahrene Piloten."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Fahl",
+      "coordinates": {
+        "lat": 47.51597,
+        "lon": 9.86597
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Wiesenlandung, Windsituation lokal prüfen",
+      "description": "Gemähte Wiese an der Gabelung L4 (Langen / Doren / Sulzberg), Ortsteil Fahl."
+    }
+  ]
+}
