@@ -3,15 +3,22 @@
   "site": "diedamskopf",
   "name": "Diedamskopf",
   "coordinates": {
-    "lat": 47.313333,
-    "lng": 10.025000
+    "lat": 47.31333,
+    "lon": 10.02500
   },
   "talHeight": 852,
-  "operator": "Bergbahnen Diedamskopf",
-  "access": [
-    "cableCar",
-    "hikeAndFly"
-  ],
+  "operator": {
+    "name": "Bergbahnen Diedamskopf",
+    "url": "https://www.diedamskopf.at",
+    "phone": "+43 5515 41100"
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz Talstation Schoppernau"
+  },
   "airspaces": [],
   "flightCharacteristics": {
     "soaring": false,
@@ -19,44 +26,40 @@
     "crossCountry": true
   },
   "windDirections": [
+    "SO",
     "S",
-    "SE",
     "SW"
   ],
-  "webcam": [
-    "Bergstation",
-    "Mittelstation",
-    "Panoramabahn Diedamskopf"
-  ],
-  "approachDescription": "Talstation in Schoppernau. Auffahrt mit der Diedamskopf Seilbahn oder zu Fuß über markierte Wanderwege. Treffpunkt für Piloten meist an der Talstation.",
-  "description": "Der Diedamskopf ist ein etabliertes Winter- und Frühjahrsfluggebiet im Bregenzerwald. Gute Thermik im Spätwinter und Frühjahr. Klassische erste XC-Schritte über Falzerkopf und Üntschenspitze möglich. Bei Süd bis Südost ist die Mittagsfluh oft eine gute Anschlussoption. Im Sommer problematisch wegen starker Taldüse und Talwindentwicklung. Dann wird häufig auf die Niedere ausgewichen. Westwind kann am oberen Antennenstart kritisch werden.",
+  "webcam": "https://www.au-schoppernau.at",
+  "approachDescription": "Talstation in Schoppernau. Auffahrt mit der Diedamskopf-Seilbahn oder zu Fuß über gut beschilderte Wanderwege. Treffpunkt für Piloten meist an der Talstation.",
+  "description": "Der Diedamskopf ist ein klassisches Winter- und Frühjahrsfluggebiet im Bregenzerwald. Gute Thermik im Spätwinter und Frühjahr. XC-Anschluss über Falzerkopf und Üntschenspitze möglich. Bei S bis SE ist die Mittagsfluh oft eine gute Weiterflugoption. Im Sommer kann starker Talwind durch die Taldüse problematisch werden. Dann wird häufig auf Andelsbuch/Niedere ausgewichen.",
   "siteRatings": {
-    "thermal": 4,
-    "overall": 4
+    "overallRating": 4,
+    "thermalRating": 4
   },
   "startpunkte": [
     {
       "name": "Bergstation / Antenne",
       "coordinates": {
-        "lat": 47.345833,
-        "lng": 10.025889
+        "lat": 47.34583,
+        "lon": 10.02589
       },
       "startHeight": 2070,
       "heightDifference": 1218,
       "launchDirections": [
-        "SE",
+        "SO",
         "S",
         "SW"
       ],
       "difficulty": "anspruchsvoll",
-      "windSensitivity": "Heikel bei Westwind wegen Rotoren am Funkturm und Gratbereich.",
-      "description": "Start direkt bei der Antenne/Funkturm, etwa 40 Höhenmeter über der Bergstation. Für GS technisch anspruchsvoll. Nach dem Abheben zügig in den Südhang oder entlang des Grats einordnen. Auf HG-Rampe und anderen Verkehr achten."
+      "windSensitivity": "Heikel bei Westwind, Rotor am Funkturm möglich",
+      "description": "Start direkt bei der Antenne/Funkturm, etwa 40 Höhenmeter über der Bergstation. Technischer Start. Nach dem Abheben zügig in den Südhang oder entlang des Grats einordnen."
     },
     {
       "name": "Südstart",
       "coordinates": {
-        "lat": 47.344444,
-        "lng": 10.028889
+        "lat": 47.34444,
+        "lon": 10.02889
       },
       "startHeight": 2000,
       "heightDifference": 1148,
@@ -64,36 +67,36 @@
         "S"
       ],
       "difficulty": "leicht",
-      "windSensitivity": "Relativ tolerant bei sauberem Süd, aber empfindlich bei starkem Talwind.",
-      "description": "Unterhalb der Bergstation auf einer leicht abfallenden Wiese. Einfacher GS-Start. Direkt nach dem Start in die südliche Hangthermik einsteigen."
+      "windSensitivity": "Talwind kann nachmittags stark werden",
+      "description": "Unterhalb der Bergstation gelegene, leicht abfallende Startwiese. Einfacher Hangstart mit direktem Einstieg in den Südhang."
     },
     {
       "name": "Mittelstation",
       "coordinates": {
-        "lat": 47.333194,
-        "lng": 10.024611
+        "lat": 47.33319,
+        "lon": 10.02461
       },
       "startHeight": 1640,
       "heightDifference": 788,
       "launchDirections": [
-        "SE",
+        "SO",
         "S"
       ],
-      "difficulty": null,
-      "windSensitivity": "Talwind im Sommer kann hier deutlich verstärkt anstehen.",
-      "description": "Alternativstart bei schwächeren Bedingungen oder wenn oben zu stark. Thermischer Anschluss oft direkt über dem Südhang."
+      "difficulty": "mittel",
+      "windSensitivity": "Talwind im Sommer verstärkt",
+      "description": "Alternativstart an der Mittelstation. Sinnvoll bei starkem Höhenwind oben oder schwächeren Bedingungen."
     }
   ],
   "landeplaetze": [
     {
       "name": "Schoppernau",
       "coordinates": {
-        "lat": 47.314361,
-        "lng": 10.007083
+        "lat": 47.31436,
+        "lon": 10.00708
       },
       "difficulty": "leicht",
-      "windSensitivity": "Im Sommer oft kräftiger Talwind. Landeeinteilung frühzeitig planen.",
-      "description": "Große offizielle Landewiese einige hundert Meter von der Talstation entfernt, Windsack vorhanden. Im Sommer auf Talwindgradient und mögliche Turbulenzen achten."
+      "windSensitivity": "Starker Talwind im Sommer möglich",
+      "description": "Große offizielle Landewiese mit Windsack, wenige hundert Meter von der Talstation entfernt."
     }
   ]
 }
