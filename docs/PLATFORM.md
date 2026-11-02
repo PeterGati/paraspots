@@ -84,3 +84,14 @@ Restoring production also requires the recorded original Cloudflare build/output
 Requested by user: add German, English and Hungarian to the mobile app. This is a separate follow-up; current Flutter source was not modified. Website translations must not be represented as app localization already completed.
 
 Dashboard deployment screenshot also confirms production branch `main`, production baseline `fa66fe9` at `https://9cfffd62.paraspots.pages.dev`, and a separate preview deployment for the feature branch at `https://1fa4ac33.paraspots.pages.dev`. Both are still the old site at this checkpoint.
+
+## Proposed Cloudflare preview deployment configuration (not saved by agent)
+
+Dashboard build command: exact one-line content of `docs/cloudflare-build-command.txt`.
+Build output directory: `cf-output`. Framework: None. Root directory: unchanged/empty.
+
+This branch-aware command builds the combined review artifact ONLY for `feat/platform-marketing-demo`. Every other branch, including main, is archived into cf-output without changing any tracked bytes. This protects legacy production if the dashboard build setting is project-wide. It deliberately does not activate the new site on main even after a future merge; final release needs its own reviewed configuration.
+
+Validation: `python3 scripts/check_cloudflare_build.py` uses isolated clones. Main output contains all 255 original tracked files byte-for-byte; feature output contains the marketing pages and admin demo, with neither old data nor old search pages. The command has been tested locally, not yet in Cloudflare. Python availability in Cloudflare and final deployment status remain to be verified by the actual build.
+
+After configuration is saved, push the committed feature branch using GitHub Desktop and inspect the Cloudflare preview build. Do not change the production branch or domains. The previous baseline settings are in docs/cloudflare-baseline.json. If reverting the build configuration, restore the empty build command and `/` output together.

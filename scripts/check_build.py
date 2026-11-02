@@ -23,7 +23,7 @@ for target in ['marketing','preview']:
             assert dest.exists(),f'Broken link: {page}: {value}'
             count+=1
 base='fa66fe91575e084a58551af63df6b539a906eb57'
-names=subprocess.check_output(['git','ls-tree','-r','--name-only',base],cwd=ROOT,text=True).splitlines()
+names=subprocess.check_output(['git','-c','core.quotepath=false','ls-tree','-r','--name-only',base],cwd=ROOT,text=True).splitlines()
 legacy=[n for n in names if n.endswith(('.json','.geojson'))]
 manifest={}
 for name in legacy:

@@ -1,0 +1,1 @@
+if [ "$CF_PAGES_BRANCH" = "feat/platform-marketing-demo" ]; then python3 scripts/build.py && cp -R out/preview cf-output; else mkdir cf-output && git archive --output=/tmp/paraspots-legacy-build.tar HEAD && tar -xf /tmp/paraspots-legacy-build.tar -C cf-output; fi
