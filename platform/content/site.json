@@ -1,0 +1,521 @@
+{
+  "de": {
+    "nav": [
+      "Start",
+      "Für Piloten",
+      "Für Clubs",
+      "So funktioniert’s",
+      "Kontakt"
+    ],
+    "lang": "Sprache",
+    "menu": "Menü",
+    "skip": "Zum Inhalt",
+    "app": "Die App kennenlernen",
+    "clubs": "Für deinen Club",
+    "eyebrow": "DEIN FLUGGEBIET. DEIN CLUB. DEINE COMMUNITY.",
+    "headline": "Mehr fliegen.<br>Verbunden bleiben.",
+    "intro": "PARASPOTS bringt Fluggebiete, Piloten und Clubs in einer App zusammen. Damit vor dem nächsten Flug mehr Zeit für das Wesentliche bleibt.",
+    "stage": "Die Plattform entsteht · App 0.1 im Demo-Stadium",
+    "heroNote": "Alpine Illustration aus dem App-Design.",
+    "scroll": "Eine Plattform. Zwei Perspektiven.",
+    "homeTitle": "Draußen zu Hause.<br>Digital verbunden.",
+    "homeText": "Lokales Wissen gehört zu den Menschen, die ein Fluggebiet kennen. PARASPOTS macht dieses Wissen in der App zugänglich und gibt Clubs einen eigenen digitalen Raum.",
+    "pilotCard": [
+      "01 / FÜR PILOTEN",
+      "Dein nächster Flug beginnt in der App.",
+      "Fluggebiete kennenlernen, Clubinformationen lesen und den eigenen Club im Blick behalten. Alles ist für die mobile Nutzung gedacht."
+    ],
+    "clubCard": [
+      "02 / FÜR CLUBS",
+      "Euer Club. Eure Inhalte. Eure Regeln.",
+      "Ein eigener Clubbereich in einer gemeinsamen Plattform. Wählt die Module, die zu eurem Verein passen."
+    ],
+    "more": "Mehr erfahren",
+    "preview": "Ein Blick in die App",
+    "previewText": "Echter Bildschirm aus dem vorhandenen PARASPOTS-0.1-Prototyp. Die dargestellten Inhalte sind Demodaten. Der aktuelle App-Prototyp ist deutschsprachig.",
+    "screenAlt": "Bildschirm des vorhandenen PARASPOTS-App-Prototyps",
+    "downloadTitle": "Bereit für deinen nächsten Start?",
+    "downloadText": "PARASPOTS wird für iOS und Android entwickelt. Sobald die Veröffentlichung bestätigt ist, findest du hier die offiziellen Download-Links.",
+    "store": "Noch nicht im Store verfügbar",
+    "ios": "Für iOS geplant",
+    "android": "Für Android geplant",
+    "footer": "Fly more. Search less.",
+    "copyright": "PARASPOTS Platform · Produktvorschau",
+    "contactButton": "Kontakt aufnehmen",
+    "demo": "Admin-Demo ansehen",
+    "demoNote": "Fiktive Daten · keine echten Transaktionen",
+    "back": "Zur Startseite",
+    "pilotTitle": "Dein Flugtag.<br>Eine App.",
+    "pilotIntro": "Vom ersten Blick auf ein Fluggebiet bis zu den Neuigkeiten deines Clubs: PARASPOTS begleitet die Vorbereitung auf deinem Smartphone.",
+    "pilotFeatures": [
+      [
+        "Fluggebiete verstehen",
+        "Lokale Regeln, Anreise und die zugehörigen Clubs an einem Ort in der App."
+      ],
+      [
+        "Deinen Club dabeihaben",
+        "Neuigkeiten, Veranstaltungen und freigegebene Dokumente – passend zu deinem Club und deiner Mitgliedschaft."
+      ],
+      [
+        "Tageskarten im Blick",
+        "Der geplante Ablauf verbindet die Anfrage in der App mit der Prüfung durch den Club."
+      ],
+      [
+        "Hinweise richtig einordnen",
+        "Unbestätigte Mitgliedermeldungen und offizielle Clubsperrungen bleiben klar voneinander getrennt."
+      ]
+    ],
+    "pilotNote": "Diese Website stellt die App vor. Fluggebietssuche, Tageskarten und Pilotenprofile gehören ausschließlich in die App.",
+    "clubTitle": "Mehr Clubleben.<br>Weniger verstreute Infos.",
+    "clubIntro": "Ein digitaler Clubbereich mit eigener Identität – eingebettet in eine gemeinsame Plattform für Piloten und Fluggebiete.",
+    "clubFeatures": [
+      [
+        "Eigene Identität",
+        "Euer Club bleibt erkennbar. Inhalte, Module und lokale Informationen gehören in euren eigenen Bereich."
+      ],
+      [
+        "Passende Module",
+        "News, Veranstaltungen, Dokumente, Mitgliedschaft, Tageskarten und Hinweise lassen sich je Club zusammenstellen."
+      ],
+      [
+        "Klare Zuständigkeiten",
+        "Clubadmins kümmern sich um ihren Club. Der Superadmin verwaltet Clubs und verfügbare Module auf Plattformebene."
+      ]
+    ],
+    "adminTitle": "So könnte eure Verwaltung aussehen.",
+    "adminText": "Probiert den Tageskartenablauf, Mitgliedsanfragen, Sperrungen und Module aus. Die getrennte Demo arbeitet ausschließlich mit fiktiven Daten.",
+    "adminBadge": "INTERAKTIVER ENTWURF",
+    "adminPreview": [
+      "Clubübersicht",
+      "Tageskarten prüfen",
+      "Mitgliedschaften verwalten",
+      "Module auswählen"
+    ],
+    "howTitle": "Klarer Ablauf.<br>Klare Verantwortung.",
+    "howIntro": "Drei zentrale Abläufe verbinden die mobile App mit der Verwaltung des Clubs. Die Details werden mit dem Prototyp weiterentwickelt.",
+    "flows": [
+      {
+        "id": "tickets",
+        "label": "01 / TAGESKARTE",
+        "title": "Von der Anfrage zur Clubprüfung.",
+        "steps": [
+          [
+            "In der App anfragen",
+            "Der Pilot wählt die Tageskarte des Clubs in der mobilen App."
+          ],
+          [
+            "Direkt an den Club überweisen",
+            "Geplant ist die direkte Banküberweisung. PARASPOTS zeigt hier keine Bankdaten und löst keine Zahlung aus."
+          ],
+          [
+            "Der Club prüft den Eingang",
+            "„Ich habe überwiesen“ ist noch kein Zahlungsnachweis. Erst die Clubprüfung kann den Status bestätigen."
+          ]
+        ],
+        "note": "Preise, Gültigkeit, Nachweise und Erstattungen sind noch nicht abschließend festgelegt."
+      },
+      {
+        "id": "alerts",
+        "label": "02 / HINWEISE",
+        "title": "Eine Meldung ist noch keine Sperrung.",
+        "steps": [
+          [
+            "Mitglied meldet eine Gefahr",
+            "Eine Meldung erscheint als unbestätigter Hinweis mit Herkunft und Zeitangabe."
+          ],
+          [
+            "Berechtigter Clubadmin entscheidet",
+            "Nur autorisierte Clubverantwortliche können eine offizielle Sperrung oder Wiederöffnung veranlassen."
+          ],
+          [
+            "Status bleibt eindeutig",
+            "Ein abgelaufener Hinweis öffnet ein gesperrtes Gebiet nicht automatisch wieder."
+          ]
+        ],
+        "note": "Benachrichtigungen ersetzen keine Prüfung vor Ort und keinen Notruf. Die Demo sendet keine Meldungen."
+      },
+      {
+        "id": "membership",
+        "label": "03 / MITGLIEDSCHAFT",
+        "title": "Einmal geprüft. Im Club verbunden.",
+        "steps": [
+          [
+            "In der App anfragen",
+            "Der Pilot beantragt die Zuordnung zu seinem Club im Profil."
+          ],
+          [
+            "Der Club prüft",
+            "Berechtigte Clubverantwortliche prüfen die Mitgliedschaft."
+          ],
+          [
+            "Clubinterne Inhalte nutzen",
+            "Nach der späteren serverseitigen Freigabe werden die passenden Inhalte in der App zugänglich."
+          ]
+        ],
+        "note": "Ein Rollenwechsel in der Demo ist keine echte Anmeldung oder Mitgliedschaftsprüfung."
+      }
+    ],
+    "contactTitle": "Lasst uns über<br>euren Club sprechen.",
+    "contactIntro": "Fragen zur Plattform, Interesse an einer Zusammenarbeit oder Feedback zum Prototyp? Peter freut sich auf deine Nachricht.",
+    "contactLabel": "DEIN KONTAKT",
+    "contactName": "Peter Gati",
+    "contactNote": "Der Link öffnet dein eigenes E-Mail-Programm. Diese Website versendet keine Nachricht automatisch.",
+    "contactSubjects": [
+      "Für Clubs",
+      "Für Pilotinnen und Piloten",
+      "Zum Prototyp"
+    ],
+    "contactDetails": [
+      "Welche Module passen zu eurem Verein? Welche Abläufe sollen einfacher werden?",
+      "Welche Informationen brauchst du vor Ort und in deinem Club?",
+      "Teile Feedback zur Darstellung und zu den geplanten Abläufen."
+    ],
+    "legal": "Projekt in Entwicklung. Betreiber- und Datenschutzhinweise werden vor der öffentlichen Freigabe ergänzt."
+  },
+  "en": {
+    "nav": [
+      "Home",
+      "For pilots",
+      "For clubs",
+      "How it works",
+      "Contact"
+    ],
+    "lang": "Language",
+    "menu": "Menu",
+    "skip": "Skip to content",
+    "app": "Explore the app",
+    "clubs": "For your club",
+    "eyebrow": "YOUR FLYING AREA. YOUR CLUB. YOUR COMMUNITY.",
+    "headline": "Fly more.<br>Stay connected.",
+    "intro": "PARASPOTS brings flying areas, pilots and clubs together in one app. Leaving more time for what matters before your next flight.",
+    "stage": "Platform in development · App 0.1 demo",
+    "heroNote": "Alpine illustration from the app design.",
+    "scroll": "One platform. Two perspectives.",
+    "homeTitle": "At home outdoors.<br>Connected digitally.",
+    "homeText": "Local knowledge belongs to the people who know a flying area. PARASPOTS brings it into the app and gives clubs a digital space of their own.",
+    "pilotCard": [
+      "01 / FOR PILOTS",
+      "Your next flight starts in the app.",
+      "Get to know flying areas, read club information and stay connected with your club. Designed for your phone."
+    ],
+    "clubCard": [
+      "02 / FOR CLUBS",
+      "Your club. Your content. Your rules.",
+      "Your own club space on a shared platform. Choose the modules that fit your organisation."
+    ],
+    "more": "Learn more",
+    "preview": "A look inside the app",
+    "previewText": "Actual screen from the existing PARASPOTS 0.1 prototype. The content shown is demo data. The current app prototype is in German.",
+    "screenAlt": "Screen from the existing PARASPOTS app prototype",
+    "downloadTitle": "Ready for your next take-off?",
+    "downloadText": "PARASPOTS is being developed for iOS and Android. Official download links will appear here once publication is confirmed.",
+    "store": "Not yet available in stores",
+    "ios": "Planned for iOS",
+    "android": "Planned for Android",
+    "footer": "Fly more. Search less.",
+    "copyright": "PARASPOTS Platform · Product preview",
+    "contactButton": "Get in touch",
+    "demo": "Explore the admin demo",
+    "demoNote": "Fictional data · no real transactions",
+    "back": "Back to home",
+    "pilotTitle": "Your flying day.<br>One app.",
+    "pilotIntro": "From getting to know a flying area to catching up with your club: PARASPOTS helps you prepare on your smartphone.",
+    "pilotFeatures": [
+      [
+        "Understand flying areas",
+        "Local rules, directions and associated clubs in one place in the app."
+      ],
+      [
+        "Take your club with you",
+        "News, events and approved documents relevant to your club and membership."
+      ],
+      [
+        "Keep track of day passes",
+        "The planned process connects an in-app request with verification by the club."
+      ],
+      [
+        "Understand local notices",
+        "Unverified member reports and official club closures remain clearly distinct."
+      ]
+    ],
+    "pilotNote": "This website introduces the app. Flying-area search, day passes and pilot profiles belong exclusively in the app.",
+    "clubTitle": "More club life.<br>Less scattered information.",
+    "clubIntro": "A digital club space with its own identity, part of a shared platform for pilots and flying areas.",
+    "clubFeatures": [
+      [
+        "Your own identity",
+        "Your club stays recognisable. Content, modules and local information live in your own space."
+      ],
+      [
+        "Modules that fit",
+        "Combine news, events, documents, membership, day passes and notices to suit each club."
+      ],
+      [
+        "Clear responsibilities",
+        "Club admins manage their own club. The superadmin manages clubs and available modules across the platform."
+      ]
+    ],
+    "adminTitle": "Explore your future workspace.",
+    "adminText": "Try day-pass reviews, membership requests, closures and modules. The separate demo uses fictional data only.",
+    "adminBadge": "INTERACTIVE CONCEPT",
+    "adminPreview": [
+      "Club overview",
+      "Review day passes",
+      "Manage memberships",
+      "Choose modules"
+    ],
+    "howTitle": "Clear processes.<br>Clear responsibility.",
+    "howIntro": "Three core processes connect the mobile app with club administration. Details will evolve with the prototype.",
+    "flows": [
+      {
+        "id": "tickets",
+        "label": "01 / DAY PASS",
+        "title": "From request to club verification.",
+        "steps": [
+          [
+            "Request in the app",
+            "The pilot selects a club day pass in the mobile app."
+          ],
+          [
+            "Transfer directly to the club",
+            "A direct bank transfer is planned. This website shows no bank details and initiates no payment."
+          ],
+          [
+            "The club checks receipt",
+            "“I have transferred” is not proof of payment. Only a club review can confirm the status."
+          ]
+        ],
+        "note": "Prices, validity, evidence and refunds have not yet been finalised."
+      },
+      {
+        "id": "alerts",
+        "label": "02 / NOTICES",
+        "title": "A report is not a closure.",
+        "steps": [
+          [
+            "A member reports a hazard",
+            "A report is labelled unverified, with its source and time."
+          ],
+          [
+            "An authorised club admin decides",
+            "Only authorised club representatives can issue an official closure or reopening."
+          ],
+          [
+            "The status stays clear",
+            "An expired notice does not automatically reopen a closed area."
+          ]
+        ],
+        "note": "Notifications do not replace on-site checks or emergency services. The demo sends no alerts."
+      },
+      {
+        "id": "membership",
+        "label": "03 / MEMBERSHIP",
+        "title": "Verified once. Connected to your club.",
+        "steps": [
+          [
+            "Request in the app",
+            "The pilot requests club membership verification in their profile."
+          ],
+          [
+            "The club reviews",
+            "Authorised club representatives verify the membership."
+          ],
+          [
+            "Access club content",
+            "Following future server-side approval, relevant club content becomes available in the app."
+          ]
+        ],
+        "note": "Switching roles in the demo is not authentication or actual membership verification."
+      }
+    ],
+    "contactTitle": "Let’s talk<br>about your club.",
+    "contactIntro": "Questions about the platform, a potential collaboration or feedback on the prototype? Get in touch with Peter.",
+    "contactLabel": "YOUR CONTACT",
+    "contactName": "Peter Gati",
+    "contactNote": "This link opens your own email application. The website does not send any message automatically.",
+    "contactSubjects": [
+      "For clubs",
+      "For pilots",
+      "About the prototype"
+    ],
+    "contactDetails": [
+      "Which modules fit your club? Which processes could be simpler?",
+      "What information do you need at a flying area and in your club?",
+      "Share feedback on the design and planned workflows."
+    ],
+    "legal": "Project in development. Operator and privacy information will be added before public release."
+  },
+  "hu": {
+    "nav": [
+      "Kezdőlap",
+      "Pilótáknak",
+      "Kluboknak",
+      "Hogyan működik",
+      "Kapcsolat"
+    ],
+    "lang": "Nyelv",
+    "menu": "Menü",
+    "skip": "Ugrás a tartalomra",
+    "app": "Ismerd meg az appot",
+    "clubs": "A klubodnak",
+    "eyebrow": "A REPÜLŐHELYED. A KLUBOD. A KÖZÖSSÉGED.",
+    "headline": "Repülj többet.<br>Maradj kapcsolatban.",
+    "intro": "A PARASPOTS egy alkalmazásban köti össze a repülőhelyeket, a pilótákat és a klubokat. Hogy a következő repülés előtt több időd maradjon arra, ami igazán számít.",
+    "stage": "Készülő platform · App 0.1 demó",
+    "heroNote": "Alpesi illusztráció az alkalmazás arculatából.",
+    "scroll": "Egy platform. Két nézőpont.",
+    "homeTitle": "Otthon a szabadban.<br>Együtt az appban.",
+    "homeText": "A helyi tudás azoknál van, akik ismerik a repülőhelyet. A PARASPOTS ezt teszi elérhetővé az alkalmazásban, a kluboknak pedig saját digitális teret ad.",
+    "pilotCard": [
+      "01 / PILÓTÁKNAK",
+      "A következő repülésed az appban kezdődik.",
+      "Ismerd meg a repülőhelyeket, olvasd el a klubinformációkat, és kövesd a saját klubod életét. Mindezt a telefonodon."
+    ],
+    "clubCard": [
+      "02 / KLUBOKNAK",
+      "A ti klubotok. A ti tartalmaitok. A ti szabályaitok.",
+      "Saját klubfelület egy közös platformon. Válasszátok ki az egyesületetekhez illő modulokat."
+    ],
+    "more": "Részletek",
+    "preview": "Pillantás az alkalmazásba",
+    "previewText": "Valódi képernyő a meglévő PARASPOTS 0.1 prototípusból, demóadatokkal. Az app jelenlegi prototípusa német nyelvű.",
+    "screenAlt": "A meglévő PARASPOTS alkalmazás prototípusának képernyője",
+    "downloadTitle": "Készen állsz a következő startra?",
+    "downloadText": "A PARASPOTS iOS-re és Androidra készül. Az igazolt megjelenés után itt találod majd a hivatalos letöltési linkeket.",
+    "store": "Az áruházakban még nem érhető el",
+    "ios": "iOS-re tervezve",
+    "android": "Androidra tervezve",
+    "footer": "Fly more. Search less.",
+    "copyright": "PARASPOTS Platform · Termékelőzetes",
+    "contactButton": "Kapcsolatfelvétel",
+    "demo": "Admin demó megnyitása",
+    "demoNote": "Fiktív adatok · valódi tranzakciók nélkül",
+    "back": "Vissza a kezdőlapra",
+    "pilotTitle": "A repülős napod.<br>Egy alkalmazás.",
+    "pilotIntro": "A repülőhely megismerésétől a klubod híreiig: a PARASPOTS a telefonodon segít a felkészülésben.",
+    "pilotFeatures": [
+      [
+        "Ismerd meg a repülőhelyeket",
+        "Helyi szabályok, megközelítés és kapcsolódó klubok egy helyen, az appban."
+      ],
+      [
+        "Vidd magaddal a klubod",
+        "Hírek, események és elérhető dokumentumok a klubodnak és tagságodnak megfelelően."
+      ],
+      [
+        "Kövesd a napijegyed",
+        "A tervezett folyamat az appban indított igénylést a klub ellenőrzésével kapcsolja össze."
+      ],
+      [
+        "Értsd a figyelmeztetéseket",
+        "A nem ellenőrzött tagi jelzések és a hivatalos klublezárások egyértelműen elkülönülnek."
+      ]
+    ],
+    "pilotNote": "Ez a weboldal az alkalmazást mutatja be. Repülőhely-keresés, napijegy és pilótaprofil kizárólag az appban lesz.",
+    "clubTitle": "Több klubélet.<br>Kevesebb szétszórt információ.",
+    "clubIntro": "Saját arculatú digitális klubfelület a pilóták és repülőhelyek közös platformján.",
+    "clubFeatures": [
+      [
+        "Saját arculat",
+        "A klubotok felismerhető marad. Saját tartalmak, modulok és helyi információk a saját felületeteken."
+      ],
+      [
+        "Hozzátok illő modulok",
+        "Hírek, események, dokumentumok, tagság, napijegyek és figyelmeztetések klubonként összeállítva."
+      ],
+      [
+        "Világos feladatkörök",
+        "A klubadmin a saját klubját kezeli. A superadmin a platform klubjait és az elérhető modulokat felügyeli."
+      ]
+    ],
+    "adminTitle": "Ilyen lehet a klubotok kezelőfelülete.",
+    "adminText": "Próbáljátok ki a napijegykezelést, a tagsági kérelmeket, a lezárásokat és a modulokat. A külön demó kizárólag fiktív adatokkal működik.",
+    "adminBadge": "KATTINTHATÓ TERV",
+    "adminPreview": [
+      "Klubáttekintés",
+      "Napijegyek ellenőrzése",
+      "Tagságok kezelése",
+      "Modulok kiválasztása"
+    ],
+    "howTitle": "Világos folyamatok.<br>Egyértelmű felelősség.",
+    "howIntro": "Három alapvető folyamat köti össze a mobilappot a klub kezelésével. A részletek a prototípussal együtt fejlődnek.",
+    "flows": [
+      {
+        "id": "tickets",
+        "label": "01 / NAPIJEGY",
+        "title": "Az igényléstől a klub ellenőrzéséig.",
+        "steps": [
+          [
+            "Igénylés az appban",
+            "A pilóta a mobilalkalmazásban választja ki a klub napijegyét."
+          ],
+          [
+            "Közvetlen átutalás a klubnak",
+            "A terv közvetlen banki átutalás. A weboldal nem mutat bankadatokat, és nem indít fizetést."
+          ],
+          [
+            "A klub ellenőrzi a jóváírást",
+            "Az „átutaltam” jelzés nem fizetési igazolás. Az állapotot csak a klub ellenőrzése erősítheti meg."
+          ]
+        ],
+        "note": "Az árak, érvényesség, igazolások és visszatérítések részletei még nem véglegesek."
+      },
+      {
+        "id": "alerts",
+        "label": "02 / FIGYELMEZTETÉSEK",
+        "title": "A jelzés még nem lezárás.",
+        "steps": [
+          [
+            "A tag veszélyt jelez",
+            "A jelzés nem ellenőrzött figyelmeztetésként jelenik meg, forrással és időponttal."
+          ],
+          [
+            "Az illetékes klubadmin dönt",
+            "Hivatalos lezárást és újranyitást csak erre jogosult klubfelelős rendelhet el."
+          ],
+          [
+            "Az állapot egyértelmű marad",
+            "Egy lejárt figyelmeztetés nem nyitja újra automatikusan a lezárt területet."
+          ]
+        ],
+        "note": "Az értesítések nem helyettesítik a helyszíni tájékozódást és a segélyhívást. A demó nem küld riasztást."
+      },
+      {
+        "id": "membership",
+        "label": "03 / TAGSÁG",
+        "title": "Egyszer ellenőrizve. Kapcsolatban a klubbal.",
+        "steps": [
+          [
+            "Kérelem az appban",
+            "A pilóta a profiljában kéri a klubtagsága igazolását."
+          ],
+          [
+            "A klub ellenőriz",
+            "Az illetékes klubfelelősök ellenőrzik a tagságot."
+          ],
+          [
+            "Belső tartalmak elérése",
+            "A későbbi szerveroldali jóváhagyás után megnyílnak a megfelelő klubtartalmak az appban."
+          ]
+        ],
+        "note": "A demó szerepváltója nem valódi bejelentkezés vagy tagságellenőrzés."
+      }
+    ],
+    "contactTitle": "Beszéljünk<br>a klubotokról.",
+    "contactIntro": "Kérdésed van a platformról, együttműködnél, vagy visszajelzést adnál a prototípusról? Írj Péternek.",
+    "contactLabel": "KAPCSOLATTARTÓ",
+    "contactName": "Gáti Péter",
+    "contactNote": "A hivatkozás a saját levelezőprogramodat nyitja meg. A weboldal nem küld automatikusan üzenetet.",
+    "contactSubjects": [
+      "Kluboknak",
+      "Pilótáknak",
+      "A prototípusról"
+    ],
+    "contactDetails": [
+      "Mely modulok illenek hozzátok? Mely folyamatokon egyszerűsítenétek?",
+      "Milyen információkra van szükséged a helyszínen és a klubodban?",
+      "Mondd el a véleményed a megjelenésről és a tervezett folyamatokról."
+    ],
+    "legal": "Fejlesztés alatt álló projekt. Az üzemeltetői és adatkezelési tájékoztató a nyilvános kiadás előtt készül el."
+  }
+}

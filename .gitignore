@@ -1,0 +1,4 @@
+out/
+.qa/
+.DS_Store
+node_modules/
