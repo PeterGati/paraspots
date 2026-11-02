@@ -170,7 +170,12 @@
       "Welche Informationen brauchst du vor Ort und in deinem Club?",
       "Teile Feedback zur Darstellung und zu den geplanten Abläufen."
     ],
-    "legal": "Projekt in Entwicklung. Betreiber- und Datenschutzhinweise werden vor der öffentlichen Freigabe ergänzt."
+    "legal": "Projekt in Entwicklung. Betreiber- und Datenschutzhinweise werden vor der öffentlichen Freigabe ergänzt.",
+    "clubScreenCaption": "Deutschsprachiger Demo-Bildschirm aus der vorhandenen App.",
+    "clubScreenAlts": [
+      "Eigener App-Bereich des fiktiven Alpinclubs Bergblick",
+      "Veranstaltungen und Treffen im App-Modul"
+    ]
   },
   "en": {
     "nav": [
@@ -343,13 +348,18 @@
       "What information do you need at a flying area and in your club?",
       "Share feedback on the design and planned workflows."
     ],
-    "legal": "Project in development. Operator and privacy information will be added before public release."
+    "legal": "Project in development. Operator and privacy information will be added before public release.",
+    "clubScreenCaption": "German-language demo screen from the existing app.",
+    "clubScreenAlts": [
+      "The fictional Bergblick club’s own mobile app area",
+      "Events and meetings in the app’s events module"
+    ]
   },
   "hu": {
     "nav": [
       "Kezdőlap",
       "Pilótáknak",
-      "Kluboknak",
+      "Egyesületeknek",
       "Hogyan működik",
       "Kapcsolat"
     ],
@@ -357,24 +367,24 @@
     "menu": "Menü",
     "skip": "Ugrás a tartalomra",
     "app": "Ismerd meg az appot",
-    "clubs": "A klubodnak",
-    "eyebrow": "A REPÜLŐHELYED. A KLUBOD. A KÖZÖSSÉGED.",
+    "clubs": "Az egyesületednek",
+    "eyebrow": "A STARTHELYED. AZ EGYESÜLETED. A KÖZÖSSÉGED.",
     "headline": "Repülj többet.<br>Maradj kapcsolatban.",
-    "intro": "A PARASPOTS egy alkalmazásban köti össze a repülőhelyeket, a pilótákat és a klubokat. Hogy a következő repülés előtt több időd maradjon arra, ami igazán számít.",
+    "intro": "A PARASPOTS egy alkalmazásban köti össze a starthelyeket, a pilótákat és az egyesületeket. Hogy a következő repülés előtt több időd maradjon arra, ami igazán számít.",
     "stage": "Készülő platform · App 0.1 demó",
     "heroNote": "Alpesi illusztráció az alkalmazás arculatából.",
     "scroll": "Egy platform. Két nézőpont.",
     "homeTitle": "Otthon a szabadban.<br>Együtt az appban.",
-    "homeText": "A helyi tudás azoknál van, akik ismerik a repülőhelyet. A PARASPOTS ezt teszi elérhetővé az alkalmazásban, a kluboknak pedig saját digitális teret ad.",
+    "homeText": "A helyi tudás azoknál van, akik ismerik a starthelyet. A PARASPOTS ezt teszi elérhetővé az alkalmazásban, az egyesületeknak pedig saját digitális teret ad.",
     "pilotCard": [
       "01 / PILÓTÁKNAK",
       "A következő repülésed az appban kezdődik.",
-      "Ismerd meg a repülőhelyeket, olvasd el a klubinformációkat, és kövesd a saját klubod életét. Mindezt a telefonodon."
+      "Fedezz fel új starthelyeket, ismerd meg az ott működő egyesületeket, és kövesd a saját közösséged híreit. Mindezt a telefonodon."
     ],
     "clubCard": [
-      "02 / KLUBOKNAK",
-      "A ti klubotok. A ti tartalmaitok. A ti szabályaitok.",
-      "Saját klubfelület egy közös platformon. Válasszátok ki az egyesületetekhez illő modulokat."
+      "02 / EGYESÜLETEKNEK",
+      "A ti egyesületetek. A ti tartalmaitok. A ti szabályaitok.",
+      "Saját egyesületi felület egy közös platformon. Válasszátok ki az egyesületetekhez illő modulokat."
     ],
     "more": "Részletek",
     "preview": "Pillantás az alkalmazásba",
@@ -392,70 +402,70 @@
     "demoNote": "Fiktív adatok · valódi tranzakciók nélkül",
     "back": "Vissza a kezdőlapra",
     "pilotTitle": "A repülős napod.<br>Egy alkalmazás.",
-    "pilotIntro": "A repülőhely megismerésétől a klubod híreiig: a PARASPOTS a telefonodon segít a felkészülésben.",
+    "pilotIntro": "Fedezz fel új starthelyeket, olvasd az egyesületek híreit, és kövesd a saját közösséged életét – mindezt egy helyen, a PARASPOTS appban!",
     "pilotFeatures": [
       [
-        "Ismerd meg a repülőhelyeket",
-        "Helyi szabályok, megközelítés és kapcsolódó klubok egy helyen, az appban."
+        "Ismerd meg a starthelyeket",
+        "Helyi szabályok, megközelítés és kapcsolódó egyesületek egy helyen, az appban."
       ],
       [
-        "Vidd magaddal a klubod",
-        "Hírek, események és elérhető dokumentumok a klubodnak és tagságodnak megfelelően."
+        "Maradj képben az egyesületedben",
+        "Hírek, események és a tagságodhoz tartozó dokumentumok – kéznél, amikor szükséged van rájuk."
       ],
       [
         "Kövesd a napijegyed",
-        "A tervezett folyamat az appban indított igénylést a klub ellenőrzésével kapcsolja össze."
+        "A tervezett folyamat az appban indított igénylést az egyesület ellenőrzésével kapcsolja össze."
       ],
       [
         "Értsd a figyelmeztetéseket",
-        "A nem ellenőrzött tagi jelzések és a hivatalos klublezárások egyértelműen elkülönülnek."
+        "A nem ellenőrzött tagi jelzések és az egyesület által elrendelt hivatalos lezárások egyértelműen elkülönülnek."
       ]
     ],
-    "pilotNote": "Ez a weboldal az alkalmazást mutatja be. Repülőhely-keresés, napijegy és pilótaprofil kizárólag az appban lesz.",
-    "clubTitle": "Több klubélet.<br>Kevesebb szétszórt információ.",
-    "clubIntro": "Saját arculatú digitális klubfelület a pilóták és repülőhelyek közös platformján.",
+    "pilotNote": "Ez a weboldal az alkalmazást mutatja be. Starthely-keresés, napijegy és pilótaprofil kizárólag az appban lesz.",
+    "clubTitle": "Pezsgő egyesületi élet.<br>Minden fontos hír egy helyen.",
+    "clubIntro": "Mutassátok meg az egyesületeteket a PARASPOTS appban: saját arculattal, saját hírekkel és a tagjaitoknak szóló tartalmakkal.",
     "clubFeatures": [
       [
         "Saját arculat",
-        "A klubotok felismerhető marad. Saját tartalmak, modulok és helyi információk a saját felületeteken."
+        "Saját arculat, saját hírek, saját felület. A pilóták az appban is rögtön felismerik az egyesületeteket."
       ],
       [
         "Hozzátok illő modulok",
-        "Hírek, események, dokumentumok, tagság, napijegyek és figyelmeztetések klubonként összeállítva."
+        "Hírek, programok, dokumentumok, tagság és napijegyek: ti döntitek el, mely modulokra van szükségetek."
       ],
       [
         "Világos feladatkörök",
-        "A klubadmin a saját klubját kezeli. A superadmin a platform klubjait és az elérhető modulokat felügyeli."
+        "Az egyesületi adminisztrátor a saját egyesületének felületét kezeli. A superadmin a teljes platform egyesületeit és elérhető moduljait felügyeli."
       ]
     ],
-    "adminTitle": "Ilyen lehet a klubotok kezelőfelülete.",
+    "adminTitle": "Ilyen lehet az egyesületetek kezelőfelülete.",
     "adminText": "Próbáljátok ki a napijegykezelést, a tagsági kérelmeket, a lezárásokat és a modulokat. A külön demó kizárólag fiktív adatokkal működik.",
     "adminBadge": "KATTINTHATÓ TERV",
     "adminPreview": [
-      "Klubáttekintés",
+      "Egyesületi áttekintés",
       "Napijegyek ellenőrzése",
       "Tagságok kezelése",
       "Modulok kiválasztása"
     ],
     "howTitle": "Világos folyamatok.<br>Egyértelmű felelősség.",
-    "howIntro": "Három alapvető folyamat köti össze a mobilappot a klub kezelésével. A részletek a prototípussal együtt fejlődnek.",
+    "howIntro": "A pilóták az appot használják, az egyesületek a saját kezelőfelületükön intézik az ügyeket. Így kapcsolódik össze a napijegy, a figyelmeztetés és a tagság kezelése.",
     "flows": [
       {
         "id": "tickets",
         "label": "01 / NAPIJEGY",
-        "title": "Az igényléstől a klub ellenőrzéséig.",
+        "title": "Az igényléstől az egyesület ellenőrzéséig.",
         "steps": [
           [
             "Igénylés az appban",
-            "A pilóta a mobilalkalmazásban választja ki a klub napijegyét."
+            "A pilóta a mobilalkalmazásban választja ki az egyesület napijegyét."
           ],
           [
-            "Közvetlen átutalás a klubnak",
+            "Közvetlen átutalás az egyesületnek",
             "A terv közvetlen banki átutalás. A weboldal nem mutat bankadatokat, és nem indít fizetést."
           ],
           [
-            "A klub ellenőrzi a jóváírást",
-            "Az „átutaltam” jelzés nem fizetési igazolás. Az állapotot csak a klub ellenőrzése erősítheti meg."
+            "Az egyesület ellenőrzi a jóváírást",
+            "Az „átutaltam” jelzés nem fizetési igazolás. Az állapotot csak az egyesület ellenőrzése erősítheti meg."
           ]
         ],
         "note": "Az árak, érvényesség, igazolások és visszatérítések részletei még nem véglegesek."
@@ -470,8 +480,8 @@
             "A jelzés nem ellenőrzött figyelmeztetésként jelenik meg, forrással és időponttal."
           ],
           [
-            "Az illetékes klubadmin dönt",
-            "Hivatalos lezárást és újranyitást csak erre jogosult klubfelelős rendelhet el."
+            "Az illetékes egyesületi adminisztrátor dönt",
+            "Hivatalos lezárást és újranyitást csak erre jogosult egyesületi felelős rendelhet el."
           ],
           [
             "Az állapot egyértelmű marad",
@@ -483,39 +493,44 @@
       {
         "id": "membership",
         "label": "03 / TAGSÁG",
-        "title": "Egyszer ellenőrizve. Kapcsolatban a klubbal.",
+        "title": "Egyszer ellenőrizve. Kapcsolatban az egyesülettel.",
         "steps": [
           [
             "Kérelem az appban",
-            "A pilóta a profiljában kéri a klubtagsága igazolását."
+            "A pilóta a profiljában kéri az egyesületi tagsága igazolását."
           ],
           [
-            "A klub ellenőriz",
-            "Az illetékes klubfelelősök ellenőrzik a tagságot."
+            "Az egyesület ellenőriz",
+            "Az illetékes egyesületi felelősök ellenőrzik a tagságot."
           ],
           [
             "Belső tartalmak elérése",
-            "A későbbi szerveroldali jóváhagyás után megnyílnak a megfelelő klubtartalmak az appban."
+            "A későbbi szerveroldali jóváhagyás után megnyílnak a megfelelő egyesületi tartalmak az appban."
           ]
         ],
         "note": "A demó szerepváltója nem valódi bejelentkezés vagy tagságellenőrzés."
       }
     ],
-    "contactTitle": "Beszéljünk<br>a klubotokról.",
+    "contactTitle": "Beszéljünk<br>az egyesüle&shy;tetekről.",
     "contactIntro": "Kérdésed van a platformról, együttműködnél, vagy visszajelzést adnál a prototípusról? Írj Péternek.",
     "contactLabel": "KAPCSOLATTARTÓ",
     "contactName": "Gáti Péter",
     "contactNote": "A hivatkozás a saját levelezőprogramodat nyitja meg. A weboldal nem küld automatikusan üzenetet.",
     "contactSubjects": [
-      "Kluboknak",
+      "Egyesületeknek",
       "Pilótáknak",
       "A prototípusról"
     ],
     "contactDetails": [
       "Mely modulok illenek hozzátok? Mely folyamatokon egyszerűsítenétek?",
-      "Milyen információkra van szükséged a helyszínen és a klubodban?",
+      "Milyen információkra van szükséged a helyszínen és az egyesületedban?",
       "Mondd el a véleményed a megjelenésről és a tervezett folyamatokról."
     ],
-    "legal": "Fejlesztés alatt álló projekt. Az üzemeltetői és adatkezelési tájékoztató a nyilvános kiadás előtt készül el."
+    "legal": "Fejlesztés alatt álló projekt. Az üzemeltetői és adatkezelési tájékoztató a nyilvános kiadás előtt készül el.",
+    "clubScreenCaption": "A meglévő app német nyelvű demóképernyője.",
+    "clubScreenAlts": [
+      "A Bergblick fiktív egyesület saját telefonos felülete",
+      "Programok és találkozók az alkalmazás eseménymoduljában"
+    ]
   }
 }

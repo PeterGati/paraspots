@@ -17,6 +17,16 @@ def card(c,href,d):
     return f'<article class="feature-card"><p class="eyebrow">{c[0]}</p><h3>{c[1]}</h3><p>{c[2]}</p><a class="text-link" href="{href}">{d["more"]} <span aria-hidden="true">↗</span></a></article>'
 def features(items):
     return '<div class="feature-grid">'+''.join(f'<article class="feature"><span class="feature-number">0{i+1}</span><h3>{x[0]}</h3><p>{x[1]}</p></article>' for i,x in enumerate(items))+'</div>'
+def club_features(d):
+    rows=[]
+    for i,(title,body) in enumerate(d['clubFeatures']):
+        text=f'<div class="club-feature-copy"><span class="feature-number">0{i+1}</span><h2>{title}</h2><p class="large-text">{body}</p></div>'
+        if i<2:
+            image_name=['app-club.png','app-events.png'][i]
+            text+=f'<figure class="club-phone-figure"><div class="phone"><img src="/assets/{image_name}" alt="{esc(d["clubScreenAlts"][i])}" width="1170" height="2532" loading="lazy"></div><figcaption>{d["clubScreenCaption"]}</figcaption></figure>'
+        rows.append(f'<article class="club-feature-row">{text}</article>')
+    return '<div class="club-feature-story">'+''.join(rows)+'</div>'
+
 def download(d):
     return f'<section class="download wrap" id="app"><div><p class="eyebrow">PARASPOTS APP</p><h2>{d["downloadTitle"]}</h2><p>{d["downloadText"]}</p></div><div class="store-status"><span class="pill">{d["store"]}</span><div class="store-row"><span>{d["ios"]}</span><span>{d["android"]}</span></div></div></section>'
 def preview(d):
@@ -30,7 +40,7 @@ def page_content(p,d,lang,demo_url):
         return f'''<section class="wrap inner-hero split"><div><p class="eyebrow">{d['nav'][1]}</p><h1>{d['pilotTitle']}</h1><div class="red-line"></div><p class="large-text">{d['pilotIntro']}</p><a class="button" href="#app">{d['app']} ↓</a></div>{preview(d)}</section><section class="wrap section-space">{features(d['pilotFeatures'])}<p class="notice">{d['pilotNote']}</p><p class="caption">{d['previewText']}</p></section>{download(d)}'''
     if p=='clubs':
         cta=f'<a class="button" href="{esc(demo_url)}?lang={lang}">{d["demo"]} ↗</a>' if demo_url else f'<a class="button" href="contact.html">{d["contactButton"]} ↗</a>'
-        return f'''<section class="wrap inner-hero"><p class="eyebrow">{d['nav'][2]}</p><h1>{d['clubTitle']}</h1><div class="red-line"></div><p class="large-text max-text">{d['clubIntro']}</p></section><section class="wrap section-space">{features(d['clubFeatures'])}</section><section class="admin-teaser"><div class="wrap split"><div><p class="eyebrow">{d['adminBadge']}</p><h2>{d['adminTitle']}</h2><p>{d['adminText']}</p>{cta}<p class="caption">{d['demoNote']}</p></div><div class="mini-admin"><div class="mini-top"><span>PARASPOTS</span><span class="pill">DEMO</span></div>{''.join(f'<div class="mini-row"><span>0{i+1}</span><strong>{x}</strong><span>→</span></div>' for i,x in enumerate(d['adminPreview']))}</div></div></section><section class="wrap closing"><h2>{d['contactTitle']}</h2><a class="button" href="contact.html">{d['contactButton']} ↗</a></section>'''
+        return f'''<section class="wrap inner-hero"><p class="eyebrow">{d['nav'][2]}</p><h1>{d['clubTitle']}</h1><div class="red-line"></div><p class="large-text max-text">{d['clubIntro']}</p></section><section class="wrap section-space">{club_features(d)}</section><section class="admin-teaser"><div class="wrap split"><div><p class="eyebrow">{d['adminBadge']}</p><h2>{d['adminTitle']}</h2><p>{d['adminText']}</p>{cta}<p class="caption">{d['demoNote']}</p></div><div class="mini-admin"><div class="mini-top"><span>PARASPOTS</span><span class="pill">DEMO</span></div>{''.join(f'<div class="mini-row"><span>0{i+1}</span><strong>{x}</strong><span>→</span></div>' for i,x in enumerate(d['adminPreview']))}</div></div></section><section class="wrap closing"><h2>{d['contactTitle']}</h2><a class="button" href="contact.html">{d['contactButton']} ↗</a></section>'''
     if p=='how-it-works':
         flows=''
         for f in d['flows']:

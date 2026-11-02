@@ -95,3 +95,11 @@ This branch-aware command builds the combined review artifact ONLY for `feat/pla
 Validation: `python3 scripts/check_cloudflare_build.py` uses isolated clones. Main output contains all 255 original tracked files byte-for-byte; feature output contains the marketing pages and admin demo, with neither old data nor old search pages. The command has been tested locally, not yet in Cloudflare. Python availability in Cloudflare and final deployment status remain to be verified by the actual build.
 
 After configuration is saved, push the committed feature branch using GitHub Desktop and inspect the Cloudflare preview build. Do not change the production branch or domains. The previous baseline settings are in docs/cloudflare-baseline.json. If reverting the build configuration, restore the empty build command and `/` output together.
+
+## Review changes — 2026-11-02
+
+User requested Hungarian terminology: starthely / egyesület, with revised natural Hungarian pilot introduction and association copy. German and English existing copy retained for later proofreading. Website/admin PARASPOTS wordmark is upright; original app screenshots are unchanged historical captures.
+
+Association page now places two original handoff screenshots beside relevant content: `15-club-bergblick.png` for association identity and `22-events.png` for modules. Assets are copied byte-for-byte as app-club.png and app-events.png; localized alt text/captions identify German demo screens. No new logo or mockup was generated.
+
+Local build and 108 viewport/page checks plus 10 interaction checks passed after edits. The previous commit 904e1b3 was verified present on GitHub and its marketing preview was served by Cloudflare at https://feat-platform-marketing-demo.paraspots.pages.dev/hu/. These latest review changes require a new feature-branch push before being visible there. Production main remains the legacy site.
