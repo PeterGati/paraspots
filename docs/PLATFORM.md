@@ -68,7 +68,7 @@ Backups outside the checkout:
 
 `docs/legacy-data-sha256.json` records the data manifest. Existing legacy files and workflows are retained. Deploy only the selected `out/` directory, never the repository root, when releasing the new platform. The legacy root remains available for recovery and has not been replaced.
 
-Cloudflare observations: HTTPS 200; server cloudflare. Live root differs from baseline index only by Cloudflare email obfuscation. Dashboard screenshot confirmed Pages project `paraspots`, `paraspots.pages.dev`, GitHub binding `PeterGati/paraspots`, two additional domains. Production branch/build/output settings still require inspection. Do not change DNS or the unrelated lumo-demo-gateway or paraspots-save workers.
+Cloudflare observations: HTTPS 200; server cloudflare. Live root differs from baseline index only by Cloudflare email obfuscation. Dashboard screenshot confirmed Pages project `paraspots`, `paraspots.pages.dev`, GitHub binding `PeterGati/paraspots`, two additional domains. Production settings verified from the dashboard: main branch, empty build command, build output `/`, empty root directory, build system v3, automatic deployments enabled. Baseline is also saved in docs/cloudflare-baseline.json and in the external backup folder. Do not change DNS or the unrelated lumo-demo-gateway or paraspots-save workers.
 
 Recovery example (new independent folder):
 

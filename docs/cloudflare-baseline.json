@@ -1,0 +1,23 @@
+{
+  "observed": "2026-11-02 Europe/Vienna",
+  "source": "User-supplied Cloudflare dashboard screenshots",
+  "project": "paraspots",
+  "repository": "PeterGati/paraspots",
+  "production_branch": "main",
+  "build_command": "",
+  "build_output_directory": "/",
+  "root_directory": "",
+  "automatic_deployments": true,
+  "build_comments": true,
+  "build_cache": false,
+  "build_system_version": 3,
+  "build_watch_include": [
+    "*"
+  ],
+  "baseline_commit": "fa66fe91575e084a58551af63df6b539a906eb57",
+  "production_deployment_url": "https://9cfffd62.paraspots.pages.dev",
+  "baseline_preview_url": "https://1fa4ac33.paraspots.pages.dev",
+  "custom_domains_count": 2,
+  "secrets_read": false,
+  "dashboard_mutations_by_agent": false
+}
