@@ -170,12 +170,13 @@
       "Welche Informationen brauchst du vor Ort und in deinem Club?",
       "Teile Feedback zur Darstellung und zu den geplanten Abläufen."
     ],
-    "legal": "Projekt in Entwicklung. Betreiber- und Datenschutzhinweise werden vor der öffentlichen Freigabe ergänzt.",
+    "legal": "Öffentliche Produktdemo. App und Verwaltungsabläufe sind noch keine verfügbaren Live-Dienste.",
     "clubScreenCaption": "Deutschsprachiger Demo-Bildschirm aus der vorhandenen App.",
     "clubScreenAlts": [
       "Eigener App-Bereich des fiktiven Alpinclubs Bergblick",
       "Veranstaltungen und Treffen im App-Modul"
-    ]
+    ],
+    "demoBanner": "DEMO · Plattform in Entwicklung"
   },
   "en": {
     "nav": [
@@ -348,12 +349,13 @@
       "What information do you need at a flying area and in your club?",
       "Share feedback on the design and planned workflows."
     ],
-    "legal": "Project in development. Operator and privacy information will be added before public release.",
+    "legal": "Public product demo. The app and administration workflows are not yet available as live services.",
     "clubScreenCaption": "German-language demo screen from the existing app.",
     "clubScreenAlts": [
       "The fictional Bergblick club’s own mobile app area",
       "Events and meetings in the app’s events module"
-    ]
+    ],
+    "demoBanner": "DEMO · Platform in development"
   },
   "hu": {
     "nav": [
@@ -526,11 +528,12 @@
       "Milyen információkra van szükséged a helyszínen és az egyesületedban?",
       "Mondd el a véleményed a megjelenésről és a tervezett folyamatokról."
     ],
-    "legal": "Fejlesztés alatt álló projekt. Az üzemeltetői és adatkezelési tájékoztató a nyilvános kiadás előtt készül el.",
+    "legal": "Nyilvános termékbemutató. Az alkalmazás és az adminisztrációs folyamatok még nem használhatók éles szolgáltatásként.",
     "clubScreenCaption": "A meglévő app német nyelvű demóképernyője.",
     "clubScreenAlts": [
       "A Bergblick fiktív egyesület saját telefonos felülete",
       "Programok és találkozók az alkalmazás eseménymoduljában"
-    ]
+    ],
+    "demoBanner": "DEMÓ · Fejlesztés alatt álló platform"
   }
 }

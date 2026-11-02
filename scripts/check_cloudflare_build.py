@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Verify the proposed dashboard command in isolated checkouts before saving it."""
 from pathlib import Path
-import subprocess, tempfile, os, hashlib
+import subprocess, tempfile, os, hashlib, sys
 ROOT=Path(__file__).resolve().parents[1]
-command=(ROOT/'docs/cloudflare-build-command.txt').read_text().strip()
+command=(ROOT/(sys.argv[1] if len(sys.argv)>1 else 'docs/cloudflare-build-command.txt')).read_text().strip()
 for branch,ref in [('main','fa66fe91575e084a58551af63df6b539a906eb57'),('feat/platform-marketing-demo','HEAD')]:
     with tempfile.TemporaryDirectory(prefix='paraspots-cf-check-') as folder:
         subprocess.run(['git','clone','--quiet','--shared','--no-checkout',str(ROOT),folder],check=True)

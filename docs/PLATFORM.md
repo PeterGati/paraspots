@@ -103,3 +103,13 @@ User requested Hungarian terminology: starthely / egyesület, with revised natur
 Association page now places two original handoff screenshots beside relevant content: `15-club-bergblick.png` for association identity and `22-events.png` for modules. Assets are copied byte-for-byte as app-club.png and app-events.png; localized alt text/captions identify German demo screens. No new logo or mockup was generated.
 
 Local build and 108 viewport/page checks plus 10 interaction checks passed after edits. The previous commit 904e1b3 was verified present on GitHub and its marketing preview was served by Cloudflare at https://feat-platform-marketing-demo.paraspots.pages.dev/hu/. These latest review changes require a new feature-branch push before being visible there. Production main remains the legacy site.
+
+## Public demo release authorised — 2026-11-02
+
+The user explicitly requested publication to paraspots.at to share the demo with the Austrian league lead. This supersedes the earlier review-only pause. The user knows operator/privacy documents are not final and requested the demo to proceed with the confirmed name and email. No claim of legal compliance is made.
+
+Prepared public demo: all marketing pages carry a localized demo banner; German default, DE/EN/HU switcher, original emblem, upright website wordmark, latest Hungarian revisions and real app screenshots. Browser-only admin demo remains at `/demo/`, linked from the association page. All pages remain noindex. No real account, banking, GPS, email sending or push service is enabled.
+
+Release build command: exact contents of docs/cloudflare-production-command.txt. It builds the new site whenever scripts/build.py exists, including the release main commit; an old main without that file still deploys its original archived files. Output remains cf-output; framework None; production branch remains main; root unchanged.
+
+Validation before release: 108 page/viewport checks and 10 interaction checks passed; 528 links/assets valid; all 220 legacy JSON/GeoJSON files unchanged. Release is prepared locally. Publication must be verified from the actual paraspots.at response after the authenticated user saves production build settings and pushes main. Do not confuse local main preparation with remote deployment.
