@@ -1,0 +1,126 @@
+{
+  "region": "steiermark",
+  "site": "schoeckel-schoeckl",
+  "name": "Schöckel/Schöckl",
+  "coordinates": {
+    "lat": 47.20083,
+    "lon": 15.47583
+  },
+  "talHeight": 700,
+  "operator": {
+    "name": "Paragleitclub Steiermark",
+    "url": "https://www.paragleitclub.at",
+    "phone": ""
+  },
+  "access": {
+    "car": true,
+    "cableCar": true,
+    "hikeAndFly": true,
+    "publicTransport": false,
+    "parking": "Parkplatz bei der Talstation kostenlos bei Nutzung der Gondelbahn oder Konsumation im Gasthof."
+  },
+  "airspaces": [
+    "Höhenbegrenzung wegen Flughafen Graz: maximal 2150 m im Bereich Schöckl."
+  ],
+  "flightCharacteristics": {
+    "soaring": true,
+    "thermal": true,
+    "crossCountry": true
+  },
+  "windDirections": [
+    "N",
+    "NW",
+    "O",
+    "SO",
+    "S"
+  ],
+  "webcam": null,
+  "approachDescription": "Von Graz Richtung St. Radegund zur Talstation der Schöcklbahn. Auffahrt mit der Gondelbahn oder Walk&Fly-Aufstieg direkt unter der Seilbahn beziehungsweise vom Schöcklkreuz.",
+  "description": "Der Schöckl ist eines der bekanntesten Fluggebiete der Steiermark und wegen der Nähe zu Graz besonders stark frequentiert. Das Gebiet bietet ausgezeichnete Thermik-, Soaring- und Streckenflugmöglichkeiten. Der Berg steht exponiert und ist stark windanfällig, Windrichtung und Windstärke müssen sorgfältig beurteilt werden. Wegen der Nähe zum Flughafen Graz gelten spezielle Luftraumbeschränkungen. Besonders an thermisch starken Tagen treten am Süd- und Nordstartplatz Turbulenzen auf.",
+  "siteRatings": {
+    "overallRating": 0,
+    "thermalRating": 4
+  },
+  "startpunkte": [
+    {
+      "name": "Stubenberghaus",
+      "coordinates": {
+        "lat": 47.19950,
+        "lon": 15.47450
+      },
+      "startHeight": 1440,
+      "heightDifference": 740,
+      "launchDirections": [
+        "S"
+      ],
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Nur bei passenden Südbedingungen. Thermisch oft turbulent.",
+      "description": "Relativ flacher und anspruchsvoller Start westlich des Stubenberghauses direkt neben der Sommerrodelbahn."
+    },
+    {
+      "name": "Hauptstartplatz Süd - Ostgipfel",
+      "coordinates": {
+        "lat": 47.20083,
+        "lon": 15.47583
+      },
+      "startHeight": 1430,
+      "heightDifference": 730,
+      "launchDirections": [
+        "O",
+        "SO",
+        "S"
+      ],
+      "difficulty": "leicht",
+      "windSensitivity": "An thermisch starken Tagen turbulente Bedingungen möglich.",
+      "description": "Großer Hauptstartplatz östlich der Bergstation mit mehreren Windanzeigern und Drachenrampe."
+    },
+    {
+      "name": "Hauptstartplatz Nord - Gipfelkreuz",
+      "coordinates": {
+        "lat": 47.19750,
+        "lon": 15.45861
+      },
+      "startHeight": 1430,
+      "heightDifference": 730,
+      "launchDirections": [
+        "N",
+        "NW"
+      ],
+      "difficulty": "mittel",
+      "windSensitivity": "Bei weniger Wind als an der Südseite starten. Nordthermik oft kräftig.",
+      "description": "Nordstart nahe dem Gipfelkreuz mit zusätzlicher Drachenrampe östlich davon."
+    }
+  ],
+  "landeplaetze": [
+    {
+      "name": "Talstation",
+      "coordinates": {
+        "lat": 47.18588,
+        "lon": 15.48394
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Stromleitung am südlichen Ende beachten. Unterschiedliche Thermik- und Sinkenbereiche.",
+      "description": "Hauptlandeplatz direkt neben der Talstation der Schöcklbahn."
+    },
+    {
+      "name": "Nordlandeplatz - Plenzengreith",
+      "coordinates": {
+        "lat": 47.21444,
+        "lon": 15.47917
+      },
+      "difficulty": "anspruchsvoll",
+      "windSensitivity": "Nur nach Einweisung anfliegen.",
+      "description": "Schwieriger Nordlandeplatz neben der Volksschule Plenzengreith."
+    },
+    {
+      "name": "Drachenlandeplatz",
+      "coordinates": {
+        "lat": 47.17472,
+        "lon": 15.49361
+      },
+      "difficulty": "mittel",
+      "windSensitivity": "Windwechsel und Ostwind problematisch.",
+      "description": "Drachenlandeplatz südlich von St. Radegund mit separatem Parkplatz."
+    }
+  ]
+}

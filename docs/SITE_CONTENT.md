@@ -50,3 +50,9 @@ Old source and 220 JSON/GeoJSON files are retained. Source-only rollback should 
 ## Deferred
 
 Image upload/storage, offline maps, DE/EN/HU translated site content editing, clubadmin scopes, actual memberships, payments and member-targeted push are not implemented by this first content slice. Existing German source descriptions are not automatically translated. The editor UI currently uses Hungarian; mobile demo retains German.
+
+## Local follow-up: save feedback and airspace removal
+
+Save progress/success/errors are now visible beside the action buttons at the bottom of long forms. Successful save feedback includes server-save time and distinguishes first unpublished draft, pending published changes and an already published version. Busy controls prevent repeated submissions; error feedback retains unsaved edits. Schöckl fixture validates 3 launch direction groups and 3 landing points. Browser tests cover feedback visibility at 390/1440 widths and a failed save without losing edits.
+
+Airspace inputs have been removed from the editor and new-record template. Original imported fields remain preserved internally for lossless export; no app airspace section is rendered. Original source files are not rewritten. These follow-up editor changes are local review changes until explicitly deployed; existing public admin is the earlier version.

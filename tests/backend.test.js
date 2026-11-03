@@ -35,3 +35,15 @@ test('incorrect passwords are throttled',async()=>{
  const app=setup();for(let i=0;i<5;i++)assert.equal((await app.req('/api/login','POST',{email:'admin@example.test',password:'wrong'})).status,401);
  assert.equal((await app.login()).status,429);
 });
+test('clean Schöckl import preserves all three launches, directions and landings',async()=>{
+ const app=setup();await app.login();
+ const site=JSON.parse(readFileSync(new URL('./fixtures/schoeckel-schoeckl.json',import.meta.url)));
+ assert.equal((await app.req('/api/admin/sites','PUT',{data:site,revision:0})).status,200);
+ assert.equal((await app.req('/api/sites')).body.sites.length,0);
+ const row=(await app.req('/api/admin/sites')).body.sites[0];
+ await app.req(`/api/admin/sites/${encodeURIComponent(row.id)}/publish`,'POST',{revision:row.revision});
+ const result=(await app.req('/api/sites')).body.sites[0].data;
+ assert.deepEqual(result,site);
+ assert.deepEqual(result.startpunkte.map(p=>p.launchDirections),[['S'],['O','SO','S'],['N','NW']]);
+ assert.equal(result.landeplaetze.length,3);
+});
