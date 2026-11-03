@@ -1,5 +1,6 @@
 {
   "base_commit": "fa66fe91575e084a58551af63df6b539a906eb57",
+  "upstream_weather_commit": "c7390496bfcec83e47d5f3f0a02edafc280beeb4",
   "files": {
     "airspace/airspace.json": "1edbe6f5c6c027886f5446546c06bbaf9036a328be431fd2b98cfa3424bd11cd",
     "airspace/controlled/class-c/ARLBERG.geojson": "5050759daced6bac5d2561229a204251028d200b85112775f035be29de3065d3",
@@ -219,7 +220,7 @@
     "data/vorarlberg/silvretta-nova.json": "d53a30a622d5c160b8e97d6c5f3d75ca1a9e9e36e9045a31ca10f1782b9cbc0d",
     "data/vorarlberg/sulzberg.json": "08d0ad3fd8b5d707e8670f74d040c9118db4e16a144ad49107e945190bcf75a5",
     "data/vorarlberg/tristenkopf.json": "4f1c641dbe83f57902928a656c8a43675ee4db5d090c8bef3911d253695e09b2",
-    "data/wetter.json": "3530044c2da735c182235b8e051d95e3267039a23a2103147009824e5f19c88f",
+    "data/wetter.json": "8cb0b4529260b1d074423bb46c5849dbf09dd431452cc03df1e98d24e10c36a5",
     "radsberg.json": "0f58be631c3e029b86d2fb1ae30bca2ff30c06d21a1f847456a05287e35c453e"
   }
 }
