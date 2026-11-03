@@ -2,3 +2,7 @@ out/
 .qa/
 .DS_Store
 node_modules/
+.dev.vars
+.dev.vars.*
+.local-cloudflare/
+.wrangler/

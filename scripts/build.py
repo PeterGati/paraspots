@@ -62,7 +62,7 @@ for target,demo_url in [('marketing',os.environ.get('PARASPOTS_ADMIN_URL','')),(
     (dest/'index.html').write_text('<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=/de/index.html"><title>PARASPOTS</title></head><body><a href="/de/index.html">Deutsch</a> · <a href="/en/index.html">English</a> · <a href="/hu/index.html">Magyar</a></body></html>')
     (dest/'robots.txt').write_text('User-agent: *\nDisallow: /\n')
     (dest/'404.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>404 · PARASPOTS</title><link rel="stylesheet" href="/site.css"><main class="wrap inner-hero"><h1>404</h1><p>Seite nicht gefunden · Page not found · Az oldal nem található</p><a class="button" href="/">PARASPOTS →</a></main></html>')
-    (dest/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()\n  Content-Security-Policy: default-src \'self\'; img-src \'self\'; script-src \'self\'; style-src \'self\'; connect-src \'none\'; frame-ancestors \'none\'; base-uri \'self\'; form-action \'none\'\n  X-Robots-Tag: noindex, nofollow\n')
+    (dest/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()\n  Content-Security-Policy: default-src \'self\'; img-src \'self\'; script-src \'self\'; style-src \'self\'; connect-src \'self\'; frame-ancestors \'none\'; base-uri \'self\'; form-action \'none\'\n  X-Robots-Tag: noindex, nofollow\n')
 shutil.copytree(ROOT/'platform/admin',OUT/'admin')
 admin_index=OUT/'admin/index.html'
 admin_index.write_text(admin_index.read_text().replace('<body>', '<body data-website-base="'+esc(os.environ.get('PARASPOTS_WEBSITE_URL','https://paraspots.at'))+'">'))
@@ -72,3 +72,11 @@ for dest in [OUT/'admin',OUT/'preview/demo']:
     shutil.copy2(ROOT/'platform/public/assets/paraspots-original.png',dest/'assets')
     shutil.copy2(OUT/'marketing/_headers',dest/'_headers')
 print('Built: out/marketing (15 pages), out/admin, out/preview (combined local review).')
+
+# Protected editor assets are public; all reads/writes require server authentication.
+for target in ['marketing','preview']:
+    dest=OUT/target/'superadmin'
+    shutil.copytree(ROOT/'platform/superadmin',dest)
+    shutil.copy2(ROOT/'backend/validation.js',dest/'validation.js')
+    with (OUT/target/'_headers').open('a') as f:
+        f.write("\n/superadmin/*\n  Cache-Control: no-store\n")
