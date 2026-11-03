@@ -56,3 +56,11 @@ Image upload/storage, offline maps, DE/EN/HU translated site content editing, cl
 Save progress/success/errors are now visible beside the action buttons at the bottom of long forms. Successful save feedback includes server-save time and distinguishes first unpublished draft, pending published changes and an already published version. Busy controls prevent repeated submissions; error feedback retains unsaved edits. Schöckl fixture validates 3 launch direction groups and 3 landing points. Browser tests cover feedback visibility at 390/1440 widths and a failed save without losing edits.
 
 Airspace inputs have been removed from the editor and new-record template. Original imported fields remain preserved internally for lossless export; no app airspace section is rendered. Original source files are not rewritten. These follow-up editor changes are local review changes until explicitly deployed; existing public admin is the earlier version.
+
+## Direction picker — 2026-11-03
+
+The editor uses eight checkbox choices with German and Hungarian names, an immediate SVG sector preview and an expandable JSON example. Canonical values are N, NO, O, SO, S, SW, W, NW. The same picker serves region-level windDirections and per-launch launchDirections, with separate explanations of scope. No arbitrary direction text is accepted. Import errors identify the field, the unsupported value and an example such as ["O","SO","S"]. Repeated entries are rejected. Empty lists mean unknown/no supplied direction, never all directions.
+
+The compass retains original website colours (#cfe8ff and #5fd12f), fixed north-up orientation and 45-degree sectors centred on each heading. A shared app CustomPainter implements the equivalent logic. The web direction preview and the app read the same canonical arrays. Green means a recorded launch direction; it is not a live wind measurement.
+
+Seven backend/validation tests pass. Browser QA at 390 and 1440px covers checkbox preview, separate per-launch state, canonical saving and invalid-import guidance. App tests include pixel checks at the 360/0-degree north boundary, O/SO/S, N/NW and the empty case, plus screen-reader labels. UI source remains an adaptation of the preserved app design; original legacy files have not been changed.

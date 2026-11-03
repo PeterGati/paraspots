@@ -15,7 +15,14 @@ export function validateSite(d) {
    else for(const [k,max] of [['lat',90],['lon',180]]){let v=p.coordinates[k];if(v!=null&&(typeof v!=='number'||!Number.isFinite(v)||Math.abs(v)>max)) errors.push(`${path}.${k}: hibás koordináta.`);}
   }
   for(const k of ['startHeight','heightDifference','talHeight']) if(p[k]!=null&&(typeof p[k]!=='number'||!Number.isFinite(p[k]))) errors.push(`${path}.${k}: szám szükséges.`);
-  for(const k of ['windDirections','launchDirections']) if(p[k]!=null&&(!Array.isArray(p[k])||p[k].some(x=>!directions.includes(x)))) errors.push(`${path}.${k}: N, NO, O, SO, S, SW, W, NW irányok használhatók.`);
+  for(const k of ['windDirections','launchDirections']) if(p[k]!=null){
+   if(!Array.isArray(p[k]))errors.push(`${path}.${k}: irányok listája szükséges, például ["O","SO","S"].`);
+   else {
+    const bad=p[k].filter(x=>!directions.includes(x));
+    if(bad.length)errors.push(`${path}.${k}: ismeretlen jelölés: ${bad.map(x=>JSON.stringify(x)).join(', ')}. Használható: N, NO, O, SO, S, SW, W, NW. O = Ost (kelet), NO = Nordost (északkelet). Példa: ["O","SO","S"].`);
+    if(new Set(p[k]).size!==p[k].length)errors.push(`${path}.${k}: minden irány csak egyszer szerepelhet.`);
+   }
+  }
   for(const k of ['name','description','difficulty','windSensitivity','approachDescription','webcam']) if(p[k]!=null&&typeof p[k]!=='string') errors.push(`${path}.${k}: szöveg szükséges.`);
  }
  point(d,'starthely');

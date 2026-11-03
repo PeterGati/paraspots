@@ -1,4 +1,5 @@
 import {directions,validateSite,importWarnings} from './validation.js';
+import {directionEditor} from './directions.js';
 const $=id=>document.getElementById(id),clone=x=>JSON.parse(JSON.stringify(x));
 let records=[],current=null,selected=null,dirty=false,busy=false;
 const labels={region:'Régió azonosítója',site:'Starthely azonosítója',name:'Név',coordinates:'Koordináták',lat:'Szélesség',lon:'Hosszúság',talHeight:'Völgy magassága (m)',operator:'Üzemeltető / egyesület',url:'Weboldal',phone:'Telefonszám',access:'Megközelítés',car:'Autóval',publicTransport:'Tömegközlekedéssel',hikeAndFly:'Hike & Fly',cableCar:'Felvonóval',parking:'Parkolás',flightCharacteristics:'Repülési lehetőségek',soaring:'Soaring',thermal:'Termik',crossCountry:'Távrepülés',windDirections:'Startirányok – területi összesítés',webcam:'Webkamera URL',approachDescription:'Megközelítés leírása',description:'Leírás',siteRatings:'Értékelések',overallRating:'Összesített értékelés',thermalRating:'Termik értékelése',startpunkte:'Startpontok',landeplaetze:'Leszállóhelyek',startHeight:'Startmagasság (m)',heightDifference:'Szintkülönbség (m)',launchDirections:'Startirányok',difficulty:'Nehézség',windSensitivity:'Szélérzékenység',startRating:'Start értékelése'};
@@ -53,8 +54,7 @@ function field(parent,key,value,path){
  const label=element('label',title);
  let input;
  if(['windDirections','launchDirections'].includes(key)){
-  input=element('div',null,'direction-set');input.dataset.type='directions';
-  for(const dir of directions){const l=element('label');const check=element('input');check.type='checkbox';check.value=dir;check.checked=(value||[]).includes(dir);l.append(check,document.createTextNode(dir));input.append(l);}
+  const control=directionEditor(value||[],title,path,key);parent.append(control);return;
  }else if(typeof value==='boolean'){label.className='check-label';input=element('input');input.type='checkbox';input.checked=value;input.dataset.type='boolean';}
  else if(numeric.has(key)){input=element('input');input.type='number';input.step='any';input.value=value??'';input.dataset.type='number';}
  else if(Array.isArray(value)){input=element('textarea');input.value=JSON.stringify(value,null,2);input.dataset.type='json';label.className='wide';}
