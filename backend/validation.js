@@ -12,7 +12,7 @@ export function validateSite(d) {
   if(!p||typeof p!=='object'||Array.isArray(p)){errors.push(`${path}: hibás adat.`);return;}
   if(p.coordinates!=null){
    if(typeof p.coordinates!=='object'||Array.isArray(p.coordinates)) errors.push(`${path}: hibás koordináta.`);
-   else for(const [k,max] of [['lat',90],['lon',180]]){let v=p.coordinates[k];if(v!=null&&(typeof v!=='number'||!Number.isFinite(v)||Math.abs(v)>max)) errors.push(`${path}.${k}: hibás koordináta.`);}
+   else for(const [k,max] of [['lat',90],['lon',180]]){let v=p.coordinates[k];if(v!=null&&(typeof v!=='number'||!Number.isFinite(v)||Math.abs(v)>max)) errors.push(`${path}.coordinates.${k}: WGS84 tizedes fokot adj meg számként (például ${k==='lat'?'47.20083':'15.47583'}), −${max} és ${max} között.`);}
   }
   for(const k of ['startHeight','heightDifference','talHeight']) if(p[k]!=null&&(typeof p[k]!=='number'||!Number.isFinite(p[k]))) errors.push(`${path}.${k}: szám szükséges.`);
   for(const k of ['windDirections','launchDirections']) if(p[k]!=null){

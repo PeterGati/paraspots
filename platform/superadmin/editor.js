@@ -1,5 +1,6 @@
 import {directions,validateSite,importWarnings} from './validation.js';
 import {directionEditor} from './directions.js';
+import {coordinateEditor} from './coordinates.js';
 const $=id=>document.getElementById(id),clone=x=>JSON.parse(JSON.stringify(x));
 let records=[],current=null,selected=null,dirty=false,busy=false;
 const labels={region:'Régió azonosítója',site:'Starthely azonosítója',name:'Név',coordinates:'Koordináták',lat:'Szélesség',lon:'Hosszúság',talHeight:'Völgy magassága (m)',operator:'Üzemeltető / egyesület',url:'Weboldal',phone:'Telefonszám',access:'Megközelítés',car:'Autóval',publicTransport:'Tömegközlekedéssel',hikeAndFly:'Hike & Fly',cableCar:'Felvonóval',parking:'Parkolás',flightCharacteristics:'Repülési lehetőségek',soaring:'Soaring',thermal:'Termik',crossCountry:'Távrepülés',windDirections:'Startirányok – területi összesítés',webcam:'Webkamera URL',approachDescription:'Megközelítés leírása',description:'Leírás',siteRatings:'Értékelések',overallRating:'Összesített értékelés',thermalRating:'Termik értékelése',startpunkte:'Startpontok',landeplaetze:'Leszállóhelyek',startHeight:'Startmagasság (m)',heightDifference:'Szintkülönbség (m)',launchDirections:'Startirányok',difficulty:'Nehézség',windSensitivity:'Szélérzékenység',startRating:'Start értékelése'};
@@ -43,6 +44,7 @@ function collect(){
 }
 function field(parent,key,value,path){
  const title=labels[key]||key;
+ if(key==='coordinates'){parent.append(coordinateEditor(value,path));return;}
  if(['startpunkte','landeplaetze'].includes(key)){
   const section=element('fieldset');section.append(element('legend',title));
   (value||[]).forEach((p,i)=>{const entry=element('div',null,'entry');entry.append(element('h3',`${i+1}. ${p.name||title}`));object(entry,p,[...path,i]);const del=element('button','Eltávolítás');del.type='button';del.onclick=()=>{if(!confirm('Eltávolítod ezt a pontot a piszkozatból?'))return;current=collect();get(current,path).splice(i,1);dirty=true;renderFields();};entry.append(del);section.append(entry);});
@@ -89,7 +91,8 @@ $('import').onchange=e=>action(async()=>{
  if(dirty&&!confirm('Elveted a nem mentett módosításokat?'))return;
  const row=records.find(x=>x.id===data.region+'/'+data.site);
  if(row&&!confirm('Ez a starthely már létezik. A fájl adatait betöltöd a szerkesztőbe? Mentésig semmi sem változik.'))return;
- data.startpunkte??=[];data.landeplaetze??=[];data.windDirections??=[];
+ data.startpunkte??=[];data.landeplaetze??=[];data.windDirections??=[];data.coordinates??={lat:null,lon:null};
+ for(const point of [...data.startpunkte,...data.landeplaetze])point.coordinates??={lat:null,lon:null};
  open(data,row);dirty=true;$('publish').disabled=true;message('JSON betöltve előnézetbe. Ellenőrizd, majd mentsd piszkozatként.');
 });
 $('site-form').addEventListener('input',()=>{dirty=true;updateControls();message('Nem mentett módosítások. Az app tartalma még nem változott.');});

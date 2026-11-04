@@ -28,14 +28,14 @@ legacy=[n for n in names if n.endswith(('.json','.geojson'))]
 manifest={}
 for name in legacy:
     # Preserve the scheduled weather update already present upstream before this work.
-    reference='c7390496bfcec83e47d5f3f0a02edafc280beeb4' if name=='data/wetter.json' else base
+    reference='416a413bdff947aa74a40e85014059ca72aeab11' if name=='data/wetter.json' else base
     original=subprocess.check_output(['git','show',f'{reference}:{name}'],cwd=ROOT)
     actual=(ROOT/name).read_bytes()
     assert original==actual,f'Changed legacy data: {name}'
     manifest[name]=hashlib.sha256(actual).hexdigest()
 source=Path('/Users/petergati/Downloads/PARASPOTS_DESIGN_HANDOFF/assets/paraspots-original.png')
 if source.exists(): assert source.read_bytes()==(ROOT/'platform/public/assets/paraspots-original.png').read_bytes()
-(ROOT/'docs/legacy-data-sha256.json').write_text(json.dumps({'base_commit':base,'upstream_weather_commit':'c7390496bfcec83e47d5f3f0a02edafc280beeb4','files':manifest},indent=2)+'\n')
+(ROOT/'docs/legacy-data-sha256.json').write_text(json.dumps({'base_commit':base,'upstream_weather_commit':'416a413bdff947aa74a40e85014059ca72aeab11','files':manifest},indent=2)+'\n')
 assert not (ROOT/'out/marketing/data').exists()
 assert not (ROOT/'out/marketing/demo').exists()
 print(f'PASS: {count} local asset/link references; {len(legacy)-1} original JSON/GeoJSON files unchanged + upstream scheduled weather preserved; original emblem byte-identical; separate deployment outputs.')

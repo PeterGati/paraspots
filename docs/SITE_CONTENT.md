@@ -64,3 +64,11 @@ The editor uses eight checkbox choices with German and Hungarian names, an immed
 The compass retains original website colours (#cfe8ff and #5fd12f), fixed north-up orientation and 45-degree sectors centred on each heading. A shared app CustomPainter implements the equivalent logic. The web direction preview and the app read the same canonical arrays. Green means a recorded launch direction; it is not a live wind measurement.
 
 Seven backend/validation tests pass. Browser QA at 390 and 1440px covers checkbox preview, separate per-launch state, canonical saving and invalid-import guidance. App tests include pixel checks at the 360/0-degree north boundary, O/SO/S, N/NW and the empty case, plus screen-reader labels. UI source remains an adaptation of the preserved app design; original legacy files have not been changed.
+
+## Coordinate guidance — 2026-11-04
+
+Each root/launch/landing coordinate group now presents separate WGS84 decimal-degree numeric fields: lat (latitude) then lon (longitude). The guide explains decimal points in JSON, signed values, valid ranges and the exclusion of DMS strings or direction letters. A complete valid pair enables a standard Google Maps search URL with api=1 and query=latitude,longitude; this shows the point without inventing a driving route to a launch. It opens only when the user clicks the link. Empty/invalid pairs never produce a map link. Values are not rounded. Zero is a valid coordinate. Partial legacy coordinates remain optional and visibly incomplete.
+
+This format matches the planned native GPS location fields; it does not imply that device geolocation is implemented. User-provided records are not rewritten by the guide. Public API/storage schema is unchanged. Validation errors for text, DMS and range failures now include a decimal example. Ten backend/helper tests passed, plus 390/1440px browser checks of pair order, incomplete/out-of-range suppression and guidance. No production content was changed during these checks.
+
+References: https://developers.google.com/maps/documentation/urls/get-started ; https://support.google.com/maps/answer/18539 ; https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d .
