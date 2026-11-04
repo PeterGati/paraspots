@@ -1,3 +1,4 @@
+import {photoPath,uploadPhoto,servePhoto} from './media.js';
 import { validateSite } from './validation.js';
 const encoder=new TextEncoder();
 const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'};
@@ -18,6 +19,7 @@ export async function handle(request,env){
 async function route(request,env){
  const url=new URL(request.url),path=url.pathname.replace(/\/$/,'');
  if(!env.SITE_DB)return reply({error:'A központi adattároló még nincs beállítva.'},503);
+ if(photoPath.test(path)&&['GET','HEAD'].includes(request.method))return servePhoto(request,env.SITE_PHOTOS,path);
  const db=env.SITE_DB,now=Date.now();
  const origin=request.headers.get('Origin');
  if(!['GET','HEAD'].includes(request.method)&&origin!==url.origin)return reply({error:'Tiltott kérés.'},403);
@@ -52,6 +54,7 @@ async function route(request,env){
  const token=request.headers.get('Cookie')?.match(/(?:^|;\s*)ps_admin=([^;]+)/)?.[1];
  const session=token?await db.prepare('SELECT expires FROM sessions WHERE token_hash=?').bind(await hash(token)).first():null;
  if(!session||session.expires<=now)return reply({error:'Bejelentkezés szükséges.'},401);
+ if(path==='/api/admin/media'&&request.method==='POST')return uploadPhoto(request,env.SITE_PHOTOS);
  if(path==='/api/logout'&&request.method==='POST'){
   await db.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await hash(token)).run();
   return reply({ok:true},200,{'Set-Cookie':'ps_admin=; Path=/api; HttpOnly; SameSite=Strict; Max-Age=0'});

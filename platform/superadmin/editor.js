@@ -1,3 +1,4 @@
+import {preparePhoto} from './photos.js';
 import {directions,validateSite,importWarnings} from './validation.js';
 import {directionEditor} from './directions.js';
 import {coordinateEditor} from './coordinates.js';
@@ -13,6 +14,7 @@ function updateControls(){
  $('publish').disabled=busy||!selected||dirty;$('unpublish').disabled=busy||!selected?.published;
  $('export').disabled=busy||!current;
  for(const id of ['new','import','reload','logout'])$(id).disabled=busy;
+ for(const button of $('records').querySelectorAll('button'))button.disabled=busy;
  $('fields').inert=busy;
 }
 function savedSummary(row){
@@ -65,7 +67,31 @@ function field(parent,key,value,path){
  if(selected&&['site','region'].includes(key))input.disabled=true;
  if(input.tagName==='DIV'){label.append(input);}else{input.setAttribute('aria-label',title);label.append(input);}parent.append(label);
 }
-function object(parent,data,path=[]){const grid=element('div',null,'grid');for(const [key,value]of Object.entries(data)){if(key==='airspaces')continue;if(value&&typeof value==='object'&&!Array.isArray(value)||['startpunkte','landeplaetze','windDirections','launchDirections'].includes(key)){const wide=element('div',null,'wide');field(wide,key,value,[...path,key]);grid.append(wide);}else field(grid,key,value,[...path,key]);}parent.append(grid);}
+function photoEditor(data,path){
+ const section=element('fieldset',null,'photo-editor');
+ const isRoot=path.length===0;
+ section.append(element('legend',isRoot?'Közös starthelyi / egyesületi fotó':'A pont saját fotója'));
+ const inherited=!isRoot&&current.photo;
+ const src=data.photo||inherited||'/assets/alpine-hero.png';
+ const preview=element('img');preview.src=src;preview.alt=isRoot?'Közös fotó előnézete':'Pontfotó előnézete';preview.loading='lazy';
+ preview.onerror=()=>{preview.onerror=null;preview.src=inherited&&src!==inherited?inherited:'/assets/alpine-hero.png';};section.append(preview);
+ section.append(element('p',data.photo?'Saját fotó van beállítva.':inherited?'A közös starthelyi / egyesületi fotót örökli.':'A jelenlegi általános képet használja.'));
+ const label=element('label',data.photo?'Fotó cseréje':'Fotó feltöltése');
+ const input=element('input');input.type='file';input.accept='image/jpeg,image/png,image/webp';input.setAttribute('aria-label',isRoot?'Közös fotó feltöltése':`Pontfotó feltöltése: ${data.name||'új pont'}`);
+ input.onchange=()=>{const file=input.files[0];if(!file)return;action(async()=>{
+  current=collect();message('Kép előkészítése és feltöltése…');
+  const blob=await preparePhoto(file);
+  const result=await api('/api/admin/media',{method:'POST',headers:{'Content-Type':'image/jpeg'},body:blob});
+  set(current,[...path,'photo'],result.photo);dirty=true;renderFields();message('✓ Fotó feltöltve. Mentsd a piszkozatot, majd tedd közzé, hogy az appban is megjelenjen.');
+ });};label.append(input);section.append(label);
+ if(data.photo){const remove=element('button',isRoot?'Közös fotó elhagyása':'Saját fotó elhagyása – közös kép használata');remove.type='button';remove.onclick=()=>{current=collect();set(current,[...path,'photo'],null);dirty=true;renderFields();message('Fotó elhagyva a szerkesztésben. Mentsd, majd tedd közzé.');};section.append(remove);}
+ section.append(element('small','JPEG, PNG, WebP · automatikus kicsinyítés (legfeljebb 2000 px). A telefonos helyadatokat nem küldjük tovább. Saját pontfotó → közös fotó → általános kép.'));
+ return section;
+}
+function object(parent,data,path=[]){
+ if(path.length===0||(path.length===2&&['startpunkte','landeplaetze'].includes(path[0])))parent.append(photoEditor(data,path));
+ const grid=element('div',null,'grid');for(const [key,value]of Object.entries(data)){if(['airspaces','photo'].includes(key))continue;if(value&&typeof value==='object'&&!Array.isArray(value)||['startpunkte','landeplaetze','windDirections','launchDirections'].includes(key)){const wide=element('div',null,'wide');field(wide,key,value,[...path,key]);grid.append(wide);}else field(grid,key,value,[...path,key]);}parent.append(grid);
+}
 function renderFields(){
  $('fields').replaceChildren();object($('fields'),current);$('title').textContent=current.name||'Új starthely';
  $('state').textContent=selected?.published?'Van közzétett változat':'Piszkozat';
@@ -75,7 +101,7 @@ function renderFields(){
 function open(data,row=null){current=clone(data);selected=row;dirty=!row;$('empty').hidden=true;$('editor').hidden=false;renderFields();message(row?savedSummary(row):'Még nincs elmentve. Ellenőrizd az adatokat, majd mentsd piszkozatként.');}
 async function load(keep=false){
  const data=await api('/api/admin/sites');records=data.sites;$('records').replaceChildren();
- for(const row of records){const btn=element('button',row.draft.name,'record');btn.append(element('small',row.published?'Közzétett + szerkeszthető piszkozat':'Piszkozat'));btn.onclick=()=>{if(dirty&&!confirm('Elveted a nem mentett módosításokat?'))return;open(row.draft,row);};$('records').append(btn);}
+ for(const row of records){const btn=element('button',row.draft.name,'record');btn.append(element('small',row.published?'Közzétett + szerkeszthető piszkozat':'Piszkozat'));btn.onclick=()=>{if(busy)return;if(dirty&&!confirm('Elveted a nem mentett módosításokat?'))return;open(row.draft,row);};$('records').append(btn);}
  if(keep&&current){const row=records.find(x=>x.id===current.region+'/'+current.site);if(row)open(row.draft,row);}
 }
 async function action(fn){if(busy)return;busy=true;updateControls();message('Művelet folyamatban…');try{await fn();}catch(e){message(e.message,true);}finally{busy=false;updateControls();}}

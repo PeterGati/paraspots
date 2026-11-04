@@ -8,5 +8,11 @@
       "database_name": "paraspots-content",
       "database_id": "7ec9d477-13a8-4292-8e49-9ce55a1f663d"
     }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "SITE_PHOTOS",
+      "bucket_name": "paraspots-photos"
+    }
   ]
 }

@@ -10,6 +10,7 @@ export function validateSite(d) {
 
  function point(p,path){
   if(!p||typeof p!=='object'||Array.isArray(p)){errors.push(`${path}: hibás adat.`);return;}
+  if(p.photo!=null&&(typeof p.photo!=='string'||!/^\/api\/media\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(p.photo)))errors.push(`${path}.photo: saját képtárból feltöltött kép szükséges.`);
   if(p.coordinates!=null){
    if(typeof p.coordinates!=='object'||Array.isArray(p.coordinates)) errors.push(`${path}: hibás koordináta.`);
    else for(const [k,max] of [['lat',90],['lon',180]]){let v=p.coordinates[k];if(v!=null&&(typeof v!=='number'||!Number.isFinite(v)||Math.abs(v)>max)) errors.push(`${path}.coordinates.${k}: WGS84 tizedes fokot adj meg számként (például ${k==='lat'?'47.20083':'15.47583'}), −${max} és ${max} között.`);}
