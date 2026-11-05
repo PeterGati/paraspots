@@ -112,7 +112,8 @@ function object(parent,data,path=[]){
 function renderFields(){
  $('fields').replaceChildren();object($('fields'),current);$('title').textContent=current.name||'Új starthely';
  $('state').textContent=selected?.published?'Van közzétett változat':'Piszkozat';
- $('warnings').textContent=[...importWarnings(current),...missingTranslations(current)].join('\n');$('preview').textContent=JSON.stringify(current,null,2);
+ const missing=missingTranslations(current);
+ $('warnings').textContent=[...importWarnings(current),...(missing.length?[`Hiányzó fordítások: ${missing.length} mező. Az üres EN/HU mezőknél a német tartalom jelenik meg; a hiányokat a mezőknél is jelezzük.`]:[])].join('\n');$('preview').textContent=JSON.stringify(current,null,2);
  updateControls();
 }
 function open(data,row=null){current=migrateContent(clone(data));selected=row;dirty=!row;$('empty').hidden=true;$('editor').hidden=false;renderFields();message(row?savedSummary(row):'Még nincs elmentve. Ellenőrizd az adatokat, majd mentsd piszkozatként.');}

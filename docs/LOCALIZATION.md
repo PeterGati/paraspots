@@ -40,3 +40,11 @@ Reproduce browser→app integration:
 4. In the Flutter repository: `flutter test test/admin_integration_test.dart --dart-define=PARASPOTS_ALLOW_LOCAL_HTTP=true --dart-define=PARASPOTS_TEST_ADMIN_URL=http://127.0.0.1:4175/api/sites`.
 
 The server must be restarted between full browser test runs. Production content was not changed by these tests. Credentials in the QA server are test-only and cannot authenticate to production.
+
+## Liga branding and final checks
+
+The user-supplied `ligalogo_klein.png` is copied without image edits to `platform/public/assets/liga-logo.png`. Header and footer logos use white tiles to preserve black-letter contrast, and both link to `https://www.paragleiter.org/` in a new tab. The app logo remains non-interactive; a separate Liga module is deferred. Header/menu layout was checked at 1440, 1024, 850, 390 and 320 px in DE/EN/HU.
+
+The optional database normalization was additionally run on an in-memory copy of the actual production SQL export: both existing records retained every original value and publication state, exact backup rows were verified, and a second run made no changes. The production database itself was not migrated or edited by this test.
+
+The complete web/app local integration was rerun after the editor's missing-translation summary was shortened. 16 backend tests and the browser edit→save→publish→HTTP app refresh/offline-restart flow passed. The iPhone's language selection/persistence was confirmed by the user; the Liga build was subsequently installed in place and launched.
