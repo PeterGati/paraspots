@@ -1,3 +1,4 @@
+import {migrateContent,translatable,missingTranslations} from './localization.js';
 import {preparePhoto} from './photos.js';
 import {directions,validateSite,importWarnings} from './validation.js';
 import {directionEditor} from './directions.js';
@@ -42,10 +43,26 @@ function collect(){
   else if(value===''&&get(current,path)===null)value=null;
   set(data,path,value);
  }
+ for(const el of $('fields').querySelectorAll('[data-translation]')){
+  const {path,lang}=JSON.parse(el.dataset.translation),obj=get(data,path.slice(0,-1)),key=path.at(-1);
+  obj.translations??={};obj.translations[lang]??={};obj.translations[lang][key]=el.value;
+  if(lang==='de')obj[key]=el.value;
+ }
  return data;
 }
 function field(parent,key,value,path){
  const title=labels[key]||key;
+ if(translatable(key,value)){
+  const group=element('fieldset',null,'wide translation-fields');group.append(element('legend',title));
+  for(const [lang,name] of [['de','Deutsch'],['en','English'],['hu','Magyar']]){
+   const label=element('label',name),input=element(/description|parking|sensitivity/i.test(key)?'textarea':'input');
+   input.value=lang==='de'?(value??''):(get(current,path.slice(0,-1)).translations?.[lang]?.[key]??'');
+   input.dataset.translation=JSON.stringify({path,lang});input.setAttribute('aria-label',`${title} · ${name}`);
+   const hint=element('small');const update=()=>{hint.textContent=lang!=='de'&&!input.value.trim()?'Hiányzó fordítás · a német szöveg jelenik meg.':'';};update();input.addEventListener('input',update);
+   label.append(input,hint);group.append(label);
+  }
+  parent.append(group);return;
+ }
  if(key==='coordinates'){parent.append(coordinateEditor(value,path));return;}
  if(['startpunkte','landeplaetze'].includes(key)){
   const section=element('fieldset');section.append(element('legend',title));
@@ -90,15 +107,15 @@ function photoEditor(data,path){
 }
 function object(parent,data,path=[]){
  if(path.length===0||(path.length===2&&['startpunkte','landeplaetze'].includes(path[0])))parent.append(photoEditor(data,path));
- const grid=element('div',null,'grid');for(const [key,value]of Object.entries(data)){if(['airspaces','photo'].includes(key))continue;if(value&&typeof value==='object'&&!Array.isArray(value)||['startpunkte','landeplaetze','windDirections','launchDirections'].includes(key)){const wide=element('div',null,'wide');field(wide,key,value,[...path,key]);grid.append(wide);}else field(grid,key,value,[...path,key]);}parent.append(grid);
+ const grid=element('div',null,'grid');for(const [key,value]of Object.entries(data)){if(['airspaces','photo','translations'].includes(key))continue;if(value&&typeof value==='object'&&!Array.isArray(value)||['startpunkte','landeplaetze','windDirections','launchDirections'].includes(key)){const wide=element('div',null,'wide');field(wide,key,value,[...path,key]);grid.append(wide);}else field(grid,key,value,[...path,key]);}parent.append(grid);
 }
 function renderFields(){
  $('fields').replaceChildren();object($('fields'),current);$('title').textContent=current.name||'Új starthely';
  $('state').textContent=selected?.published?'Van közzétett változat':'Piszkozat';
- $('warnings').textContent=importWarnings(current).join('\n');$('preview').textContent=JSON.stringify(current,null,2);
+ $('warnings').textContent=[...importWarnings(current),...missingTranslations(current)].join('\n');$('preview').textContent=JSON.stringify(current,null,2);
  updateControls();
 }
-function open(data,row=null){current=clone(data);selected=row;dirty=!row;$('empty').hidden=true;$('editor').hidden=false;renderFields();message(row?savedSummary(row):'Még nincs elmentve. Ellenőrizd az adatokat, majd mentsd piszkozatként.');}
+function open(data,row=null){current=migrateContent(clone(data));selected=row;dirty=!row;$('empty').hidden=true;$('editor').hidden=false;renderFields();message(row?savedSummary(row):'Még nincs elmentve. Ellenőrizd az adatokat, majd mentsd piszkozatként.');}
 async function load(keep=false){
  const data=await api('/api/admin/sites');records=data.sites;$('records').replaceChildren();
  for(const row of records){const btn=element('button',row.draft.name,'record');btn.append(element('small',row.published?'Közzétett + szerkeszthető piszkozat':'Piszkozat'));btn.onclick=()=>{if(busy)return;if(dirty&&!confirm('Elveted a nem mentett módosításokat?'))return;open(row.draft,row);};$('records').append(btn);}

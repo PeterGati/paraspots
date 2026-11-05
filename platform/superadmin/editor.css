@@ -8,3 +8,4 @@
 .coordinate-help{font-size:13px;font-weight:400;color:#52657b;margin:8px 0 14px}.coordinate-map-link[aria-disabled=true]{opacity:.5;cursor:default}
 
 .photo-editor img{display:block;width:100%;max-width:520px;height:190px;object-fit:cover;border-radius:14px;margin-bottom:12px}.photo-editor small{display:block;margin-top:12px;line-height:1.5}.photo-editor input[type=file]{max-width:100%;background:#fff}.photo-editor button{margin-top:10px}
+.translation-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.translation-fields label{min-width:0}.translation-fields small{color:#9b4a00;display:block;min-height:2.5em}.translation-fields textarea{min-height:130px}@media(max-width:760px){.translation-fields{grid-template-columns:1fr}}

@@ -78,5 +78,6 @@ for target in ['marketing','preview']:
     dest=OUT/target/'superadmin'
     shutil.copytree(ROOT/'platform/superadmin',dest)
     shutil.copy2(ROOT/'backend/validation.js',dest/'validation.js')
+    shutil.copy2(ROOT/'backend/localization.js',dest/'localization.js')
     with (OUT/target/'_headers').open('a') as f:
         f.write("\n/superadmin/*\n  Cache-Control: no-store\n")

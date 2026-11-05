@@ -1,3 +1,4 @@
+import {localizedContent} from './localization.js';
 import {photoPath,uploadPhoto,servePhoto} from './media.js';
 import { validateSite } from './validation.js';
 const encoder=new TextEncoder();
@@ -46,7 +47,7 @@ async function route(request,env){
  }
  if(path==='/api/sites'&&request.method==='GET'){
   const {results}=await db.prepare('SELECT id,published,published_at FROM sites WHERE published IS NOT NULL ORDER BY id').all();
-  const sites=results.map(r=>({id:r.id,data:JSON.parse(r.published),publishedAt:r.published_at}));
+  const sites=results.map(r=>({id:r.id,data:url.searchParams.has('lang')?localizedContent(JSON.parse(r.published),['de','en','hu'].includes(url.searchParams.get('lang'))?url.searchParams.get('lang'):'de'):JSON.parse(r.published),publishedAt:r.published_at}));
   const etag='"'+await hash(JSON.stringify(sites))+'"';
   if(request.headers.get('If-None-Match')===etag)return new Response(null,{status:304,headers:{ETag:etag,'Cache-Control':'no-cache'}});
   return reply({schemaVersion:1,sites},200,{ETag:etag,'Cache-Control':'no-cache'});

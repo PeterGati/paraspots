@@ -1,3 +1,4 @@
+import {translationErrors} from './localization.js';
 export const directions = ['N','NO','O','SO','S','SW','W','NW'];
 export function validateSite(d) {
  const errors=[];
@@ -31,7 +32,7 @@ export function validateSite(d) {
   if(d[key]!=null&&!Array.isArray(d[key])) errors.push(`${key}: lista szükséges.`);
   else (d[key]||[]).forEach((p,i)=>point(p,`${key}[${i+1}]`));
  }
- return errors;
+ return [...errors,...translationErrors(d)];
 }
 export function importWarnings(d){
  const w=[];

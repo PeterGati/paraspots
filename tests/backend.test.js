@@ -47,3 +47,19 @@ test('clean Schöckl import preserves all three launches, directions and landing
  assert.deepEqual(result.startpunkte.map(p=>p.launchDirections),[['S'],['O','SO','S'],['N','NW']]);
  assert.equal(result.landeplaetze.length,3);
 });
+test('admin saves all languages, publication stays isolated, new and legacy app reads work',async()=>{
+ const app=setup();await app.login();const data=structuredClone(seed);
+ data.translations={de:{description:data.description},en:{description:'Approved English test content'},hu:{description:'Jóváhagyott magyar teszttartalom'}};
+ assert.equal((await app.req('/api/admin/sites','PUT',{data,revision:0})).status,200);
+ let row=(await app.req('/api/admin/sites')).body.sites[0];assert.equal((await app.req('/api/sites')).body.sites.length,0);
+ await app.req(`/api/admin/sites/${encodeURIComponent(row.id)}/publish`,'POST',{revision:row.revision});
+ assert.equal((await app.req('/api/sites')).body.sites[0].data.description,data.description);
+ assert.equal((await app.req('/api/sites?lang=en')).body.sites[0].data.description,data.translations.en.description);
+ assert.equal((await app.req('/api/sites?lang=hu')).body.sites[0].data.description,data.translations.hu.description);
+ assert.equal((await app.req('/api/sites?lang=de')).body.sites[0].data.description,data.description);
+ assert.equal((await app.req('/api/sites?lang=fr')).body.sites[0].data.description,data.description);
+ row=(await app.req('/api/admin/sites')).body.sites[0];data.translations.hu.description='';
+ assert.equal((await app.req('/api/admin/sites','PUT',{data,revision:row.revision})).status,200);
+ row=(await app.req('/api/admin/sites')).body.sites[0];await app.req(`/api/admin/sites/${encodeURIComponent(row.id)}/publish`,'POST',{revision:row.revision});
+ assert.equal((await app.req('/api/sites?lang=hu')).body.sites[0].data.description,data.description);
+});
