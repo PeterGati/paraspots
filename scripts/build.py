@@ -13,6 +13,16 @@ def brand():
     return '<span class="emblem"><img src="/assets/paraspots-original.png" alt=""></span><span class="wordmark">PARASPOTS<small>FLY MORE. SEARCH LESS.</small></span>'
 def liga_logo():
     return '<a class="liga-mark" href="https://www.paragleiter.org/" target="_blank" rel="noopener noreferrer"><img src="/assets/liga-logo.png" alt="Austria Paragliding Liga" width="132" height="160"></a>'
+LIGA_COPY = {
+    'de': ('Gemeinsam fliegen. Weiter kommen.', 'Wettkampf, Weiterentwicklung und Gemeinschaft im österreichischen Gleitschirmsport.', 'Die Liga entdecken'),
+    'en': ('Fly together. Go further.', 'Competition, progress and community in Austrian paragliding.', 'Discover the Liga'),
+    'hu': ('Együtt repülünk. Messzebbre jutunk.', 'Versenyzés, fejlődés és közösség az osztrák siklóernyőzésben.', 'Ismerd meg a Ligát'),
+}
+def liga_strip(lang, footer=False):
+    title, description, link = LIGA_COPY[lang]
+    cls = 'liga-strip liga-strip-footer' if footer else 'liga-strip'
+    inner = 'liga-strip-inner' if footer else 'wrap liga-strip-inner'
+    return f'<section class="{cls}" aria-label="Österreichische Liga Paragleiten"><div class="{inner}">{liga_logo()}<div class="liga-copy"><p class="liga-eyebrow">ÖSTERREICHISCHE LIGA PARAGLEITEN</p><h2>{title}</h2><p class="liga-description">{description}</p><a class="liga-link" href="https://www.paragleiter.org/" target="_blank" rel="noopener noreferrer">{link} ↗</a></div></div></section>'
 def buttons(d):
     return f'<div class="actions"><a class="button" href="pilots.html">{d["app"]} <span aria-hidden="true">↗</span></a><a class="button secondary" href="clubs.html">{d["clubs"]} <span aria-hidden="true">→</span></a></div>'
 def card(c,href,d):
@@ -35,7 +45,7 @@ def preview(d):
     return f'<div class="phone"><img src="/assets/app-start.png" alt="{d["screenAlt"]}" width="1170" height="2532" loading="lazy"></div>'
 def page_content(p,d,lang,demo_url):
     if p=='index':
-        return f'''<section class="hero"><div class="hero-inner wrap"><div class="hero-copy"><p class="eyebrow">{d['eyebrow']}</p><h1>{d['headline']}</h1><div class="red-line"></div><p class="hero-lead">{d['intro']}</p>{buttons(d)}<p class="stage"><span></span>{d['stage']}</p></div><div class="hero-aside"><span class="altitude">PARASPOTS<br><strong>PLATFORM</strong></span><p>{d['heroNote']}</p></div></div><div class="hero-bottom wrap"><span>{d['scroll']}</span><span aria-hidden="true">↓</span></div></section>
+        return f'''<section class="hero"><div class="hero-inner wrap"><div class="hero-copy"><p class="eyebrow">{d['eyebrow']}</p><h1>{d['headline']}</h1><div class="red-line"></div><p class="hero-lead">{d['intro']}</p>{buttons(d)}<p class="stage"><span></span>{d['stage']}</p></div><div class="hero-aside"><span class="altitude">PARASPOTS<br><strong>PLATFORM</strong></span><p>{d['heroNote']}</p></div></div><div class="hero-bottom wrap"><span>{d['scroll']}</span><span aria-hidden="true">↓</span></div></section>{liga_strip(lang)}
 <section class="wrap intro-section"><p class="eyebrow">PARASPOTS</p><div class="split"><h2>{d['homeTitle']}</h2><p class="large-text">{d['homeText']}</p></div><div class="two-cards">{card(d['pilotCard'],'pilots.html',d)}{card(d['clubCard'],'clubs.html',d)}</div></section>
 <section class="app-section"><div class="wrap split app-grid"><div><p class="eyebrow">PARASPOTS 0.1</p><h2>{d['preview']}</h2><p>{d['previewText']}</p><a class="button" href="pilots.html">{d['app']} ↗</a></div>{preview(d)}</div></section>{download(d)}'''
     if p=='pilots':
@@ -53,7 +63,7 @@ def page_content(p,d,lang,demo_url):
 def render(p,d,lang,demo_url):
     nav=''.join(f'<a href="{s}.html"'+(' aria-current="page"' if s==p else '')+f'>{n}</a>' for s,n in zip(PAGES,d['nav']))
     langs=''.join(f'<a href="/{l}/{p}.html" lang="{l}" hreflang="{l}" aria-label="{LABELS[l]}"'+(' aria-current="true"' if l==lang else '')+f'>{l.upper()}</a>' for l in DATA)
-    return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{d['nav'][PAGES.index(p)]} · PARASPOTS</title><meta name="description" content="{esc(d['intro'])}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#102740"><link rel="stylesheet" href="/site.css"><script src="/site.js" defer></script></head><body><a class="skip" href="#main">{d['skip']}</a><header class="site-header"><div class="public-demo-banner">{d["demoBanner"]}</div><div class="header-inner wrap"><a class="brand" href="index.html" aria-label="PARASPOTS · {d['nav'][0]}">{brand()}</a>{liga_logo()}<button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">{d['menu']} ☰</button><nav id="main-nav" aria-label="{d['menu']}">{nav}</nav><nav class="languages" aria-label="{d['lang']}">{langs}</nav></div></header><main id="main">{page_content(p,d,lang,demo_url)}</main><footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a class="brand" href="index.html">{brand()}</a>{liga_logo()}</div><p>{d['footer']}</p><a href="contact.html">{d['contactButton']} ↗</a></div><div class="footer-bottom"><span>{d['copyright']}</span><span>DE · EN · HU</span></div><p class="legal-note">{d['legal']}</p></div></footer></body></html>'''
+    return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{d['nav'][PAGES.index(p)]} · PARASPOTS</title><meta name="description" content="{esc(d['intro'])}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#102740"><link rel="stylesheet" href="/site.css"><script src="/site.js" defer></script></head><body><a class="skip" href="#main">{d['skip']}</a><header class="site-header"><div class="public-demo-banner">{d["demoBanner"]}</div><div class="header-inner wrap"><a class="brand" href="index.html" aria-label="PARASPOTS · {d['nav'][0]}">{brand()}</a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">{d['menu']} ☰</button><nav id="main-nav" aria-label="{d['menu']}">{nav}</nav><nav class="languages" aria-label="{d['lang']}">{langs}</nav></div></header><main id="main">{page_content(p,d,lang,demo_url)}</main><footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a class="brand" href="index.html">{brand()}</a></div><p>{d['footer']}</p><a href="contact.html">{d['contactButton']} ↗</a></div>{liga_strip(lang, footer=True)}<div class="footer-bottom"><span>{d['copyright']}</span><span>DE · EN · HU</span></div><p class="legal-note">{d['legal']}</p></div></footer></body></html>'''
 
 if OUT.exists(): shutil.rmtree(OUT)
 for target,demo_url in [('marketing',os.environ.get('PARASPOTS_ADMIN_URL','')),('preview','/demo/')]:
