@@ -1,3 +1,4 @@
+import {addMemberships} from './membership.js';
 import {clubRoute, publicClubs, siteRelations} from './clubs.js';
 import {localizedContent} from './localization.js';
 import {photoPath,uploadPhoto,servePhoto} from './media.js';
@@ -58,6 +59,7 @@ async function route(request,env){
     const assigned=maps.filter(m=>m.site_id===site.id);
     if(assigned.length) site.data.regionalMaps=assigned;
   }
+  await addMemberships(db,sites,owners);
   const etag='"'+await hash(JSON.stringify({sites,clubs}))+'"';
   if(request.headers.get('If-None-Match')===etag)return new Response(null,{status:304,headers:{ETag:etag,'Cache-Control':'no-cache'}});
   return reply({schemaVersion:1,sites,clubs},200,{ETag:etag,'Cache-Control':'no-cache'});

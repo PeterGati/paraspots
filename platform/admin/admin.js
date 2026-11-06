@@ -1,3 +1,4 @@
+import {dayPanel,saveDay} from './day.js';
 const titles=['Übersicht','Vereinsprofil','Fluggebiete','Tagesmitgliedschaft','QR-Aufkleber','Warnungen & Sperren','Luftraum & Naturschutz','Veranstaltungen','Webcams & Medien','Tandemflüge','Mitglieder & Zugänge','Module & Einstellungen'];
 const sections={1:'description',5:'warnings',7:'events',8:'webcams',9:'tandem'};
 const $=id=>document.getElementById(id);
@@ -35,6 +36,7 @@ function render(){
     html=own.map(s=>`<form data-save="site" data-site="${esc(s.id)}"><h3>${esc(s.draft.name)}</h3>${field('name','Gebietsname',s.draft.name,'text','required')}<label>Beschreibung · DE<textarea name="description">${esc(s.draft.description)}</textarea></label><button>Entwurf speichern</button><p>Die Freigabe erfolgt im Superadmin.</p></form><details><summary>Alle Gebietsdaten bearbeiten</summary><form data-save="full-site" data-site="${esc(s.id)}"><label>Vollständiger Gebietsentwurf (JSON)<textarea name="draft" required>${esc(JSON.stringify(s.draft,null,2))}</textarea></label><button>Entwurf speichern</button></form></details>`).join('')||'<p>Noch kein Fluggebiet zugeordnet.</p>';
     html+=`<form data-save="new-site"><h3>Fluggebiet anlegen</h3>${field('name','Gebietsname','','text','required')}${field('region','Regionskürzel','','text','required')}${field('slug','Gebietskürzel','','text','required')}<button>Entwurf anlegen</button></form>`;
     if(model.superuser)html+=`<form data-save="owner"><label>Fluggebiet zu diesem Verein zuordnen<select name="site" required>${sites.filter(s=>s.club_id!==club.id).map(s=>`<option value="${esc(s.id)}">${esc(s.draft.name)} · ${esc(s.club_id||'nicht zugeordnet')}</option>`).join('')}</select></label><button>Zuordnen</button></form>`;
+  } else if(view===3||view===4){html=dayPanel(model,view,{esc,field});
   } else if(view===6) {
     html='<p>Vorbereitete Satellitenkarte in sRGB mit eingezeichneten AMSL-Höhen, Grenzen und Schutzzonen hochladen. Empfohlen: 6000 × 4000 Pixel, bei großen Karten bis 8192 Pixel an der langen Seite.</p>';
     html+=`<form data-save="map">${field('title','Kartentitel','','text','required')}${field('source','Quelle','','text','required')}${field('updated','Aktualisiert am','','date','required')}${field('image','WebP / JPEG · bis 32 MB','','file','accept="image/webp,image/jpeg" required')}<button>Karte zur Bibliothek hinzufügen</button></form>`;
@@ -75,6 +77,7 @@ $('panel').onsubmit=async e=>{
     else if(action==='owner'){if(!b.site)throw Error('Fluggebiet auswählen.');await api('/ownership','PUT',{site:b.site,previous:model.sites.find(s=>s.id===b.site).club_id});}
     else if(action==='map'){const uploaded=await api('/map-image','POST',b.image);await api('/map','PUT',{...b,image:uploaded.photo});}
     else if(action==='view'){await api('/view','PUT',{...b,x:Number(b.x),y:Number(b.y),zoom:Number(b.zoom),remove:button.name==='remove'});}
+    else if(action.startsWith('day-')||action==='stickers'){await saveDay(api,form,b,model);}
     else if(action==='account'){await api('/account','PUT',b);form.reset();}
     $('message').textContent='Gespeichert.';await load();
   }catch(err){showError(err);}finally{button.disabled=false;}

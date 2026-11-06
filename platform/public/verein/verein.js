@@ -1,3 +1,4 @@
+import {showMembership} from './day.js';
 const params=new URLSearchParams(location.search);
 const langs=['de','en','hu'];
 const lang=langs.includes(params.get('lang'))?params.get('lang'):'de';
@@ -16,7 +17,7 @@ try {
     if(club.hidden?.includes(key))continue;
     if(key==='areas'){
       const list=sites.filter(s=>s.data.clubId===id);
-      if(list.length){add('h2',title[index]);for(const s of list)add('p',s.data.name);}
+      if(list.length){add('h2',title[index]);for(const s of list){add('h3',s.data.name);showMembership(add,s.data.dayMembership,lang);}}
       continue;
     }
     const text=club[key]?.[lang] || club[key]?.de;

@@ -42,8 +42,8 @@
     "footer": "Fly more. Search less.",
     "copyright": "PARASPOTS Platform · Produktvorschau",
     "contactButton": "Kontakt aufnehmen",
-    "demo": "Admin-Demo ansehen",
-    "demoNote": "Fiktive Daten · keine echten Transaktionen",
+    "demo": "Vereinsverwaltung öffnen",
+    "demoNote": "",
     "back": "Zur Startseite",
     "pilotTitle": "Dein Flugtag.<br>Eine App.",
     "pilotIntro": "Vom ersten Blick auf ein Fluggebiet bis zu den Neuigkeiten deines Clubs: PARASPOTS begleitet die Vorbereitung auf deinem Smartphone.",
@@ -57,7 +57,7 @@
         "Neuigkeiten, Veranstaltungen und freigegebene Dokumente – passend zu deinem Club und deiner Mitgliedschaft."
       ],
       [
-        "Tageskarten im Blick",
+        "Tagesmitgliedschaften im Blick",
         "Der geplante Ablauf verbindet die Anfrage in der App mit der Prüfung durch den Club."
       ],
       [
@@ -65,7 +65,7 @@
         "Unbestätigte Mitgliedermeldungen und offizielle Clubsperrungen bleiben klar voneinander getrennt."
       ]
     ],
-    "pilotNote": "Diese Website stellt die App vor. Fluggebietssuche, Tageskarten und Pilotenprofile gehören ausschließlich in die App.",
+    "pilotNote": "Diese Website stellt die App vor. Fluggebietssuche, Tagesmitgliedschaften und Pilotenprofile gehören ausschließlich in die App.",
     "clubTitle": "Mehr Clubleben.<br>Weniger verstreute Infos.",
     "clubIntro": "Ein digitaler Clubbereich mit eigener Identität – eingebettet in eine gemeinsame Plattform für Piloten und Fluggebiete.",
     "clubFeatures": [
@@ -75,19 +75,19 @@
       ],
       [
         "Passende Module",
-        "News, Veranstaltungen, Dokumente, Mitgliedschaft, Tageskarten und Hinweise lassen sich je Club zusammenstellen."
+        "News, Veranstaltungen, Dokumente, Mitgliedschaft, Tagesmitgliedschaften und Hinweise lassen sich je Club zusammenstellen."
       ],
       [
         "Klare Zuständigkeiten",
         "Clubadmins kümmern sich um ihren Club. Der Superadmin verwaltet Clubs und verfügbare Module auf Plattformebene."
       ]
     ],
-    "adminTitle": "So könnte eure Verwaltung aussehen.",
-    "adminText": "Probiert den Tageskartenablauf, Mitgliedsanfragen, Sperrungen und Module aus. Die getrennte Demo arbeitet ausschließlich mit fiktiven Daten.",
-    "adminBadge": "INTERAKTIVER ENTWURF",
+    "adminTitle": "Vereinsverwaltung öffnen",
+    "adminText": "Der Verein legt Gebühren und Zahlungswege für seine Fluggebiete fest.",
+    "adminBadge": "VEREINSVERWALTUNG",
     "adminPreview": [
       "Clubübersicht",
-      "Tageskarten prüfen",
+      "Tagesmitgliedschaft verwalten",
       "Mitgliedschaften verwalten",
       "Module auswählen"
     ],
@@ -96,23 +96,23 @@
     "flows": [
       {
         "id": "tickets",
-        "label": "01 / TAGESKARTE",
-        "title": "Von der Anfrage zur Clubprüfung.",
+        "label": "Tagesmitgliedschaft",
+        "title": "Mit der eigenen Banking-App bezahlen.",
         "steps": [
           [
-            "In der App anfragen",
-            "Der Pilot wählt die Tageskarte des Clubs in der mobilen App."
+            "Regelung für das Fluggebiet ansehen",
+            "Die Tagesmitgliedschaft kann separat zu bezahlen oder bereits im Bergliftticket enthalten sein."
           ],
           [
-            "Direkt an den Club überweisen",
-            "Geplant ist die direkte Banküberweisung. PARASPOTS zeigt hier keine Bankdaten und löst keine Zahlung aus."
+            "QR-Aufkleber vor Ort scannen",
+            "Öffne deine eigene Banking-App und scanne den Zahlungscode. Prüfe Begünstigten, IBAN, Betrag und Verwendungszweck."
           ],
           [
-            "Der Club prüft den Eingang",
-            "„Ich habe überwiesen“ ist noch kein Zahlungsnachweis. Erst die Clubprüfung kann den Status bestätigen."
+            "Überweisung freigeben",
+            "Bewahre die SMS oder Buchungsbestätigung für die Kontrolle durch den Verein vor Ort auf."
           ]
         ],
-        "note": "Preise, Gültigkeit, Nachweise und Erstattungen sind noch nicht abschließend festgelegt."
+        "note": "Der Betrag geht direkt an den Verein. Für diesen Überweisungsweg fällt keine Transaktionsgebühr eines externen Zahlungsdienstleisters an."
       },
       {
         "id": "alerts",
@@ -221,8 +221,8 @@
     "footer": "Fly more. Search less.",
     "copyright": "PARASPOTS Platform · Product preview",
     "contactButton": "Get in touch",
-    "demo": "Explore the admin demo",
-    "demoNote": "Fictional data · no real transactions",
+    "demo": "Open club administration",
+    "demoNote": "",
     "back": "Back to home",
     "pilotTitle": "Your flying day.<br>One app.",
     "pilotIntro": "From getting to know a flying area to catching up with your club: PARASPOTS helps you prepare on your smartphone.",
@@ -236,7 +236,7 @@
         "News, events and approved documents relevant to your club and membership."
       ],
       [
-        "Keep track of day passes",
+        "Keep track of day memberships",
         "The planned process connects an in-app request with verification by the club."
       ],
       [
@@ -244,7 +244,7 @@
         "Unverified member reports and official club closures remain clearly distinct."
       ]
     ],
-    "pilotNote": "This website introduces the app. Flying-area search, day passes and pilot profiles belong exclusively in the app.",
+    "pilotNote": "This website introduces the app. Flying-area search, day memberships and pilot profiles belong exclusively in the app.",
     "clubTitle": "More club life.<br>Less scattered information.",
     "clubIntro": "A digital club space with its own identity, part of a shared platform for pilots and flying areas.",
     "clubFeatures": [
@@ -254,19 +254,19 @@
       ],
       [
         "Modules that fit",
-        "Combine news, events, documents, membership, day passes and notices to suit each club."
+        "Combine news, events, documents, membership, day memberships and notices to suit each club."
       ],
       [
         "Clear responsibilities",
         "Club admins manage their own club. The superadmin manages clubs and available modules across the platform."
       ]
     ],
-    "adminTitle": "Explore your future workspace.",
-    "adminText": "Try day-pass reviews, membership requests, closures and modules. The separate demo uses fictional data only.",
-    "adminBadge": "INTERACTIVE CONCEPT",
+    "adminTitle": "Open club administration",
+    "adminText": "Clubs set fees and payment options for their flying sites.",
+    "adminBadge": "CLUB ADMINISTRATION",
     "adminPreview": [
       "Club overview",
-      "Review day passes",
+      "Manage day membership",
       "Manage memberships",
       "Choose modules"
     ],
@@ -275,23 +275,23 @@
     "flows": [
       {
         "id": "tickets",
-        "label": "01 / DAY PASS",
-        "title": "From request to club verification.",
+        "label": "Day membership",
+        "title": "Pay with your own banking app.",
         "steps": [
           [
-            "Request in the app",
-            "The pilot selects a club day pass in the mobile app."
+            "Check the flying site",
+            "A day membership may be charged separately or included in the lift ticket."
           ],
           [
-            "Transfer directly to the club",
-            "A direct bank transfer is planned. This website shows no bank details and initiates no payment."
+            "Scan the sticker on site",
+            "Open your own banking app and scan the payment code. Check the beneficiary, IBAN, amount and reference."
           ],
           [
-            "The club checks receipt",
-            "“I have transferred” is not proof of payment. Only a club review can confirm the status."
+            "Authorise the transfer",
+            "Keep the SMS or booking confirmation for a local check by the club."
           ]
         ],
-        "note": "Prices, validity, evidence and refunds have not yet been finalised."
+        "note": "The money goes directly to the club. This transfer route has no external payment processor transaction fee."
       },
       {
         "id": "alerts",
@@ -400,8 +400,8 @@
     "footer": "Fly more. Search less.",
     "copyright": "PARASPOTS Platform · Termékelőzetes",
     "contactButton": "Kapcsolatfelvétel",
-    "demo": "Admin demó megnyitása",
-    "demoNote": "Fiktív adatok · valódi tranzakciók nélkül",
+    "demo": "Klubadmin megnyitása",
+    "demoNote": "",
     "back": "Vissza a kezdőlapra",
     "pilotTitle": "A repülős napod.<br>Egy alkalmazás.",
     "pilotIntro": "Fedezz fel új starthelyeket, olvasd az egyesületek híreit, és kövesd a saját közösséged életét – mindezt egy helyen, a PARASPOTS appban!",
@@ -415,7 +415,7 @@
         "Hírek, események és a tagságodhoz tartozó dokumentumok – kéznél, amikor szükséged van rájuk."
       ],
       [
-        "Kövesd a napijegyed",
+        "Kövesd a napi tagságod",
         "A tervezett folyamat az appban indított igénylést az egyesület ellenőrzésével kapcsolja össze."
       ],
       [
@@ -423,7 +423,7 @@
         "A nem ellenőrzött tagi jelzések és az egyesület által elrendelt hivatalos lezárások egyértelműen elkülönülnek."
       ]
     ],
-    "pilotNote": "Ez a weboldal az alkalmazást mutatja be. Starthely-keresés, napijegy és pilótaprofil kizárólag az appban lesz.",
+    "pilotNote": "Ez a weboldal az alkalmazást mutatja be. Starthely-keresés, napi tagság és pilótaprofil kizárólag az appban lesz.",
     "clubTitle": "Pezsgő egyesületi élet.<br>Minden fontos hír egy helyen.",
     "clubIntro": "Mutassátok meg az egyesületeteket a PARASPOTS appban: saját arculattal, saját hírekkel és a tagjaitoknak szóló tartalmakkal.",
     "clubFeatures": [
@@ -433,44 +433,44 @@
       ],
       [
         "Hozzátok illő modulok",
-        "Hírek, programok, dokumentumok, tagság és napijegyek: ti döntitek el, mely modulokra van szükségetek."
+        "Hírek, programok, dokumentumok, tagság és napi tagságok: ti döntitek el, mely modulokra van szükségetek."
       ],
       [
         "Világos feladatkörök",
         "Az egyesületi adminisztrátor a saját egyesületének felületét kezeli. A superadmin a teljes platform egyesületeit és elérhető moduljait felügyeli."
       ]
     ],
-    "adminTitle": "Ilyen lehet az egyesületetek kezelőfelülete.",
-    "adminText": "Próbáljátok ki a napijegykezelést, a tagsági kérelmeket, a lezárásokat és a modulokat. A külön demó kizárólag fiktív adatokkal működik.",
-    "adminBadge": "KATTINTHATÓ TERV",
+    "adminTitle": "Klubadmin megnyitása",
+    "adminText": "A klub repülőterületenként állíthatja be a díjat és a fizetési lehetőségeket.",
+    "adminBadge": "KLUBADMIN",
     "adminPreview": [
       "Egyesületi áttekintés",
-      "Napijegyek ellenőrzése",
+      "Napi tagság kezelése",
       "Tagságok kezelése",
       "Modulok kiválasztása"
     ],
     "howTitle": "Világos folyamatok.<br>Egyértelmű felelősség.",
-    "howIntro": "A pilóták az appot használják, az egyesületek a saját kezelőfelületükön intézik az ügyeket. Így kapcsolódik össze a napijegy, a figyelmeztetés és a tagság kezelése.",
+    "howIntro": "A pilóták az appot használják, az egyesületek a saját kezelőfelületükön intézik az ügyeket. Így kapcsolódik össze a napi tagság, a figyelmeztetés és a tagság kezelése.",
     "flows": [
       {
         "id": "tickets",
-        "label": "01 / NAPIJEGY",
-        "title": "Az igényléstől az egyesület ellenőrzéséig.",
+        "label": "Napi tagság",
+        "title": "Fizetés a saját banki appoddal.",
         "steps": [
           [
-            "Igénylés az appban",
-            "A pilóta a mobilalkalmazásban választja ki az egyesület napijegyét."
+            "Nézd meg a repülőterület feltételeit",
+            "A napi tagság lehet külön fizetős, vagy benne lehet a felvonójegy árában."
           ],
           [
-            "Közvetlen átutalás az egyesületnek",
-            "A terv közvetlen banki átutalás. A weboldal nem mutat bankadatokat, és nem indít fizetést."
+            "Olvasd be a helyszíni matricát",
+            "Nyisd meg a saját banki appodat, és olvasd be a fizetési kódot. Ellenőrizd a kedvezményezettet, az IBAN-t, az összeget és a közleményt."
           ],
           [
-            "Az egyesület ellenőrzi a jóváírást",
-            "Az „átutaltam” jelzés nem fizetési igazolás. Az állapotot csak az egyesület ellenőrzése erősítheti meg."
+            "Hagyd jóvá az átutalást",
+            "Őrizd meg az SMS-t vagy a könyvelési visszaigazolást a klub helyszíni ellenőrzéséhez."
           ]
         ],
-        "note": "Az árak, érvényesség, igazolások és visszatérítések részletei még nem véglegesek."
+        "note": "Az összeg közvetlenül a klubhoz érkezik. Ezen az átutalási úton nincs külső fizetési szolgáltató tranzakciós díja."
       },
       {
         "id": "alerts",

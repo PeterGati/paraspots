@@ -1,1 +1,1 @@
-{"private":true,"type":"module","scripts":{"dev:cloudflare":"wrangler pages dev out/preview --d1 SITE_DB --persist-to .local-cloudflare","test:backend":"node --test tests/backend.test.js"},"devDependencies":{"wrangler":"^4.0.0"}}
+{"private":true,"type":"module","scripts":{"dev:cloudflare":"wrangler pages dev out/preview --d1 SITE_DB --persist-to .local-cloudflare","test:backend":"node --test tests/backend.test.js"},"devDependencies":{"wrangler":"^4.0.0"},"dependencies":{"ibantools":"4.5.4"}}
