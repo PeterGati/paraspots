@@ -87,6 +87,7 @@ print('Built: out/marketing (15 pages), out/admin, out/preview (combined local r
 
 # Protected editor assets are public; all reads/writes require server authentication.
 for target in ['marketing','preview']:
+    shutil.copytree(ROOT/'platform/admin',OUT/target/'clubadmin')
     dest=OUT/target/'superadmin'
     shutil.copytree(ROOT/'platform/superadmin',dest)
     shutil.copy2(ROOT/'backend/validation.js',dest/'validation.js')

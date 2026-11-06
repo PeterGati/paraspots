@@ -1,14 +1,16 @@
 // Immutable, same-origin photos. Uploads require the existing admin session.
 export const photoPath=/^\/api\/media\/[a-f0-9]{64}\.(jpg|png|webp)$/;
 const limit=8*1024*1024;
-export async function uploadPhoto(request,bucket){
+export async function uploadPhoto(request,bucket,{map=false}={}){
+ const max=map?32*1024*1024:limit;
  if(!bucket)return Response.json({error:'A képtár még nincs bekapcsolva. Az adatok mentése továbbra is használható.'},{status:503});
- if(Number(request.headers.get('Content-Length'))>limit)return Response.json({error:'A kép legfeljebb 8 MB lehet.'},{status:413});
+ if(Number(request.headers.get('Content-Length'))>max)return Response.json({error:map?'Maximal 32 MB.':'A kép legfeljebb 8 MB lehet.'},{status:413});
  const reader=request.body?.getReader(),chunks=[];let size=0;
- if(reader)while(true){const {value,done}=await reader.read();if(done)break;size+=value.length;if(size>limit){await reader.cancel();return Response.json({error:'A kép legfeljebb 8 MB lehet.'},{status:413});}chunks.push(value);}
+ if(reader)while(true){const {value,done}=await reader.read();if(done)break;size+=value.length;if(size>max){await reader.cancel();return Response.json({error:map?'Maximal 32 MB.':'A kép legfeljebb 8 MB lehet.'},{status:413});}chunks.push(value);}
  const bytes=new Uint8Array(size);let offset=0;for(const c of chunks){bytes.set(c,offset);offset+=c.length;}
  const prefix=String.fromCharCode(...bytes.slice(0,12));
  const type=bytes[0]===255&&bytes[1]===216&&bytes[2]===255?'jpg':prefix.startsWith('\x89PNG\r\n\x1a\n')?'png':prefix.startsWith('RIFF')&&prefix.slice(8)==='WEBP'?'webp':null;
+ if(map && !['jpg','webp'].includes(type))return Response.json({error:'JPEG oder WebP erforderlich.'},{status:415});
  if(!type)return Response.json({error:'JPEG, PNG vagy WebP képfájl szükséges.'},{status:415});
  const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(v=>v.toString(16).padStart(2,'0')).join('');
  const key=`${digest}.${type}`,contentType={jpg:'image/jpeg',png:'image/png',webp:'image/webp'}[type];

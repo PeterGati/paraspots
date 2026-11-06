@@ -1,3 +1,4 @@
+import {clubRoute, publicClubs, siteRelations} from './clubs.js';
 import {localizedContent} from './localization.js';
 import {photoPath,uploadPhoto,servePhoto} from './media.js';
 import { validateSite } from './validation.js';
@@ -48,12 +49,25 @@ async function route(request,env){
  if(path==='/api/sites'&&request.method==='GET'){
   const {results}=await db.prepare('SELECT id,published,published_at FROM sites WHERE published IS NOT NULL ORDER BY id').all();
   const sites=results.map(r=>({id:r.id,data:url.searchParams.has('lang')?localizedContent(JSON.parse(r.published),['de','en','hu'].includes(url.searchParams.get('lang'))?url.searchParams.get('lang'):'de'):JSON.parse(r.published),publishedAt:r.published_at}));
-  const etag='"'+await hash(JSON.stringify(sites))+'"';
+  const clubs=await publicClubs(db);
+  const {owners,maps}=await siteRelations(db);
+  for(const site of sites) {
+    delete site.data.clubId;
+    delete site.data.regionalMaps;
+    if(owners.has(site.id)) site.data.clubId=owners.get(site.id);
+    const assigned=maps.filter(m=>m.site_id===site.id);
+    if(assigned.length) site.data.regionalMaps=assigned;
+  }
+  const etag='"'+await hash(JSON.stringify({sites,clubs}))+'"';
   if(request.headers.get('If-None-Match')===etag)return new Response(null,{status:304,headers:{ETag:etag,'Cache-Control':'no-cache'}});
-  return reply({schemaVersion:1,sites},200,{ETag:etag,'Cache-Control':'no-cache'});
+  return reply({schemaVersion:1,sites,clubs},200,{ETag:etag,'Cache-Control':'no-cache'});
  }
  const token=request.headers.get('Cookie')?.match(/(?:^|;\s*)ps_admin=([^;]+)/)?.[1];
  const session=token?await db.prepare('SELECT expires FROM sessions WHERE token_hash=?').bind(await hash(token)).first():null;
+ if(path==='/api/club'||path.startsWith('/api/club/')) {
+   try {return await clubRoute({request,url,path,db,body,hash,reply,superuser:!!session && session.expires>now && url.searchParams.get('mode')==='super',env,passwordMatches});}
+   catch(e){if(e instanceof SyntaxError || e.message==='payload')return reply({error:'Ungültige Eingabe.'},400);throw e;}
+ }
  if(!session||session.expires<=now)return reply({error:'Bejelentkezés szükséges.'},401);
  if(path==='/api/admin/media'&&request.method==='POST')return uploadPhoto(request,env.SITE_PHOTOS);
  if(path==='/api/logout'&&request.method==='POST'){
