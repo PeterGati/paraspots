@@ -1,7 +1,7 @@
 import {isValidIBAN} from 'ibantools';
 
 const languages=['de','en','hu'];
-const blankRule={mode:'none',cents:0,terms:{}};
+const blankRule={mode:'unset',cents:0,terms:{}};
 const initial=()=>({base:blankRule,sites:{},bank:{iban:'',name:'',count:null},alternatives:{},download:''});
 const invalid=message=>{throw new RangeError(message);};
 function text(value,max) {
@@ -18,7 +18,14 @@ function link(value) {
   try{const u=new URL(raw);if(u.protocol==='https:'&&u.hostname&&!u.username&&!u.password)return u.href;}catch{}
   invalid('Ein gültiger HTTPS-Link ist erforderlich.');
 }
+function readSettings(raw) {
+  const s=JSON.parse(raw);
+  // Previous untouched defaults had no language keys. Explicit opt-outs always had all three.
+  if(s.base.mode==='none' && Object.keys(s.base.terms).length===0)s.base=blankRule;
+  return s;
+}
 function rule(value) {
+  if(value.mode==='unset')return blankRule;
   if(!['none','paid','lift'].includes(value?.mode))invalid('Modus auswählen.');
   const cents=value.mode==='paid'?value.cents:0;
   if(!Number.isSafeInteger(cents)||(value.mode==='paid'&&(cents<=0||cents>99999999999)))invalid('Einen positiven Eurobetrag mit höchstens zwei Nachkommastellen eingeben.');
@@ -42,28 +49,31 @@ function matchesPrint(batch,settings,site) {
   return r.mode==='paid' && batch.cents===r.cents && batch.iban===settings.bank.iban && batch.name===settings.bank.name && batch.download===settings.download;
 }
 export async function addMemberships(db,sites,owners) {
-  const settings=new Map((await db.prepare('SELECT * FROM day_settings').all()).results.map(r=>[r.club_id,JSON.parse(r.settings)]));
+  const settings=new Map((await db.prepare('SELECT * FROM day_settings').all()).results.map(r=>[r.club_id,readSettings(r.settings)]));
   for(const site of sites){
     delete site.data.dayMembership;
+    delete site.data.paymentHelp;
     const owner=owners.get(site.id),s=settings.get(owner);
     if(!s)continue;
     const r=effective(s,site.id);
     if(r.mode==='none')continue;
-    const showPaymentHelp=r.mode==='paid' && Boolean(s.bank.iban || s.bank.name || s.bank.count || s.download);
+    const showPaymentHelp=r.mode!=='lift' && Boolean(s.bank.iban || s.bank.name || s.bank.count || s.download);
     const methods=[];
-    if(r.mode==='paid'){
+    if(r.mode==='unset'&&!showPaymentHelp)continue;
+    if(r.mode!=='lift'){
       if(showPaymentHelp)methods.push({kind:'qr'});
       for(const kind of ['cash','paypal','other','lift']){
         const value=s.alternatives[kind];
         if(typeof value==='string'?value:Object.values(value??{}).some(Boolean))methods.push({kind,value});
       }
     }
-    site.data.dayMembership={...r,showPaymentHelp,methods};
+    if(r.mode==='unset')site.data.paymentHelp={mode:'info',showPaymentHelp,methods};
+    else site.data.dayMembership={...r,showPaymentHelp,methods};
   }
 }
 export async function membershipAdmin(db,id) {
   const row=await db.prepare('SELECT * FROM day_settings WHERE club_id=?').bind(id).first();
-  const settings=row?JSON.parse(row.settings):initial();
+  const settings=row?readSettings(row.settings):initial();
   const batches=(await db.prepare('SELECT * FROM sticker_batches WHERE club_id=? ORDER BY created DESC').bind(id).all()).results.map(b=>({
     id:b.id,site:b.site_id,created:b.created,current:matchesPrint(JSON.parse(b.snapshot),settings,b.site_id)
   }));

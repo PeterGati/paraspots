@@ -7,7 +7,7 @@ export function showMembership(add,m,lang){
  if(!m)return;
  const c=copy[lang],local=v=>v?.[lang]||v?.de||'';
  add('h4',c[0]);
- add('p',m.mode==='lift'?c[1]:new Intl.NumberFormat(lang,{style:'currency',currency:'EUR'}).format(m.cents/100));
+ if(m.mode!=='info')add('p',m.mode==='lift'?c[1]:new Intl.NumberFormat(lang,{style:'currency',currency:'EUR'}).format(m.cents/100));
  if(local(m.terms))add('p',local(m.terms));
  for(const method of m.methods){
    if(method.kind==='qr'){add('strong',c[2]);add('p',c[3]);}

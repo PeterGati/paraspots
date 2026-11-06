@@ -49,3 +49,16 @@ test('mixed sites, partial sticker fields, ordering, clearing, ownership and imm
  await save('day-rule',{site:'a',mode:'inherit'});
  assert.equal((await get())[0].cents,650);
 });
+
+test('a saved sticker field activates instructions on an unconfigured site, without publishing a fee',async()=>{
+  const db=database(),owners=new Map([['hw','001']]);
+  const s={base:{mode:'none',cents:0,terms:{}},sites:{},bank:{iban:'present'},alternatives:{},download:''};
+  async function feed(){
+    db.sql.prepare('INSERT OR REPLACE INTO day_settings VALUES(?,?,1)').run('001',JSON.stringify(s));
+    const sites=[{id:'hw',data:{}}];await addMemberships(db,sites,owners);return sites[0].data;
+  }
+  assert.deepEqual(await feed(),{paymentHelp:{mode:'info',showPaymentHelp:true,methods:[{kind:'qr'}]}});
+  s.bank.iban='';assert.deepEqual(await feed(),{});
+  s.bank.count=25;s.base.terms={de:'',en:'',hu:''};assert.deepEqual(await feed(),{});
+  s.base.mode='lift';assert.equal((await feed()).dayMembership.showPaymentHelp,false);
+});
