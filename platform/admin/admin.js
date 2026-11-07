@@ -1,12 +1,13 @@
+import {memberListPanel} from './member-list.js';
 import {membersPanel} from './members.js';
 import {dayPanel,saveDay} from './day.js';
-const titles=['Übersicht','Vereinsprofil','Fluggebiete','Tagesmitgliedschaft','QR-Aufkleber','Warnungen & Sperren','Luftraum & Naturschutz','Veranstaltungen','Webcams & Medien','Tandemflüge','Mitglieder & Zugänge','Module & Einstellungen'];
+const titles=['Übersicht','Vereinsprofil','Fluggebiete','Tagesmitgliedschaft','QR-Aufkleber','Warnungen & Sperren','Luftraum & Naturschutz','Veranstaltungen','Webcams & Medien','Tandemflüge','Mitglieder & Zugänge','Module & Einstellungen','Mitgliederliste'];
 const sections={1:'description',5:'warnings',7:'events',8:'webcams',9:'tandem'};
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const params=new URLSearchParams(location.search);
 const elevated=params.get('mode')==='super';
-let selected=params.get('club') || '001', view=0, model;
+let selected=params.get('club') || '001', view=params.get('view')==='members'?12:0, model;
 const field=(name,title,value='',type='text',extra='')=>`<label>${esc(title)}<input type="${type}" name="${name}" value="${esc(value)}" ${extra}></label>`;
 const langs=['de','en','hu'];
 async function api(path='',method='GET',data) {
@@ -46,6 +47,8 @@ function render(){
     html=membersPanel(model,{esc,field});
     html+=accounts.map(a=>`<p>${esc(a.email)} · ${a.active?'Aktiv':'Passwort ausstehend'}</p>`).join('')||'<p>Noch kein Verwaltungszugang.</p>';
     if(model.superuser)html+=`<form data-save="account">${field('email','Zugang für diesen Verein',accounts[0]?.email,'email','required')}${field('password','Passwort festlegen oder ersetzen','','password','minlength="12" maxlength="256" autocomplete="new-password" required')}<button>Zugang speichern</button></form>`;
+  } else if(view===12) {
+    html=memberListPanel(model,{esc,field});
   } else if(view===11) {
     html=`<form data-save="modules">${Object.entries(sections).map(([i,k])=>`<label><input type="checkbox" name="${k}" ${club.profile.hidden?.includes(k)?'':'checked'}> ${titles[i]}</label>`).join('')}<button>Sichtbarkeit speichern</button></form>`;
   } else html='<p>Vorbereitet. Die Konfiguration wird in der nächsten Entwicklungsphase freigeschaltet.</p>';

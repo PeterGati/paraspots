@@ -1,3 +1,4 @@
+import './members.js';
 import {migrateContent,translatable,missingTranslations} from './localization.js';
 import {preparePhoto} from './photos.js';
 import {directions,validateSite,importWarnings} from './validation.js';

@@ -9,3 +9,7 @@
 
 .photo-editor img{display:block;width:100%;max-width:520px;height:190px;object-fit:cover;border-radius:14px;margin-bottom:12px}.photo-editor small{display:block;margin-top:12px;line-height:1.5}.photo-editor input[type=file]{max-width:100%;background:#fff}.photo-editor button{margin-top:10px}
 .translation-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.translation-fields label{min-width:0}.translation-fields small{color:#9b4a00;display:block;min-height:2.5em}.translation-fields textarea{min-height:130px}@media(max-width:760px){.translation-fields{grid-template-columns:1fr}}
+
+.member-list form{display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid #dce3ec;padding:16px 0;margin:0}.member-address{min-width:0;overflow-wrap:anywhere;font-weight:600}.member-address small{display:block;font-size:12px;font-weight:400;color:#627186;margin-top:5px}@media(max-width:520px){.member-list form{align-items:flex-start;flex-direction:column}}
+
+#member-area{margin:20px 0}#member-list form[data-save="member-add"]{max-width:520px;margin-bottom:20px}#member-area select{max-width:520px}
