@@ -1,3 +1,4 @@
+import {memberRoute} from './club-members.js';
 import {addMemberships} from './membership.js';
 import {clubRoute, publicClubs, siteRelations} from './clubs.js';
 import {localizedContent} from './localization.js';
@@ -64,6 +65,7 @@ async function route(request,env){
   if(request.headers.get('If-None-Match')===etag)return new Response(null,{status:304,headers:{ETag:etag,'Cache-Control':'no-cache'}});
   return reply({schemaVersion:1,sites,clubs},200,{ETag:etag,'Cache-Control':'no-cache'});
  }
+ if(path.startsWith('/api/member/')) return memberRoute({request,url,path,db,reply});
  const token=request.headers.get('Cookie')?.match(/(?:^|;\s*)ps_admin=([^;]+)/)?.[1];
  const session=token?await db.prepare('SELECT expires FROM sessions WHERE token_hash=?').bind(await hash(token)).first():null;
  if(path==='/api/club'||path.startsWith('/api/club/')) {

@@ -1,3 +1,4 @@
+import {manageMembers,memberList,memberContent} from './club-members.js';
 import {membershipAdmin,membershipWrite} from './membership.js';
 import {photoPath, uploadPhoto} from './media.js';
 import {validateSite} from './validation.js';
@@ -55,10 +56,11 @@ export async function clubRoute({request,url,path,db,body,hash,reply,superuser,e
     const allSites = await rows(db.prepare('SELECT s.id,s.draft,s.revision,c.club_id FROM sites s LEFT JOIN site_clubs c ON c.site_id=s.id WHERE ? OR c.club_id=? ORDER BY s.id').bind(Number(superuser),clubId));
     const sites = allSites.map(s=>({...s,draft:JSON.parse(s.draft)}));
     const {maps} = await siteRelations(db);
-    return reply({superuser,day:await membershipAdmin(db,clubId),club:{...club,profile:JSON.parse(club.profile)},clubs:superuser?await publicClubs(db):[],sites,
+    return reply({members:await memberList(db,clubId),memberContent:await memberContent(db,clubId),superuser,day:await membershipAdmin(db,clubId),club:{...club,profile:JSON.parse(club.profile)},clubs:superuser?await publicClubs(db):[],sites,
       maps:await rows(db.prepare('SELECT * FROM regional_maps ORDER BY title,id')),views:maps.filter(m=>sites.some(s=>s.id===m.site_id)),
       accounts:await rows(db.prepare('SELECT email,password_hash IS NOT NULL AS active FROM club_accounts WHERE club_id=?').bind(clubId))});
   }
+  if(['/api/club/members','/api/club/member-content'].includes(path)) return manageMembers({request,path,db,clubId,body,reply});
   if(path === '/api/club/map-image' && method==='POST') return uploadPhoto(request,env.SITE_PHOTOS,{map:true});
   if(method!=='PUT') return reply({error:'Nicht gefunden.'},404);
   const b=await body();

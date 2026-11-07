@@ -1,3 +1,4 @@
+import {membersPanel} from './members.js';
 import {dayPanel,saveDay} from './day.js';
 const titles=['Übersicht','Vereinsprofil','Fluggebiete','Tagesmitgliedschaft','QR-Aufkleber','Warnungen & Sperren','Luftraum & Naturschutz','Veranstaltungen','Webcams & Medien','Tandemflüge','Mitglieder & Zugänge','Module & Einstellungen'];
 const sections={1:'description',5:'warnings',7:'events',8:'webcams',9:'tandem'};
@@ -42,7 +43,8 @@ function render(){
     html+=`<form data-save="map">${field('title','Kartentitel','','text','required')}${field('source','Quelle','','text','required')}${field('updated','Aktualisiert am','','date','required')}${field('image','WebP / JPEG · bis 32 MB','','file','accept="image/webp,image/jpeg" required')}<button>Karte zur Bibliothek hinzufügen</button></form>`;
     if(model.maps.length && own.length) html+=`<form data-save="view"><label>Fluggebiet<select name="site">${own.map(s=>`<option value="${esc(s.id)}">${esc(s.draft.name)}</option>`).join('')}</select></label><label>Karte<select name="map">${model.maps.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} · ${esc(m.updated)}</option>`).join('')}</select></label>${field('x','Mittelpunkt horizontal (0–1)',.5,'number','step="any" min="0" max="1" required')}${field('y','Mittelpunkt vertikal (0–1)',.5,'number','step="any" min="0" max="1" required')}${field('zoom','Anfangszoom (1–16)',1,'number','step="any" min="1" max="16" required')}<button>Grundansicht speichern</button> <button name="remove" value="1">Zuordnung entfernen</button></form>`;
   } else if(view===10) {
-    html=accounts.map(a=>`<p>${esc(a.email)} · ${a.active?'Aktiv':'Passwort ausstehend'}</p>`).join('')||'<p>Noch kein Verwaltungszugang.</p>';
+    html=membersPanel(model,{esc,field});
+    html+=accounts.map(a=>`<p>${esc(a.email)} · ${a.active?'Aktiv':'Passwort ausstehend'}</p>`).join('')||'<p>Noch kein Verwaltungszugang.</p>';
     if(model.superuser)html+=`<form data-save="account">${field('email','Zugang für diesen Verein',accounts[0]?.email,'email','required')}${field('password','Passwort festlegen oder ersetzen','','password','minlength="12" maxlength="256" autocomplete="new-password" required')}<button>Zugang speichern</button></form>`;
   } else if(view===11) {
     html=`<form data-save="modules">${Object.entries(sections).map(([i,k])=>`<label><input type="checkbox" name="${k}" ${club.profile.hidden?.includes(k)?'':'checked'}> ${titles[i]}</label>`).join('')}<button>Sichtbarkeit speichern</button></form>`;
@@ -78,6 +80,8 @@ $('panel').onsubmit=async e=>{
     else if(action==='map'){const uploaded=await api('/map-image','POST',b.image);await api('/map','PUT',{...b,image:uploaded.photo});}
     else if(action==='view'){await api('/view','PUT',{...b,x:Number(b.x),y:Number(b.y),zoom:Number(b.zoom),remove:button.name==='remove'});}
     else if(action.startsWith('day-')||action==='stickers'){await saveDay(api,form,b,model);}
+    else if(action==='member-add'||action==='member-remove'){await api('/members',action==='member-add'?'PUT':'DELETE',{email:b.email});}
+    else if(action==='member-content'){const item=model.memberContent.find(c=>c.id===form.dataset.id);await api('/member-content',button.name==='remove'?'DELETE':'PUT',{...b,id:item?.id,revision:item?.revision});}
     else if(action==='account'){await api('/account','PUT',b);form.reset();}
     $('message').textContent='Gespeichert.';await load();
   }catch(err){showError(err);}finally{button.disabled=false;}
