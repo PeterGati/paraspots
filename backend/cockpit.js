@@ -92,13 +92,9 @@ export async function cockpitRoute({request,path,db,body,env,reply,backupStatus=
  if(row.revision!==b.revision)return reply({error:'Közben módosult a szerverpiszkozat.',record:record(row)},409);
  const data=JSON.parse(row.draft),errors=validateSite(data);
  if(errors.length)return reply({error:errors.join('\n')},422);
- if(!row.club_id)errors.push('Üzemeltető klub szükséges.');
- if(!data.description?.trim())errors.push('Területleírás szükséges.');
- for(const key of ['startpunkte','landeplaetze']) {
-  if(!Array.isArray(data[key])||!data[key].length)errors.push(`${key}: legalább egy hely szükséges.`);
-  for(const point of data[key]||[])if(!point.name?.trim()||!Number.isFinite(point.coordinates?.lat)||!Number.isFinite(point.coordinates?.lon))errors.push(`${key}: név és teljes GPS-koordinátapár szükséges.`);
- }
- if(errors.length)return reply({error:errors.join('\n')},422);
+ // Publication requires valid supplied data, not completeness. Missing club,
+ // descriptions, points and coordinates are allowed for collaborative collection.
+ // validateSite above still rejects invalid identities, types, URLs and GPS ranges.
  const next={...record(row),published:data,revision:b.revision+1};
  const result=await db.batch([db.prepare('UPDATE sites SET published=draft,published_at=?,revision=revision+1 WHERE id=? AND revision=?').bind(new Date().toISOString(),id,b.revision),audit(id,'publish',record(row),next)]);
  if(!result[0].meta.changes)return reply({error:'Publikálási ütközés. Frissítsd a szerverállapotot.'},409);

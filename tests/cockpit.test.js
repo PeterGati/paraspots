@@ -56,3 +56,31 @@ test('central change list contains real before/after and declares its limited sc
  const response=await a.call('/changes');assert.equal(response.status,200);const result=await response.json();
  assert.equal(result.changes.length,1);assert.equal(result.changes[0].before,null);assert.deepEqual(result.changes[0].after.draft,seed);assert.match(result.scope,/klubadmin/);
 });
+
+test('named incomplete sites publish without invented club, points or GPS',async()=>{
+ for(const missing of [
+  {region:'steiermark',site:'partial',name:'Partial'},
+  {region:'steiermark',site:'partial',name:'Partial',description:'',startpunkte:[{name:'Start',coordinates:{lat:null,lon:null},startHeight:null}],landeplaetze:[]},
+  {region:'steiermark',site:'partial',name:'Partial',startpunkte:[{coordinates:{lat:47,lon:null}}]}
+ ]) {
+  const a=setup();let r=await a.call('/sites','PUT',{data:missing,revision:0,clubID:null});assert.equal(r.status,200);
+  const route='/sites/'+encodeURIComponent('steiermark/partial');
+  assert.equal(a.db.sql.prepare('SELECT published FROM sites').get().published,null);
+  r=await a.call(route+'/publish','POST',{revision:1});assert.equal(r.status,200);
+  const record=(await r.json()).record;assert.deepEqual(record.published,missing);assert.equal(record.clubID,null);
+  assert.equal(a.db.sql.prepare('SELECT count(*) AS n FROM cockpit_audit').get().n,2);
+ }
+});
+test('incomplete publication never bypasses invalid coordinates or identity',async()=>{
+ for(const data of [
+  {region:'steiermark',site:'bad',name:'Bad',startpunkte:[{coordinates:{lat:91,lon:16}}]},
+  {region:'steiermark',site:'bad',name:'Bad',startpunkte:[{coordinates:{lat:'unknown',lon:null}}]},
+  {region:'steiermark',site:'bad',name:''},
+  {region:'steiermark',site:'bad',name:'Bad',photo:'javascript:alert(1)'}
+ ]) {
+  const a=setup();a.db.sql.prepare('INSERT INTO sites(id,draft,updated_at) VALUES(?,?,?)').run('steiermark/bad',JSON.stringify(data),new Date().toISOString());
+  const row=a.db.sql.prepare('SELECT revision FROM sites').get();
+  assert.equal((await a.call('/sites/steiermark%2Fbad/publish','POST',{revision:row.revision})).status,422);
+  assert.equal(a.db.sql.prepare('SELECT published FROM sites').get().published,null);
+ }
+});
