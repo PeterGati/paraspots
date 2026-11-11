@@ -12,5 +12,5 @@ export function database(path=':memory:'){
   async first(){return sql.prepare(query).get(...values)||null;},
   async run(){const r=sql.prepare(query).run(...values);return {meta:{changes:r.changes}};},
   async all(){return {results:sql.prepare(query).all(...values)};}
- };},async all(){return {results:sql.prepare(query).all()};}};}};
+ };},async first(){return sql.prepare(query).get()||null;},async all(){return {results:sql.prepare(query).all()};}};}};
 }

@@ -1,3 +1,4 @@
+import {prepareTranslations,trackedContentWrite,workflowReady,mergeClubPublication,foreignTextChanged} from './translation-workflow.js';
 import {manageMembers,memberList,memberContent} from './club-members.js';
 import {membershipAdmin,membershipWrite} from './membership.js';
 import {photoPath, uploadPhoto} from './media.js';
@@ -61,6 +62,7 @@ export async function clubRoute({request,url,path,db,body,hash,reply,superuser,e
       accounts:await rows(db.prepare('SELECT email,password_hash IS NOT NULL AS active FROM club_accounts WHERE club_id=?').bind(clubId))});
   }
   if(['/api/club/members','/api/club/member-content'].includes(path)) return manageMembers({request,path,db,clubId,body,reply});
+  if(path === '/api/club/logo-image' && method==='POST') return uploadPhoto(request,env.SITE_PHOTOS);
   if(path === '/api/club/map-image' && method==='POST') return uploadPhoto(request,env.SITE_PHOTOS,{map:true});
   if(method!=='PUT') return reply({error:'Nicht gefunden.'},404);
   const b=await body();
@@ -82,10 +84,25 @@ export async function clubRoute({request,url,path,db,body,hash,reply,superuser,e
   }
   if(path==='/api/club/profile') {
     if(!isText(b.name) || !b.name.trim() || !fields.every(f=>['de','en','hu'].every(l=>isText(b.profile?.[f]?.[l] ?? ''))) || !https(b.profile?.link) || !https(b.profile?.webcamLink)) return reply({error:'Profil oder HTTPS-Link ungültig.'},400);
-    const profile={};
+    const prior=JSON.parse(club.profile);
+    const logo=b.profile?.logo===undefined ? prior.logo : b.profile.logo;
+    if(logo && (!photoPath.test(logo)||!await env.SITE_PHOTOS?.head(logo.split('/').pop()))) return reply({error:'Logo aus der Bildablage erforderlich.'},400);
+    const email=b.profile?.email===undefined ? prior.email : b.profile.email;
+    if(email && (typeof email!=='string'||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))) return reply({error:'E-Mail-Adresse prüfen.'},400);
+    const website=b.profile?.url===undefined ? prior.url : b.profile.url;
+    if(!https(website)) return reply({error:'HTTPS-Webseite erforderlich.'},400);
+    const profile={...prior,logo:logo||null,email:email||'',url:website||''};
     for(const f of fields) profile[f]=Object.fromEntries(['de','en','hu'].map(l=>[l,b.profile?.[f]?.[l] || '']));
     for(const k of ['link','webcamLink']) profile[k]=b.profile?.[k] || '';
     profile.hidden=fields.filter(k=>b.profile?.hidden?.includes(k));
+    if(env.TRANSLATION_WORKFLOW_ENABLED==='true') {
+      if(!await workflowReady(db))return reply({error:'Übersetzungsworkflow noch nicht eingerichtet.'},503);
+      if(!superuser&&foreignTextChanged('club',prior,profile))return reply({error:'EN/HU-Änderungen benötigen die Freigabe der Zentrale.'},400);
+      const prepared=prepareTranslations('club',prior,profile),actor=superuser?env.ADMIN_EMAIL:account.email;
+      const statement=db.prepare('UPDATE clubs SET name=?,profile=?,revision=revision+1 WHERE id=? AND revision=?').bind(b.name.trim(),JSON.stringify(prepared.value),clubId,b.revision);
+      const ok=await trackedContentWrite({db,statement,entityType:'club',entityID:clubId,before:{name:club.name,profile:prior},after:{name:b.name.trim(),profile:prepared.value},jobs:prepared.jobs,actor,role:superuser?'superadmin':'clubadmin',action:'club-profile-edit',clubID:clubId});
+      return ok?reply({ok:true}):reply({error:conflict},409);
+    }
     const result=await db.prepare('UPDATE clubs SET name=?,profile=?,revision=revision+1 WHERE id=? AND revision=?').bind(b.name.trim(),JSON.stringify(profile),clubId,b.revision).run();
     return result.meta.changes?reply({ok:true}):reply({error:conflict},409);
   }
@@ -115,7 +132,7 @@ export async function clubRoute({request,url,path,db,body,hash,reply,superuser,e
   const ownership='EXISTS(SELECT 1 FROM site_clubs WHERE site_id=? AND club_id=?)';
   if(!b.site || !await db.prepare('SELECT 1 FROM site_clubs WHERE site_id=? AND club_id=?').bind(b.site,clubId).first()) return reply({error:'Kein Zugriff.'},403);
   if(path==='/api/club/site') {
-    const row=await db.prepare('SELECT draft FROM sites WHERE id=?').bind(b.site).first();
+    const row=await db.prepare('SELECT draft,published,revision FROM sites WHERE id=?').bind(b.site).first();
     const data=b.draft ?? JSON.parse(row.draft);
     if(!b.draft && (!isText(b.name)||!b.name.trim()||!isText(b.description))) return reply({error:'Name und Beschreibung prüfen.'},400);
     if(!b.draft) for(const k of ['name','description']) {
@@ -123,6 +140,16 @@ export async function clubRoute({request,url,path,db,body,hash,reply,superuser,e
       if(data.translations?.de) data.translations.de[k]=b[k];
     }
     if(validateSite(data).length || data.region+'/'+data.site!==b.site) return reply({error:'Gebietsdaten prüfen.'},400);
+    if(env.TRANSLATION_WORKFLOW_ENABLED==='true') {
+      if(!await workflowReady(db))return reply({error:'Übersetzungsworkflow noch nicht eingerichtet.'},503);
+      const prior=JSON.parse(row.draft),live=row.published?JSON.parse(row.published):null;
+      if(!superuser&&foreignTextChanged('site',prior,data))return reply({error:'EN/HU-Änderungen benötigen die Freigabe der Zentrale.'},400);
+      let merged;try{merged=mergeClubPublication(prior,data,live);}catch{return reply({error:'Unveröffentlichte Änderungen der Zentrale überschneiden sich. Bitte zuerst mit der Zentrale abstimmen.'},409);}
+      const prepared=prepareTranslations('site',live??prior,merged??data),draft=prepareTranslations('site',prior,data).value,published=live?prepared.value:null,stamp=new Date().toISOString();
+      const statement=db.prepare('UPDATE sites SET draft=?,published=?,updated_at=?,published_at=CASE WHEN published IS NOT NULL THEN ? ELSE published_at END,revision=revision+1 WHERE id=? AND revision=? AND '+ownership).bind(JSON.stringify(draft),published?JSON.stringify(published):null,stamp,stamp,b.site,b.revision,b.site,clubId);
+      const ok=await trackedContentWrite({db,statement,entityType:'site',entityID:b.site,before:{draft:prior,published:live},after:{draft,published},jobs:prepared.jobs,actor:superuser?env.ADMIN_EMAIL:account.email,role:superuser?'superadmin':'clubadmin',action:'club-site-edit',clubID:clubId});
+      return ok?reply({ok:true}):reply({error:conflict},409);
+    }
     const result=await db.prepare('UPDATE sites SET draft=?,updated_at=?,revision=revision+1 WHERE id=? AND revision=? AND '+ownership).bind(JSON.stringify(data),new Date().toISOString(),b.site,b.revision,b.site,clubId).run();
     return result.meta.changes?reply({ok:true}):reply({error:conflict},409);
   }

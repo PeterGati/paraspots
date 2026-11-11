@@ -27,6 +27,19 @@ export function validateSite(d) {
   }
   for(const k of ['name','description','difficulty','windSensitivity','approachDescription','webcam']) if(p[k]!=null&&typeof p[k]!=='string') errors.push(`${path}.${k}: szöveg szükséges.`);
  }
+ for(const key of ['weatherLink','webcamLink']) if(d[key]!=null && d[key]!=='') {
+  try {const u=new URL(d[key]);if(typeof d[key]!=='string'||!['https:','http:'].includes(u.protocol)||!u.hostname.includes('.')||u.username||u.password||/\s/.test(d[key]))throw Error();}
+  catch {errors.push(`${key}: érvényes HTTP/HTTPS webcím szükséges.`);}
+ }
+ const parking=d.access?.parkingCoordinates;
+ if(parking!=null) {
+  if(typeof parking!=='object'||Array.isArray(parking))errors.push('Parkoló: koordinátapár szükséges.');
+  else {
+   const empty=v=>v==null||v==='';
+   if(!(empty(parking.lat)&&empty(parking.lon)) &&
+      !(['lat','lon'].every(k=>typeof parking[k]==='number'&&Number.isFinite(parking[k]))&&Math.abs(parking.lat)<=90&&Math.abs(parking.lon)<=180))errors.push('Parkoló: mindkét GPS-koordinátát érvényesen add meg, vagy mindkettőt töröld.');
+  }
+ }
  point(d,'starthely');
  for(const key of ['startpunkte','landeplaetze']) {
   if(d[key]!=null&&!Array.isArray(d[key])) errors.push(`${key}: lista szükséges.`);

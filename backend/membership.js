@@ -80,8 +80,9 @@ export async function membershipAdmin(db,id) {
   return {settings,revision:row?.revision??0,batches};
 }
 const uuidPattern=/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-export async function membershipWrite({db,clubId,superuser,path,b,reply}) {
+export async function membershipWrite({db,clubId,superuser,path,b,reply,audit}) {
   const {settings,revision}=await membershipAdmin(db,clubId);
+  const originalSettings=structuredClone(settings);
   const owns=async site=>typeof site==='string' && await db.prepare('SELECT 1 FROM site_clubs WHERE club_id=? AND site_id=?').bind(clubId,site).first();
   try{
     if(path==='/api/club/stickers'){
@@ -94,8 +95,9 @@ export async function membershipWrite({db,clubId,superuser,path,b,reply}) {
         if(r.mode!=='paid'||!settings.bank.iban||!settings.bank.name||!settings.bank.count)invalid('Für den Datenexport bitte separate Gebühr, IBAN, Begünstigten und Stückzahl angeben.');
         if(revision!==b.revision)return reply({error:'Einstellungen geändert. Bitte neu laden.'},409);
         const snapshot={...settings.bank,cents:r.cents,download:settings.download};
-        await db.prepare('INSERT OR IGNORE INTO sticker_batches SELECT ?,?,?,?,? WHERE EXISTS(SELECT 1 FROM day_settings WHERE club_id=? AND revision=?) AND EXISTS(SELECT 1 FROM site_clubs WHERE club_id=? AND site_id=?)')
-          .bind(b.id,clubId,b.site,JSON.stringify(snapshot),new Date().toISOString(),clubId,revision,clubId,b.site).run();
+        const statement=db.prepare('INSERT OR IGNORE INTO sticker_batches SELECT ?,?,?,?,? WHERE EXISTS(SELECT 1 FROM day_settings WHERE club_id=? AND revision=?) AND EXISTS(SELECT 1 FROM site_clubs WHERE club_id=? AND site_id=?)')
+          .bind(b.id,clubId,b.site,JSON.stringify(snapshot),new Date().toISOString(),clubId,revision,clubId,b.site);
+        if(audit)await db.batch([statement,audit('club:'+clubId,'sticker-batch',null,{id:b.id,site:b.site,snapshot})]);else await statement.run();
         batch=await db.prepare('SELECT * FROM sticker_batches WHERE id=? AND club_id=? AND site_id=?').bind(b.id,clubId,b.site).first();
         if(!batch)return reply({error:'Daten geändert. Bitte neu laden.'},409);
       }
@@ -120,8 +122,9 @@ export async function membershipWrite({db,clubId,superuser,path,b,reply}) {
       case '/api/club/day-bank':settings.bank=bankDetails(b);settings.download=downloadLink(b.download);break;
       default:return reply({error:'Nicht gefunden.'},404);
     }
-    const result=await db.prepare("INSERT INTO day_settings SELECT ?,?,1 WHERE (?=0 OR EXISTS(SELECT 1 FROM day_settings WHERE club_id=? AND revision=?)) AND (?=\'\' OR EXISTS(SELECT 1 FROM site_clubs WHERE club_id=? AND site_id=?)) ON CONFLICT(club_id) DO UPDATE SET settings=excluded.settings,revision=day_settings.revision+1 WHERE day_settings.revision=?")
-      .bind(clubId,JSON.stringify(settings),revision,clubId,revision,guardedSite,clubId,guardedSite,revision).run();
+    const statement=db.prepare("INSERT INTO day_settings SELECT ?,?,1 WHERE (?=0 OR EXISTS(SELECT 1 FROM day_settings WHERE club_id=? AND revision=?)) AND (?=\'\' OR EXISTS(SELECT 1 FROM site_clubs WHERE club_id=? AND site_id=?)) ON CONFLICT(club_id) DO UPDATE SET settings=excluded.settings,revision=day_settings.revision+1 WHERE day_settings.revision=?")
+      .bind(clubId,JSON.stringify(settings),revision,clubId,revision,guardedSite,clubId,guardedSite,revision);
+    const result=audit?(await db.batch([statement,audit('club:'+clubId,'membership-settings',{settings:originalSettings,revision},{settings,revision:revision+1})]))[0]:await statement.run();
     return result.meta.changes?reply({ok:true}):reply({error:'Daten geändert. Bitte neu laden.'},409);
   }catch(error){if(error instanceof RangeError)return reply({error:error.message},400);throw error;}
 }

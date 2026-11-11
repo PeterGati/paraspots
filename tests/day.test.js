@@ -62,3 +62,13 @@ test('a saved sticker field activates instructions on an unconfigured site, with
   s.bank.count=25;s.base.terms={de:'',en:'',hu:''};assert.deepEqual(await feed(),{});
   s.base.mode='lift';assert.equal((await feed()).dayMembership.showPaymentHelp,false);
 });
+
+test('audited bank updates are atomic and stale revisions cannot create audit records',async()=>{
+ const db=database();db.sql.exec('CREATE TABLE audit_test(id TEXT, payload TEXT)');
+ const audit=(id,_action,_before,after)=>db.prepare('INSERT INTO audit_test SELECT ?,? WHERE changes()=1').bind(id,JSON.stringify(after));
+ const write=(revision,auditFn=audit)=>membershipWrite({db,clubId:'001',superuser:true,path:'/api/club/day-bank',b:{revision,name:'Club',iban:'AT611904300234573201',count:25},reply:(data,status=200)=>({data,status}),audit:auditFn});
+ assert.equal((await write(0)).status,200);assert.equal(db.sql.prepare('SELECT count(*) n FROM audit_test').get().n,1);
+ assert.equal((await write(0)).status,409);assert.equal(db.sql.prepare('SELECT count(*) n FROM audit_test').get().n,1);
+ await assert.rejects(write(1,()=>db.prepare('INSERT INTO nonexistent VALUES(?)').bind('fail')));
+ assert.equal((await membershipAdmin(db,'001')).revision,1);
+});

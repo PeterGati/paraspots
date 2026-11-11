@@ -1,3 +1,6 @@
+import {dispatchNotifications} from './notifications.js';
+import {cockpitRoute} from './cockpit.js';
+import {backupRoute} from './backups.js';
 import {memberRoute} from './club-members.js';
 import {addMemberships} from './membership.js';
 import {clubRoute, publicClubs, siteRelations} from './clubs.js';
@@ -17,8 +20,10 @@ export async function passwordMatches(password,stored){
   let diff=got.length^want.length; for(let i=0;i<got.length;i++)diff|=got.charCodeAt(i)^want.charCodeAt(i);return diff===0;
  }catch{return false;}
 }
-export async function handle(request,env){
- try{return await route(request,env);}catch(e){console.error('Site API failure',e?.message);return reply({error:'A szerver most nem érhető el. A mentést próbáld újra.'},500);}
+export async function handle(request,env,context){
+ try{const response=await route(request,env);
+  if(context?.waitUntil&&response.ok&&!['GET','HEAD'].includes(request.method)&&env.NOTIFICATIONS_ENABLED==='true')context.waitUntil(dispatchNotifications(env).catch(()=>console.error('Notification dispatch failed')));
+  return response;}catch(e){console.error('Site API failure',e?.message);return reply({error:'A szerver most nem érhető el. A mentést próbáld újra.'},500);}
 }
 async function route(request,env){
  const url=new URL(request.url),path=url.pathname.replace(/\/$/,'');
@@ -73,6 +78,8 @@ async function route(request,env){
    catch(e){if(e instanceof SyntaxError || e.message==='payload')return reply({error:'Ungültige Eingabe.'},400);throw e;}
  }
  if(!session||session.expires<=now)return reply({error:'Bejelentkezés szükséges.'},401);
+ if(path==='/api/admin/cockpit'||path.startsWith('/api/admin/cockpit/'))return cockpitRoute({request,path,db,body,env,reply});
+ if(path==='/api/admin/backups'||path.startsWith('/api/admin/backups/'))return backupRoute({request,path,env,reply});
  if(path==='/api/admin/media'&&request.method==='POST')return uploadPhoto(request,env.SITE_PHOTOS);
  if(path==='/api/logout'&&request.method==='POST'){
   await db.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await hash(token)).run();
